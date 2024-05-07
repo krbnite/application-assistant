@@ -6,3 +6,10 @@ Resume Suggestions:
 
 ------------------------------------
 
+Project 
+* blurb about purpose
+* blurb about how you built it
+* tech/tools used
+* any links?
+
+
