@@ -51,6 +51,7 @@
     "SKILL-04"
   ],
   "include_education": true,
+  "publication_section_title": "Selected Publications",
   "publication_ids": [
     "PUB-01",
     "PUB-02"

@@ -99,6 +99,7 @@ Use `TAILORED_RESUME_PLAN_TEMPLATE.json` as the starting shape for a role-specif
 - Object entries with `id`, `label`, and/or `text` represent light edits to canonical bullets and must be defended in the audit.
 - Object entries without an `id` are custom bullets and should be rare.
 - Blank `headline` and `profile` fields are filled from the selected `profile_cluster`; populated fields indicate role-specific tailoring and must be audited.
+- Use `publication_section_title` when the selected publication set includes nonstandard entries such as unpublished manuscripts, conference abstracts/posters, public science writing, or research writing.
 - Treat existing DOCX resumes as examples or generated outputs, not canonical sources.
 - Generate the DOCX with `generate_resume_docx.py`; do not manually rebuild the DOCX unless the generator cannot express the needed tailoring.
 - Validate before generating when possible.

@@ -582,7 +582,7 @@ def build_docx(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: dict[
 
     publication_entries = resolve_entries(plan.get("publication_ids", []), bank)
     if publication_entries:
-        add_section(doc, "Selected Publications")
+        add_section(doc, str(plan.get("publication_section_title", "Selected Publications")))
         for entry in publication_entries:
             add_simple_bullet(doc, entry.text)
 

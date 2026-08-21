@@ -183,6 +183,7 @@ Rules:
 
 - Always consider `PUB-01` for health/wearables/neurotech roles.
 - Always consider `PUB-02` for physical systems, geophysics, and signal-processing roles.
+- Use the section title `Selected Publications & Research Writing` when selected entries include unpublished manuscripts, conference abstracts/posters, or public science writing.
 - Include older space/physics publications only when they strengthen the target role.
 - Omit publications entirely only if space is tight and the JD is strongly product/industry oriented.
 
