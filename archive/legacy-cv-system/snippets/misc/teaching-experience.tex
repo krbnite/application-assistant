@@ -1,0 +1,162 @@
+% vim:tw=72 sw=2 ft=tex
+%         File: text.tex
+% Date Created: 2015 Jul 27
+%  Last Change: 2015 Nov 19
+%     Compiler: pdflatex
+%       Author: Kurban
+
+\documentclass[10pt]{article}
+
+
+%%%%%%%%%%%%%%
+%% Packages %%
+%%%%%%%%%%%%%%
+
+%% For changing the margin size. %%
+\usepackage[margin=0.7in,left=0.6in,right=0.6in]{geometry}
+
+%% For colored text. %%
+% -  See
+%    http://en.wikibooks.org/wiki/LaTeX/Colors#The_68_standard_colors_known_to_dvips
+%    for a list of predefined colors.
+% \textcolor{colYouWant}{text}
+\usepackage[usenames,dvipsnames]{color}
+
+%% For providing a link to your email. %%
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+
+%% For making compact lists.
+% -  use itemize* environment for compact itemized lists, etc.
+\usepackage{mdwlist}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%             New              %%
+%%           Commands           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% For making a new section in your resume. %%
+% -  \noindent prevents LaTeX from indenting.
+% -  \large makes the text slightly larger.
+%    See http://en.wikibooks.org/wiki/LaTeX/Fonts#Sizing_text
+%    for a list of other font-sizing commands.
+% -  \vspace adds a little bit of vertical space.
+% -  \hrule adds a horizontal line.
+\newcommand{\ressection}[1]{\noindent{\large\textbf{#1}}
+\vspace{2pt}\hrule\vspace{4pt}}
+
+%% For job titles and date names. %%
+% -  \hfill fills up horizontal space until
+%    the words to the left and the right are
+%    as far apart as possible.
+\newcommand{\leftandright}[2]{\noindent\textbf{#1}\hfill
+\textbf{#2}}
+
+
+
+%%%%%%%%%%%%%%%%%%%
+%% Miscellaneous %%
+%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty} %% removes the page numbers.
+
+
+
+%%%%%%%%%%%%%%%%%
+%% The Resume! %%
+%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+  \textbf{\huge{Kevin Urban}}\\  
+  \url{http://www.kevin-urban.com}\\  
+  \url{https://www.linkedin.com/pub/kevin-urban/32/ba9/67}\\  
+  kevin.ddu@gmail.com
+  \textbullet\, (973) 464-6833
+\end{center}
+\vspace{-0.9em}
+
+NOTE: This document is just a quick reference for copying-and-pasting to
+a resume.
+
+%========================================================
+%     CLASSROOM  EXPERIENCE
+%========================================================
+\ressection{Classroom Experience}
+
+\leftandright{Department of Mathematical Sciences, NJIT}{Newark, NJ
+\textbullet\, Spring 2015}\\  
+\vspace{-0.8em}
+\textit{Substitute Lecturer} 
+\begin{itemize*}
+  \item MATH 111H
+\end{itemize*}
+
+\leftandright{Department of Physics, NJIT}{Newark, NJ \textbullet\, January
+2009 -- 2010}\\  
+\vspace{-0.8em}
+\textit{Substitute Lecturer} 
+\begin{itemize*}
+  \item PHYS 202 ...atoms,wiggles...
+  \item PHYS 203 ...
+\end{itemize*}
+
+\leftandright{Department of Physics, NJIT}{Newark, NJ \textbullet\, January
+2009 -- 2010}\\  
+\vspace{-0.8em}
+\textit{Substitute Lecturer} 
+\begin{itemize*}
+  \item PHYS 1 (Atwood's machine)
+  \item PHYS Electromagnetism 
+\end{itemize*}
+
+
+
+%========================================================
+%     One-on-One / Tutoring EXPERIENCE
+%========================================================
+\ressection{One-on-One Experience}
+
+\leftandright{Department of Physics, NJIT}{Newark, NJ \textbullet\, January
+2009 -- 2010}\\  
+\vspace{-0.8em}
+\textit{Personalized Tutoring} 
+\begin{itemize*}
+  \item Anthony Teti: Graduate Quantum Mechanics
+  \item Anthony Teti: Graduate Electrodynamics
+  \item Michelle: Undergraduate quantum mechanics
+\end{itemize*}
+
+\textit{General Tutoring} 
+\begin{itemize*}
+  \item PHYS 202
+  \item PHYS 203
+  \item PHYS 111
+  \item PHYS 2
+\end{itemize*}
+
+
+
+%========================================================
+%       EXPERIENCE
+%========================================================
+\ressection{Classroom Materials}
+\textit{Exams} 
+* I wrote 5 exams for the astronomy class
+
+
+
+%========================================================
+%       PROCTORING EXPERIENCE
+%========================================================
+* Proctored 4 exams for Physics 1
+
+
+
+\end{document}
+
+
+

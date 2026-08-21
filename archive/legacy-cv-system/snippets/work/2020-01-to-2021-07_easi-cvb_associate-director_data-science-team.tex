@@ -1,0 +1,161 @@
+\leftandright
+  {Associate Director of Digital Health (Data Science Team)}
+  {Jan 2020 - Jul 2021} \\
+%\begin{itemize*}
+%  \item\leftandright
+%  \item Co-development, advocacy, and distribution of science-oriented
+%    "best practices" for the Early Signal data science team focused on 
+%    reducing cognitive overhead and technical debt across project (e.g., 
+%    reuseable, customized environment elements, such as a CookieCutter 
+%    project template to homogenize layout, baseline Docker images and
+%    MiniConda environments, etc)
+%  \item Research and writing support for CVB funding initiatives, such as 
+%    grant submissions, primarily in the domains of suicidality and PTSD
+%  \item Casual collaboration with and mentorship of a junior data
+%    scientist interested in diversifying their analytics acumen
+%  \item Co-lead on the advancement and support of the 
+%    "Early Signal Platform," primarily responsible for the
+%    development of wearable-based models capable of detecting,
+%    classifying, and further quantifying (e.g., duration, frequency,
+%    intensity) an assortment of daily activities, as well as 
+%    disease/disorder-specific events, such as symptoms
+%    and behaviors, passively and continuous with low-to-no burden
+%    for individuals with disruptive
+%    neurodegenerative/neurodevelopmental disorders that negatively
+%    impact motor function, with the intention that this approach can then
+%    help validate and improve treatment and intervention strategies
+%    (e.g., is a given medication impacting such measurable quantities in
+%    a manner consistent with its purpose?). 
+%    \begin{itemize*}
+%      \item Development of data processing pipelines to prepare
+%        continuously recorded sensor time series data for model
+%        training, which -- for example -- requires the 
+%        extraction of lab-recorded events  via reference to timestmaped
+%        event logs (each event constitutes 20-30 seconds of a subject
+%        performing the requested gesture/activit), as well as careful
+%        consideration of the windowing strategy (e.g., must be sure to
+%        window by timestamp, not index; e.g., advised by data curator
+%        that 2-3 seconds at the event boundaries may not actually
+%        correspond to the gesture/activity since the timestamps did not
+%        always correspond to the exact start/stop times during data
+%        collection)
+%      \item Careful design of training/validation/test data-splitting
+%        strategies dependent on specifics of that dataset,
+%        requirements implied by the question the model is intended to
+%        address, and other considerations, such as data leakage and
+%        accidental training set biases
+%      \item Initial prototyping of a gesture/stereotypy recognition
+%        model tasked with discerning between nearly 40 classes with
+%        high accuracy (~83\%)
+%      \item Continued exploration, development, and improvements via
+%        hyperparameter tuning in a broadsense, covering degrees
+%        of freedom arising at various points along the data processing
+%        and modeling pipeline, including signal processing and
+%        data-specific considerations (window size, sampling rate, sensor
+%        choices, number of sensors, filtering, etc), as well as architectural 
+%        decisions determining the overall shape, structure, 
+%        composition, and/or topology of the network, further fine-tuned
+%        by model internals and learning styles (kernel and stride sizes,
+%        regularization and activation specifics, optimizer type, etc),
+%        resulting in later stage models capable of discerning
+%        between nearly 40 classes at a very high level of
+%        accuracy (almost 90\%).
+%      \item Modeling contribution to research poster at SOBP
+%        (Rozenberg, Z., K. Urban, C. Espino, U. Rubin, N. Shokhirev, T.
+%        Roberts, E. Marsh, F. Postma, and D. Brunner. "Quantifying
+%        stereotypic hand movements in Rett Disorder." 2019 Annual Meeting -
+%        SOBP's 74th Annual Scientific Conference. "Innovations in Clinical
+%        Neuroscience: Tools, Techniques and Transformative Frameworks".)
+%      \item Modeling contribution to research poster at NORD 
+%        (Rozenberg, K. Urban, C. Espino, U. Rubin, N. Shokhirev,
+%        T. Roberts, E. Marsch, F. Postma, D. Brunner. "Quantifying
+%        Stereotypic Hand Movements in Rare Disorders using IMU
+%        Sensors and Deep Learning Algortihms." National Organization
+%        for Rare Disorders (NORD): 2019 Rare Diseases and Orphan Products
+%        Breakthrough Summit in Washington, D.C.; October 21-22, 2019
+%      \item Vision development and brainstorming of operational solutions
+%        capable of addressing issues that can arise in deployment for an
+%        activity recognition model trained on a labeled, in-lab dataset,
+%        but expected to passively and continuously monitor for and recognize
+%        the activities it has been trained to detect when deployed "out
+%        in the wild." This is the machine learning equivalent of
+%        expecting a child to understand the complexity and nuance of
+%        moral decision making in adult life: if a model has only ever
+%        known a synthetic, oversimplified version of reality depicted by
+%        a stringent data collection protocol where each decision its
+%        ever had to make, by definition, arises from exactly one of N 
+%        orthogonal "pure tone" activities, then one cannot
+%        expect it to understand and cope with the complexity,
+%        heterogeneity, and nigh-infinitude of potential activities that
+%        can arise in a free-living deployment domain -- at least without
+%        adopting more sophisticated, adaptive training strategies
+%        and deployment-specific customizations.
+%        "closed world" dataset 
+%      \item Self-guided literature review into techniques from zero-,
+%        one-shot, and few-shot learning; domain adaptation; and 
+%        transfer learning solutions in general.
+%    \end{itemize*}
+%
+%  \item\leftandright
+%    {\textbf{Investigated utility of Wearables data for Parkinson's Disease}}
+%    * Empatic E4, Physiolog, MJFF
+%
+%  \item Project mapping for suicide/self-harm research and detection
+%    efforts 
+%  \item Problem: How to measure and monitor model performance for a
+%    deployed predictive model whose predictions are intended to trigger 
+%    interventions, e.g., a suicide prediction model capable of
+%    preventing suicides, or a dropout prediction model that helps a
+%    clinician to better encourage retention?
+%  \item Collaborated with statistician from partner organization to
+%    formulate a research trajectory that might benefit from both causal
+%    inference and predictive models for patient dropout
+%  \item Development of "toy models" to illustrate the strengths and
+%    potetial pitfalls of a predictive modeling approach using publicly
+%    availble datasets concerned with dropout in clinical trials,
+%    in-patient clinical care programs, and out-patient treatment plans 
+%  \item Self-guided literature review on treating missing values in
+%    predictive models versus inference models, informative missingness,
+%    and missingness that contributes to data leakage
+%    * developed predictive and causal goals with CVN statistician
+%
+%
+%  \item\leftandright
+%    {\textbf{PTSD Landscaping and Knowledge Mapping}}
+%    ...to help guide adaptive clinical trials...
+%  \item\leftandright
+%    {\textbf{Database Evaluation and Implementation for
+%    Wearables-to-Biological-Phenomenon Knowledge Graph}}
+%    {\small{Neo4j, MongoDB, MySQL, Postgres, etc}} \\  
+%    * Reviewed the functionality and pros/cons of graph (Neo4j,
+%      AgensGraph, AWS Neptune), document (MongoDB), relational (MySQL,
+%      Postgres, TimeScaleDB), and key-value (Redis, DynamoDB) databases,
+%      as well as enhanced AWS cloud offerings, such as RDS, Athena, and
+%      Aurora
+%    * Designed several iterations of schema (e.g., entity relationship
+%      diagrams, document-oriented schema, and graph models)
+%    * Identified graph databases as providing the best support for 
+%      many-to-many/any-to-any relationships inherent in our concept
+%      mappings
+%    * Demonstrated the simplified nature of querying via Cypher from Neo4j 
+%    * Mapped queries of interest to Cypher...
+%    * data dictionaries
+%  \item\leftandright
+%    {\textbf{Landscaping and Literature Review: Suicide and Self-Harm Predictors and Risk Factors}}
+%    {\small{}} \\  
+%    * Developed domain expertise in suicidal ideation and behaviors
+%    * Synthesized and reported on the state-of-the-art modeling efforts from several
+%      siloed communities of research, including efforts involving
+%      wearable and mobile phone sensors, electronic health records,
+%      brain imaging, paralinguistics, natural language processing, 
+%      neurocognitive tests, clinical instruments
+%      (questionnaires) used for screening, diagnosing, and monitoring
+%      patients 
+%    * * wrote suicide review paper (then let it collect dust)
+%    * Suicide report to white house (Request for Information, RFI);
+%    review of suicide detection methods (data types (brain imaging,
+%    scales, neurocog tests, EHRs, mobile phones / wearables, etc),
+%    models)  (In response to:  Executive Order (EO) 13861 (the
+%    President’s Roadmap to Empower Veterans and End a National Tragedy
+%    of Suicide or PREVENTS), On signed on March 5, 2019)
+%\end{itemize*}

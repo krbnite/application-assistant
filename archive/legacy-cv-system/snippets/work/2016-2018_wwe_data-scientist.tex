@@ -1,0 +1,158 @@
+\leftandright{WWE (World Wrestling Entertainment)}{Stamford, CT \textbullet\, October
+2016 -- July 2018} \\  
+\leftandright{\emph{Data Scientist, Advanced Analytics Team}}{} \\
+  Lead on numerous business-driven analytics research and
+  predictive modeling projects for WWE Network -- an
+  over-the-top (OTT) content distribution network 
+  (described as ``Netflix for Wrestling'') with nearly
+  2 million daily active users, resulting in 1-3 million new rows of viewership/behavioral 
+  data in an AWS Redshift database everyday
+\begin{itemize*}
+  \item\leftandright
+    {\textbf{Customer Behavioral Models}}
+    {\small{(Python, Sklearn, TensorFlow, Keras, AWS
+    EC2/Redshift, SQL)}} \\  
+    Development of automated reporting and interactive dashboard 
+    pipelines for regular distribution of live or recent subscriber 
+    and business health metrics to key WWE busines stakeholders
+    across verticals, as well as at the executive level (Vince Mcmahon,
+    Paul "Triple H" Levesque); this included the development of
+    data processing and machine learning pipelines
+    (preprocessing, feature selection, dimensionality reduction,
+    model selection, etc) for the training and deployment of prediction and classification
+    models (random forests, deep multilayer perceptrons,
+    CNNs), which provided insights for downstream decision support.  Behavioral targets include
+    customer segmentation, churn, winback, and lifetime value.        
+  \item\leftandright
+    {\textbf{Wrestler Recognition Network}}
+    {\small{(Python, TensorFlow, Keras, AWS, EC2, GPU)}} \\  
+    Development of wrestler image recognition algorithm (transfer learning,
+    convolutional neural networks) that could be used to tag video
+    and image content.
+  \item\leftandright
+    {\textbf{Seasonal Subscriber Analysis}}
+    {\small{(R, Python, FFT)}} \\  
+    Spectral analyses of customer churn/winback behaviors 
+    to enhance customer segmentation efforts, help advise email campaigns, and
+    improve churn/winback forecasting 
+  \item\leftandright
+    {\textbf{Revenue Attribution Across Content}}
+    {\small{(R, tidyverse, SQL, Redshift)}} \\  
+    Development of ensemble approach to revenue attribution models for WWE Network content
+    driven by viewership behaviour at the customer level (analysis of
+    over a billion rows of data in Redshift)
+  \item\leftandright
+    {\textbf{Miscellaneous Projects}}
+    {\small{(R, tidyverse, SQL, Redshift, Tableau)}}
+    \begin{itemize*}
+      \item Fusion of fan panel survey response data with customer accounts on the
+        WWE Network to better \textbf{quantify the relationship between
+        subjective responses and objective viewership data}
+      \item \textbf{Sentiment analysis} of customer cancellation surveys
+        and social media content to uncover resolvable issues and inform on
+        how to better serve our customer base
+      \item Design of \textbf{interactive dashboards in Tableau} to help interested
+        parties explore our data assets
+    \end{itemize*}
+\end{itemize*}
+
+%\vspace{-0.3em}
+
+\leftandright{\emph{Data Scientist, Content Analytics Team}}{} \\
+  Lead on researching and developing multiple data engineering and
+  automation efforts to establish consistent and efficient data collection
+  across WWE's digital assets, including a variety of YouTube channels,
+  100's Facebook Pages and Twitter accounts, and live streaming across
+  multiple online platforms.
+\begin{itemize*}
+  \item\leftandright
+    {\textbf{YouTube Assets}}
+    {\small{(Python, Google Client API, YouTube Data API, YouTube
+    Reporting API, Redshift, SQL, Selenium, Hive, Presto, Tableau)}}
+    \begin{itemize*}
+      \item \textbf{Research into and documentation} of several YouTube APIs
+        (Google Client, YouTube Data, YouTube Analytics, YouTube
+        Reporting), establishing that 3rd party services were capturing 
+        only a fraction of the available content and viewership data from 
+        our YouTube assets.  
+      \item \textbf{Persuasion for buy-in from leadership}:  3rd party
+        consultants responsible for the collection/warehousing of
+        our YouTube assets argued they were already 
+        collecting everything possible; thanks to my
+        research and documentation, key decision makers supported my 
+        plan to revamp the YouTube data pipeline.
+      \item \textbf{Development and deployment} of an        
+        automated YouTube data collection and warehousing pipeline 
+        over a variety of WWE-owned channels, increasing the daily volume of
+        valuable YouTube  more than tenfold, resulting in significant 
+        cost savings by obviating need for 3rd party consultants
+      \item \textbf{Design and development} of a variety of
+        live Tableau dashboards and automated emails to the appropriate
+        stakeholders.
+      \item \textbf{Shorter Time to Insight}: YouTube takes its viewership metrics
+        (e.g., number of view, likes, etc) very seriously and has many
+        algorithms in place to detect and correct for fraudulent sources
+        (robots, automated page refreshes, etc).  In this spirit, there
+        is a 3-day lag on any officially published data.  However, our
+        marketers, advertisers, and other leadership want insights and
+        intuition on content performance immediately.  By using Selenium
+        for webscraping, I was able to extract ``unofficial'' YouTube
+        viewership data with no lag -- especially important on the day a
+        video is live or published. This is something the data vendor was
+        not getting for WWE.
+      \item \textbf{Hive/Presto vs Redshift}: Worked with data
+        engineering team on a Hive/Presto solution on top of S3 to
+        lessen our dependence on Redshift, which is more expensive, 
+        especially for the amount of data we were ingesting
+    \end{itemize*}
+  \item\leftandright
+    {\textbf{Facebook/Instagram Assets}}
+    {\small{(Python, Facebook Graph API, Selenium, Redshift, SQL)}}
+    \begin{itemize*}
+      \item My success evaluating and re-engineering our YouTube
+        data pipeline motivated us to take a look at other services
+        provided by 3rd party vendors starting with Facebook (WWE owns
+        and manages 100's of Facebook Pages, several dozen Instagram
+        accounts, as well as several Facebook
+        exclusive web series that air live weekly)
+      \item Researched and documented various Facebook APIs and
+        technologies, including the various web-based data portals,
+        GraphQL, and the Facebook Graph API.
+      \item By learning how to use the Graph API, I was able to 
+        query, pull, and storing all Page, Post, and Video Insights on a
+        daily basis, which required flattening JSON files into a tabular
+        form amenable to SQL queries in Hive or Redshift
+      \item By comparing my daily pull with our vendors, I identified that 
+        the vendors were only providing a limited subset of
+        the Page , Post, and Video Insights in our daily Facebook load
+        (and no Instagram data)
+      \item I also learned how track live videos at a high frequency,
+        thus providing data for live videos on our various Facebook
+        Pages, as well as live webisodes streaming on Facebook Watch --
+        data the vendors were not able to provide 
+    \end{itemize*}
+  \item\leftandright
+    {\textbf{Multi-Platform Real-Time Dashboard for Live Events}}
+    {\small{(Python, YouTube APIs, Facebook Graph API, Selenium, Redshift, SQL)}}
+    \begin{itemize*}
+      \item Lessons learned from YouTube and Facebook pipeline
+        development motivated the development of a live Tableau
+        dashboard that could be published within minutes of any live
+        airing of a "kickoff show" (aired on YouTube, Facebook, Twitter,
+        the WWE Website, and the WWE Network) before a main wrestling event (aired
+        only the WWE Network) 
+      \item This required an immediate, automated capture of viewership metrics across 
+        all platforms the event aired live on, replacing a highly manual
+        process performed by several employees over multiple
+        departments, resulting in a 12-24 hour latency
+      \item Required the automation of headless web browsers (using Selenium, Chrome,
+         BeautifulSoup, and Cron) to scrape JavaScript-heavy Twitter and WWE
+         websites 
+    \end{itemize*}
+  \item\leftandright
+    {\textbf{R Packages for Automated Reporting}}
+    {\small{(R, tidyverse, Redshift, SQL)}} \\
+    Developed R packages that the team could use to automate
+    various reporting responsibilities
+\end{itemize*}
+

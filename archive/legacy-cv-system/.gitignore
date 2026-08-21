@@ -1,0 +1,13 @@
+# Vim
+*.swp
+*.swo
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.out
+
+.DS_Store
