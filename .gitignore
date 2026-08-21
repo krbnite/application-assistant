@@ -2,6 +2,7 @@
 job-search/
 
 # Local/editor noise
+.local/
 .DS_Store
 .vscode/
 .~lock.*#
