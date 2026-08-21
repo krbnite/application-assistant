@@ -9,6 +9,7 @@ This file defines what "done" means when creating a tailored resume from Kevin's
 - `JD_CLUSTER_BANK.md`: profile clusters, archetype JDs, and core/add-on matching signals.
 - `RESUME_BULLET_BANK.md`: canonical evidence reservoir and cluster-scored bullet selection guide.
 - `TAILORED_RESUME_AUDIT_TEMPLATE.md`: required audit format.
+- `INTERVIEW_QA_TEMPLATE.md`: role-specific HR screener and hiring-manager Q&A prep template.
 - `TAILORED_RESUME_PLAN_TEMPLATE.json`: copyable JSON plan for selecting profile, themes, bullets, skills, education, and publications.
 - `generate_resume_docx.py`: DOCX generator that consumes a role-specific plan.
 
@@ -20,9 +21,10 @@ This file defines what "done" means when creating a tailored resume from Kevin's
   - `YYYY-MM-DD_Kevin-Urban_Resume_{Company}_plan.json`
   - `YYYY-MM-DD_Kevin-Urban_Resume_{Company}.docx`
   - `YYYY-MM-DD_Kevin-Urban_Resume_{Company}_audit.md`
-- Store each role-specific plan, tailored resume, and audit together in that application's associated job folder.
-- Completed role-specific plans, tailored resumes, and audits are application artifacts, not canonical process files. Keep them under ignored `job-search/` folders by default.
-- Track only reusable templates, generators, banks, archetypes, and process rules. If an audit reveals a reusable lesson, promote that lesson into a tracked bank or process file rather than tracking the completed audit itself.
+  - `YYYY-MM-DD_Kevin-Urban_{Company}_interview_qa.md`
+- Store each role-specific plan, tailored resume, audit, and interview Q&A companion together in that application's associated job folder.
+- Completed role-specific plans, tailored resumes, audits, and interview Q&A companions are application artifacts, not canonical process files. Keep them under ignored `job-search/` folders by default.
+- Track only reusable templates, generators, banks, archetypes, and process rules. If an audit or interview Q&A file reveals a reusable lesson, promote that lesson into a tracked bank or process file rather than tracking the completed job-specific artifact itself.
 
 ## Length Target
 
@@ -97,6 +99,17 @@ Use `TAILORED_RESUME_PLAN_TEMPLATE.json` as the starting shape for a role-specif
 - Check for awkward page breaks, orphan headings, cramped bullets, inconsistent formatting, or missing profile/audit details.
 - If visual rendering is unavailable, say so in the final response.
 
+## Interview Q&A Companion
+
+Create a role-specific Markdown Q&A companion by default when generating a tailored resume, using `INTERVIEW_QA_TEMPLATE.md`.
+
+- Include likely HR screener questions and hiring-manager questions.
+- Use the tailored resume, resume audit, JD cluster, and job description to choose the strongest answer anchor for each question.
+- Optimize for answer selection and concise landings, not exhaustive recall.
+- For questions where Kevin might over-explain, include a short "stop after" cue.
+- Include gaps and do-not-overstate notes so Kevin can answer honestly without volunteering unnecessary weakness.
+- Store the completed Q&A file in the ignored associated job folder.
+
 ## Final Response Contract
 
 The final response should include:
@@ -104,6 +117,7 @@ The final response should include:
 - Tailored resume path.
 - Resume plan path.
 - Audit path.
+- Interview Q&A path, if created.
 - Primary cluster and confidence.
 - Starting profile used or new cluster created.
 - Any profile-bank, JD-archetype, or bullet-bank updates.

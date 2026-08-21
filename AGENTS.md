@@ -22,11 +22,12 @@ This repo tracks Kevin's reusable resume and application automation process, not
 - `LEGACY_CV_CONTENT_AUDIT.md`: audit of legacy CV material and promotion decisions.
 - `RESUME_OUTPUT_CONTRACT.md`: tailored resume output rules.
 - `TAILORED_RESUME_AUDIT_TEMPLATE.md`: audit template for each tailored resume.
+- `INTERVIEW_QA_TEMPLATE.md`: interview prep companion template for HR screener and hiring-manager questions.
 - `TAILORED_RESUME_PLAN_TEMPLATE.json`: copyable selection plan for a tailored resume.
 - `generate_resume_docx.py`: generator that turns a selection plan into a DOCX.
 
 Generated DOCX files are deliverables or snapshots, not canonical sources.
-Completed role-specific plans and audits are job-specific sanity-check artifacts, not canonical sources. Keep them in ignored job folders unless Kevin explicitly asks to preserve one; promote only reusable lessons into the tracked banks, archetypes, templates, or process docs.
+Completed role-specific plans, audits, and interview Q&A companions are job-specific sanity/prep artifacts, not canonical sources. Keep them in ignored job folders unless Kevin explicitly asks to preserve one; promote only reusable lessons into the tracked banks, archetypes, templates, or process docs.
 
 ## Default Resume Tailoring Rule
 
@@ -34,4 +35,4 @@ When Kevin provides a job description, read `RESUME_TAILORING_AGENT.md` first, t
 
 Use core JD archetype signals to choose the primary cluster. Use add-on signals only to tune the profile, bullet selection, skills, and audit notes.
 
-For a tailored deliverable, create a role-specific JSON plan from `TAILORED_RESUME_PLAN_TEMPLATE.json`, validate it, generate the DOCX with `generate_resume_docx.py`, render/visually verify the DOCX, and document decisions in an audit file derived from `TAILORED_RESUME_AUDIT_TEMPLATE.md`.
+For a tailored deliverable, create a role-specific JSON plan from `TAILORED_RESUME_PLAN_TEMPLATE.json`, validate it, generate the DOCX with `generate_resume_docx.py`, render/visually verify the DOCX, document decisions in an audit file derived from `TAILORED_RESUME_AUDIT_TEMPLATE.md`, and create a concise interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md`.
