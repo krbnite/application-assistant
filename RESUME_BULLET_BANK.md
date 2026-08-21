@@ -107,9 +107,10 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 
 | ID | Bullet | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
-| INT-01 | JPL trajectory optimization and design | 0 | 1 | 2 | 0 | 1 | Keep only for aerospace, robotics/autonomy, optimization, or physical-systems roles. |
-| INT-02 | NASA Goddard Heliophysics Division | 0 | 0 | 1 | 0 | 0 | Usually omit or compress into prior research line. |
-| INT-03 | NASA Goddard Observational Cosmology Laboratory | 0 | 0 | 1 | 0 | 0 | Usually omit or compress into prior research line. |
+| INT-01 | JPL trajectory optimization and design | 0 | 1 | 2 | 0 | 1 | Use when expanded internship detail helps aerospace, robotics/autonomy, optimization, physical-systems, or mission-oriented roles. |
+| INT-02 | NASA Goddard Heliophysics Division | 0 | 0 | 1 | 0 | 0 | Use only when expanded early software/NASA detail is strategically useful. |
+| INT-03 | NASA Goddard Observational Cosmology Laboratory | 0 | 0 | 1 | 0 | 0 | Use only when expanded spacecraft-instrument or cosmology software detail is strategically useful. |
+| INT-04 | NASA/JPL research internship signal | 1 | 1 | 1 | 0 | 0 | Default compact brand/research signal when page budget allows; omit only under meaningful page pressure or if early-career detail would distract. |
 
 ## Skills Lines
 
@@ -348,6 +349,10 @@ Heliophysics Division - NASA Goddard Space Flight Center, Greenbelt, MD (Summer 
 ### INT-03: NASA Goddard Observational Cosmology Laboratory
 
 Observational Cosmology Laboratory - NASA Goddard Space Flight Center, Greenbelt, MD (Summer 2007). Developed software to model data collection and analysis for the Absolute Spectrum Polarimeter, a proposed spacecraft instrument for detecting B-mode gravitational-wave signatures.
+
+### INT-04: NASA/JPL research internship signal
+
+Research internships at NASA Goddard Space Flight Center and Jet Propulsion Laboratory (2006, 2007, 2011), spanning spacecraft-instrument software, heliophysics tools, and formal mission-design research.
 
 ### SKILL-01: Machine learning
 

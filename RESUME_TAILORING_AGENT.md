@@ -30,6 +30,14 @@ Use the canonical system files as the resume source of truth. Treat older local 
 
 MachineSaidGo may be referenced as Kevin's LLC / exploratory side-project umbrella when strategically useful and supported by canonical content.
 
+## Compact Brand-Signal Rule
+
+WWE and NASA/JPL are useful credibility and conversation signals even when they are not the central evidence for a role. When page budget allows, preserve them as compact one-line entries rather than omitting them by default.
+
+- For WWE, usually retain one concise business/production ML line unless the role would be distracted by entertainment or customer analytics.
+- For NASA/JPL, usually retain the compact internship signal unless page pressure is meaningful; expand individual internships only for aerospace, robotics/autonomy, optimization, physical-systems, spacecraft-instrument, or mission-oriented roles.
+- If either signal is omitted from a tailored resume, record why in the audit.
+
 ## Default Workflow When Kevin Provides A Job Description
 
 1. Read the job description and compare it against the resume template, profile bank, JD cluster bank, and bullet bank.

@@ -105,7 +105,8 @@ Data Scientist | Stamford, CT | Oct 2016 - Aug 2017
 
 Guidance:
 
-- Usually compress or omit for research-heavy health, sensor AI, and physical systems roles.
+- Usually compress for research-heavy health, sensor AI, and physical systems roles, but retain one compact WWE line when page budget allows because the brand and business-ML range are useful conversation starters.
+- Omit entirely only when page budget is unusually tight or the role would be distracted by business/entertainment analytics.
 - Retain for industrial/operational ML, production data products, dashboards, A/B testing, stakeholder decision support, or business-impact evidence.
 
 ### Center For Solar-Terrestrial Research
@@ -137,8 +138,9 @@ INTERNSHIPS
 
 Rules:
 
-- Keep JPL for aerospace, robotics/autonomy, optimization, physical systems, or mission-oriented roles.
-- Compress or omit NASA Goddard internships unless space/physics/aerospace signals matter.
+- Default to the compact NASA/JPL signal when page budget allows; the brand/research credibility is often useful even outside aerospace roles.
+- Expand the individual internship bullets only when aerospace, robotics/autonomy, optimization, physical systems, spacecraft instruments, or mission-oriented research are directly relevant.
+- Omit the internship signal only under meaningful page pressure or when early-career space/physics detail would distract from the target role; record the omission in the audit.
 
 ## Technical Skills Slot
 
