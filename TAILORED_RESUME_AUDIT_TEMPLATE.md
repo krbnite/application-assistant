@@ -1,6 +1,8 @@
 # Tailored Resume Audit Template
 
-Use this template for every tailored resume generated from the Markdown resume system.
+Use this template for every tailored resume generated from the Markdown resume system. Store the completed audit in the associated job folder next to that role's plan and tailored resume.
+
+Completed audits are local/job-specific sanity checks, not canonical tracked repo state by default. If a completed audit reveals a reusable rule, profile change, archetype signal, or bullet-bank improvement, promote that reusable lesson into the appropriate tracked source file instead of tracking the completed audit itself.
 
 ## Role
 

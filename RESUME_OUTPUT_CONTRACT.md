@@ -20,6 +20,9 @@ This file defines what "done" means when creating a tailored resume from Kevin's
   - `YYYY-MM-DD_Kevin-Urban_Resume_{Company}_plan.json`
   - `YYYY-MM-DD_Kevin-Urban_Resume_{Company}.docx`
   - `YYYY-MM-DD_Kevin-Urban_Resume_{Company}_audit.md`
+- Store each role-specific plan, tailored resume, and audit together in that application's associated job folder.
+- Completed role-specific plans, tailored resumes, and audits are application artifacts, not canonical process files. Keep them under ignored `job-search/` folders by default.
+- Track only reusable templates, generators, banks, archetypes, and process rules. If an audit reveals a reusable lesson, promote that lesson into a tracked bank or process file rather than tracking the completed audit itself.
 
 ## Length Target
 

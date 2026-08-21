@@ -26,6 +26,7 @@ This repo tracks Kevin's reusable resume and application automation process, not
 - `generate_resume_docx.py`: generator that turns a selection plan into a DOCX.
 
 Generated DOCX files are deliverables or snapshots, not canonical sources.
+Completed role-specific plans and audits are job-specific sanity-check artifacts, not canonical sources. Keep them in ignored job folders unless Kevin explicitly asks to preserve one; promote only reusable lessons into the tracked banks, archetypes, templates, or process docs.
 
 ## Default Resume Tailoring Rule
 

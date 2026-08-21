@@ -156,7 +156,8 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Keep cross-domain breadth when it helps the role, but reduce entropy by tethering breadth to the target company's problem.
 - Use job-description language selectively and truthfully.
 - Keep a short "deliberate framing choices" summary in the final response.
-- Create a role-specific audit file from `TAILORED_RESUME_AUDIT_TEMPLATE.md` and keep it near the tailored resume.
+- Create a role-specific audit file from `TAILORED_RESUME_AUDIT_TEMPLATE.md` and store it in the associated job folder next to the tailored resume and plan.
+- Treat completed audits as local sanity-check/application records. Do not track them in Git by default; promote only reusable findings into `PROFILE_BANK.md`, `JD_CLUSTER_BANK.md`, `RESUME_BULLET_BANK.md`, or a process doc.
 - Ask clarifying questions only for facts not present in the canonical files and only when the missing fact materially affects tailoring.
 
 ## Updating The Master System
