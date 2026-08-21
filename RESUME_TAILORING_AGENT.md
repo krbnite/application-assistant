@@ -162,10 +162,10 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Keep cross-domain breadth when it helps the role, but reduce entropy by tethering breadth to the target company's problem.
 - Use job-description language selectively and truthfully.
 - Keep a short "deliberate framing choices" summary in the final response.
-- Create a role-specific audit file from `TAILORED_RESUME_AUDIT_TEMPLATE.md` and store it in the associated job folder next to the tailored resume and plan.
+- Create a role-specific audit file from `TAILORED_RESUME_AUDIT_TEMPLATE.md` and store it in the associated job folder's `supporting/` subfolder next to the role-specific plans.
 - Treat completed audits as local sanity-check/application records. Do not track them in Git by default; promote only reusable findings into `PROFILE_BANK.md`, `JD_CLUSTER_BANK.md`, `RESUME_BULLET_BANK.md`, or a process doc.
-- Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` and store it in the associated job folder. Treat completed Q&A files as local interview-prep artifacts, not tracked canonical state.
-- Create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json` when generating a cover letter. Use `COVER_LETTER_BANK.md` as the source of reusable paragraph modules, and treat completed cover-letter plans/DOCXs as ignored job artifacts.
+- Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` and store it in the associated job folder's `supporting/` subfolder. Treat completed Q&A files as local interview-prep artifacts, not tracked canonical state.
+- Create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json` when generating a cover letter. Store the plan in `supporting/`, keep the generated DOCX in the job folder root, use `COVER_LETTER_BANK.md` as the source of reusable paragraph modules, and treat completed cover-letter plans/DOCXs as ignored job artifacts.
 - Ask clarifying questions only for facts not present in the canonical files and only when the missing fact materially affects tailoring.
 
 ## Updating The Master System

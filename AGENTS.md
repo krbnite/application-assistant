@@ -30,7 +30,7 @@ This repo tracks Kevin's reusable resume and application automation process, not
 - `generate_cover_letter_docx.py`: generator that turns a cover-letter plan into a DOCX.
 
 Generated DOCX files are deliverables or snapshots, not canonical sources.
-Completed role-specific plans, audits, interview Q&A companions, and cover letters are job-specific sanity/prep/application artifacts, not canonical sources. Keep them in ignored job folders unless Kevin explicitly asks to preserve one; promote only reusable lessons into the tracked banks, archetypes, templates, or process docs.
+Completed role-specific plans, audits, interview Q&A companions, and cover letters are job-specific sanity/prep/application artifacts, not canonical sources. Keep generated resume and cover-letter DOCX files in the ignored job folder root, and keep plans, audits, and interview Q&A companions in that job folder's `supporting/` subfolder unless Kevin explicitly asks otherwise. Promote only reusable lessons into the tracked banks, archetypes, templates, or process docs.
 
 ## Default Resume Tailoring Rule
 

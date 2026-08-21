@@ -2,7 +2,7 @@
 
 Use this template for a role-specific interview prep companion generated alongside a tailored resume.
 
-Completed interview Q&A files are local/job-specific prep artifacts, not canonical tracked repo state by default. Store each completed file in the associated ignored job folder next to the tailored resume, plan, and audit. If a generated answer reveals reusable positioning, promote that reusable language into `PROFILE_BANK.md`, `RESUME_BULLET_BANK.md`, `JD_CLUSTER_BANK.md`, or another tracked process file.
+Completed interview Q&A files are local/job-specific prep artifacts, not canonical tracked repo state by default. Store each completed file in the associated ignored job folder's `supporting/` subfolder next to the role-specific plans and audit. If a generated answer reveals reusable positioning, promote that reusable language into `PROFILE_BANK.md`, `RESUME_BULLET_BANK.md`, `JD_CLUSTER_BANK.md`, or another tracked process file.
 
 ## Role
 

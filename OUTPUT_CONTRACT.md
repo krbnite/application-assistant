@@ -27,16 +27,16 @@ When Kevin provides a job description and asks for a tailored application packet
 
 Do not create PDFs by default. Kevin will convert final DOCX files to PDF at submission time so he can make final manual tweaks.
 
-Use this filename pattern unless Kevin asks otherwise:
+Use this filename pattern unless Kevin asks otherwise. Keep submission-facing DOCX files in the associated job folder root; keep support/prep files in a `supporting/` subfolder.
 
-- `YYYY-MM-DD_Kevin-Urban_Resume_{Company}_plan.json`
 - `YYYY-MM-DD_Kevin-Urban_Resume_{Company}.docx`
-- `YYYY-MM-DD_Kevin-Urban_Cover-Letter_{Company}_plan.json`
 - `YYYY-MM-DD_Kevin-Urban_Cover-Letter_{Company}.docx`
-- `YYYY-MM-DD_Kevin-Urban_Resume_{Company}_audit.md`
-- `YYYY-MM-DD_Kevin-Urban_{Company}_interview_qa.md`
+- `supporting/YYYY-MM-DD_Kevin-Urban_Resume_{Company}_plan.json`
+- `supporting/YYYY-MM-DD_Kevin-Urban_Cover-Letter_{Company}_plan.json`
+- `supporting/YYYY-MM-DD_Kevin-Urban_Resume_{Company}_audit.md`
+- `supporting/YYYY-MM-DD_Kevin-Urban_{Company}_interview_qa.md`
 
-Store each role-specific plan, DOCX, audit, and interview Q&A companion together in that application's associated job folder.
+Store generated resume and cover-letter DOCX files in the associated job folder root so the immediately needed application files are easy to find. Store role-specific plans, audits, and interview Q&A companions in that job folder's `supporting/` subfolder.
 
 Completed role-specific plans, resumes, cover letters, audits, and interview Q&A companions are application artifacts, not canonical process files. Keep them under ignored `job-search/` folders by default.
 
@@ -149,11 +149,11 @@ Create a role-specific Markdown Q&A companion by default, using `INTERVIEW_QA_TE
 - Optimize for answer selection and concise landings, not exhaustive recall.
 - For questions where Kevin might over-explain, include a short "stop after" cue.
 - Include gaps and do-not-overstate notes so Kevin can answer honestly without volunteering unnecessary weakness.
-- Store the completed Q&A file in the ignored associated job folder.
+- Store the completed Q&A file in the ignored associated job folder's `supporting/` subfolder.
 
 ## Audit Contract
 
-Create one role-specific audit from `TAILORED_RESUME_AUDIT_TEMPLATE.md` and store it in the associated job folder.
+Create one role-specific audit from `TAILORED_RESUME_AUDIT_TEMPLATE.md` and store it in the associated job folder's `supporting/` subfolder.
 
 The audit should record:
 
