@@ -32,6 +32,8 @@ Do not fabricate experience, tools, metrics, publications, credentials, or domai
 
 Use the canonical system files as the resume source of truth. Treat older local archives and job-search folders as reference material for content mining only, not as automatic resume content.
 
+Kevin's separate `kitchensink` repository is a broad public archive of older writing and cross-domain material: `https://github.com/krbnite/kitchensink`. Keep it separate from this repo. Do not automatically scan it for every job description, but suggest or ask Kevin whether to inspect it when a role seems likely to benefit from public writing, older technical essays, talks, side projects, or other material not yet promoted into the top-level banks.
+
 MachineSaidGo may be referenced as Kevin's LLC / exploratory side-project umbrella when strategically useful and supported by canonical content.
 
 ## Compact Brand-Signal Rule
@@ -51,6 +53,7 @@ WWE and NASA/JPL are useful credibility and conversation signals even when they 
    - Gaps or weakly supported requirements.
    - Keywords, methods, tools, and framing language worth mirroring.
    - Likely implicit evaluation concerns, such as research depth, deployment maturity, clinical rigor, embedded constraints, robotics/perception relevance, or stakeholder communication.
+   - Whether the role has an unusual signal that might justify asking Kevin about scanning `kitchensink` for missed public writing or older cross-domain evidence before finalizing the packet.
 3. Choose the best starting profile from `PROFILE_BANK.md`.
    - When an archetype JD exists for a likely cluster, compare the new JD against that archetype rather than only against individual historical JDs.
    - Use the archetype's core/necessary signals to decide whether the JD truly belongs to the cluster. Use variable/add-on signals only to tune emphasis after the cluster is selected.
