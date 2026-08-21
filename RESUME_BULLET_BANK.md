@@ -57,6 +57,12 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 
 ## Cohen Veterans Bioscience
 
+Default role placement matters because CVB has three separate title/date buckets. Use this placement unless a bullet genuinely spans titles, and document any override in the audit.
+
+- `cvb_director`: `CVB-01` to `CVB-06`, plus `CVB-17` when research-ops/team-enablement work is relevant.
+- `cvb_associate_director`: `CVB-07` to `CVB-12`, plus `CVB-18` when knowledge-graph/database work is relevant.
+- `cvb_senior_ds`: `CVB-13` to `CVB-16`.
+
 | ID | Bullet | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
 | CVB-01 | Technical leadership and mentorship | 3 | 1 | 1 | 2 | 1 | Keep for lead/principal roles; compress for individual-contributor research roles. |

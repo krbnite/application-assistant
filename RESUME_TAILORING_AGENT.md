@@ -158,6 +158,7 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Use a role-specific JSON plan as the bridge between tailoring decisions and DOCX generation.
 - Use plain bullet IDs when retaining canonical text as-is.
 - Use plan objects with `id` plus edited `text` when lightly editing or merging canonical bullets; explain those edits in the audit.
+- Keep CVB bullets under their canonical title/date bucket. If a CVB bullet truly spans titles, use `allow_role_override: true` in the plan and explain the override in the audit.
 - Use custom bullet objects rarely, and only when Kevin's known evidence supports the claim.
 - Preserve the strongest evidence density: concrete systems, sensors, methods, validation designs, deployment context, metrics, and outcomes.
 - Prefer people -> problem -> decision -> outcome -> mechanism when restructuring bullets.

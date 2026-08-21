@@ -114,6 +114,33 @@ ROLE_ORDER = [
     ),
 ]
 
+ROLE_ALLOWED_ENTRY_IDS = {
+    "cvb_director": {
+        "CVB-01",
+        "CVB-02",
+        "CVB-03",
+        "CVB-04",
+        "CVB-05",
+        "CVB-06",
+        "CVB-17",
+    },
+    "cvb_associate_director": {
+        "CVB-07",
+        "CVB-08",
+        "CVB-09",
+        "CVB-10",
+        "CVB-11",
+        "CVB-12",
+        "CVB-18",
+    },
+    "cvb_senior_ds": {
+        "CVB-13",
+        "CVB-14",
+        "CVB-15",
+        "CVB-16",
+    },
+}
+
 EDUCATION_LINES = [
     ("PhD, Physics", "New Jersey Institute of Technology / Rutgers University, 2016."),
     ("MS, Applied Physics", "Minor in Applied Math, NJIT / Rutgers University, 2010."),
@@ -524,7 +551,20 @@ def validate_plan(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: di
         if not isinstance(specs, list):
             raise ValueError(f"`experience.{role_key}` must be a list.")
         for spec in specs:
-            resolve_entry(spec, bank)
+            entry = resolve_entry(spec, bank)
+            allowed_ids = ROLE_ALLOWED_ENTRY_IDS.get(role_key)
+            allow_override = isinstance(spec, dict) and bool(spec.get("allow_role_override"))
+            if (
+                allowed_ids is not None
+                and entry.id != "CUSTOM"
+                and entry.id not in allowed_ids
+                and not allow_override
+            ):
+                raise ValueError(
+                    f"{entry.id} is not in the canonical bullet set for `{role_key}`. "
+                    "Move it to the correct CVB role or set `allow_role_override: true` "
+                    "with an audit explanation if the bullet intentionally spans titles."
+                )
 
 
 def build_docx(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: dict[str, Profile], output_path: Path) -> None:

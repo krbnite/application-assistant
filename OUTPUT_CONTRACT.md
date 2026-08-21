@@ -97,6 +97,7 @@ Use `TAILORED_RESUME_PLAN_TEMPLATE.json` as the starting shape for a role-specif
 - Fill core research themes, experience bullets, skills, education, and publications from `RESUME_BULLET_BANK.md`.
 - Plain string IDs pull exact canonical text from `RESUME_BULLET_BANK.md`.
 - Object entries with `id`, `label`, and/or `text` represent light edits to canonical bullets and must be defended in the audit.
+- CVB bullets must stay in their canonical title/date bucket unless the plan sets `allow_role_override: true` and the audit explains why the bullet spans titles.
 - Object entries without an `id` are custom bullets and should be rare.
 - Blank `headline` and `profile` fields are filled from the selected `profile_cluster`; populated fields indicate role-specific tailoring and must be audited.
 - Use `publication_section_title` when the selected publication set includes nonstandard entries such as unpublished manuscripts, conference abstracts/posters, public science writing, or research writing.

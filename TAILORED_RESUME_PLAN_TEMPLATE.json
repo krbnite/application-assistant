@@ -22,16 +22,21 @@
     ],
     "cvb_director": [
       "CVB-01",
+      "CVB-02",
       "CVB-03",
-      "CVB-06"
+      "CVB-04",
+      "CVB-05"
     ],
     "cvb_associate_director": [
+      "CVB-07",
       "CVB-08",
       "CVB-09",
       "CVB-10",
       "CVB-12"
     ],
     "cvb_senior_ds": [
+      "CVB-13",
+      "CVB-14",
       "CVB-15"
     ],
     "wwe_senior_ds": [],
