@@ -107,6 +107,22 @@ New bullets should be rare. Use this section whenever a tailored resume creates 
 - Claims intentionally avoided:
 - Clarifying questions for Kevin, if any:
 
+## Cover Letter Companion
+
+- Cover letter created? `Yes / No`
+- Cover-letter plan:
+- Cover-letter DOCX:
+- Starting modules selected:
+- Modules kept as-is:
+- Modules lightly edited:
+- New/custom paragraphs created:
+- Modules dropped or avoided:
+- Claims intentionally avoided:
+- Reusable language to promote to `COVER_LETTER_BANK.md`, if any:
+- DOCX rendered and visually checked? `Yes / No`
+- Page count:
+- Formatting notes:
+
 ## Verification
 
 - DOCX rendered and visually checked? `Yes / No`

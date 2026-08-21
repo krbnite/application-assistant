@@ -25,9 +25,13 @@ This repo tracks Kevin's reusable resume and application automation process, not
 - `INTERVIEW_QA_TEMPLATE.md`: interview prep companion template for HR screener and hiring-manager questions.
 - `TAILORED_RESUME_PLAN_TEMPLATE.json`: copyable selection plan for a tailored resume.
 - `generate_resume_docx.py`: generator that turns a selection plan into a DOCX.
+- `COVER_LETTER_BANK.md`: canonical cover-letter paragraph module reservoir.
+- `COVER_LETTER_OUTPUT_CONTRACT.md`: tailored cover-letter output rules.
+- `COVER_LETTER_PLAN_TEMPLATE.json`: copyable selection plan for a tailored cover letter.
+- `generate_cover_letter_docx.py`: generator that turns a cover-letter plan into a DOCX.
 
 Generated DOCX files are deliverables or snapshots, not canonical sources.
-Completed role-specific plans, audits, and interview Q&A companions are job-specific sanity/prep artifacts, not canonical sources. Keep them in ignored job folders unless Kevin explicitly asks to preserve one; promote only reusable lessons into the tracked banks, archetypes, templates, or process docs.
+Completed role-specific plans, audits, interview Q&A companions, and cover letters are job-specific sanity/prep/application artifacts, not canonical sources. Keep them in ignored job folders unless Kevin explicitly asks to preserve one; promote only reusable lessons into the tracked banks, archetypes, templates, or process docs.
 
 ## Default Resume Tailoring Rule
 
@@ -36,3 +40,5 @@ When Kevin provides a job description, read `RESUME_TAILORING_AGENT.md` first, t
 Use core JD archetype signals to choose the primary cluster. Use add-on signals only to tune the profile, bullet selection, skills, and audit notes.
 
 For a tailored deliverable, create a role-specific JSON plan from `TAILORED_RESUME_PLAN_TEMPLATE.json`, validate it, generate the DOCX with `generate_resume_docx.py`, render/visually verify the DOCX, document decisions in an audit file derived from `TAILORED_RESUME_AUDIT_TEMPLATE.md`, and create a concise interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md`.
+
+When a cover letter is requested or useful for an application packet, use `COVER_LETTER_OUTPUT_CONTRACT.md`: create a role-specific cover-letter plan, generate the DOCX with `generate_cover_letter_docx.py`, render/visually verify it, and record cover-letter decisions in the role audit.

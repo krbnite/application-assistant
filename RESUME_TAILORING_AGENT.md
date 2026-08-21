@@ -18,6 +18,10 @@ Primary files:
 - `INTERVIEW_QA_TEMPLATE.md` - role-specific HR screener and hiring-manager prep companion.
 - `TAILORED_RESUME_PLAN_TEMPLATE.json` - copyable JSON structure for the role-specific selection plan.
 - `generate_resume_docx.py` - generator that turns the selection plan into a tailored DOCX.
+- `COVER_LETTER_BANK.md` - canonical cover-letter paragraph module reservoir.
+- `COVER_LETTER_OUTPUT_CONTRACT.md` - output rules for tailored cover letters.
+- `COVER_LETTER_PLAN_TEMPLATE.json` - copyable JSON structure for the role-specific cover-letter plan.
+- `generate_cover_letter_docx.py` - generator that turns the cover-letter plan into a DOCX.
 
 Treat `RESUME_BULLET_BANK.md` as the source of truth for resume evidence. Treat `PROFILE_BANK.md` as the source of truth for reusable intro/profile clusters. Treat generated DOCX files as outputs, not canonical sources.
 
@@ -59,7 +63,8 @@ WWE and NASA/JPL are useful credibility and conversation signals even when they 
 9. Create a role-specific JSON plan from `TAILORED_RESUME_PLAN_TEMPLATE.json`.
 10. Validate the plan, generate the DOCX with `generate_resume_docx.py`, render/verify the DOCX, and create an audit from `TAILORED_RESUME_AUDIT_TEMPLATE.md`.
 11. Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` unless Kevin says to skip it.
-12. Follow `RESUME_OUTPUT_CONTRACT.md`: target 3 pages, create DOCX by default, and document any four-page exception.
+12. If a cover letter is requested, required, or useful for the application packet, create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json`, generate the DOCX with `generate_cover_letter_docx.py`, render/verify it, and complete the cover-letter audit section.
+13. Follow `RESUME_OUTPUT_CONTRACT.md` and `COVER_LETTER_OUTPUT_CONTRACT.md`: target 3 resume pages, target 1 cover-letter page, create DOCX by default, and document exceptions.
 
 ## Profile Cluster Guidance
 
@@ -161,6 +166,7 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Create a role-specific audit file from `TAILORED_RESUME_AUDIT_TEMPLATE.md` and store it in the associated job folder next to the tailored resume and plan.
 - Treat completed audits as local sanity-check/application records. Do not track them in Git by default; promote only reusable findings into `PROFILE_BANK.md`, `JD_CLUSTER_BANK.md`, `RESUME_BULLET_BANK.md`, or a process doc.
 - Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` and store it in the associated job folder. Treat completed Q&A files as local interview-prep artifacts, not tracked canonical state.
+- Create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json` when generating a cover letter. Use `COVER_LETTER_BANK.md` as the source of reusable paragraph modules, and treat completed cover-letter plans/DOCXs as ignored job artifacts.
 - Ask clarifying questions only for facts not present in the canonical files and only when the missing fact materially affects tailoring.
 
 ## Updating The Master System
@@ -207,6 +213,7 @@ When delivering or summarizing a tailored resume, include:
 - The JSON plan path.
 - The audit file path.
 - The interview Q&A path if created.
+- The cover-letter DOCX and plan paths if created.
 - Page count and whether visual verification was completed.
 
 Keep the report concise enough to be useful. Kevin wants the audit trail, not a wall of bookkeeping.
