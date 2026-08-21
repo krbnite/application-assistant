@@ -1,0 +1,7 @@
+# Ignore the specifics of any job search (e.g., no need to track the 2024 or 2026 applications)
+job-search/
+
+# Local/editor noise
+.DS_Store
+.vscode/
+.~lock.*#
