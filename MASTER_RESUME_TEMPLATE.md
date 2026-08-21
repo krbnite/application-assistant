@@ -4,7 +4,7 @@ This file is the canonical structure for tailored resumes.
 
 It is intentionally template-like. Do not treat it as the evidence reservoir. Resume evidence lives in `RESUME_BULLET_BANK.md`; reusable profile/headline language lives in `PROFILE_BANK.md`; cluster matching lives in `JD_CLUSTER_BANK.md`.
 
-Generated tailored resumes should usually be 3 pages and should be delivered as DOCX by default according to `RESUME_OUTPUT_CONTRACT.md`.
+Generated tailored resumes should usually be 3 pages and should be delivered as DOCX by default according to `OUTPUT_CONTRACT.md`.
 
 ## Header
 

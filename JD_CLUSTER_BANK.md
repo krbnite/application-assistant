@@ -10,7 +10,7 @@ It is not meant to become a full archive of every pasted job description. The pr
 - `PROFILE_BANK.md` - canonical source of profile/headline clusters.
 - `RESUME_TAILORING_AGENT.md` - process instructions for tailoring.
 - `RESUME_BULLET_BANK.md` - canonical evidence reservoir and cluster-scored resume bullet guide.
-- `RESUME_OUTPUT_CONTRACT.md` - output requirements for tailored resumes.
+- `OUTPUT_CONTRACT.md` - output requirements for tailored application packets.
 - `TAILORED_RESUME_AUDIT_TEMPLATE.md` - audit template for tailoring decisions.
 
 ## Cluster Mapping From 2026 Company-Specific Resumes And Recovered JDs

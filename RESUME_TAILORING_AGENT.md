@@ -13,13 +13,12 @@ Primary files:
 - `JD_CLUSTER_BANK.md` - cluster mapping and synthesized archetype JDs for matching new job descriptions.
 - `RESUME_BULLET_BANK.md` - canonical evidence reservoir and cluster-scored bullet guide.
 - `PUBLICATION_PRESENTATION_BANK.md` - fuller publication, presentation, and award inventory for CV-like or research-heavy tailoring.
-- `RESUME_OUTPUT_CONTRACT.md` - output rules for tailored resumes, including length, file type, confidence, and verification expectations.
+- `OUTPUT_CONTRACT.md` - output rules for tailored application packets, including resume, cover letter, audit, interview Q&A, length targets, file types, confidence, and verification expectations.
 - `TAILORED_RESUME_AUDIT_TEMPLATE.md` - required audit structure for documenting tailoring decisions.
 - `INTERVIEW_QA_TEMPLATE.md` - role-specific HR screener and hiring-manager prep companion.
 - `TAILORED_RESUME_PLAN_TEMPLATE.json` - copyable JSON structure for the role-specific selection plan.
 - `generate_resume_docx.py` - generator that turns the selection plan into a tailored DOCX.
 - `COVER_LETTER_BANK.md` - canonical cover-letter paragraph module reservoir.
-- `COVER_LETTER_OUTPUT_CONTRACT.md` - output rules for tailored cover letters.
 - `COVER_LETTER_PLAN_TEMPLATE.json` - copyable JSON structure for the role-specific cover-letter plan.
 - `generate_cover_letter_docx.py` - generator that turns the cover-letter plan into a DOCX.
 
@@ -64,7 +63,7 @@ WWE and NASA/JPL are useful credibility and conversation signals even when they 
 10. Validate the plan, generate the DOCX with `generate_resume_docx.py`, render/verify the DOCX, and create an audit from `TAILORED_RESUME_AUDIT_TEMPLATE.md`.
 11. Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` unless Kevin says to skip it.
 12. If a cover letter is requested, required, or useful for the application packet, create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json`, generate the DOCX with `generate_cover_letter_docx.py`, render/verify it, and complete the cover-letter audit section.
-13. Follow `RESUME_OUTPUT_CONTRACT.md` and `COVER_LETTER_OUTPUT_CONTRACT.md`: target 3 resume pages, target 1 cover-letter page, create DOCX by default, and document exceptions.
+13. Follow `OUTPUT_CONTRACT.md`: target 3 resume pages, target 1 cover-letter page, create DOCX by default, create the audit and interview Q&A companion, and document exceptions.
 
 ## Profile Cluster Guidance
 

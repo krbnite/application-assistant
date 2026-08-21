@@ -20,13 +20,12 @@ This repo tracks Kevin's reusable resume and application automation process, not
 - `RESUME_BULLET_BANK.md`: canonical evidence reservoir and cluster-scored bullet guide.
 - `PUBLICATION_PRESENTATION_BANK.md`: complete-ish publication, presentation, and award inventory for CV-like tailoring.
 - `LEGACY_CV_CONTENT_AUDIT.md`: audit of legacy CV material and promotion decisions.
-- `RESUME_OUTPUT_CONTRACT.md`: tailored resume output rules.
+- `OUTPUT_CONTRACT.md`: application packet output rules for the resume, cover letter, audit, and interview Q&A.
 - `TAILORED_RESUME_AUDIT_TEMPLATE.md`: audit template for each tailored resume.
 - `INTERVIEW_QA_TEMPLATE.md`: interview prep companion template for HR screener and hiring-manager questions.
 - `TAILORED_RESUME_PLAN_TEMPLATE.json`: copyable selection plan for a tailored resume.
 - `generate_resume_docx.py`: generator that turns a selection plan into a DOCX.
 - `COVER_LETTER_BANK.md`: canonical cover-letter paragraph module reservoir.
-- `COVER_LETTER_OUTPUT_CONTRACT.md`: tailored cover-letter output rules.
 - `COVER_LETTER_PLAN_TEMPLATE.json`: copyable selection plan for a tailored cover letter.
 - `generate_cover_letter_docx.py`: generator that turns a cover-letter plan into a DOCX.
 
@@ -39,6 +38,4 @@ When Kevin provides a job description, read `RESUME_TAILORING_AGENT.md` first, t
 
 Use core JD archetype signals to choose the primary cluster. Use add-on signals only to tune the profile, bullet selection, skills, and audit notes.
 
-For a tailored deliverable, create a role-specific JSON plan from `TAILORED_RESUME_PLAN_TEMPLATE.json`, validate it, generate the DOCX with `generate_resume_docx.py`, render/visually verify the DOCX, document decisions in an audit file derived from `TAILORED_RESUME_AUDIT_TEMPLATE.md`, and create a concise interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md`.
-
-When a cover letter is requested or useful for an application packet, use `COVER_LETTER_OUTPUT_CONTRACT.md`: create a role-specific cover-letter plan, generate the DOCX with `generate_cover_letter_docx.py`, render/visually verify it, and record cover-letter decisions in the role audit.
+For a tailored deliverable, follow `OUTPUT_CONTRACT.md`: create the role-specific resume plan, cover-letter plan, audit, interview Q&A companion, and generated DOCX files requested for the application packet. Render and visually verify generated DOCX files before delivery.
