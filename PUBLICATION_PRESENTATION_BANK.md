@@ -37,6 +37,13 @@ Do not treat this file as a mandate to include everything. For ordinary three-pa
 |---|---|
 | Atri, R. and Urban, K. "Augmented Unsupervised Domain Adaptation for Deep Time Series Models." | Evidence for transfer learning, domain adaptation, and deep time-series representation learning. Do not label as published. |
 | Urban, K. and Atri, R. "Evaluating the impact of domain expertise and deep learning in the design and performance of sleep apnea detection models." | Evidence for biosignal ML, ablations, and classical-to-deep-model comparison. Do not label as published. |
+| Urban, K. "Bounded Dynamic Time Warping for Epoch-by-Epoch Agreement Between Polysomnography and Sleep-Tracking Devices." Manuscript in preparation. | Strong for Oura-style sleep validation, PSG-device comparison, bounded DTW, signal alignment, physiological timing mismatch, and methods-heavy wearable roles. Label as manuscript in preparation / unpublished; do not imply acceptance, peer review, or publication. |
+
+## Public Science Writing
+
+| Date | Work | Resume use |
+|---:|---|---|
+| 2020-10-01 | Urban, K. "Are Wearables Worth the Hype?" Cohen Veterans Bioscience public science article / Q3 newsletter. CVB website: `https://www.cohenveteransbioscience.org/2020/09/29/are-wearables-worth-the-hype-digital-biomarkers/`; newsletter: `https://mailchi.mp/cohenbio/q3-2020-brain-health-news`. | Strong for Oura-style wearable health science, digital biomarkers, scientific communication, and public-facing translational writing. Label as public science writing, not peer-reviewed. |
 
 ## Selected Invited Presentations
 
@@ -54,6 +61,7 @@ Do not treat this file as a mandate to include everything. For ordinary three-pa
 
 | Date | Presentation | Venue | Resume use |
 |---|---|---|---|
+| May 1, 2020 | "Technical Performance Verification of Wearable and Home Sensor Devices Monitoring Sleep: Best Practices" | Biological Psychiatry 87(9), S343. DOI: `10.1016/j.biopsych.2020.02.880` | Strong for Oura-style sleep validation, wearable/home sensor verification, technical performance evaluation, and scientific dissemination. Label as conference abstract/poster, not a full journal article. |
 | Oct 18, 2019 | "Quantifying Stereotypic Hand Movements in Rare Disorders Using IMU Sensors and Deep Learning Algorithms" | National Organization for Rare Disorders | Strong for health, wearables, rare disease, IMU ML. |
 | May 16, 2019 | "Quantifying Stereotypic Hand Movements in Rare Disorders Using IMU Sensors and Deep Learning Algorithms" | Society of Biological Psychiatry | Strong for health, neurotech, IMU ML. |
 | Dec 2016 | "Leveraging the Polar Cap: Ground-Based Measurements of the Solar Wind" | AGU Fall Meeting | Strong for inverse/remote-sensing roles. |

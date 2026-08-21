@@ -133,6 +133,9 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | PUB-06 | Powders and Grains 2013 granular column dynamics | 0 | 0 | 2 | 0 | 1 | Use for physical simulation, granular dynamics, and mathematical modeling roles. |
 | PUB-07 | JOMMS 2011 tapping dynamics | 0 | 0 | 2 | 0 | 1 | Use for nonlinear dynamics, simulations, and computational mechanics roles. |
 | PUB-08 | Condensed Matter Physics 2010 fractional fields | 0 | 0 | 2 | 0 | 1 | Use only for mathematically oriented modeling roles. |
+| PUB-09 | CVB 2020 wearable digital-biomarker science article | 3 | 0 | 0 | 0 | 0 | Public science writing, not peer-reviewed. Lead for Oura-style wearable health science communication. |
+| PUB-10 | Biological Psychiatry 2020 wearable/home sleep-sensor verification poster | 3 | 0 | 1 | 0 | 0 | Conference abstract/poster, not a full journal article. Lead for sleep, wearable validation, and home-sensor verification roles. |
+| PUB-11 | Bounded DTW sleep-device validation methods manuscript | 3 | 0 | 2 | 0 | 0 | Manuscript in preparation / unpublished. Lead for sleep validation, PSG-device comparison, signal alignment, and methods-heavy wearable roles. |
 
 ## Canonical Text
 
@@ -401,3 +404,15 @@ Blackmore et al. "Tapping dynamics for a column of particles and beyond." Journa
 ### PUB-08: Condensed Matter Physics 2010 fractional fields
 
 Blackmore, Urban, and Rosato. "Integrability analysis of regular and fractional Blackmore-Samulyak-Rosato fields." Condensed Matter Physics, 2010.
+
+### PUB-09: CVB 2020 wearable digital-biomarker science article
+
+Urban, K. "Are Wearables Worth the Hype?" Cohen Veterans Bioscience public science article / Q3 newsletter, 2020.
+
+### PUB-10: Biological Psychiatry 2020 wearable/home sleep-sensor verification poster
+
+Postma, F., Rozenberg, Z., Shokhirev, N., Urban, K., Rubin, U., and Brunner, D. "Technical Performance Verification of Wearable and Home Sensor Devices Monitoring Sleep: Best Practices." Biological Psychiatry 87(9), S343, 2020. DOI: 10.1016/j.biopsych.2020.02.880.
+
+### PUB-11: Bounded DTW sleep-device validation methods manuscript
+
+Urban, K. "Bounded Dynamic Time Warping for Epoch-by-Epoch Agreement Between Polysomnography and Sleep-Tracking Devices." Manuscript in preparation.
