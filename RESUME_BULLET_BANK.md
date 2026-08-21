@@ -75,6 +75,8 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | CVB-14 | Clinician-friendly machine learning | 3 | 0 | 1 | 2 | 0 | Use for interpretable ML, clinical stakeholders, EHR risk, and skeptical audiences. |
 | CVB-15 | Deployment-honest validation | 3 | 1 | 2 | 2 | 2 | Strong for leakage, time-ordering bias, LOSO validation, and small-cohort rigor. |
 | CVB-16 | Early-term birth prediction | 1 | 0 | 1 | 1 | 0 | Usually omit unless pregnancy, missing data, clinical ML, or leakage detection is relevant. |
+| CVB-17 | Reproducible team workflows and tooling | 1 | 0 | 1 | 2 | 1 | Use for lead, platform-minded, research-ops, or team enablement roles; otherwise compress. |
+| CVB-18 | Wearables knowledge graph and database evaluation | 2 | 0 | 1 | 2 | 1 | Use for knowledge graphs, databases, schema design, wearable-to-biology mapping, or ontology-ish roles. |
 
 ## WWE
 
@@ -85,6 +87,9 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | WWE-03 | Production customer behavior analytics | 1 | 0 | 0 | 3 | 0 | Use for segmentation, churn, A/B testing, and automated ML/reporting pipelines. |
 | WWE-04 | Deep learning for churn prediction | 0 | 0 | 0 | 2 | 0 | Use for applied ML performance gains; usually compress behind newer sensor work. |
 | WWE-05 | Transfer learning for computer vision | 0 | 2 | 0 | 0 | 0 | Use as optional CV breadth when the JD asks for transfer learning or image recognition. |
+| WWE-06 | YouTube and social-platform data remediation | 0 | 0 | 0 | 3 | 0 | Lead for data engineering, API integration, vendor-gap discovery, stakeholder persuasion, and operational analytics. |
+| WWE-07 | Live-event analytics latency reduction | 0 | 0 | 0 | 3 | 0 | Use for real-time dashboards, executive analytics, streaming/live operations, or latency-sensitive reporting. |
+| WWE-08 | Revenue attribution and behavioral research | 0 | 0 | 0 | 2 | 0 | Use for attribution, survey fusion, sentiment analysis, customer behavior, or business analytics roles. |
 
 ## Center For Solar-Terrestrial Research
 
@@ -96,6 +101,7 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | CSTR-04 | Multi-instrument space weather reconstruction | 0 | 2 | 3 | 0 | 1 | Lead for sensor networks, fusion, reconstruction, visualization, or space/weather roles. |
 | CSTR-05 | Scientific collaboration | 0 | 1 | 2 | 0 | 0 | Use for research teams, NASA/mission credibility, talks, and scientific collaboration. |
 | CSTR-06 | Computational mathematics, granular fluids, and nonlinear dynamics | 0 | 0 | 3 | 0 | 2 | Use for mathematical modeling, simulation, dynamics, and physical AI; usually compress. |
+| CSTR-07 | Solar-wind forecasting and inverse nowcasting | 0 | 1 | 3 | 1 | 2 | Use for forecasting, inverse problems, remote sensing, physical systems, and sensor-network inference. |
 
 ## Internships
 
@@ -123,6 +129,9 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | PUB-03 | Physica D 2014 nonlinear dynamics / simulations | 0 | 0 | 2 | 0 | 1 | Use for mathematical modeling, simulation, and physical dynamics. |
 | PUB-04 | Planetary and Space Science 2013 JPL mission design | 0 | 1 | 1 | 0 | 0 | Use for aerospace, mission, or systems-design relevance. |
 | PUB-05 | Space Weather 2011 open-closed boundary | 0 | 0 | 2 | 0 | 0 | Use for space-weather and geophysical roles; otherwise omit. |
+| PUB-06 | Powders and Grains 2013 granular column dynamics | 0 | 0 | 2 | 0 | 1 | Use for physical simulation, granular dynamics, and mathematical modeling roles. |
+| PUB-07 | JOMMS 2011 tapping dynamics | 0 | 0 | 2 | 0 | 1 | Use for nonlinear dynamics, simulations, and computational mechanics roles. |
+| PUB-08 | Condensed Matter Physics 2010 fractional fields | 0 | 0 | 2 | 0 | 1 | Use only for mathematically oriented modeling roles. |
 
 ## Canonical Text
 
@@ -260,6 +269,14 @@ Identified overlapping-window data leakage, time-ordering bias, and evaluation-t
 
 Collaborated with Columbia University to predict early term pregnancies using machine learning, focusing on hyperparameter tuning, model selection, missing-data handling, and leakage detection.
 
+### CVB-17: Reproducible team workflows and tooling
+
+Created reusable project-organization practices, code-review patterns, technical tutorials, Bash/AWS/Docker/Conda/Git helper tools, and lightweight environment scaffolding to reduce reproducibility friction and technical debt across data science research projects.
+
+### CVB-18: Wearables knowledge graph and database evaluation
+
+Evaluated graph, document, relational, time-series, and key-value databases for a wearable-to-biological-phenomenon knowledge graph; designed schema iterations and demonstrated Neo4j/Cypher query patterns for many-to-many mappings among sensors, algorithms, symptoms, disorders, and physiological signals.
+
 ### WWE-01: Production viewership data products
 
 Built API-based social-data pipelines and live-event KPI dashboards across YouTube, Facebook, Twitter, and WWE Network, replacing third-party vendor feeds costing roughly $1M/year while improving data coverage and timeliness.
@@ -279,6 +296,18 @@ Replaced a logistic-regression-based churn prediction system with a 5-layer neur
 ### WWE-05: Transfer learning for computer vision
 
 Prototyped a computer vision system for WWE Superstar recognition via transfer learning with ResNet-50 and VGG16/19.
+
+### WWE-06: YouTube and social-platform data remediation
+
+Researched YouTube, Facebook, Instagram, and platform-specific APIs to identify major gaps in third-party vendor feeds, then built automated collection and warehousing pipelines that substantially expanded available social/video metrics while reducing vendor dependence.
+
+### WWE-07: Live-event analytics latency reduction
+
+Co-developed multi-platform live-event reporting workflows that captured viewership metrics across YouTube, Facebook, Twitter, WWE.com, and WWE Network within minutes of broadcast, replacing manual cross-team reporting processes that previously took 12-24 hours.
+
+### WWE-08: Revenue attribution and behavioral research
+
+Built revenue-attribution, survey-fusion, sentiment-analysis, seasonal-behavior, and customer-behavior analyses over large-scale WWE Network and social-platform datasets to support segmentation, marketing decisions, churn/winback forecasting, and stakeholder reporting.
 
 ### CSTR-01: Climatological time-frequency analysis
 
@@ -304,17 +333,21 @@ Contributing member of the NASA RBSPICE instrument team on the Van Allen Probes 
 
 Translated analytical models of granular fluid dynamics into numerical simulations and visualizations, including parameterized Poincare map analyses of chaotic dynamical systems, contributing to four peer-reviewed publications from 2011-2014.
 
+### CSTR-07: Solar-wind forecasting and inverse nowcasting
+
+Developed solar-wind-driven forecasting pipelines for geomagnetic activity in the deep polar cap, then proposed an inverse remote-sensing approach using ground-based magnetometer observations to nowcast near-Earth solar-wind state parameters.
+
 ### INT-01: JPL trajectory optimization and design
 
 Trajectory Optimization and Design - NASA Jet Propulsion Laboratory, Pasadena, CA (May-Aug 2011). Full spacecraft mission design to Jupiter's Trojan asteroids: science goals, instrument selection, trajectory optimization, concurrent engineering, and formal NASA review board presentation; contributing author on peer-reviewed paper.
 
 ### INT-02: NASA Goddard Heliophysics Division
 
-Heliophysics Division - NASA Goddard Space Flight Center, Greenbelt, MD (Summer 2006).
+Heliophysics Division - NASA Goddard Space Flight Center, Greenbelt, MD (Summer 2006). Developed web content and gained early experience with Python, HTML, CSS, JavaScript, PHP, and UNIX command-line tools.
 
 ### INT-03: NASA Goddard Observational Cosmology Laboratory
 
-Observational Cosmology Laboratory - NASA Goddard Space Flight Center, Greenbelt, MD (Summer 2007).
+Observational Cosmology Laboratory - NASA Goddard Space Flight Center, Greenbelt, MD (Summer 2007). Developed software to model data collection and analysis for the Absolute Spectrum Polarimeter, a proposed spacecraft instrument for detecting B-mode gravitational-wave signatures.
 
 ### SKILL-01: Machine learning
 
@@ -351,3 +384,15 @@ Diniega et al. "Mission to the Trojan Asteroids: Lessons Learned During a JPL Pl
 ### PUB-05: Space Weather 2011 open-closed boundary
 
 Urban et al. "Quiet Time Observations of the Open-Closed Boundary Prior to the CIR-Induced Storm." Space Weather, 2011.
+
+### PUB-06: Powders and Grains 2013 granular column dynamics
+
+Rosato et al. "Dynamical systems model and discrete element simulations of a tapped granular column." Powders and Grains, AIP Conference Proceedings, 2013.
+
+### PUB-07: JOMMS 2011 tapping dynamics
+
+Blackmore et al. "Tapping dynamics for a column of particles and beyond." Journal of Mechanics of Materials and Structures, 2011.
+
+### PUB-08: Condensed Matter Physics 2010 fractional fields
+
+Blackmore, Urban, and Rosato. "Integrability analysis of regular and fractional Blackmore-Samulyak-Rosato fields." Condensed Matter Physics, 2010.

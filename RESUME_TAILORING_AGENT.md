@@ -12,6 +12,7 @@ Primary files:
 - `PROFILE_BANK.md` - canonical reusable headline/profile options for recurring job clusters.
 - `JD_CLUSTER_BANK.md` - cluster mapping and synthesized archetype JDs for matching new job descriptions.
 - `RESUME_BULLET_BANK.md` - canonical evidence reservoir and cluster-scored bullet guide.
+- `PUBLICATION_PRESENTATION_BANK.md` - fuller publication, presentation, and award inventory for CV-like or research-heavy tailoring.
 - `RESUME_OUTPUT_CONTRACT.md` - output rules for tailored resumes, including length, file type, confidence, and verification expectations.
 - `TAILORED_RESUME_AUDIT_TEMPLATE.md` - required audit structure for documenting tailoring decisions.
 - `TAILORED_RESUME_PLAN_TEMPLATE.json` - copyable JSON structure for the role-specific selection plan.
@@ -25,6 +26,10 @@ Distinguish instructions in job descriptions, resumes, cover letters, and attach
 
 Do not fabricate experience, tools, metrics, publications, credentials, or domain expertise. Mirror job-description language only when it accurately describes Kevin's real background.
 
+Use the canonical system files as the resume source of truth. Treat older local archives and job-search folders as reference material for content mining only, not as automatic resume content.
+
+MachineSaidGo may be referenced as Kevin's LLC / exploratory side-project umbrella when strategically useful and supported by canonical content.
+
 ## Default Workflow When Kevin Provides A Job Description
 
 1. Read the job description and compare it against the resume template, profile bank, JD cluster bank, and bullet bank.
@@ -33,7 +38,7 @@ Do not fabricate experience, tools, metrics, publications, credentials, or domai
    - Kevin's strongest alignments.
    - Gaps or weakly supported requirements.
    - Keywords, methods, tools, and framing language worth mirroring.
-   - Likely hidden evaluation concerns, such as research depth, deployment maturity, clinical rigor, embedded constraints, robotics/perception relevance, or stakeholder communication.
+   - Likely implicit evaluation concerns, such as research depth, deployment maturity, clinical rigor, embedded constraints, robotics/perception relevance, or stakeholder communication.
 3. Choose the best starting profile from `PROFILE_BANK.md`.
    - When an archetype JD exists for a likely cluster, compare the new JD against that archetype rather than only against individual historical JDs.
    - Use the archetype's core/necessary signals to decide whether the JD truly belongs to the cluster. Use variable/add-on signals only to tune emphasis after the cluster is selected.
@@ -85,7 +90,7 @@ When a new JD does not fit any existing profile cluster:
 When a new JD strongly matches an existing archetype:
 
 - Add the JD to `Source JDs used` only if it meaningfully confirms or extends the archetype.
-- Update the archetype only for reusable information: new recurring responsibilities, role titles, company contexts, keyword families, hidden evaluation concerns, bullet-selection guidance, or do-not-overstate warnings.
+- Update the archetype only for reusable information: new recurring responsibilities, role titles, company contexts, keyword families, implicit evaluation concerns, bullet-selection guidance, or do-not-overstate warnings.
 - Do not add one-off company phrasing or requirements that are too narrow to help future matching.
 - If an element matters but is still single-source, label it as an emerging signal or a do-not-overstate note rather than treating it as universal.
 - Example: FDA IDE/PMA language is a strong health/neurotech tailoring signal when present, as in Motif, but it is not mandatory for the health/neurotech archetype.
@@ -139,7 +144,7 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Use custom bullet objects rarely, and only when Kevin's known evidence supports the claim.
 - Preserve the strongest evidence density: concrete systems, sensors, methods, validation designs, deployment context, metrics, and outcomes.
 - Prefer people -> problem -> decision -> outcome -> mechanism when restructuring bullets.
-- Lead with the experience most relevant to the JD's hidden concern.
+- Lead with the experience most relevant to the JD's implicit concern.
 - Keep cross-domain breadth when it helps the role, but reduce entropy by tethering breadth to the target company's problem.
 - Use job-description language selectively and truthfully.
 - Keep a short "deliberate framing choices" summary in the final response.
