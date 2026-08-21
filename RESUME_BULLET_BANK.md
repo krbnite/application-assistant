@@ -123,3 +123,231 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | PUB-03 | Physica D 2014 nonlinear dynamics / simulations | 0 | 0 | 2 | 0 | 1 | Use for mathematical modeling, simulation, and physical dynamics. |
 | PUB-04 | Planetary and Space Science 2013 JPL mission design | 0 | 1 | 1 | 0 | 0 | Use for aerospace, mission, or systems-design relevance. |
 | PUB-05 | Space Weather 2011 open-closed boundary | 0 | 0 | 2 | 0 | 0 | Use for space-weather and geophysical roles; otherwise omit. |
+
+## Canonical Text
+
+The generator uses this section for exact bullet, skill, internship, and publication text. Keep IDs synchronized with the tables above.
+
+### CORE-01: Sensor inference under uncertainty
+
+Designed Bayesian, streaming, and adaptive estimators for indirect physiological and physical measurements where uncertainty, drift, irregular sampling, and hardware artifacts are central rather than incidental.
+
+### CORE-02: Time-series and spatiotemporal ML
+
+Built sequence models, weakly supervised wearable pipelines, spectral/time-frequency methods, DTW validation frameworks, and spatiotemporal representations across biosignal, thermal, image, and geophysical data.
+
+### CORE-03: Computer vision and thermal imaging
+
+Developed and stabilized thermal computer-vision workflows for 17-frame thermogram scans, including foot localization, left/right classification, segmentation masks, background removal, scan-quality handling, and anatomical keypoint temperature extraction.
+
+### CORE-04: Simulation and synthetic data
+
+Built physics-informed thermal models, synthetic thermogram generation, dynamical-system simulations, and visualizations to reason about sparse observations and latent process behavior.
+
+### CORE-05: Research-to-product translation
+
+Partnered with engineering, hardware, clinical, and scientific stakeholders to preserve model validity from prototype through embedded firmware and production deployment in regulated, high-noise environments.
+
+### CORE-06: Deployment-honest validation
+
+Repeatedly redesigned evaluation methods to reflect real deployment conditions, including leave-one-subject-out validation, leakage audits, staged/prospective pilot studies, and model stress tests under distribution shift.
+
+### POD-01: On-device fall-risk estimation
+
+Designed and implemented streaming fall-risk estimators for SmartMat+, a battery-powered patient-facing edge device enabling near-real-time risk updates after a 17-second pressure-sensor session. Prototyped Bayesian and weighted-window approaches in Python, selected the strongest estimator, translated it to C, validated numerical equivalence, and supported firmware integration for prospective testing.
+
+### POD-02: Robust estimator validation
+
+Benchmarked candidates on synthetic, staged, and prospective datasets, progressing from 5-participant internal testing to a 10-recruit characterization study and a 3-month, 30-patient pilot while stress-testing drift, regime shifts, outliers, irregular sampling, cold-start behavior, and long-horizon error accumulation.
+
+### POD-03: Adaptive fall-risk monitoring
+
+Reduced time to reliable patient-specific estimates from roughly 20-30 days to 3-5 days through adaptive streaming estimation and Bayesian cold-start methods.
+
+### POD-04: Adaptive alert logic
+
+Designed baseline-updating and alert-triggering logic for longitudinal fall-risk monitoring from pressure-derived stability metrics, evaluating deviations from individualized baselines and requiring time-bounded persistence before clinical escalation.
+
+### POD-05: Production thermal CV pipeline
+
+Extended, validated, and refactored FDA-cleared SmartMat thermal computer-vision workflows, including foot bounding-box extraction, left/right classification, segmentation masks, background removal, scan-quality handling, and anatomical keypoint temperature extraction in a deployed platform serving roughly 15k active patients and 25k lifetime patients.
+
+### POD-06: SmartMat+ thermal algorithm adaptation
+
+Led technical investigations to transfer, tune, and validate existing SmartMat thermal scan-processing modules for SmartMat+, tracing hardware, statistical, and algorithmic sources of prediction error across data collection, validation design, training/inference consistency, scan quality, and device-specific behavior to support reliable production deployment.
+
+### POD-07: Personalized DFU detection prototype
+
+Developed and presented an adaptive temperature-asymmetry model for thermal-scan diabetic foot-ulcer detection, using individualized conservatively updated thermal baselines to improve robustness for patients with Charcot foot, peripheral arterial disease, or changing health status.
+
+### POD-08: Framewise foot tracking prototype
+
+Investigated frame-level foot localization and segmentation across 17-frame thermal scan sequences to stabilize regions of interest before thermal-equilibrium extrapolation, with the goal of reducing noisy temporal inputs and improving downstream temperature estimates.
+
+### POD-09: Physics-informed thermal modeling
+
+Developed physics-informed thermal models to support algorithm development and evaluation, including a synthetic thermogram generation framework for realistic spatiotemporal simulation and a Newtonian heat-transfer model for extrapolating short-duration thermal scans toward thermal equilibrium.
+
+### POD-10: Next Best Action analytics
+
+Co-designed an analytical framework combining quasi-experimental methods with baseline-adjusted behavioral response metrics to evaluate intervention effectiveness, support patient segmentation, optimize reengagement channels, and enable future A/B testing and personalized outreach.
+
+### POD-11: Cross-functional technical leadership
+
+Served as the primary scientific partner to software and hardware engineering teams, advising on algorithm integration, sensor behavior, scan-processing pipelines, validation methodology, and implementation decisions to ensure production systems preserved the integrity of physiological data and scientific conclusions.
+
+### CVB-01: Technical leadership and mentorship
+
+Led scientific direction, reviewed modeling and validation decisions, mentored data scientists and ML contributors, and translated ambiguous project goals into concrete technical plans, evaluation criteria, and deployment constraints.
+
+### CVB-02: Program leadership
+
+Led the Sensor Analytics Team through organizational change, secured continued Michael J. Fox Foundation funding, and received two 2023 Milestone Achievement Awards.
+
+### CVB-03: Wearable study design and evaluation
+
+Co-developed in-lab and longitudinal home-use wearable protocols with a partner hospital for personalized Rett syndrome monitoring, then reconstructed and audited multimodal data from smartwatch sensors, video recordings, and behavioral annotations post-collection, identifying missing or inconsistently documented sensor-synchronization procedures, timestamp inconsistencies, annotation ambiguity, limited behavioral coverage, and temporal-alignment limits that made brief behavioral events unreliable targets for patient-specific stereotypy detection.
+
+### CVB-04: Sleep sensor validation
+
+Reframed conventional PSG/actigraphy validation methodology by developing a DTW-based evaluation framework accounting for systematic physiological timing differences in sleep onset between EEG- and motion-based measurements.
+
+### CVB-05: Parkinson's research leadership
+
+Led the wearable Parkinson's disease research program, providing scientific direction while co-developing wearable disease-monitoring models that culminated in a peer-reviewed publication and invited presentations.
+
+### CVB-06: Large-scale wearable data processing
+
+Converted free-living multimodal wearable recordings into a queryable local database, enabling efficient slicing, temporal alignment, quality auditing, and model development without loading full sensor streams into memory.
+
+### CVB-07: Parkinson's digital biomarkers
+
+Named, built, and led the Sensor Analytics Team; won a Michael J. Fox Foundation grant to develop digital biomarkers for longitudinal Parkinson's disease monitoring using Verily Watch data from PPMI.
+
+### CVB-08: Free-living Parkinson's monitoring
+
+Used a weakly supervised walk-detection framework to restrict disease inference to gait-relevant, walk-like intervals within unconstrained free-living recordings, then applied an end-to-end deep neural network to discriminate Parkinsonian gait from healthy controls with approximately 90% single-event accuracy and 100% daily majority-vote accuracy.
+
+### CVB-09: Wearable gesture recognition
+
+Built Conv1D-LSTM gesture-recognition models for Rett stereotypy detection across Shimmer IMUs, Apple Watch, and Oura Ring datasets; informed IMU sampling-rate decisions using Nyquist reasoning and 25-400 Hz ablations, showing that higher sampling rates degraded classification performance.
+
+### CVB-10: End-to-end biosignal modeling
+
+Adapted an end-to-end Conv1D-LSTM architecture from wearable gesture recognition to ECG sleep-apnea detection, then validated the approach through ablation studies that progressively replaced a classical signal-processing, handcrafted-feature, and SVM pipeline with learned representations; the resulting framework was later adapted to Parkinson's disease monitoring.
+
+### CVB-11: Cross-domain representation learning
+
+Explored variational autoencoder-based architectures for representation learning and unsupervised domain adaptation, adapting computer vision techniques to wearable physiological sensing.
+
+### CVB-12: Weakly supervised learning
+
+Leveraged rules-based walk detection to identify walk-like intervals from unlabeled free-living wearable recordings, enabling Parkinson's disease modeling without manually annotated activity labels.
+
+### CVB-13: Research strategy
+
+Evaluated a wearable suicide-risk prediction initiative as infeasible given no available training data and the need for a long-term prospective study; redirected the program toward more tractable clinical risk indicators such as dropout and prepared executive-facing reports for senior stakeholders, including the White House.
+
+### CVB-14: Clinician-friendly machine learning
+
+Built Random Forest and XGBoost models to predict patient dropout risk from longitudinal EHRs, using SHAP, LIME, and feature-importance analyses to make model behavior interpretable for skeptical clinical stakeholders.
+
+### CVB-15: Deployment-honest validation
+
+Identified overlapping-window data leakage, time-ordering bias, and evaluation-target mismatch in a gesture-recognition prototype, then redesigned validation around leave-one-subject-out cross-validation to estimate unseen-patient generalization in a small cohort.
+
+### CVB-16: Early-term birth prediction
+
+Collaborated with Columbia University to predict early term pregnancies using machine learning, focusing on hyperparameter tuning, model selection, missing-data handling, and leakage detection.
+
+### WWE-01: Production viewership data products
+
+Built API-based social-data pipelines and live-event KPI dashboards across YouTube, Facebook, Twitter, and WWE Network, replacing third-party vendor feeds costing roughly $1M/year while improving data coverage and timeliness.
+
+### WWE-02: Real-time executive analytics
+
+Developed a multi-platform dashboard for live-event viewership metrics and KPIs, enabling informed real-time executive decisions during live broadcasts.
+
+### WWE-03: Production customer behavior analytics
+
+Developed and maintained automated data processing, machine learning, and reporting pipelines supporting customer segmentation, churn prediction, executive reporting, and A/B test analysis for marketing and customer engagement initiatives.
+
+### WWE-04: Deep learning for churn prediction
+
+Replaced a logistic-regression-based churn prediction system with a 5-layer neural network, improving total AUC from approximately 0.64 to 0.73; independently developed Gaussian noise injection between hidden layers as a regularization strategy, contributing approximately half of the overall performance gain.
+
+### WWE-05: Transfer learning for computer vision
+
+Prototyped a computer vision system for WWE Superstar recognition via transfer learning with ResNet-50 and VGG16/19.
+
+### CSTR-01: Climatological time-frequency analysis
+
+Developed MedPSD, a median-normalized sliding-window power spectral density method that revealed long-timescale geomagnetic spatiotemporal structure across the polar cap not visible in standard event-based case studies.
+
+### CSTR-02: Geomagnetic coordinate representation and validation
+
+Demonstrated that corrected geomagnetic coordinates misclassify polar cap sites, motivating and validating alternative observational coordinate representations, including eccentric dipole coordinates computed from IGRF-12 coefficients.
+
+### CSTR-03: Geophysical signal interpretation
+
+Analyzed ground magnetometer observations by disentangling overlapping effects from coastline geometry, crustal conductivity, ionospheric conductivity, and solar-wind coupling.
+
+### CSTR-04: Multi-instrument space weather reconstruction
+
+Reconstructed and animated heliospheric event timelines as dynamic global visualizations of space weather propagation across a distributed instrument chain spanning the Sun to the heliosheath, integrating observations from SDO, ACE, approximately 180 INTERMAGNET magnetometers, the Antarctic AGO network, DMSP satellites, the Van Allen Probes, and Voyager 2.
+
+### CSTR-05: Scientific collaboration
+
+Contributing member of the NASA RBSPICE instrument team on the Van Allen Probes mission; delivered invited talks at AGU, the Air Force Research Laboratory, and CEDAR.
+
+### CSTR-06: Computational mathematics, granular fluids, and nonlinear dynamics
+
+Translated analytical models of granular fluid dynamics into numerical simulations and visualizations, including parameterized Poincare map analyses of chaotic dynamical systems, contributing to four peer-reviewed publications from 2011-2014.
+
+### INT-01: JPL trajectory optimization and design
+
+Trajectory Optimization and Design - NASA Jet Propulsion Laboratory, Pasadena, CA (May-Aug 2011). Full spacecraft mission design to Jupiter's Trojan asteroids: science goals, instrument selection, trajectory optimization, concurrent engineering, and formal NASA review board presentation; contributing author on peer-reviewed paper.
+
+### INT-02: NASA Goddard Heliophysics Division
+
+Heliophysics Division - NASA Goddard Space Flight Center, Greenbelt, MD (Summer 2006).
+
+### INT-03: NASA Goddard Observational Cosmology Laboratory
+
+Observational Cosmology Laboratory - NASA Goddard Space Flight Center, Greenbelt, MD (Summer 2007).
+
+### SKILL-01: Machine learning
+
+Deep learning; sequence modeling with Conv1D/CNNs, LSTMs, transformers, and TCNs; representation learning; autoencoders/VAEs; transfer learning; fine-tuning; self-supervised learning; tree-based learning; clustering; explainable AI with SHAP and LIME; computer vision; image localization/segmentation; human activity recognition; gesture recognition; synthetic data generation; physics-informed modeling; model selection; validation/verification; ablation studies.
+
+### SKILL-02: Statistical signal processing and estimation
+
+Bayesian inference; inverse problems; state estimation; stochastic filtering; Kalman filtering; recursive Bayesian estimation; adaptive estimators; tracking; uncertainty-aware modeling; drift/regime-shift analysis; robustness testing; Normal-Inverse-Gamma priors; time-series and longitudinal modeling; spatiotemporal modeling; time-frequency methods; STFT; PSD/spectral analysis; wavelets; coherence analysis; time-series similarity and alignment with DTW.
+
+### SKILL-03: Sensor analytics and modalities
+
+IMUs, accelerometers, gyroscopes, ECG, pressure sensing, thermal imaging, magnetometers, cameras, medical devices, satellites/spacecraft, sensor fusion, multimodal sensing, physiological sensing, wearables, longitudinal monitoring, digital biomarkers, field validation, sensor synchronization, embedded deployment.
+
+### SKILL-04: Languages and tools
+
+Python, PyTorch, TensorFlow/Keras, OpenCV, HuggingFace, scikit-learn, SciPy, NumPy, MLflow, C/C++, R, MATLAB, IDL, SQL, Linux, Docker, Git, Jupyter, AWS, GCP.
+
+### PUB-01: Sensors 2022 Parkinson's disease wearable monitoring
+
+Atri, R. and Urban, K. (co-first authors) et al. "Deep Learning for Daily Monitoring of Parkinson's Disease Outside the Clinic Using Wearable Sensors." Sensors, 2022.
+
+### PUB-02: JGR Space Physics 2016 polar-cap / ULF power
+
+Urban et al. "Rethinking the Polar Cap: Eccentric Dipole Structuring of ULF Power." JGR: Space Physics, 2016.
+
+### PUB-03: Physica D 2014 nonlinear dynamics / simulations
+
+Blackmore et al. "Analysis, simulation and visualization of 1D tapping via reduced dynamical models." Physica D: Nonlinear Phenomena, 2014.
+
+### PUB-04: Planetary and Space Science 2013 JPL mission design
+
+Diniega et al. "Mission to the Trojan Asteroids: Lessons Learned During a JPL Planetary Science Summer School Mission Design Exercise." Planetary and Space Science, 2013.
+
+### PUB-05: Space Weather 2011 open-closed boundary
+
+Urban et al. "Quiet Time Observations of the Open-Closed Boundary Prior to the CIR-Induced Storm." Space Weather, 2011.

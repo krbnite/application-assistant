@@ -1,0 +1,58 @@
+{
+  "company": "Example Company",
+  "role_title": "Example Applied Scientist Role",
+  "date": "2026-08-21",
+  "profile_cluster": "Default Sensor ML Research Scientist",
+  "headline": "",
+  "profile": "",
+  "output_path": "job-search/2026/example/2026-08-21_Kevin-Urban_Resume_Example-Company.docx",
+  "core_theme_ids": [
+    "CORE-01",
+    "CORE-02",
+    "CORE-05",
+    "CORE-06"
+  ],
+  "experience": {
+    "podimetrics": [
+      "POD-01",
+      "POD-02",
+      "POD-05",
+      "POD-09",
+      "POD-11"
+    ],
+    "cvb_director": [
+      "CVB-01",
+      "CVB-03",
+      "CVB-06"
+    ],
+    "cvb_associate_director": [
+      "CVB-08",
+      "CVB-09",
+      "CVB-10",
+      "CVB-12"
+    ],
+    "cvb_senior_ds": [
+      "CVB-15"
+    ],
+    "wwe_senior_ds": [],
+    "wwe_data_scientist": [],
+    "cstr_research_assistant": [
+      "CSTR-01",
+      "CSTR-04"
+    ]
+  },
+  "internship_ids": [
+    "INT-01"
+  ],
+  "skill_ids": [
+    "SKILL-01",
+    "SKILL-02",
+    "SKILL-03",
+    "SKILL-04"
+  ],
+  "include_education": true,
+  "publication_ids": [
+    "PUB-01",
+    "PUB-02"
+  ]
+}

@@ -14,6 +14,8 @@ Primary files:
 - `RESUME_BULLET_BANK.md` - canonical evidence reservoir and cluster-scored bullet guide.
 - `RESUME_OUTPUT_CONTRACT.md` - output rules for tailored resumes, including length, file type, confidence, and verification expectations.
 - `TAILORED_RESUME_AUDIT_TEMPLATE.md` - required audit structure for documenting tailoring decisions.
+- `TAILORED_RESUME_PLAN_TEMPLATE.json` - copyable JSON structure for the role-specific selection plan.
+- `generate_resume_docx.py` - generator that turns the selection plan into a tailored DOCX.
 
 Treat `RESUME_BULLET_BANK.md` as the source of truth for resume evidence. Treat `PROFILE_BANK.md` as the source of truth for reusable intro/profile clusters. Treat generated DOCX files as outputs, not canonical sources.
 
@@ -40,7 +42,9 @@ Do not fabricate experience, tools, metrics, publications, credentials, or domai
 6. Tell Kevin what changed in the profile/headline and why. Surface and defend all meaningful profile edits or add-ons in the audit, just as you do for bullet edits.
 7. If no existing profile cluster fits well, create a new profile cluster, label it clearly, and retain it in `PROFILE_BANK.md`. If the cluster is based on a single job description, mark it as provisional rather than discarding it. Explain why the new cluster is needed beyond the existing options.
 8. Build the tailored resume from `MASTER_RESUME_TEMPLATE.md`, `PROFILE_BANK.md`, and `RESUME_BULLET_BANK.md`, not by copying from old company-specific resumes unless Kevin explicitly asks for historical comparison.
-9. Follow `RESUME_OUTPUT_CONTRACT.md`: target 3 pages, create DOCX by default, render/verify the DOCX, and create an audit from `TAILORED_RESUME_AUDIT_TEMPLATE.md`.
+9. Create a role-specific JSON plan from `TAILORED_RESUME_PLAN_TEMPLATE.json`.
+10. Validate the plan, generate the DOCX with `generate_resume_docx.py`, render/verify the DOCX, and create an audit from `TAILORED_RESUME_AUDIT_TEMPLATE.md`.
+11. Follow `RESUME_OUTPUT_CONTRACT.md`: target 3 pages, create DOCX by default, and document any four-page exception.
 
 ## Profile Cluster Guidance
 
@@ -129,6 +133,10 @@ If a new bullet is created for a specific role, record why it was needed and dec
 
 - Start from `MASTER_RESUME_TEMPLATE.md` unless Kevin asks for a different format.
 - Follow the output contract: tailored resumes should usually be 3 pages and should produce a DOCX by default, not a PDF.
+- Use a role-specific JSON plan as the bridge between tailoring decisions and DOCX generation.
+- Use plain bullet IDs when retaining canonical text as-is.
+- Use plan objects with `id` plus edited `text` when lightly editing or merging canonical bullets; explain those edits in the audit.
+- Use custom bullet objects rarely, and only when Kevin's known evidence supports the claim.
 - Preserve the strongest evidence density: concrete systems, sensors, methods, validation designs, deployment context, metrics, and outcomes.
 - Prefer people -> problem -> decision -> outcome -> mechanism when restructuring bullets.
 - Lead with the experience most relevant to the JD's hidden concern.
@@ -179,6 +187,7 @@ When delivering or summarizing a tailored resume, include:
 - Any new bullets created and whether they should be retained in the bullet bank.
 - Any gaps, risks, or claims that should not be overstated.
 - The final tailored file path if a DOCX was created.
+- The JSON plan path.
 - The audit file path.
 - Page count and whether visual verification was completed.
 

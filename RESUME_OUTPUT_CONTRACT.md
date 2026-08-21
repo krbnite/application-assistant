@@ -9,12 +9,15 @@ This file defines what "done" means when creating a tailored resume from Kevin's
 - `JD_CLUSTER_BANK.md`: profile clusters, archetype JDs, and core/add-on matching signals.
 - `RESUME_BULLET_BANK.md`: canonical evidence reservoir and cluster-scored bullet selection guide.
 - `TAILORED_RESUME_AUDIT_TEMPLATE.md`: required audit format.
+- `TAILORED_RESUME_PLAN_TEMPLATE.json`: copyable JSON plan for selecting profile, themes, bullets, skills, education, and publications.
+- `generate_resume_docx.py`: DOCX generator that consumes a role-specific plan.
 
 ## Output Format
 
 - Create a tailored `.docx` resume by default.
 - Do not create a PDF by default. Kevin will convert the final DOCX to PDF at submission time so he can make final manual tweaks.
 - Use this filename pattern unless Kevin asks otherwise:
+  - `YYYY-MM-DD_Kevin-Urban_Resume_{Company}_plan.json`
   - `YYYY-MM-DD_Kevin-Urban_Resume_{Company}.docx`
   - `YYYY-MM-DD_Kevin-Urban_Resume_{Company}_audit.md`
 
@@ -71,6 +74,18 @@ For each tailored resume:
 3. Fill the core research themes, experience bullets, skills, and publications from `RESUME_BULLET_BANK.md`.
 4. Keep stable sections such as education unless the JD or page budget creates a clear reason to alter them.
 5. Treat existing DOCX resumes as examples or generated outputs, not as canonical sources.
+6. Record the selected profile, bullet IDs, edited text, merged bullets, custom bullets, skills, and publications in a role-specific JSON plan.
+7. Generate the DOCX with `generate_resume_docx.py`; do not manually rebuild the DOCX unless the generator cannot express the needed tailoring.
+
+## Generator Contract
+
+Use `TAILORED_RESUME_PLAN_TEMPLATE.json` as the starting shape for a role-specific plan.
+
+- Plain string IDs pull exact canonical text from `RESUME_BULLET_BANK.md`.
+- Object entries with `id`, `label`, and/or `text` represent light edits to canonical bullets and must be defended in the audit.
+- Object entries without an `id` are custom bullets and should be rare; the audit must decide whether to add them to the bullet bank, mark them provisional, or keep them one-off.
+- Blank `headline` and `profile` fields are filled from the selected `profile_cluster`; populated fields indicate role-specific profile/headline tailoring and must be audited.
+- Validate before generating when possible.
 
 ## Verification
 
@@ -84,6 +99,7 @@ For each tailored resume:
 The final response should include:
 
 - Tailored resume path.
+- Resume plan path.
 - Audit path.
 - Primary cluster and confidence.
 - Starting profile used or new cluster created.

@@ -7,6 +7,7 @@ Use this template for every tailored resume generated from the Markdown resume s
 - Company:
 - Role title:
 - JD source:
+- Resume plan:
 - Tailored resume:
 - Date:
 
