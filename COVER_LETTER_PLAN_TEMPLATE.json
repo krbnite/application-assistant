@@ -1,0 +1,27 @@
+{
+  "company": "Example Company",
+  "role_title": "Example Role",
+  "date": "2026-08-21",
+  "salutation": "Dear Hiring Team,",
+  "recipient_block": [],
+  "include_date": false,
+  "variables": {
+    "company_problem": "turning noisy real-world data into reliable product decisions",
+    "target_domain": "the target domain",
+    "target_contribution": "the target contribution",
+    "gap_domain": "the exact target domain",
+    "adjacent_strengths": "sensor inference, validation, and research-to-product translation",
+    "closing_keywords": "machine learning, statistical signal processing, Bayesian estimation, sensor analytics, and deployment-oriented validation"
+  },
+  "paragraphs": [
+    "OPEN-DEFAULT-01",
+    "EVID-POD-01",
+    "EVID-CVB-01",
+    "EVID-RESEARCH-01",
+    "BRIDGE-SAR-01",
+    "CLOSE-DEFAULT-01"
+  ],
+  "closing": "Sincerely,",
+  "signature": "Kevin Urban, PhD",
+  "output_path": "job-search/2026/example/2026-08-21_Kevin-Urban_Cover-Letter_Example-Company.docx"
+}
