@@ -101,6 +101,17 @@ New bullets should be rare. Use this section whenever a tailored resume creates 
 - Education changes, if any:
 - Why these choices fit the JD:
 
+## Prior Same-Cluster Resume Scan
+
+- Current job-search cycle scanned:
+- Same-cluster prior resumes checked:
+- Close secondary-cluster resumes checked, if any:
+- Useful ideas found:
+- Ideas adopted into this resume:
+- Ideas rejected and why:
+- Bank/template updates needed from this scan:
+- If no prior same-cluster resumes were scanned, why not:
+
 ## Gaps And Do-Not-Overstate Notes
 
 - JD asks for but resume does not strongly support:

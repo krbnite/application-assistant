@@ -39,4 +39,6 @@ When Kevin provides a job description, read `RESUME_TAILORING_AGENT.md` first, t
 
 Use core JD archetype signals to choose the primary cluster. Use add-on signals only to tune the profile, bullet selection, skills, and audit notes.
 
+Before final delivery, scan prior same-cluster resumes from the current job-search cycle for missed profile, bullet, publication, research-writing, or compact brand-signal ideas. Treat those prior resumes as comparison examples only, not canonical sources; adopt ideas only when supported by the banks or deliberately promoted.
+
 For a tailored deliverable, follow `OUTPUT_CONTRACT.md`: create the role-specific resume plan, cover-letter plan, audit, interview Q&A companion, and generated DOCX files requested for the application packet. Render and visually verify generated DOCX files before delivery.

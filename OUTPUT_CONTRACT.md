@@ -105,6 +105,17 @@ Use `TAILORED_RESUME_PLAN_TEMPLATE.json` as the starting shape for a role-specif
 - Generate the DOCX with `generate_resume_docx.py`; do not manually rebuild the DOCX unless the generator cannot express the needed tailoring.
 - Validate before generating when possible.
 
+### Prior Same-Cluster Resume Scan
+
+Before finalizing a tailored resume, scan prior resumes from the same profile/JD cluster in the current job-search cycle, such as the current `job-search/2026` folder.
+
+- Use this as a miss check for strong ideas, not as a replacement for the canonical banks.
+- Look especially for profile phrasing, publication/research-writing selections, compact brand signals, bullet compression choices, and section-level judgment that the current plan may have missed.
+- Adopt an idea only when it is supported by the canonical banks or can be deliberately promoted into them.
+- If a useful idea is adopted from a prior resume, record the source resume and rationale in the audit.
+- If a good prior-resume idea is rejected, briefly record why, such as page pressure, weaker JD fit, or unsupported source status.
+- If no same-cluster prior resumes are available, note that in the audit.
+
 ## Cover Letter Contract
 
 ### Length And Shape
@@ -162,6 +173,7 @@ The audit should record:
 - Primary profile/JD cluster, confidence, and any archetype updates.
 - Resume profile/headline choices and edits.
 - Resume bullet choices, edits, merges, drops, and any new bullets.
+- Prior same-cluster resumes scanned, including ideas adopted or rejected.
 - Cover-letter plan path and DOCX path.
 - Cover-letter modules kept as-is, lightly edited, replaced, dropped, or newly created.
 - Any resume or cover-letter language that should be promoted to a reusable bank.
@@ -172,6 +184,7 @@ The audit should record:
 
 - Render and visually verify each generated DOCX before delivery.
 - Confirm resume and cover-letter page counts.
+- Complete the prior same-cluster resume scan after page count is known and before final delivery.
 - Check for awkward page breaks, orphan headings, cramped bullets, cramped paragraphs, inconsistent formatting, missing signature, missing audit details, or unresolved placeholders.
 - If visual rendering is unavailable, say so in the final response.
 
@@ -188,4 +201,5 @@ The final response should include:
 - Primary cluster and confidence.
 - Starting profile used or new cluster created.
 - Any profile-bank, JD-archetype, resume-bullet-bank, or cover-letter-bank updates.
+- Whether the prior same-cluster resume scan found any adopted changes.
 - Whether visual verification was completed for each DOCX.

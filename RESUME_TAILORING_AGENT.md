@@ -64,9 +64,10 @@ WWE and NASA/JPL are useful credibility and conversation signals even when they 
 8. Build the tailored resume from `MASTER_RESUME_TEMPLATE.md`, `PROFILE_BANK.md`, and `RESUME_BULLET_BANK.md`, not by copying from old company-specific resumes unless Kevin explicitly asks for historical comparison.
 9. Create a role-specific JSON plan from `TAILORED_RESUME_PLAN_TEMPLATE.json`.
 10. Validate the plan, generate the DOCX with `generate_resume_docx.py`, render/verify the DOCX, and create an audit from `TAILORED_RESUME_AUDIT_TEMPLATE.md`.
-11. Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` unless Kevin says to skip it.
-12. If a cover letter is requested, required, or useful for the application packet, create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json`, generate the DOCX with `generate_cover_letter_docx.py`, render/verify it, and complete the cover-letter audit section.
-13. Follow `OUTPUT_CONTRACT.md`: target 3 resume pages, target 1 cover-letter page, create DOCX by default, create the audit and interview Q&A companion, and document exceptions.
+11. Before finalizing, scan prior same-cluster resumes in the current job-search cycle for missed section-level ideas, especially profile phrasing, publication/research-writing choices, compact brand signals, and unusually good bullet-selection decisions. Use those prior resumes as comparison examples only, not canonical sources.
+12. Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` unless Kevin says to skip it.
+13. If a cover letter is requested, required, or useful for the application packet, create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json`, generate the DOCX with `generate_cover_letter_docx.py`, render/verify it, and complete the cover-letter audit section.
+14. Follow `OUTPUT_CONTRACT.md`: target 3 resume pages, target 1 cover-letter page, create DOCX by default, create the audit and interview Q&A companion, and document exceptions.
 
 ## Profile Cluster Guidance
 
@@ -170,7 +171,25 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Treat completed audits as local sanity-check/application records. Do not track them in Git by default; promote only reusable findings into `PROFILE_BANK.md`, `JD_CLUSTER_BANK.md`, `RESUME_BULLET_BANK.md`, or a process doc.
 - Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` and store it in the associated job folder's `supporting/` subfolder. Treat completed Q&A files as local interview-prep artifacts, not tracked canonical state.
 - Create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json` when generating a cover letter. Store the plan in `supporting/`, keep the generated DOCX in the job folder root, use `COVER_LETTER_BANK.md` as the source of reusable paragraph modules, and treat completed cover-letter plans/DOCXs as ignored job artifacts.
+- Before final delivery, compare the generated resume against prior same-cluster resumes from the current job-search cycle, usually the same year folder under `job-search/`. This is a late-stage miss check, not a rewrite from history.
 - Ask clarifying questions only for facts not present in the canonical files and only when the missing fact materially affects tailoring.
+
+## Prior Same-Cluster Resume Scan
+
+Use this scan near the end of a tailored packet, after the first generated resume has been rendered and page budget is known.
+
+1. Identify the current job-search cycle from the target job folder, such as `job-search/2026`.
+2. Use `JD_CLUSTER_BANK.md`, existing audits/plans, folder names, and role context to identify prior applications from the same primary cluster and, when useful, close secondary-cluster matches.
+3. Inspect prior tailored resumes, and optionally their audits/plans, for missed judgment calls:
+   - Stronger profile/headline phrasing.
+   - Better publication or research-writing selections.
+   - Useful compact brand signals such as WWE, NASA/JPL, or other credibility lines.
+   - Strong bullet-selection, compression, or section-order decisions.
+   - Good cover-letter framing only if a cover letter is part of the packet.
+4. Do not copy prior resumes wholesale and do not treat them as canonical sources. If an idea is useful, verify that it is supported by `RESUME_BULLET_BANK.md`, `PROFILE_BANK.md`, `PUBLICATION_PRESENTATION_BANK.md`, or another tracked source before adopting it.
+5. If a prior resume contains a good idea not represented in the banks, either ask Kevin, keep it as an audited one-off only when clearly supported, or promote it deliberately into the relevant bank.
+6. Record the scan in the audit: which prior resumes were checked, what was adopted or rejected, and why.
+7. If no same-cluster prior resumes exist, note that explicitly in the audit.
 
 ## Updating The Master System
 
