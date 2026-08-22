@@ -18,6 +18,41 @@ Given a job description, the intended workflow is:
 
 The goal is not full autopilot. Kevin still reviews the packet before submission. The system is meant to remove repetitive re-optimization and make tailoring decisions auditable.
 
+## Usage
+
+To help ensure the agent follows the intended workflow:
+
+- **Job Search Folder:** First, if not already established, create a new `job-search/<name-of-job-search>` folder for your current job search.
+  - Example: I have `job-search/2024/` and `job-search/2026/`, each of which contains subfolders for each role being pursued.
+- **Role Subfolders:** Within that folder, create subfolders for each role being pursued.
+  - Example: My current `2026` syntax has subfolders like `job-search/2026/<JobNumber>_<Company>_<Role>`, which I like because it organizes the job search chronologically and by company/role, but you can use whatever naming convention you prefer, such as `job-search/2026/<Company1>/<Role1>`, `job-search/2026/<Company1>/<Role2>`, or `job-search/2026/<Company2>/<Role1>`.
+- **Job Description:** Each subfolder should contain the job description and any supporting materials for that role.
+  - Example: `job-search/2026/17_Dexcom/job-description.md` contains the job description for the Dexcom Staff Algorithm Engineer role.
+- **Prompt:** Using ChatGPT/Codex or Claude with permission to access the repo, use the following prompt to ensure the agent follows the intended workflow:
+
+  ```
+  Please run the full application-assistant workflow for the JD in:
+  job-search/2026/XX_Company/job-description.md
+
+  Before doing anything, re-read the repo process files:
+  * README.md
+  * AGENTS.md
+  * RESUME_TAILORING_AGENT.md
+  * OUTPUT_CONTRACT.md
+  * MASTER_RESUME_TEMPLATE.md
+  * JD_CLUSTER_BANK.md
+  * PROFILE_BANK.md
+  * RESUME_BULLET_BANK.md
+  * PUBLICATION_PRESENTATION_BANK.md
+  * COVER_LETTER_BANK.md
+  * TAILORED_RESUME_PLAN_TEMPLATE.json
+  * COVER_LETTER_PLAN_TEMPLATE.json
+  * TAILORED_RESUME_AUDIT_TEMPLATE.md
+  * INTERVIEW_QA_TEMPLATE.md
+
+  Then generate the full packet according to the current rules: resume DOCX, cover-letter DOCX, audit, interview Q&A, and supporting plan files. Make sure to perform the final QA pass, including DOCX visual render checks/page counts, unresolved placeholder checks, and the same-cluster prior-resume scan.
+  ```
+
 ## Current Layout
 
 The core files are intentionally plain Markdown, JSON, and Python so they can be reviewed, diffed, and updated cleanly.
