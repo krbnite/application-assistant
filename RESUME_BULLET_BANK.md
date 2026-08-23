@@ -321,7 +321,7 @@ Built revenue-attribution, survey-fusion, sentiment-analysis, seasonal-behavior,
 
 ### CSTR-01: Climatological time-frequency analysis
 
-Developed MedPSD, a median-normalized sliding-window power spectral density method that revealed long-timescale geomagnetic spatiotemporal structure across the polar cap not visible in standard event-based case studies.
+Developed MedPSD, a median-normalized sliding-window power spectral density method that revealed long-timescale geomagnetic spatiotemporal structure across the polar cap not visible in standard event-based case studies or captured by prevailing magnetospheric models, contributing to a PhD dissertation, peer-reviewed publications, and invited research presentations.
 
 ### CSTR-02: Geomagnetic coordinate representation and validation
 
