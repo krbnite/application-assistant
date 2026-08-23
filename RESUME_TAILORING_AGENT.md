@@ -40,9 +40,14 @@ MachineSaidGo may be referenced as Kevin's LLC / exploratory side-project umbrel
 
 WWE and NASA/JPL are useful credibility and conversation signals even when they are not the central evidence for a role. When page budget allows, preserve them as compact one-line entries rather than omitting them by default.
 
-- For WWE, usually retain one concise business/production ML line unless the role would be distracted by entertainment or customer analytics.
+- For WWE, the default compact section should include both title/date lines and two bullets: Senior Data Scientist (Aug 2017 - Jul 2018), Data Scientist (Oct 2016 - Aug 2017), `Production customer behavior analytics`, and `Production viewership data products`, with the ML/customer analytics bullet first. This is the minimum faithful default because it preserves the full chronology, shows the promotion, includes the production-ML signal, and keeps the brand/business-impact signal. Expand only when the role genuinely benefits from more WWE detail.
+- Do not compress WWE below that default unless page pressure is severe or the role would be distracted by entertainment/customer analytics. If WWE must be compressed further, preserve the full chronology with a combined role/date line such as `Senior Data Scientist / Data Scientist | Oct 2016 - Jul 2018`; do not place cross-role WWE summary bullets under only the Aug 2017-Jul 2018 Senior Data Scientist date range, because that creates a false 2016-2017 gap after CSTR. Record any smaller-than-default WWE section in the audit.
 - For NASA/JPL, usually retain the compact internship signal unless page pressure is meaningful; expand individual internships only for aerospace, robotics/autonomy, optimization, physical-systems, spacecraft-instrument, or mission-oriented roles.
 - If either signal is omitted from a tailored resume, record why in the audit.
+
+## CSTR / NJIT Compression Rule
+
+For compact older academic research sections, default to `Center for Solar-Terrestrial Research` as the section organization because it is the strongest and most specific research signal. Use `Research Assistant, New Jersey Institute of Technology | Newark, NJ | Aug 2012 - May 2016` as the role/date line unless the target role needs a fuller academic CV. The default compressed CSTR section should not shrink below the PhD/CSTR summary plus two bullets: `Climatological time-frequency analysis` and `Computational mathematics, granular fluids, and nonlinear dynamics`. This preserves the main dissertation/sensor-inference work while acknowledging the related NJIT mathematical modeling work without extending the experience timeline before 2012.
 
 ## Default Workflow When Kevin Provides A Job Description
 
