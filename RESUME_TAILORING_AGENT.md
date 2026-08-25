@@ -36,6 +36,25 @@ Kevin's separate `kitchensink` repository is a broad public archive of older wri
 
 MachineSaidGo may be referenced as Kevin's LLC / exploratory side-project umbrella when strategically useful and supported by canonical content.
 
+## Optional AI / Agentic Systems Project Signal
+
+ProblemForm and application-assistant are optional project signals, not default resume sections. Use them only when the job description materially values LLMs, AI agents, prompt/workflow automation, LLM evaluation, human-AI collaboration, developer tooling, AI product systems, or agentic/document-generation workflows. Do not force them into ordinary sensor, health, algorithm, or research resumes just because AI is fashionable.
+
+Default priority:
+
+- ProblemForm is the lead AI / agentic systems signal. It is strongest for LLM evaluation, problem formulation, prompt/workflow design, human-AI collaboration, agent workflows, benchmark/rubric design, and developer tooling.
+- application-assistant is secondary and should be framed carefully as an agent-assisted document-generation and decision-audit workflow. Avoid framing it as mass job-application automation.
+
+Candidate ProblemForm resume language:
+
+`ProblemForm: Built a human-AI problem-formulation system with a multi-phase LLM refinement pipeline, CLI, benchmark suite, rubric/property-based evaluation framework, and documented methodology for improving questions, prompts, decisions, plans, and specifications before downstream execution.`
+
+Candidate application-assistant resume language:
+
+`application-assistant: Built an agent-assisted document-generation workflow that maps job descriptions to reusable profile, bullet, publication, cover-letter, audit, and interview-prep banks, producing tailored DOCX application packets with traceable selection decisions and QA checks.`
+
+If either project is included, prefer a compact `Selected AI Systems Projects` or `Selected Projects` section with one or two project lines rather than a large project block, unless the JD is explicitly AI-agent/tooling-focused. Audit why the project signal was included and what section was displaced or compressed. Do not include either project when it distracts from the role's primary evidence or consumes space needed for stronger domain experience. If using application-assistant in a public-facing resume, emphasize reusable document workflow, traceable decisions, QA, and agent-assisted automation rather than fast application volume.
+
 ## Compact Brand-Signal Rule
 
 WWE and NASA/JPL are useful credibility and conversation signals even when they are not the central evidence for a role. When page budget allows, preserve them as compact one-line entries rather than omitting them by default.
