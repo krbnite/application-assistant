@@ -589,8 +589,28 @@ def build_docx(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: dict[
         add_section(doc, "Experience")
         current_org = None
         role_summaries = plan.get("role_summaries", {})
+        group_wwe_roles = bool(plan.get("group_wwe_roles_before_bullets"))
         for role in ROLE_ORDER:
             specs = experience.get(role.key, [])
+            if group_wwe_roles and role.key == "wwe_senior_ds":
+                wwe_specs = list(experience.get("wwe_senior_ds", [])) + list(
+                    experience.get("wwe_data_scientist", [])
+                )
+                if not wwe_specs:
+                    continue
+                if role.organization != current_org:
+                    add_org(doc, role.organization)
+                    current_org = role.organization
+                add_role(doc, role)
+                data_scientist_role = next(
+                    candidate for candidate in ROLE_ORDER if candidate.key == "wwe_data_scientist"
+                )
+                add_role(doc, data_scientist_role)
+                for entry in resolve_entries(wwe_specs, bank):
+                    add_labeled_bullet(doc, entry.label, entry.text)
+                continue
+            if group_wwe_roles and role.key == "wwe_data_scientist":
+                continue
             if not specs:
                 continue
             if role.organization != current_org:
