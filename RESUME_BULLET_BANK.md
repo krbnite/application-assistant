@@ -80,7 +80,7 @@ Default role placement matters because CVB has three separate title/date buckets
 | CVB-13 | Research strategy | 2 | 0 | 0 | 1 | 0 | Use for senior judgment, feasibility, data strategy, or executive communication; avoid if space is tight. |
 | CVB-14 | Clinician-friendly machine learning | 3 | 0 | 1 | 2 | 0 | Use for interpretable ML, clinical stakeholders, EHR risk, and skeptical audiences. |
 | CVB-15 | Deployment-honest validation | 3 | 1 | 2 | 2 | 2 | Strong for leakage, time-ordering bias, LOSO validation, and small-cohort rigor. |
-| CVB-16 | Early-term birth prediction | 1 | 0 | 1 | 1 | 0 | Usually omit unless pregnancy, missing data, clinical ML, or leakage detection is relevant. |
+| CVB-16 | Early-term birth prediction | 2 | 0 | 1 | 1 | 0 | Usually omit unless maternal health, EEG-derived clinical features, missing data, clinical ML, or leakage detection is relevant. |
 | CVB-17 | Reproducible team workflows and tooling | 1 | 0 | 1 | 2 | 1 | Use for lead, platform-minded, research-ops, or team enablement roles; otherwise compress. |
 | CVB-18 | Wearables knowledge graph and database evaluation | 2 | 0 | 1 | 2 | 1 | Use for knowledge graphs, databases, schema design, wearable-to-biology mapping, or ontology-ish roles. |
 
@@ -142,6 +142,7 @@ Default role placement matters because CVB has three separate title/date buckets
 | PUB-09 | CVB 2020 wearable digital-biomarker science article | 3 | 0 | 0 | 0 | 0 | Public science writing, not peer-reviewed. Lead for Oura-style wearable health science communication. |
 | PUB-10 | Biological Psychiatry 2020 wearable/home sleep-sensor verification poster | 3 | 0 | 1 | 0 | 0 | Conference abstract/poster, not a full journal article. Lead for sleep, wearable validation, and home-sensor verification roles. |
 | PUB-11 | Bounded DTW sleep-device validation methods manuscript | 3 | 0 | 2 | 0 | 0 | Manuscript in preparation / unpublished. Lead for sleep validation, PSG-device comparison, signal alignment, and methods-heavy wearable roles. |
+| PUB-12 | Sleep apnea deep learning and domain-expertise working paper | 3 | 0 | 2 | 0 | 0 | Working paper / unpublished. Lead for EEG/sleep, biosignal ML, ablations, and classical-to-deep-model comparison roles. |
 
 ## Canonical Text
 
@@ -277,7 +278,7 @@ Identified overlapping-window data leakage, time-ordering bias, and evaluation-t
 
 ### CVB-16: Early-term birth prediction
 
-Collaborated with Columbia University to predict early term pregnancies using machine learning, focusing on hyperparameter tuning, model selection, missing-data handling, and leakage detection.
+Collaborated with Columbia University on maternal-health prediction using clinical and Columbia-provided EEG-derived features, focusing on hyperparameter tuning, model selection, missing-data handling, and leakage detection.
 
 ### CVB-17: Reproducible team workflows and tooling
 
@@ -422,3 +423,7 @@ Postma, F., Rozenberg, Z., Shokhirev, N., Urban, K., Rubin, U., and Brunner, D. 
 ### PUB-11: Bounded DTW sleep-device validation methods manuscript
 
 Urban, K. "Bounded Dynamic Time Warping for Epoch-by-Epoch Agreement Between Polysomnography and Sleep-Tracking Devices." Manuscript in preparation.
+
+### PUB-12: Sleep apnea deep learning and domain-expertise working paper
+
+Urban, K. and Atri, R. "Evaluating the impact of domain expertise and deep learning in the design and performance of sleep apnea detection models." Working paper / unpublished.
