@@ -79,6 +79,7 @@ For compact older academic research sections, default to `Center for Solar-Terre
 Current profile clusters:
 
 - Default Sensor ML Research Scientist.
+- Quantitative Research ML Engineering (provisional, retained after the Voleon JD because it requires distinct research-engineering, model-infrastructure, and mathematical-software framing).
 - Health, Wearables, Neurotech, And Digital Biomarkers.
 - Sensor AI, Robotics, Autonomy, And Edge Perception.
 - Bayesian Estimation, Signal Processing, And Physical Systems Research.

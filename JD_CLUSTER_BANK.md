@@ -37,6 +37,7 @@ These mappings began as inferences from the tailored resumes in the 2026 search 
 | Motif Neurotech | Health, Wearables, Neurotech, And Digital Biomarkers | Bayesian / Signal Processing | High | Neurotech, biosignal/wearable sensing, clinical/device validation. |
 | Dexcom - Emerging Sensing Technologies | Health, Wearables, Neurotech, And Digital Biomarkers | Bayesian / Physical Systems Research | Medium-High | CGM/biosensing algorithm role with strong mechanistic modeling, simulation, feasibility, and performance-limit analysis signals. |
 | Dexcom - Advanced Sensing Technologies | Health, Wearables, Neurotech, And Digital Biomarkers | Bayesian / Physical Systems Research | High | CGM/biosensing algorithm role emphasizing signal processing, estimation, calibration, detection, sensor-behavior modeling, algorithm maturation, verification strategy, and hardware/firmware/product integration. |
+| Voleon | Quantitative Research ML Engineering | Bayesian / Signal Processing; Industrial / Operational Time-Series ML | High | Research-team ML engineering role emphasizing mathematical maturity, production-quality research code, data pipelines, feature engineering, validation, model evaluation infrastructure, reproducibility, and imperfect heterogeneous data. |
 
 ## Preferred Workflow: Source JDs To Archetype JD
 
@@ -153,6 +154,7 @@ Use these only as inputs to the archetype JD. Keep them compact.
 
 | Profile Cluster | Archetype JD Status | Source JDs Used / Notes |
 |---|---|---|
+| Quantitative Research ML Engineering | Provisional synthesis 2026-08-24 | Voleon Senior Machine Learning Engineer. |
 | Health, Wearables, Neurotech, And Digital Biomarkers | Updated 2026-08-22 | Oura, Omada, Beacon Biosignals, Lumicity, Motif Neurotech, Dexcom Emerging, Dexcom Advanced. |
 | Sensor AI, Robotics, Autonomy, And Edge Perception | Synthesized 2026-08-21 | General Motors, Trackman, Compound Eye, Samsara. |
 | Bayesian Estimation, Signal Processing, And Physical Systems Research | Synthesized 2026-08-21 | Kobold Data Scientist, Kobold Scientific Computing, Ionosphere, Oxman. |
@@ -161,6 +163,24 @@ Use these only as inputs to the archetype JD. Keep them compact.
 | Default Sensor ML Research Scientist | Fallback profile, not a separate JD archetype | Use when a new JD is broad or cross-domain enough that no specialized cluster dominates. |
 
 ## Synthesized Archetype JDs
+
+### Quantitative Research ML Engineering - Provisional Archetype JD
+
+- Source JDs used: Voleon Senior Machine Learning Engineer.
+- Archetype role title(s): Senior Machine Learning Engineer, Research ML Engineer, Quantitative Research Engineer, ML Infrastructure Engineer for Research Teams, Applied ML Engineer.
+- Typical company / product context: quantitative investment management, research-intensive AI/ML organizations, scientific or statistical modeling teams, productized research environments, and teams where PhD researchers need maintainable model, data, and experimentation systems.
+- Core / necessary matching signals: the JD centers on translating research ideas or prototypes into production-quality code; it asks for strong mathematical maturity in statistics, probability, optimization, linear algebra, or ML; it emphasizes data ingestion, feature engineering, validation, quality monitoring, model evaluation, experiment tooling, reproducibility, and imperfect or heterogeneous data; it expects close collaboration with researchers or domain experts.
+- Variable / add-on signals: quantitative trading, financial time series, alpha research, model-development frameworks, experiment management, ML workflow orchestration, distributed computing, model serving, feature stores, performance profiling, numerical-code optimization, R, C/C++, Linux, and production ownership for research systems.
+- Typical responsibilities: partner with researchers to design, implement, and productize ML/statistical models; build and maintain data pipelines; develop feature engineering, validation, quality-monitoring, and model-evaluation infrastructure; translate prototypes into performant, well-tested, maintainable code; debug subtle data-quality issues; lead projects from requirements through delivery; set engineering standards inside research teams.
+- Typical requirements: Python, NumPy, Pandas, SciPy, scikit-learn, PyTorch/TensorFlow or similar; Linux; software-engineering fundamentals; data structures, algorithms, systems design; statistics, probability, optimization, linear algebra; data-quality discipline; reproducibility; clear communication with researchers; often R, C/C++, distributed computing, model serving, feature stores, experiment management, or performance profiling.
+- Common keywords and phrases: quantitative research, research engineering, production-quality code, production-ready models, data ingestion, feature engineering, validation, quality monitoring, model evaluation, experimentation lifecycle, ML workflow orchestration, model-development frameworks, numerical computing, statistical modeling, mathematical maturity, imperfect data, heterogeneous data, reproducibility, correctness, maintainability, performance profiling, financial time series.
+- Hidden evaluation concerns: whether Kevin can transfer from sensor/health/geophysical ML to finance or other quantitative research domains; whether he has enough software-engineering depth for a senior MLE bar; whether distributed-computing and performance-optimization gaps are handled honestly; whether his broad research background lands as mathematical/productive rather than diffuse; whether he can collaborate with PhD researchers without over-indexing on domain narrative.
+- Tone and culture signals: high technical bar, research-intensive, low tolerance for sloppy data or code, mathematically serious, collaboration with expert researchers, production quality, maintainability, autonomous ownership, detail orientation.
+- Best starting profile: Quantitative Research ML Engineering.
+- Resume bullets usually retained: Podimetrics robust estimator validation and Python-to-C estimator translation; CVB deployment-honest validation, large-scale data processing, reproducible workflows, and deep time-series/ablation work; WWE production customer/viewership data products; CSTR spectral/time-frequency methods, mathematical modeling, and geophysical signal interpretation; selected publications that signal mathematical and research credibility.
+- Resume bullets usually compressed or discarded: health-specific clinical outcome language, FDA/regulatory language, detailed wearable study-design material, therapeutic/patient-specific framing, and medical-device modality lists unless they support validation, noisy data, or research-to-production judgment.
+- Gaps / do-not-overstate items: do not claim direct quant-trading strategy ownership, financial-market modeling experience, hedge-fund infrastructure experience, large-scale distributed ML platform ownership, deep C++ systems/performance engineering, or formal finance domain expertise unless Kevin confirms it.
+- Last updated: 2026-08-24.
 
 ### Health, Wearables, Neurotech, And Digital Biomarkers - Archetype JD
 
@@ -253,6 +273,12 @@ Use these only as inputs to the archetype JD. Keep them compact.
 - Last updated: 2026-08-21.
 
 ## Cluster Matching Signals
+
+### Quantitative Research ML Engineering
+
+Common signals: quantitative research, research engineering, senior ML engineering on research teams, production-quality code for research prototypes, data ingestion, feature engineering, validation, quality monitoring, model evaluation, experimentation lifecycle, reproducibility, correctness, maintainability, mathematical maturity, statistics, probability, optimization, linear algebra, numerical computing, imperfect or heterogeneous data, Python, Linux, R, C/C++, distributed computing, model serving, feature stores, experiment management, and financial time series.
+
+Likely hidden concerns: whether Kevin can transfer from sensor/health/geophysical ML into finance or another quantitative research domain; whether his software-engineering depth is sufficient for a senior MLE role; whether gaps around distributed computing, model serving, feature stores, performance profiling, finance, or production trading systems are acknowledged without underselling his research-to-production strengths.
 
 ### Health, Wearables, Neurotech, And Digital Biomarkers
 

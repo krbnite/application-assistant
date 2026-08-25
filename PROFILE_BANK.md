@@ -27,6 +27,22 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 **Starter Use:** This can be used as the starting profile for a new cluster, then narrowed toward the new JD's core signals.
 
+## Quantitative Research ML Engineering
+
+**Status:** Provisional, retained after the Voleon Senior Machine Learning Engineer JD because it requires a distinct research-engineering frame beyond the sensor-first default profile.
+
+**Best For:** Voleon-style senior ML engineering roles, quantitative research engineering, research-team ML infrastructure, statistically rigorous model development, experiment/model evaluation tooling, feature engineering, data-quality monitoring, and production-quality code for research organizations.
+
+**Headline:** Senior Machine Learning Engineer | Research ML Systems | Statistical Modeling | Data Pipelines | Robust Model Evaluation
+
+**Profile:** My work sits at the boundary of statistical modeling, time-series ML, data engineering, and production-quality research software: translating noisy, heterogeneous data into validated models, pipelines, and tools that support high-stakes decisions. I have built Bayesian and adaptive estimators, deep time-series models, validation frameworks, reproducible data workflows, and production-facing analytics systems across health technology, remote monitoring, entertainment analytics, and geophysical research. I am strongest in research-engineering roles where mathematical judgment, data quality, experiment design, model evaluation, and maintainable Python/Linux workflows have to meet.
+
+**Emphasize When Pruning:** Lead with evidence for mathematical maturity, model validation, data-quality/debugging discipline, production Python pipelines, experiment/evaluation workflows, reproducibility, stakeholder/research collaboration, and translation of prototype models into maintainable systems. Use CSTR for research/math depth, Podimetrics/CVB for robust validation and model lifecycle, and WWE for production data products.
+
+**Common Add-Ons:** Quantitative research, financial time series, feature engineering, model evaluation pipelines, experiment management, ML workflow orchestration, distributed computing, performance profiling, numerical computing, reproducibility, code quality, and collaboration with PhD researchers.
+
+**Do Not Overstate:** Do not claim prior quant-trading strategy ownership, direct financial-market modeling experience, hedge-fund production infrastructure experience, large-scale distributed ML platform ownership, or deep C++ performance-engineering depth unless Kevin confirms it.
+
 ## Health, Wearables, Neurotech, And Digital Biomarkers
 
 **Best For:** Motif Neurotech, Oura, Omada, Beacon Biosignals, digital health, remote monitoring, neurological sensing, and clinical AI roles.
