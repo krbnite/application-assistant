@@ -134,6 +134,7 @@ ROLE_ALLOWED_ENTRY_IDS = {
         "CVB-18",
     },
     "cvb_senior_ds": {
+        "CVB-09",
         "CVB-13",
         "CVB-14",
         "CVB-15",

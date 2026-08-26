@@ -60,8 +60,8 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 Default role placement matters because CVB has three separate title/date buckets. Use this placement unless a bullet genuinely spans titles, and document any override in the audit.
 
 - `cvb_director`: `CVB-01` to `CVB-06`, plus `CVB-17` when research-ops/team-enablement work is relevant.
-- `cvb_associate_director`: `CVB-07` to `CVB-12`, plus `CVB-18` when knowledge-graph/database work is relevant.
-- `cvb_senior_ds`: `CVB-13` to `CVB-16`.
+- `cvb_associate_director`: `CVB-07`, `CVB-08`, `CVB-10` to `CVB-12`, plus `CVB-18` when knowledge-graph/database work is relevant. `CVB-09` may be placed here only when the resume benefits from grouping late Senior Data Scientist / early Sensor Analytics transition work with the Associate Director sensor-analytics story.
+- `cvb_senior_ds`: `CVB-09`, `CVB-13` to `CVB-16`. `CVB-09` defaults here because the sampling-rate ablation work occurred in Kevin's final months as Senior Data Scientist.
 
 | ID | Bullet | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
@@ -73,7 +73,7 @@ Default role placement matters because CVB has three separate title/date buckets
 | CVB-06 | Large-scale wearable data processing | 3 | 1 | 1 | 2 | 1 | Use for data infrastructure, longitudinal data, queryable datasets, and pipeline roles. |
 | CVB-07 | Parkinson's digital biomarkers | 3 | 1 | 1 | 1 | 0 | Lead for digital biomarkers, neurotech, Parkinson's, grants, and wearable health. |
 | CVB-08 | Free-living Parkinson's monitoring | 3 | 2 | 1 | 1 | 0 | Strong for weak supervision, wearable ML, gait, and real-world sensor classification. |
-| CVB-09 | Wearable gesture recognition | 3 | 2 | 2 | 1 | 1 | Strong for IMUs, activity recognition, ablations, signal processing, and wearable algorithms. |
+| CVB-09 | Wearable gesture recognition | 3 | 2 | 2 | 1 | 1 | Strong for IMUs, activity recognition, ablations, signal processing, and wearable algorithms. Default to Senior Data Scientist; optionally place in Associate Director only when grouping late-Sr-DS / early-Sensor-Analytics transition work improves the resume. |
 | CVB-10 | End-to-end biosignal modeling | 3 | 1 | 2 | 1 | 0 | Use for biosignal ML, deep sequence models, ablations, and replacing classical pipelines. |
 | CVB-11 | Cross-domain representation learning | 3 | 2 | 2 | 0 | 1 | Use when transfer/domain adaptation, shared representations, DRCN/autoencoders, patient-level personalization, or general-to-subject adaptation is called out. |
 | CVB-12 | Weakly supervised learning | 2 | 2 | 1 | 1 | 0 | Use for unlabeled data, weak supervision, activity detection, and real-world model framing. |
