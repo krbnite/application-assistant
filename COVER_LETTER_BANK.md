@@ -25,6 +25,7 @@ Use old cover letters as style references only. Do not treat any prior company-s
 | OPEN-BSP-01 | BSP | Opener | Bayesian estimation, signal processing, spatiotemporal inference, scientific ML, and physical systems. |
 | OPEN-IOT-01 | IOT | Opener | Industrial, operational, time-series, monitoring, and decision-support roles. |
 | OPEN-CLP-01 | CLP | Opener | Closed-loop, adaptive, feedback, action-under-uncertainty, and self-learning physical systems. |
+| OPEN-QRE-01 | QRE | Opener | Quantitative/applied research-engineering opener: data infrastructure, statistical modeling, and evaluation rigor for a research team, domain-neutral (finance, healthcare, or other). |
 | EVID-POD-01 | HWD/SAR/CLP | Evidence | Podimetrics regulated product, embedded estimator, thermal CV, and validation evidence. |
 | EVID-POD-02 | IOT/CLP/HWD | Evidence | Podimetrics longitudinal monitoring, adaptive alerting, intervention, and product-decision evidence. |
 | EVID-POD-03 | HWD/SAR/IOT | Evidence | Podimetrics production Python scan-pipeline, debugging, PR, consultant-QC integration, and multi-vendor hardware support. |
@@ -41,12 +42,14 @@ Use old cover letters as style references only. Do not treat any prior company-s
 | BRIDGE-IOT-01 | IOT | Company bridge | Connects operational ML to business/production decision systems. |
 | BRIDGE-CLP-01 | CLP | Company bridge | Connects estimation, validation, and deployment to adaptive feedback systems. |
 | BRIDGE-GAP-01 | Default | Gap bridge | Honest adjacent-domain bridge when Kevin lacks the exact target domain. |
+| BRIDGE-QRE-01 | QRE | Company bridge | Connects research-engineering discipline (pipelines, data-quality judgment, evaluation infrastructure) to the target research team's problem; domain-neutral. |
 | CLOSE-DEFAULT-01 | Default | Closing | General concise close. |
 | CLOSE-HWD-01 | HWD | Closing | Health/wearable/digital biomarker close. |
 | CLOSE-SAR-01 | SAR | Closing | Sensor AI / perception close. |
 | CLOSE-BSP-01 | BSP | Closing | Physical systems / scientific ML close. |
 | CLOSE-IOT-01 | IOT | Closing | Operational ML close. |
 | CLOSE-CLP-01 | CLP | Closing | Closed-loop physical AI close. |
+| CLOSE-QRE-01 | QRE | Closing | Quantitative research-engineering close. |
 
 ## Canonical Text
 
@@ -74,6 +77,10 @@ I am excited to apply for the {role_title} position at {company}. My work sits a
 
 I am excited to apply for the {role_title} position at {company}. I build estimation and ML systems for physical and physiological data where uncertainty, feedback, drift, and changing operating conditions are central rather than incidental. {company_possessive} work on {company_problem} is especially interesting because it requires models that can improve decisions in the loop, not just perform well in a static benchmark.
 
+### OPEN-QRE-01: Quantitative/applied research-engineering opener
+
+I am excited to apply for the {role_title} position at {company}. My work has consistently lived at the boundary of statistical modeling, data infrastructure, and rigorous evaluation: building the pipelines and validation frameworks that turn messy, real-world data into research-ready evidence, then using that evidence honestly. {company_possessive} work on {company_problem} is a strong fit for that combination of data-engineering discipline, mathematical judgment, and evaluation rigor.
+
 ### EVID-POD-01: Regulated product and sensor algorithm evidence
 
 Most recently, at Podimetrics, I worked on FDA-cleared remote-monitoring products using thermal arrays and pressure sensors for diabetic foot ulcer detection and fall-risk assessment. I designed streaming estimation algorithms for a battery-powered patient-facing edge device, translated selected methods from Python into embedded C, validated numerical equivalence, supported firmware integration, and extended production thermal computer-vision workflows for foot localization, segmentation, scan-quality handling, and anatomical keypoint temperature extraction.
@@ -96,7 +103,7 @@ At Cohen Veterans Bioscience, I also worked on clinical ML problems where the mo
 
 ### EVID-CVB-03: Sensor-driven questionnaire estimation evidence
 
-At Cohen Veterans Bioscience, my first response to a leadership push for a "wearable suicide model" was to make the problem more scientifically tractable. I conducted a broad literature review and proposed Sensor-Driven Questionnaire Estimation: using wristwatch signals to estimate clinic-administered psychological assessments and broader patient-state risk indicators, supported by synthetic examples and framed around what prospective data could responsibly support.
+At Cohen Veterans Bioscience, my first response to a leadership push for a "wearable suicide model" was to make the problem more scientifically tractable. I proposed Sensor-Driven Questionnaire Estimation: targeting the PHQ-9 depression screener first, since it is freely available and already had some supporting evidence, and envisioning a roadmap extension toward a continuously updated wearable-derived proxy index that could be corrected via Kalman-filter-style data assimilation whenever a real PHQ-9 score became available. I generalized the core approach with a broad literature review and synthetic examples to show how wristwatch signals could estimate clinic-administered psychological assessments and broader patient-state risk indicators, framed around what prospective data could responsibly support.
 
 ### EVID-CSTR-01: Spatiotemporal physical inference evidence
 
@@ -138,6 +145,10 @@ What draws me to {company} is the opportunity to work on systems where learning,
 
 I should be clear that my background is not in {gap_domain}. What I would bring is adjacent depth in {adjacent_strengths}, along with the habit of learning the signal-generation process, artifacts, labels, validation constraints, and failure modes before turning a promising analysis into a product claim.
 
+### BRIDGE-QRE-01: Quantitative research-engineering bridge
+
+What draws me to {company} is the opportunity to apply that same research-engineering discipline — translating open-ended research questions into reliable pipelines, catching subtle data-quality and measurement problems before they become false conclusions, and building evaluation infrastructure researchers can actually trust — to {company_possessive} work on {company_problem}.
+
 ### CLOSE-DEFAULT-01: General concise close
 
 I would welcome the opportunity to bring my background in {closing_keywords} to {company}.
@@ -161,3 +172,7 @@ I would welcome the opportunity to bring my background in time-series ML, sensor
 ### CLOSE-CLP-01: Closed-loop physical AI close
 
 I would welcome the opportunity to bring my background in Bayesian estimation, adaptive monitoring, sensor ML, physics-informed modeling, and deployment-honest validation to {company_possessive} work on {company_problem}.
+
+### CLOSE-QRE-01: Quantitative research-engineering close
+
+I would welcome the opportunity to bring my background in {closing_keywords} to {company_possessive} research team.

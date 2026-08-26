@@ -326,7 +326,7 @@ Evaluated graph, document, relational, time-series, and key-value databases for 
 
 ### CVB-19: Sensor-driven questionnaire estimation
 
-Proposed a Sensor-Driven Questionnaire Estimation framework as a tractable alternative to an unsupported wearable-suicide prediction mandate, using a broad literature review and synthetic-data examples to show how wristwatch signals could estimate clinic-administered psychological assessments and broader patient-state risk indicators.
+Proposed a Sensor-Driven Questionnaire Estimation framework as a tractable alternative to an unsupported wearable-suicide prediction mandate, targeting the PHQ-9 depression screener first for its free availability and initial supporting evidence and envisioning a roadmap extension toward a continuously updated proxy index refined via Kalman-filter-style data assimilation whenever a real PHQ-9 score became available; generalized the core approach with a broad literature review and synthetic-data examples to broader clinic-administered assessments and patient-state risk indicators.
 
 ### CVB-20: Biosignal ablation leadership variant
 
