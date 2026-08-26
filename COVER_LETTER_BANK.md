@@ -27,8 +27,10 @@ Use old cover letters as style references only. Do not treat any prior company-s
 | OPEN-CLP-01 | CLP | Opener | Closed-loop, adaptive, feedback, action-under-uncertainty, and self-learning physical systems. |
 | EVID-POD-01 | HWD/SAR/CLP | Evidence | Podimetrics regulated product, embedded estimator, thermal CV, and validation evidence. |
 | EVID-POD-02 | IOT/CLP/HWD | Evidence | Podimetrics longitudinal monitoring, adaptive alerting, intervention, and product-decision evidence. |
+| EVID-POD-03 | HWD/SAR/IOT | Evidence | Podimetrics production Python scan-pipeline, debugging, PR, consultant-QC integration, and multi-vendor hardware support. |
 | EVID-CVB-01 | HWD | Evidence | CVB wearable digital biomarkers, Parkinson's, Rett, sleep, and clinical-study evidence. |
 | EVID-CVB-02 | HWD/IOT | Evidence | CVB feasibility judgment, clinician-friendly ML, and responsible clinical modeling evidence. |
+| EVID-CVB-03 | HWD/CLP | Evidence | Sensor-driven questionnaire estimation, passive sensing, mental-health risk, and pivot from unsupported wearable-suicide prediction. |
 | EVID-CSTR-01 | BSP/SAR/CLP | Evidence | Space-weather / geophysical spatiotemporal inference and distributed sensors. |
 | EVID-WWE-01 | IOT | Evidence | WWE production analytics, business ML, A/B testing, and stakeholder decision support. |
 | EVID-ADAPT-01 | HWD/SAR | Evidence | Transfer learning, fine-tuning, DRCN/domain adaptation, and general-to-patient adaptation evidence for foundation-model-adjacent roles. |
@@ -80,6 +82,10 @@ Most recently, at Podimetrics, I worked on FDA-cleared remote-monitoring product
 
 At Podimetrics, the practical challenge was not just model development, but building monitoring and decision systems that remained meaningful under drift, sparse observations, outliers, irregular sampling, hardware artifacts, and heterogeneous patient behavior. That work included adaptive alert logic for longitudinal pressure-sensor data, staged and prospective validation, and analytics tied to patient monitoring and intervention decisions.
 
+### EVID-POD-03: Production scan-pipeline evidence
+
+At Podimetrics, I also worked directly in the production Python scan-processing codebase, helping software engineering debug odd pipeline behavior, fix bugs, review implementation details, and integrate consultant-built quality-control components needed to keep thermal algorithms reliable across chip and hardware vendors over time.
+
 ### EVID-CVB-01: Wearable digital biomarker evidence
 
 At Cohen Veterans Bioscience, I led sensor analytics and digital-health research programs using free-living wearable data for Parkinson's disease monitoring, Rett syndrome stereotypy detection, and sleep-sensor validation. That work required building and evaluating models across smartwatch, IMU, ECG, Oura Ring, Apple Watch, Shimmer, video-adjacent behavioral annotations, and clinical-study data while keeping synchronization, weak labels, patient heterogeneity, and real-world generalization visible.
@@ -87,6 +93,10 @@ At Cohen Veterans Bioscience, I led sensor analytics and digital-health research
 ### EVID-CVB-02: Responsible clinical ML judgment evidence
 
 At Cohen Veterans Bioscience, I also worked on clinical ML problems where the most important contribution was often defining what the data could responsibly support. I evaluated a wearable suicide-risk prediction initiative as infeasible without an adequate prospective data foundation, redirected the program toward more tractable clinical risk indicators, and built clinician-friendly dropout-risk models using interpretable ML methods such as SHAP, LIME, and feature-importance analysis.
+
+### EVID-CVB-03: Sensor-driven questionnaire estimation evidence
+
+At Cohen Veterans Bioscience, my first response to a leadership push for a "wearable suicide model" was to make the problem more scientifically tractable. I conducted a broad literature review and proposed Sensor-Driven Questionnaire Estimation: using wristwatch signals to estimate clinic-administered psychological assessments and broader patient-state risk indicators, supported by synthetic examples and framed around what prospective data could responsibly support.
 
 ### EVID-CSTR-01: Spatiotemporal physical inference evidence
 

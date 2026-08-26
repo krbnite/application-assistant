@@ -54,14 +54,15 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | POD-09 | Physics-informed thermal modeling | 3 | 2 | 3 | 1 | 3 | Lead for physical modeling, synthetic data, simulation, and scientific ML. |
 | POD-10 | Next Best Action analytics | 2 | 0 | 0 | 3 | 1 | Lead for digital health decisioning, intervention analytics, operations, or A/B testing; omit for pure sensor research. |
 | POD-11 | Cross-functional technical leadership | 3 | 2 | 2 | 3 | 3 | Keep for senior, lead, startup, regulated, or cross-functional roles. |
+| POD-12 | Production scan-pipeline code and QC integration | 2 | 2 | 1 | 3 | 2 | Use for software-heavy ML, scientific platform, production codebase, debugging, PR, pipeline integration, and multi-vendor hardware/QC roles. |
 
 ## Cohen Veterans Bioscience
 
 Default role placement matters because CVB has three separate title/date buckets. Use this placement unless a bullet genuinely spans titles, and document any override in the audit.
 
 - `cvb_director`: `CVB-01` to `CVB-06`, plus `CVB-17` when research-ops/team-enablement work is relevant.
-- `cvb_associate_director`: `CVB-07`, `CVB-08`, `CVB-10` to `CVB-12`, plus `CVB-18` when knowledge-graph/database work is relevant. `CVB-09` may be placed here only when the resume benefits from grouping late Senior Data Scientist / early Sensor Analytics transition work with the Associate Director sensor-analytics story.
-- `cvb_senior_ds`: `CVB-09`, `CVB-13` to `CVB-16`. `CVB-09` defaults here because the sampling-rate ablation work occurred in Kevin's final months as Senior Data Scientist.
+- `cvb_associate_director`: `CVB-07`, `CVB-08`, `CVB-10` to `CVB-12`, `CVB-20`, plus `CVB-18` when knowledge-graph/database work is relevant. `CVB-09` may be placed here only when the resume benefits from grouping late Senior Data Scientist / early Sensor Analytics transition work with the Associate Director sensor-analytics story.
+- `cvb_senior_ds`: `CVB-09`, `CVB-13` to `CVB-16`, `CVB-19`. `CVB-09` defaults here because the sampling-rate ablation work occurred in Kevin's final months as Senior Data Scientist.
 
 | ID | Bullet | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
@@ -83,6 +84,8 @@ Default role placement matters because CVB has three separate title/date buckets
 | CVB-16 | Early-term birth prediction | 2 | 0 | 1 | 1 | 0 | Usually omit unless maternal health, EEG-derived clinical features, missing data, clinical ML, or leakage detection is relevant. |
 | CVB-17 | Reproducible team workflows and tooling | 1 | 0 | 1 | 2 | 1 | Use for lead, platform-minded, research-ops, or team enablement roles; otherwise compress. |
 | CVB-18 | Wearables knowledge graph and database evaluation | 2 | 0 | 1 | 2 | 1 | Use for knowledge graphs, databases, schema design, wearable-to-biology mapping, or ontology-ish roles. |
+| CVB-19 | Sensor-driven questionnaire estimation | 3 | 1 | 2 | 1 | 2 | Lead for passive sensing, mental health, clinic-assessment proxy modeling, patient-state estimation, and strategic pivot from unsupported wearable-suicide prediction asks. |
+| CVB-20 | Biosignal ablation leadership variant | 3 | 1 | 2 | 1 | 1 | Variant of CVB-10 for staff, lead, manager, or principal roles where experiment design, delegation, and team direction matter; usually choose either CVB-10 or CVB-20, not both. |
 
 ## WWE
 
@@ -226,6 +229,10 @@ Co-designed an analytical framework combining quasi-experimental methods with ba
 
 Served as the primary scientific partner to software and hardware engineering teams, advising on algorithm integration, sensor behavior, scan-processing pipelines, validation methodology, and implementation decisions to ensure production systems preserved the integrity of physiological data and scientific conclusions.
 
+### POD-12: Production scan-pipeline code and QC integration
+
+Contributed directly to the production Python scan-processing codebase, debugging odd pipeline behavior, fixing bugs, supporting PRs, and integrating consultant-built quality-control components needed to keep thermal algorithms reliable across chip and hardware vendors over time.
+
 ### CVB-01: Technical leadership and mentorship
 
 Led scientific direction, reviewed modeling and validation decisions, mentored data scientists and ML contributors, and translated ambiguous project goals into concrete technical plans, evaluation criteria, and deployment constraints.
@@ -297,6 +304,14 @@ Created reusable project-organization practices, code-review patterns, technical
 ### CVB-18: Wearables knowledge graph and database evaluation
 
 Evaluated graph, document, relational, time-series, and key-value databases for a wearable-to-biological-phenomenon knowledge graph; designed schema iterations and demonstrated Neo4j/Cypher query patterns for many-to-many mappings among sensors, algorithms, symptoms, disorders, and physiological signals.
+
+### CVB-19: Sensor-driven questionnaire estimation
+
+Proposed a Sensor-Driven Questionnaire Estimation framework as a tractable alternative to an unsupported wearable-suicide prediction mandate, using a broad literature review and synthetic-data examples to show how wristwatch signals could estimate clinic-administered psychological assessments and broader patient-state risk indicators.
+
+### CVB-20: Biosignal ablation leadership variant
+
+Conceived and mapped systematic ablation experiments demonstrating that end-to-end deep learning architectures outperformed handcrafted feature-engineering pipelines across biosignal domains, delegated most model implementation to a direct report, and personally contributed the final, best-performing architecture.
 
 ### WWE-01: Production viewership data products
 
