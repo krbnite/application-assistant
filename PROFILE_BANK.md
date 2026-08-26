@@ -53,9 +53,9 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 **Emphasize When Pruning:** Lead with Podimetrics and CVB; keep FDA-cleared, longitudinal, free-living, clinical validation, digital biomarker, and wearable-study-design language.
 
-**Common Add-Ons:** Neurotechnology, neuromodulation, implantable devices, mental-health biomarkers, data/ML roadmap ownership, regulatory data-feature constraints, clinical evidence generation, safe/compliant experimentation.
+**Common Add-Ons:** Neurotechnology, neuromodulation, implantable devices, mental-health biomarkers, clinical foundation-model adaptation, open-source model fine-tuning, transfer learning, DRCN/domain adaptation, patient-level model adaptation, PHI-safe data handling, train/test contamination prevention, calibration/subgroup evaluation, data/ML roadmap ownership, regulatory data-feature constraints, clinical evidence generation, safe/compliant experimentation.
 
-**Do Not Overstate:** Do not imply direct women's-health domain expertise, EEG/neural electrophysiology diagnostic ownership, active implantable medical-device experience, neuromodulation/neurostimulation therapy ownership, psychiatry/depression clinical expertise, formal FDA IDE/PMA regulatory-authoring ownership, production RL, or deep AWS/SageMaker experience unless Kevin confirms it.
+**Do Not Overstate:** Do not imply direct women's-health domain expertise, EEG/neural electrophysiology diagnostic ownership, active implantable medical-device experience, neuromodulation/neurostimulation therapy ownership, psychiatry/depression clinical expertise, formal FDA IDE/PMA regulatory-authoring ownership, production RL, production-scale clinical foundation-model ownership, expert LLM post-training infrastructure ownership, direct genomics/radiology model ownership, or deep AWS/SageMaker experience unless Kevin confirms it.
 
 ## Sensor AI, Robotics, Autonomy, And Edge Perception
 
