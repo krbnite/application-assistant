@@ -100,12 +100,13 @@ For compact older academic research sections, default to `Center for Solar-Terre
 Current profile clusters:
 
 - Default Sensor ML Research Scientist.
-- Quantitative Research ML Engineering (provisional, retained after the Voleon JD because it requires distinct research-engineering, model-infrastructure, and mathematical-software framing).
+- Quantitative Research ML Engineering (provisional, retained after the Voleon JD because it requires distinct research-engineering, model-infrastructure, and mathematical-software framing; confirmed to generalize beyond quant finance after the Abridge Senior Research Data Scientist JD).
 - Health, Wearables, Neurotech, And Digital Biomarkers.
 - Sensor AI, Robotics, Autonomy, And Edge Perception.
 - Bayesian Estimation, Signal Processing, And Physical Systems Research.
 - Industrial And Operational Time-Series ML.
 - Closed-Loop Physical AI And Self-Learning Systems (provisional, retained after the 4MP JD because it requires distinct feedback-loop/action-under-uncertainty framing).
+- Measurement Science, Evaluation, And Causal Inference (provisional, retained after the Abridge Research Scientist (Measurement and Evaluation) JD because it requires an independent-evaluation-scientist framing no existing cluster covers; Kevin's evidentiary support for it is thinner than for his other clusters, so applications from it should be treated as deliberate stretches with Low/Mixed confidence unless stronger evidence emerges).
 
 When a JD blends clusters, choose a primary cluster and borrow language from a secondary cluster only where it improves fit. If the JD exposes a materially different positioning need that cannot be handled by editing an existing cluster, create a new labeled cluster and retain it. Do not assume from one job that the cluster will or will not recur; instead, mark low-evidence clusters as provisional and let future tailoring work confirm, refine, merge, or retire them.
 

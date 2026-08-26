@@ -39,9 +39,25 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 **Emphasize When Pruning:** Lead with evidence for mathematical maturity, model validation, data-quality/debugging discipline, production Python pipelines, experiment/evaluation workflows, reproducibility, stakeholder/research collaboration, and translation of prototype models into maintainable systems. Use CSTR for research/math depth, Podimetrics/CVB for robust validation and model lifecycle, and WWE for production data products.
 
-**Common Add-Ons:** Quantitative research, financial time series, feature engineering, model evaluation pipelines, experiment management, ML workflow orchestration, distributed computing, performance profiling, numerical computing, reproducibility, code quality, and collaboration with PhD researchers.
+**Common Add-Ons:** Quantitative research, financial time series, feature engineering, model evaluation pipelines, experiment management, ML workflow orchestration, distributed computing, performance profiling, numerical computing, reproducibility, code quality, collaboration with PhD researchers, causal and descriptive analysis of observational data, construct validity and measurement-error characterization, selection-bias auditing, and being a research team's resident authority on data provenance and structure.
 
-**Do Not Overstate:** Do not claim prior quant-trading strategy ownership, direct financial-market modeling experience, hedge-fund production infrastructure experience, large-scale distributed ML platform ownership, or deep C++ performance-engineering depth unless Kevin confirms it.
+**Do Not Overstate:** Do not claim prior quant-trading strategy ownership, direct financial-market modeling experience, hedge-fund production infrastructure experience, large-scale distributed ML platform ownership, deep C++ performance-engineering depth, or formal causal-inference/quasi-experimental methods training (instrumental variables, difference-in-differences, matching) unless Kevin confirms it.
+
+## Measurement Science, Evaluation, And Causal Inference
+
+**Status:** Provisional, retained after the Abridge Research Scientist (Measurement and Evaluation) JD because it requires an independent-evaluation-scientist framing that no existing cluster covers, even though Kevin's evidence for it is thinner than for his other clusters.
+
+**Best For:** Abridge-style "Research Scientist, Measurement and Evaluation" roles; health-AI program-evaluation and applied causal-inference research roles; roles centered on operationalizing hard-to-measure constructs and validating models or instruments against ground truth or human judgment.
+
+**Headline:** Research Scientist | Measurement Science | Model & Instrument Evaluation | Research-to-Product Translation
+
+**Profile:** My research instinct is to ask what a measurement can and cannot responsibly support before building anything on top of it. When a standard sleep-validation method systematically disagreed with ground truth, I built an alternative dynamic-time-warping-based agreement framework instead of accepting the mismatch as noise. When leadership wanted a wearable-based suicide-risk model with no adequate training data, I proposed a more tractable measurement framework instead: estimating clinic-administered psychological assessments from passive sensor signals, grounded in literature review and synthetic validation rather than an unsupported claim. I have redesigned evaluation methodology after finding leakage and evaluation-target mismatch in a deployed model, led a grant-funded wearable research program with an external clinical partner through to peer-reviewed publication and invited presentations, and built clinician-facing interpretable models for skeptical stakeholders. Across health technology and physical-science research, my consistent contribution has been deciding what a given dataset can honestly prove, then building the measurement and evaluation framework that makes that judgment defensible to both scientific and non-technical audiences.
+
+**Emphasize When Pruning:** Lead with CVB-04 (sleep-measurement validity reframing), CVB-19 (sensor-driven proxy-measurement framework), CVB-13 (research-strategy/feasibility judgment), CVB-15 (leakage/evaluation-validity fixes), and the measurement/verification-flavored publications (PUB-10, PUB-11, PUB-12); keep CVB-05/CVB-07 for external-partner, grant-funded research-leadership credibility.
+
+**Common Add-Ons:** Partner-facing/external research collaboration, intern mentorship, publishing methodology-focused work, construct operationalization, healthcare-domain framing.
+
+**Do Not Overstate:** Do not imply a PhD in statistics, biostatistics, economics, information systems, or clinical informatics (Kevin's PhD is in Physics). Do not claim formal causal-inference or quasi-experimental methods training (RCT design, difference-in-differences, instrumental variables, propensity-score matching) unless Kevin confirms it. Do not claim a publication in a top evaluation/measurement-science venue. Do not imply having independently designed and led an "AI-as-intervention" causal-impact study with an external health-system partner.
 
 ## Health, Wearables, Neurotech, And Digital Biomarkers
 
