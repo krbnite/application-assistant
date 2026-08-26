@@ -158,7 +158,7 @@ def read_text(path: Path) -> str:
 
 def parse_table_entries(markdown: str) -> dict[str, dict[str, Any]]:
     entries: dict[str, dict[str, Any]] = {}
-    id_re = re.compile(r"^(CORE|POD|CVB|WWE|CSTR|INT|SKILL|PUB)-\d+$")
+    id_re = re.compile(r"^(CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB)-\d+$")
     for line in markdown.splitlines():
         stripped = line.strip()
         if not stripped.startswith("|"):
@@ -189,7 +189,7 @@ def parse_canonical_text(markdown: str) -> dict[str, tuple[str, str]]:
         raise SystemExit("RESUME_BULLET_BANK.md is missing `## Canonical Text`.")
     section = markdown.split("## Canonical Text", 1)[1]
     pattern = re.compile(
-        r"^###\s+((?:CORE|POD|CVB|WWE|CSTR|INT|SKILL|PUB)-\d+):\s*(.*?)\s*$\n+(.*?)(?=^###\s+(?:CORE|POD|CVB|WWE|CSTR|INT|SKILL|PUB)-\d+:|\Z)",
+        r"^###\s+((?:CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB)-\d+):\s*(.*?)\s*$\n+(.*?)(?=^###\s+(?:CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB)-\d+:|\Z)",
         re.M | re.S,
     )
     texts: dict[str, tuple[str, str]] = {}
@@ -533,7 +533,7 @@ def validate_plan(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: di
     if not plan.get("company"):
         raise ValueError("Plan is missing required field `company`.")
     get_profile(plan, profiles)
-    for key in ["core_theme_ids", "internship_ids", "skill_ids", "publication_ids"]:
+    for key in ["core_theme_ids", "project_ids", "internship_ids", "skill_ids", "publication_ids"]:
         for spec in plan.get(key, []):
             resolve_entry(spec, bank)
     experience = plan.get("experience", {})
@@ -623,6 +623,12 @@ def build_docx(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: dict[
                 add_body(doc, summary, italic=True)
             for entry in resolve_entries(specs, bank):
                 add_labeled_bullet(doc, entry.label, entry.text)
+
+    project_entries = resolve_entries(plan.get("project_ids", []), bank)
+    if project_entries:
+        add_section(doc, str(plan.get("project_section_title", "Selected Research Projects")))
+        for entry in project_entries:
+            add_labeled_bullet(doc, entry.label, entry.text)
 
     internship_entries = resolve_entries(plan.get("internship_ids", []), bank)
     if internship_entries:

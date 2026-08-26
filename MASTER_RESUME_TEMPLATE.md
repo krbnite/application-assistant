@@ -142,6 +142,21 @@ Rules:
 - Expand the individual internship bullets only when aerospace, robotics/autonomy, optimization, physical systems, spacecraft instruments, or mission-oriented research are directly relevant.
 - Omit the internship signal only under meaningful page pressure or when early-career space/physics detail would distract from the target role; record the omission in the audit.
 
+## Selected Research Projects Slot
+
+Use optional `MSG-*` and other project-style rows from `RESUME_BULLET_BANK.md` only when the role benefits from evidence that should not be forced into the main chronology.
+
+```text
+SELECTED RESEARCH PROJECTS
+- {PROJECT_ID}: {possibly edited project bullet}
+```
+
+Rules:
+
+- MachineSaidGo should not appear as a default chronological Experience role. It can complicate the CVB timeline because Kevin maintained CVB contracts while exploring independent consulting / side-venture work.
+- Use MachineSaidGo material only when the JD specifically rewards self-supervised video, computer vision, behavioral analysis, surrogate modeling, scientific simulation, consulting/startup initiative, or independent R&D.
+- Keep the section compact. If selected projects displace stronger recent work, omit them and preserve the Podimetrics/CVB spine.
+
 ## Technical Skills Slot
 
 Use `SKILL-*` rows in `RESUME_BULLET_BANK.md` as the source.

@@ -97,6 +97,15 @@ Default role placement matters because CVB has three separate title/date buckets
 | WWE-07 | Live-event analytics latency reduction | 0 | 0 | 0 | 3 | 0 | Use for real-time dashboards, executive analytics, streaming/live operations, or latency-sensitive reporting. |
 | WWE-08 | Revenue attribution and behavioral research | 0 | 0 | 0 | 2 | 0 | Use for attribution, survey fusion, sentiment analysis, customer behavior, or business analytics roles. |
 
+## MachineSaidGo / Independent Research Projects
+
+MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place it in the main chronological Experience section by default because it can complicate the CVB timeline. Use `project_ids` and a compact `Selected Research Projects` section only when the JD specifically rewards self-supervised video, computer vision, behavioral analysis, scientific simulation, surrogate modeling, consulting/startup initiative, or independent R&D.
+
+| ID | Project | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
+|---|---|---:|---:|---:|---:|---:|---|
+| MSG-01 | Self-supervised behavioral video analysis | 1 | 3 | 1 | 0 | 1 | Optional project signal for computer vision, behavioral analysis, biotech/animal-behavior research, self-supervised learning, anomaly detection, or video-based sensing roles. |
+| MSG-02 | Granular-dynamics surrogate modeling | 0 | 1 | 3 | 0 | 2 | Optional project signal for scientific ML, surrogate modeling, simulation acceleration, nonlinear dynamics, and physics/modeling roles. |
+
 ## Center For Solar-Terrestrial Research
 
 | ID | Bullet | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
@@ -320,6 +329,14 @@ Co-developed multi-platform live-event reporting workflows that captured viewers
 ### WWE-08: Revenue attribution and behavioral research
 
 Built revenue-attribution, survey-fusion, sentiment-analysis, seasonal-behavior, and customer-behavior analyses over large-scale WWE Network and social-platform datasets to support segmentation, marketing decisions, churn/winback forecasting, and stakeholder reporting.
+
+### MSG-01: Self-supervised behavioral video analysis
+
+MachineSaidGo / independent R&D: Designed and prototyped self-supervised deep learning architectures for mouse behavioral analysis from video, exploring activity classification and anomaly detection from unlabeled video sequences using PyTorch and computer-vision libraries.
+
+### MSG-02: Granular-dynamics surrogate modeling
+
+MachineSaidGo / independent research collaboration: Collaborated with mechanical-engineering researchers on PyTorch surrogate models for computationally expensive granular-dynamics simulations, extending a long-running nonlinear-dynamics and scientific-simulation research thread.
 
 ### CSTR-01: Climatological time-frequency analysis
 

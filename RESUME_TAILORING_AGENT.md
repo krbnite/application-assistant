@@ -34,7 +34,7 @@ Use the canonical system files as the resume source of truth. Treat older local 
 
 Kevin's separate `kitchensink` repository is a broad public archive of older writing and cross-domain material: `https://github.com/krbnite/kitchensink`. Keep it separate from this repo. Do not automatically scan it for every job description, but suggest or ask Kevin whether to inspect it when a role seems likely to benefit from public writing, older technical essays, talks, side projects, or other material not yet promoted into the top-level banks.
 
-MachineSaidGo may be referenced as Kevin's LLC / exploratory side-project umbrella when strategically useful and supported by canonical content.
+MachineSaidGo may be referenced as Kevin's LLC / exploratory side-project umbrella when strategically useful and supported by canonical content. Do not place MachineSaidGo in the default chronological Experience section. Kevin maintained CVB contracts while exploring independent consulting / side-venture work, and a fully literal six-month chronology can add more narrative cost than value. Prefer a compact `Selected Research Projects` or `Selected Projects` section when MachineSaidGo evidence is useful.
 
 ## Optional AI / Agentic Systems Project Signal
 
