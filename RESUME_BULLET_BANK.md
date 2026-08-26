@@ -139,6 +139,17 @@ MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place i
 | SKILL-03 | Sensor analytics and modalities | 3 | 3 | 3 | 2 | 2 | Keep for nearly all target roles; trim modalities irrelevant to the JD only if needed. |
 | SKILL-04 | Languages and tools | 2 | 2 | 2 | 3 | 2 | Keep concise; do not overclaim depth in tools only lightly represented. |
 
+## Training / Certifications
+
+These are optional keyword and storyline signals. Use `training_ids` only when a role or application form specifically benefits from certification/training evidence; do not create a default resume section just to bulk up the document.
+
+| ID | Training | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
+|---|---|---:|---:|---:|---:|---:|---|
+| TRAIN-01 | Deep Learning Nanodegree | 1 | 1 | 0 | 0 | 0 | Use sparingly for deep-learning timeline, credibility, and gatekeeper-heavy roles where formal DL training helps support older project evidence. |
+| TRAIN-02 | Intel IoT Edge AI Scholarship | 1 | 2 | 0 | 1 | 1 | Use for edge AI, IoT, sensor-device, embedded, and on-device inference roles; usually omit from pure research resumes. |
+| TRAIN-03 | Building with the Claude API | 1 | 1 | 0 | 1 | 0 | Use for GenAI, agentic workflow, LLM API, AI-product, or application-form screenings when lightweight formal evidence helps; do not overstate as deep LLM research experience. |
+| TRAIN-04 | Tableau 9 Essential Training | 0 | 0 | 0 | 1 | 0 | Generally omit; use only when dashboarding, BI, or Tableau is explicitly requested and page budget is loose. |
+
 ## Publications
 
 | ID | Publication | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
@@ -157,9 +168,17 @@ MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place i
 | PUB-12 | Sleep apnea deep learning and domain-expertise working paper | 3 | 0 | 2 | 0 | 0 | Working paper / unpublished. Lead for EEG/sleep, biosignal ML, ablations, and classical-to-deep-model comparison roles. |
 | PUB-13 | Augmented unsupervised domain adaptation working paper | 3 | 2 | 2 | 0 | 1 | Working paper / unpublished. Lead for transfer learning, domain adaptation, shared representations, patient-level adaptation, and deep time-series roles. |
 
+## Awards
+
+Awards are optional credibility signals. Use `award_ids` only when a role benefits from leadership, program-delivery, funding, presentation, or CV-like evidence; do not include them by default when stronger technical evidence needs the space.
+
+| ID | Award | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
+|---|---|---:|---:|---:|---:|---:|---|
+| AWARD-01 | CVB 2023 Milestone Achievement Awards | 1 | 0 | 0 | 1 | 0 | Use sparingly for senior leadership, program-delivery, grant/funding, or CV-like profiles; usually omit from ordinary technical resumes. |
+
 ## Canonical Text
 
-The generator uses this section for exact bullet, skill, internship, and publication text. Keep IDs synchronized with the tables above.
+The generator uses this section for exact bullet, project, skill, internship, training, publication, and award text. Keep IDs synchronized with the tables above.
 
 ### CORE-01: Sensor inference under uncertainty
 
@@ -413,6 +432,22 @@ IMUs, accelerometers, gyroscopes, ECG, pressure sensing, thermal imaging, magnet
 
 Python, PyTorch, TensorFlow/Keras, OpenCV, HuggingFace, scikit-learn, SciPy, NumPy, MLflow, C/C++, R, MATLAB, IDL, SQL, Linux, Docker, Git, Jupyter, AWS, GCP.
 
+### TRAIN-01: Deep Learning Nanodegree
+
+Udacity Deep Learning Nanodegree, 2017.
+
+### TRAIN-02: Intel IoT Edge AI Scholarship
+
+Intel IoT Edge AI Scholarship.
+
+### TRAIN-03: Building with the Claude API
+
+Building with the Claude API.
+
+### TRAIN-04: Tableau 9 Essential Training
+
+Tableau 9 Essential Training.
+
 ### PUB-01: Sensors 2022 Parkinson's disease wearable monitoring
 
 Atri, R. and Urban, K. (co-first authors) et al. "Deep Learning for Daily Monitoring of Parkinson's Disease Outside the Clinic Using Wearable Sensors." Sensors, 2022.
@@ -464,3 +499,7 @@ Urban, K. and Atri, R. "Evaluating the impact of domain expertise and deep learn
 ### PUB-13: Augmented unsupervised domain adaptation working paper
 
 Atri, R. and Urban, K. "Augmented Unsupervised Domain Adaptation for Deep Time Series Models." Working paper / unpublished.
+
+### AWARD-01: CVB 2023 Milestone Achievement Awards
+
+Received two 2023 CVB Milestone Achievement Awards for project execution, research leadership, and cross-functional collaboration.

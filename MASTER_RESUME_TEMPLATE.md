@@ -188,6 +188,25 @@ MS, Applied Physics: Minor in Applied Math, NJIT / Rutgers University, 2010.
 BS, Applied Physics: Minor in Applied Math, NJIT / Rutgers University, 2008.
 ```
 
+## Selected Training Slot
+
+Use `TRAIN-*` rows in `RESUME_BULLET_BANK.md`.
+
+Default target: omit.
+
+Rules:
+
+- Add a compact training section only when the JD, recruiter screen, or application form benefits from explicit course/certification evidence.
+- Consider `Deep Learning Nanodegree` when deep-learning timeline or credibility needs reinforcement.
+- Consider `Intel IoT Edge AI Scholarship` for edge AI, IoT, sensor-device, embedded, and on-device inference roles.
+- Consider `Building with the Claude API` for GenAI, agentic workflow, LLM API, or AI-product roles where lightweight formal evidence helps keyword screening.
+- Avoid Tableau unless dashboarding, BI, or Tableau is explicitly requested.
+
+```text
+SELECTED TRAINING
+- {TRAIN-* selected training}
+```
+
 ## Selected Publications Slot
 
 Use `PUB-*` rows in `RESUME_BULLET_BANK.md`.
@@ -206,4 +225,21 @@ Rules:
 SELECTED PUBLICATIONS
 - {PUB-* selected publication}
 - {PUB-* selected publication}
+```
+
+## Selected Awards Slot
+
+Use `AWARD-*` rows in `RESUME_BULLET_BANK.md`.
+
+Default target: omit.
+
+Rules:
+
+- Add awards only when they strengthen a senior leadership, program-delivery, grant/funding, presentation, or CV-like research narrative.
+- Do not use awards to bulk up an ordinary technical resume when stronger technical evidence needs the space.
+- Prefer compact award wording; if awards create page pressure, cut them before cutting recent Podimetrics/CVB evidence.
+
+```text
+SELECTED AWARDS
+- {AWARD-* selected award}
 ```

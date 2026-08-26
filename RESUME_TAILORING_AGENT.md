@@ -36,6 +36,8 @@ Kevin's separate `kitchensink` repository is a broad public archive of older wri
 
 MachineSaidGo may be referenced as Kevin's LLC / exploratory side-project umbrella when strategically useful and supported by canonical content. Do not place MachineSaidGo in the default chronological Experience section. Kevin maintained CVB contracts while exploring independent consulting / side-venture work, and a fully literal six-month chronology can add more narrative cost than value. Prefer a compact `Selected Research Projects` or `Selected Projects` section when MachineSaidGo evidence is useful.
 
+Training/certification and award entries are optional support signals, not default resume bulk. Use `training_ids` only when a JD, recruiter screen, or application form benefits from explicit evidence such as the Deep Learning Nanodegree, Intel IoT Edge AI Scholarship, or Building with the Claude API. Use `award_ids` only when awards strengthen a senior leadership, program-delivery, grant/funding, presentation, or CV-like research narrative. Omit Tableau and most awards unless the role clearly asks for that signal.
+
 ## Optional AI / Agentic Systems Project Signal
 
 ProblemForm and application-assistant are optional project signals, not default resume sections. Use them only when the job description materially values LLMs, AI agents, prompt/workflow automation, LLM evaluation, human-AI collaboration, developer tooling, AI product systems, or agentic/document-generation workflows. Do not force them into ordinary sensor, health, algorithm, or research resumes just because AI is fashionable.
@@ -186,6 +188,7 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Use plan objects with `id` plus edited `text` when lightly editing or merging canonical bullets; explain those edits in the audit.
 - Keep CVB bullets under their canonical title/date bucket. If a CVB bullet truly spans titles, use `allow_role_override: true` in the plan and explain the override in the audit.
 - Use custom bullet objects rarely, and only when Kevin's known evidence supports the claim.
+- Use `project_ids`, `training_ids`, and `award_ids` sparingly and only when the JD benefits from those optional signals enough to justify the space.
 - Preserve the strongest evidence density: concrete systems, sensors, methods, validation designs, deployment context, metrics, and outcomes.
 - Prefer people -> problem -> decision -> outcome -> mechanism when restructuring bullets.
 - Lead with the experience most relevant to the JD's implicit concern.

@@ -160,7 +160,7 @@ def read_text(path: Path) -> str:
 
 def parse_table_entries(markdown: str) -> dict[str, dict[str, Any]]:
     entries: dict[str, dict[str, Any]] = {}
-    id_re = re.compile(r"^(CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB)-\d+$")
+    id_re = re.compile(r"^(CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB|TRAIN|AWARD)-\d+$")
     for line in markdown.splitlines():
         stripped = line.strip()
         if not stripped.startswith("|"):
@@ -191,7 +191,7 @@ def parse_canonical_text(markdown: str) -> dict[str, tuple[str, str]]:
         raise SystemExit("RESUME_BULLET_BANK.md is missing `## Canonical Text`.")
     section = markdown.split("## Canonical Text", 1)[1]
     pattern = re.compile(
-        r"^###\s+((?:CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB)-\d+):\s*(.*?)\s*$\n+(.*?)(?=^###\s+(?:CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB)-\d+:|\Z)",
+        r"^###\s+((?:CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB|TRAIN|AWARD)-\d+):\s*(.*?)\s*$\n+(.*?)(?=^###\s+(?:CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB|TRAIN|AWARD)-\d+:|\Z)",
         re.M | re.S,
     )
     texts: dict[str, tuple[str, str]] = {}
@@ -535,7 +535,15 @@ def validate_plan(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: di
     if not plan.get("company"):
         raise ValueError("Plan is missing required field `company`.")
     get_profile(plan, profiles)
-    for key in ["core_theme_ids", "project_ids", "internship_ids", "skill_ids", "publication_ids"]:
+    for key in [
+        "core_theme_ids",
+        "project_ids",
+        "internship_ids",
+        "skill_ids",
+        "training_ids",
+        "publication_ids",
+        "award_ids",
+    ]:
         for spec in plan.get(key, []):
             resolve_entry(spec, bank)
     experience = plan.get("experience", {})
@@ -649,10 +657,22 @@ def build_docx(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: dict[
         for label, text in EDUCATION_LINES:
             add_skill_line(doc, label, text)
 
+    training_entries = resolve_entries(plan.get("training_ids", []), bank)
+    if training_entries:
+        add_section(doc, str(plan.get("training_section_title", "Selected Training")))
+        for entry in training_entries:
+            add_simple_bullet(doc, entry.text)
+
     publication_entries = resolve_entries(plan.get("publication_ids", []), bank)
     if publication_entries:
         add_section(doc, str(plan.get("publication_section_title", "Selected Publications")))
         for entry in publication_entries:
+            add_simple_bullet(doc, entry.text)
+
+    award_entries = resolve_entries(plan.get("award_ids", []), bank)
+    if award_entries:
+        add_section(doc, str(plan.get("award_section_title", "Selected Awards")))
+        for entry in award_entries:
             add_simple_bullet(doc, entry.text)
 
     doc.core_properties.title = f"Kevin Urban Resume - {plan.get('company', 'Tailored')}"

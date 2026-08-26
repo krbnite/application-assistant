@@ -93,11 +93,17 @@ New bullets should be rare. Use this section whenever a tailored resume creates 
 |---|---|---|---|
 |  |  |  | `Add to bank / Add as provisional / One-off only` |
 
-## Skills, Education, Publications
+## Projects, Skills, Education, Publications, Training, Awards
 
+- Optional projects retained:
+- Optional projects dropped:
 - Skills reordered or edited:
 - Publications retained:
 - Publications dropped:
+- Training/certifications retained:
+- Training/certifications dropped:
+- Awards retained:
+- Awards dropped:
 - Education changes, if any:
 - Why these choices fit the JD:
 

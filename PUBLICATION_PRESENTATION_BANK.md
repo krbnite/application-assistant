@@ -87,6 +87,7 @@ These should usually support bullets or cover-letter claims rather than appear d
 
 | Year | Award | Resume use |
 |---:|---|---|
+| 2023 | Two CVB Milestone Achievement Awards for project execution, research leadership, and cross-functional collaboration. | Use sparingly for senior leadership, program-delivery, grant/funding, or CV-like profiles; usually omit from ordinary resumes unless it strengthens the leadership narrative. |
 | 2021 | CVB Award for Best Keynote Speaker, "Movement as a Case Study" | Use for presentation/leadership credibility when space allows. |
 | 2021 | CVB Recognition Award, MJFF Wearables Program Delivery and Renewal | Use for health/wearables leadership and grant/program delivery. |
 | 2020 | CVB Recognition Award, MJFF Project Delivery | Use for health/wearables leadership. |
