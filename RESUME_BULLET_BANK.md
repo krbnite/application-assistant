@@ -75,7 +75,7 @@ Default role placement matters because CVB has three separate title/date buckets
 | CVB-08 | Free-living Parkinson's monitoring | 3 | 2 | 1 | 1 | 0 | Strong for weak supervision, wearable ML, gait, and real-world sensor classification. |
 | CVB-09 | Wearable gesture recognition | 3 | 2 | 2 | 1 | 1 | Strong for IMUs, activity recognition, ablations, signal processing, and wearable algorithms. |
 | CVB-10 | End-to-end biosignal modeling | 3 | 1 | 2 | 1 | 0 | Use for biosignal ML, deep sequence models, ablations, and replacing classical pipelines. |
-| CVB-11 | Cross-domain representation learning | 2 | 2 | 1 | 0 | 0 | Use when transfer/domain adaptation or representation learning is called out. |
+| CVB-11 | Cross-domain representation learning | 3 | 2 | 2 | 0 | 1 | Use when transfer/domain adaptation, shared representations, DRCN/autoencoders, patient-level personalization, or general-to-subject adaptation is called out. |
 | CVB-12 | Weakly supervised learning | 2 | 2 | 1 | 1 | 0 | Use for unlabeled data, weak supervision, activity detection, and real-world model framing. |
 | CVB-13 | Research strategy | 2 | 0 | 0 | 1 | 0 | Use for senior judgment, feasibility, data strategy, or executive communication; avoid if space is tight. |
 | CVB-14 | Clinician-friendly machine learning | 3 | 0 | 1 | 2 | 0 | Use for interpretable ML, clinical stakeholders, EHR risk, and skeptical audiences. |
@@ -92,7 +92,7 @@ Default role placement matters because CVB has three separate title/date buckets
 | WWE-02 | Real-time executive analytics | 0 | 0 | 0 | 2 | 0 | Use for operational dashboards, live decisions, and stakeholder-facing analytics. |
 | WWE-03 | Production customer behavior analytics | 1 | 0 | 0 | 3 | 0 | Use for segmentation, churn, A/B testing, and automated ML/reporting pipelines. |
 | WWE-04 | Deep learning for churn prediction | 0 | 0 | 0 | 2 | 0 | Use for applied ML performance gains; usually compress behind newer sensor work. |
-| WWE-05 | Transfer learning for computer vision | 0 | 2 | 0 | 0 | 0 | Use as optional CV breadth when the JD asks for transfer learning or image recognition. |
+| WWE-05 | Transfer learning and fine-tuning for computer vision | 1 | 3 | 1 | 0 | 0 | Use as optional evidence when the JD asks for transfer learning, fine-tuning, pretrained-model adaptation, computer vision, or small-data model diagnostics. |
 | WWE-06 | YouTube and social-platform data remediation | 0 | 0 | 0 | 3 | 0 | Lead for data engineering, API integration, vendor-gap discovery, stakeholder persuasion, and operational analytics. |
 | WWE-07 | Live-event analytics latency reduction | 0 | 0 | 0 | 3 | 0 | Use for real-time dashboards, executive analytics, streaming/live operations, or latency-sensitive reporting. |
 | WWE-08 | Revenue attribution and behavioral research | 0 | 0 | 0 | 2 | 0 | Use for attribution, survey fusion, sentiment analysis, customer behavior, or business analytics roles. |
@@ -143,6 +143,7 @@ Default role placement matters because CVB has three separate title/date buckets
 | PUB-10 | Biological Psychiatry 2020 wearable/home sleep-sensor verification poster | 3 | 0 | 1 | 0 | 0 | Conference abstract/poster, not a full journal article. Lead for sleep, wearable validation, and home-sensor verification roles. |
 | PUB-11 | Bounded DTW sleep-device validation methods manuscript | 3 | 0 | 2 | 0 | 0 | Manuscript in preparation / unpublished. Lead for sleep validation, PSG-device comparison, signal alignment, and methods-heavy wearable roles. |
 | PUB-12 | Sleep apnea deep learning and domain-expertise working paper | 3 | 0 | 2 | 0 | 0 | Working paper / unpublished. Lead for EEG/sleep, biosignal ML, ablations, and classical-to-deep-model comparison roles. |
+| PUB-13 | Augmented unsupervised domain adaptation working paper | 3 | 2 | 2 | 0 | 1 | Working paper / unpublished. Lead for transfer learning, domain adaptation, shared representations, patient-level adaptation, and deep time-series roles. |
 
 ## Canonical Text
 
@@ -258,7 +259,7 @@ Adapted an end-to-end Conv1D-LSTM architecture from wearable gesture recognition
 
 ### CVB-11: Cross-domain representation learning
 
-Explored variational autoencoder-based architectures for representation learning and unsupervised domain adaptation, adapting computer vision techniques to wearable physiological sensing.
+Explored DRCN-style reconstruction/classification networks, variational autoencoder architectures, transfer learning, and unsupervised domain adaptation for wearable physiological time series, using shared representations and pseudolabel concepts to adapt general activity models toward new sensors, subjects, and clinical datasets.
 
 ### CVB-12: Weakly supervised learning
 
@@ -304,9 +305,9 @@ Developed and maintained automated data processing, machine learning, and report
 
 Replaced a logistic-regression-based churn prediction system with a 5-layer neural network, improving total AUC from approximately 0.64 to 0.73; independently developed Gaussian noise injection between hidden layers as a regularization strategy, contributing approximately half of the overall performance gain.
 
-### WWE-05: Transfer learning for computer vision
+### WWE-05: Transfer learning and fine-tuning for computer vision
 
-Prototyped a computer vision system for WWE Superstar recognition via transfer learning with ResNet-50 and VGG16/19.
+Built a 20-class WWE Superstar image-recognition prototype by fine-tuning ImageNet-pretrained VGG16 with a custom classification head, two-phase frozen-base/top-block-unfrozen training, heavy data augmentation, VGG16/VGG19/ResNet50 comparison, and confidence-thresholded out-of-roster rejection under roughly 50 images per class.
 
 ### WWE-06: YouTube and social-platform data remediation
 
@@ -427,3 +428,7 @@ Urban, K. "Bounded Dynamic Time Warping for Epoch-by-Epoch Agreement Between Pol
 ### PUB-12: Sleep apnea deep learning and domain-expertise working paper
 
 Urban, K. and Atri, R. "Evaluating the impact of domain expertise and deep learning in the design and performance of sleep apnea detection models." Working paper / unpublished.
+
+### PUB-13: Augmented unsupervised domain adaptation working paper
+
+Atri, R. and Urban, K. "Augmented Unsupervised Domain Adaptation for Deep Time Series Models." Working paper / unpublished.

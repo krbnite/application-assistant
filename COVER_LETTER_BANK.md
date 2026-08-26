@@ -31,6 +31,7 @@ Use old cover letters as style references only. Do not treat any prior company-s
 | EVID-CVB-02 | HWD/IOT | Evidence | CVB feasibility judgment, clinician-friendly ML, and responsible clinical modeling evidence. |
 | EVID-CSTR-01 | BSP/SAR/CLP | Evidence | Space-weather / geophysical spatiotemporal inference and distributed sensors. |
 | EVID-WWE-01 | IOT | Evidence | WWE production analytics, business ML, A/B testing, and stakeholder decision support. |
+| EVID-ADAPT-01 | HWD/SAR | Evidence | Transfer learning, fine-tuning, DRCN/domain adaptation, and general-to-patient adaptation evidence for foundation-model-adjacent roles. |
 | EVID-RESEARCH-01 | Default | Evidence | Early-stage research direction, hidden assumptions, validation, and research-to-product judgment. |
 | BRIDGE-HWD-01 | HWD | Company bridge | Connects Kevin's health/wearable background to the company's patient/product mission. |
 | BRIDGE-SAR-01 | SAR | Company bridge | Connects sensor inference to physical-world perception and deployed systems. |
@@ -94,6 +95,10 @@ My doctoral research in space physics focused on inferring geomagnetic and polar
 ### EVID-WWE-01: Production business ML evidence
 
 At WWE, I built and maintained automated data processing, machine learning, and reporting pipelines for customer segmentation, churn prediction, A/B test analysis, and executive reporting. That experience is useful where applied ML has to connect technical modeling, product or business decisions, and stakeholder communication in a production environment.
+
+### EVID-ADAPT-01: Transfer learning and domain-adaptation evidence
+
+I have also done model-adaptation work that maps well to foundation-model-adjacent roles. At WWE, I fine-tuned ImageNet-pretrained VGG16 for a small-data image-recognition prototype using a custom head, two-phase training, augmentation, architecture comparisons, and confidence-thresholded rejection. At Cohen Veterans Bioscience, I explored DRCN-style reconstruction/classification networks, autoencoder-based representations, source/target batch training, and pseudolabeling for wearable time-series domain adaptation and patient-level modeling.
 
 ### EVID-RESEARCH-01: Early-stage research direction evidence
 

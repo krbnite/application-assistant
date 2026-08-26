@@ -43,6 +43,7 @@ Do not treat this file as a mandate to include everything. For ordinary three-pa
 
 | Date | Work | Resume use |
 |---:|---|---|
+| 2020-06-02 | Urban, K. "Introspective Supervised Learning And DRCN." kitchensink technical note. | Evidence for DRCN-style reconstruction/classification networks, self-supervised plus supervised objectives, source/target transfer, pseudolabeling, and wearable time-series domain adaptation. Label as public technical writing, not peer-reviewed publication. |
 | 2020-10-01 | Urban, K. "Are Wearables Worth the Hype?" Cohen Veterans Bioscience public science article / Q3 newsletter. CVB website: `https://www.cohenveteransbioscience.org/2020/09/29/are-wearables-worth-the-hype-digital-biomarkers/`; newsletter: `https://mailchi.mp/cohenbio/q3-2020-brain-health-news`. | Strong for Oura-style wearable health science, digital biomarkers, scientific communication, and public-facing translational writing. Label as public science writing, not peer-reviewed. |
 
 ## Selected Invited Presentations
