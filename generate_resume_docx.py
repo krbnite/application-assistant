@@ -140,6 +140,7 @@ ROLE_ALLOWED_ENTRY_IDS = {
         "CVB-14",
         "CVB-15",
         "CVB-16",
+        "CVB-18",
         "CVB-19",
     },
 }

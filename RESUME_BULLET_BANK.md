@@ -61,8 +61,8 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 Default role placement matters because CVB has three separate title/date buckets. Use this placement unless a bullet genuinely spans titles, and document any override in the audit.
 
 - `cvb_director`: `CVB-01` to `CVB-06`, plus `CVB-17` when research-ops/team-enablement work is relevant.
-- `cvb_associate_director`: `CVB-07`, `CVB-08`, `CVB-10` to `CVB-12`, `CVB-20`, plus `CVB-18` when knowledge-graph/database work is relevant. `CVB-09` may be placed here only when the resume benefits from grouping late Senior Data Scientist / early Sensor Analytics transition work with the Associate Director sensor-analytics story.
-- `cvb_senior_ds`: `CVB-09`, `CVB-13` to `CVB-16`, `CVB-19`. `CVB-09` defaults here because the sampling-rate ablation work occurred in Kevin's final months as Senior Data Scientist.
+- `cvb_associate_director`: `CVB-07`, `CVB-08`, `CVB-10` to `CVB-12`, `CVB-20`, plus `CVB-18` when knowledge-graph/database work is relevant and the resume benefits from grouping the late Senior Data Scientist / early Associate Director transition platform work with the Associate Director sensor-analytics story. `CVB-09` may be placed here only when the resume benefits from grouping late Senior Data Scientist / early Sensor Analytics transition work with the Associate Director sensor-analytics story.
+- `cvb_senior_ds`: `CVB-09`, `CVB-13` to `CVB-16`, `CVB-18`, `CVB-19`. `CVB-09` defaults here because the sampling-rate ablation work occurred in Kevin's final months as Senior Data Scientist. `CVB-18` is a legitimate spanning/transition bullet: the dated EaSiEco/knowledge-graph/database materials are concentrated in the 2018-2019 Senior Data Scientist period, but some work continued into the first several Associate Director months.
 
 | ID | Bullet | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|

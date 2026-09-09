@@ -187,7 +187,7 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Use a role-specific JSON plan as the bridge between tailoring decisions and DOCX generation.
 - Use plain bullet IDs when retaining canonical text as-is.
 - Use plan objects with `id` plus edited `text` when lightly editing or merging canonical bullets; explain those edits in the audit.
-- Keep CVB bullets under their canonical title/date bucket. If a CVB bullet truly spans titles, use `allow_role_override: true` in the plan and explain the override in the audit.
+- Keep CVB bullets under their canonical title/date bucket. If `RESUME_BULLET_BANK.md` explicitly marks a CVB bullet as spanning/transition work, place it wherever it best supports the resume's narrative and section balance, then note the placement logic in the audit. If a CVB bullet is not marked as spanning but truly spans titles for a specific resume, use `allow_role_override: true` in the plan and explain the override in the audit.
 - Use custom bullet objects rarely, and only when Kevin's known evidence supports the claim.
 - Use `project_ids`, `training_ids`, and `award_ids` sparingly and only when the JD benefits from those optional signals enough to justify the space.
 - Preserve the strongest evidence density: concrete systems, sensors, methods, validation designs, deployment context, metrics, and outcomes.
