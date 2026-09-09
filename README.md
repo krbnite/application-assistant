@@ -37,13 +37,42 @@ To help ensure the agent follows the intended workflow:
   First read APPLICATION_WORKFLOW_PROTOCOL.md, then read only the files required for resume-first mode. Generate the tailored resume plan and resume DOCX first. Do not create a cover letter, formal audit, interview Q&A, or DOCX visual render check unless I explicitly ask for those add-ons. I will handle visual QA by default.
   ```
 
-  If a full packet is needed, use this prompt instead:
+  Use add-on prompts later only when needed:
+
+  **Cover letter add-on**
 
   ```
-  Please use APPLICATION_WORKFLOW_PROTOCOL.md and run full packet mode for the JD in:
-  job-search/2026/XX_Company_Role/job-description.md
+  Please use APPLICATION_WORKFLOW_PROTOCOL.md and run cover-letter add-on mode for:
+  job-search/2026/XX_Company_Role/
 
-  Generate the resume DOCX, cover-letter DOCX, audit, interview Q&A, and supporting plan files. Perform the final QA pass unless I say I will handle visual QA.
+  Read only the files required for the cover-letter add-on. Use the existing resume plan/resume DOCX and job description in the role folder as context. Generate only the cover-letter plan and cover-letter DOCX. Do not create an audit, interview Q&A, or DOCX visual render check unless I explicitly ask.
+  ```
+
+  **Interview Q&A add-on**
+
+  ```
+  Please use APPLICATION_WORKFLOW_PROTOCOL.md and run interview-Q&A add-on mode for:
+  job-search/2026/XX_Company_Role/
+
+  Read only the files required for the interview-Q&A add-on. Use the existing resume plan/resume DOCX and job description in the role folder as context. Generate only the interview Q&A Markdown file. Do not create a cover letter, audit, or DOCX visual render check unless I explicitly ask.
+  ```
+
+  **Audit add-on**
+
+  ```
+  Please use APPLICATION_WORKFLOW_PROTOCOL.md and run audit add-on mode for:
+  job-search/2026/XX_Company_Role/
+
+  Read only the files required for the audit add-on. Use the existing resume plan/resume DOCX and job description in the role folder as context. Generate only the audit Markdown file. Do not create a cover letter, interview Q&A, or DOCX visual render check unless I explicitly ask.
+  ```
+
+  **Visual QA add-on**
+
+  ```
+  Please use APPLICATION_WORKFLOW_PROTOCOL.md and run visual-QA add-on mode for:
+  job-search/2026/XX_Company_Role/
+
+  Inspect only the already-generated DOCX files I ask about. Report page counts, obvious formatting/render issues, wrong-company residue, and unresolved placeholders. Do not generate new application artifacts unless I explicitly ask.
   ```
 
 ## Current Layout

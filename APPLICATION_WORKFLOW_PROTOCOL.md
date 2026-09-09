@@ -69,8 +69,14 @@ Use when the application requires or accepts a cover letter, or Kevin says the r
 
 Read:
 
+- `APPLICATION_WORKFLOW_PROTOCOL.md`
+- `OUTPUT_CONTRACT.md`
 - `COVER_LETTER_BANK.md`
 - `COVER_LETTER_PLAN_TEMPLATE.json`
+- the target role's `job-description.md`
+- the existing role-specific resume plan JSON
+
+Read `PROFILE_BANK.md`, `RESUME_BULLET_BANK.md`, or the generated resume DOCX only if the resume plan does not provide enough context.
 
 Produce:
 
@@ -83,7 +89,13 @@ Use when Kevin wants a formal decision record, a final high-confidence packet, o
 
 Read:
 
+- `APPLICATION_WORKFLOW_PROTOCOL.md`
+- `OUTPUT_CONTRACT.md`
 - `TAILORED_RESUME_AUDIT_TEMPLATE.md`
+- the target role's `job-description.md`
+- the existing role-specific resume plan JSON
+
+Read generated DOCX files, `PROFILE_BANK.md`, `RESUME_BULLET_BANK.md`, or prior packets only when the requested audit scope requires that extra detail.
 
 Produce:
 
@@ -97,7 +109,13 @@ Use when Kevin has an interview, expects a recruiter screen, or asks for prepara
 
 Read:
 
+- `APPLICATION_WORKFLOW_PROTOCOL.md`
+- `OUTPUT_CONTRACT.md`
 - `INTERVIEW_QA_TEMPLATE.md`
+- the target role's `job-description.md`
+- the existing role-specific resume plan JSON
+
+Read cover-letter artifacts only if they already exist and Kevin wants interview answers aligned with the letter.
 
 Produce:
 
@@ -106,6 +124,12 @@ Produce:
 ### Visual QA Add-On
 
 Use when Kevin asks the agent to inspect final DOCX rendering, page counts, and layout details.
+
+Read:
+
+- `APPLICATION_WORKFLOW_PROTOCOL.md`
+- the already-generated DOCX files Kevin asks about
+- the target role's `job-description.md` only if checking company/role residue requires it
 
 Render and visually inspect generated DOCX files. Check for page count, awkward page breaks, orphan headings, cramped bullets, inconsistent formatting, unresolved placeholders, and wrong-company residue.
 
@@ -146,11 +170,49 @@ job-search/2026/XX_Company_Role/job-description.md
 First read APPLICATION_WORKFLOW_PROTOCOL.md, then read only the files required for resume-first mode. Generate the tailored resume plan and resume DOCX first. Do not create a cover letter, formal audit, interview Q&A, or DOCX visual render check unless I explicitly ask for those add-ons. I will handle visual QA by default.
 ```
 
-Use this prompt when the full packet is truly wanted:
+Use add-on prompts later only when needed:
+
+### Cover Letter Add-On Prompt
+
+```text
+Please use APPLICATION_WORKFLOW_PROTOCOL.md and run cover-letter add-on mode for:
+job-search/2026/XX_Company_Role/
+
+Read only the files required for the cover-letter add-on. Use the existing resume plan/resume DOCX and job description in the role folder as context. Generate only the cover-letter plan and cover-letter DOCX. Do not create an audit, interview Q&A, or DOCX visual render check unless I explicitly ask.
+```
+
+### Interview Q&A Add-On Prompt
+
+```text
+Please use APPLICATION_WORKFLOW_PROTOCOL.md and run interview-Q&A add-on mode for:
+job-search/2026/XX_Company_Role/
+
+Read only the files required for the interview-Q&A add-on. Use the existing resume plan/resume DOCX and job description in the role folder as context. Generate only the interview Q&A Markdown file. Do not create a cover letter, audit, or DOCX visual render check unless I explicitly ask.
+```
+
+### Audit Add-On Prompt
+
+```text
+Please use APPLICATION_WORKFLOW_PROTOCOL.md and run audit add-on mode for:
+job-search/2026/XX_Company_Role/
+
+Read only the files required for the audit add-on. Use the existing resume plan/resume DOCX and job description in the role folder as context. Generate only the audit Markdown file. Do not create a cover letter, interview Q&A, or DOCX visual render check unless I explicitly ask.
+```
+
+### Visual QA Add-On Prompt
+
+```text
+Please use APPLICATION_WORKFLOW_PROTOCOL.md and run visual-QA add-on mode for:
+job-search/2026/XX_Company_Role/
+
+Inspect only the already-generated DOCX files I ask about. Report page counts, obvious formatting/render issues, wrong-company residue, and unresolved placeholders. Do not generate new application artifacts unless I explicitly ask.
+```
+
+Use this explicit override only when the extra artifacts are truly wanted:
 
 ```text
 Please use APPLICATION_WORKFLOW_PROTOCOL.md and run full packet mode for the JD in:
 job-search/2026/XX_Company_Role/job-description.md
 
-Generate the resume DOCX, cover-letter DOCX, audit, interview Q&A, and supporting plan files. Perform the final QA pass unless I say I will handle visual QA.
+This intentionally overrides resume-first mode. Generate the resume DOCX, cover-letter DOCX, audit, interview Q&A, and supporting plan files. Perform the final QA pass unless I say I will handle visual QA.
 ```
