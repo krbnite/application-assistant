@@ -8,6 +8,7 @@ Kevin has a Markdown-based resume tailoring system so job-specific resumes can b
 
 Primary files:
 
+- `APPLICATION_WORKFLOW_PROTOCOL.md` - entrypoint for selecting resume-first, full-packet, and optional add-on modes.
 - `MASTER_RESUME_TEMPLATE.md` - canonical resume structure and section placeholders.
 - `PROFILE_BANK.md` - canonical reusable headline/profile options for recurring job clusters.
 - `JD_CLUSTER_BANK.md` - cluster mapping and synthesized archetype JDs for matching new job descriptions.
@@ -72,6 +73,8 @@ For compact older academic research sections, default to `Center for Solar-Terre
 
 ## Default Workflow When Kevin Provides A Job Description
 
+Read `APPLICATION_WORKFLOW_PROTOCOL.md` first and use the requested mode. If Kevin does not explicitly request full packet mode, use resume-first mode.
+
 1. Read the job description and compare it against the resume template, profile bank, JD cluster bank, and bullet bank.
 2. Analyze the JD across these dimensions:
    - Tone and culture signals.
@@ -89,11 +92,13 @@ For compact older academic research sections, default to `Center for Solar-Terre
 7. If no existing profile cluster fits well, create a new profile cluster, label it clearly, and retain it in `PROFILE_BANK.md`. If the cluster is based on a single job description, mark it as provisional rather than discarding it. Explain why the new cluster is needed beyond the existing options.
 8. Build the tailored resume from `MASTER_RESUME_TEMPLATE.md`, `PROFILE_BANK.md`, and `RESUME_BULLET_BANK.md`, not by copying from old company-specific resumes unless Kevin explicitly asks for historical comparison.
 9. Create a role-specific JSON plan from `TAILORED_RESUME_PLAN_TEMPLATE.json`.
-10. Validate the plan, generate the DOCX with `generate_resume_docx.py`, render/verify the DOCX, and create an audit from `TAILORED_RESUME_AUDIT_TEMPLATE.md`.
-11. Before finalizing, scan prior same-cluster resumes in the current job-search cycle for missed section-level ideas, especially profile phrasing, publication/research-writing choices, compact brand signals, and unusually good bullet-selection decisions. Use those prior resumes as comparison examples only, not canonical sources.
-12. Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` unless Kevin says to skip it.
-13. If a cover letter is requested, required, or useful for the application packet, create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json`, generate the DOCX with `generate_cover_letter_docx.py`, render/verify it, and complete the cover-letter audit section.
-14. Follow `OUTPUT_CONTRACT.md`: target 3 resume pages, target 1 cover-letter page, create DOCX by default, create the audit and interview Q&A companion, and document exceptions.
+10. Validate the plan and generate the DOCX with `generate_resume_docx.py`.
+11. In resume-first mode, stop after the resume plan and resume DOCX unless Kevin asks for add-ons. Kevin handles visual DOCX QA by default; report any structural checks completed and any skipped visual checks.
+12. In full packet mode or audit add-on mode, create an audit from `TAILORED_RESUME_AUDIT_TEMPLATE.md`.
+13. In full packet mode or when useful for a high-value resume, scan prior same-cluster resumes in the current job-search cycle for missed section-level ideas, especially profile phrasing, publication/research-writing choices, compact brand signals, and unusually good bullet-selection decisions. Use those prior resumes as comparison examples only, not canonical sources.
+14. In full packet mode or interview-Q&A add-on mode, create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md`.
+15. In full packet mode or cover-letter add-on mode, create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json`, generate the DOCX with `generate_cover_letter_docx.py`, render/verify it when requested by the mode, and complete cover-letter audit notes only when an audit is being produced.
+16. Follow `OUTPUT_CONTRACT.md`: target 3 resume pages, target 1 cover-letter page when a cover letter is generated, create DOCX by default, and document exceptions according to the selected workflow mode.
 
 ## Profile Cluster Guidance
 
@@ -110,7 +115,7 @@ Current profile clusters:
 
 When a JD blends clusters, choose a primary cluster and borrow language from a secondary cluster only where it improves fit. If the JD exposes a materially different positioning need that cannot be handled by editing an existing cluster, create a new labeled cluster and retain it. Do not assume from one job that the cluster will or will not recur; instead, mark low-evidence clusters as provisional and let future tailoring work confirm, refine, merge, or retire them.
 
-If you create or substantially improve a profile cluster, update `PROFILE_BANK.md`. Render/verify a DOCX only when producing or refreshing a DOCX deliverable.
+If you create or substantially improve a profile cluster, update `PROFILE_BANK.md`. Render/verify a DOCX only when the selected workflow mode calls for visual QA.
 
 ## JD Cluster Bank Guidance
 
@@ -196,16 +201,16 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Keep cross-domain breadth when it helps the role, but reduce entropy by tethering breadth to the target company's problem.
 - Use job-description language selectively and truthfully.
 - Keep a short "deliberate framing choices" summary in the final response.
-- Create a role-specific audit file from `TAILORED_RESUME_AUDIT_TEMPLATE.md` and store it in the associated job folder's `supporting/` subfolder next to the role-specific plans.
+- Create a role-specific audit file from `TAILORED_RESUME_AUDIT_TEMPLATE.md` only in full packet mode or audit add-on mode, and store it in the associated job folder's `supporting/` subfolder next to the role-specific plans.
 - Treat completed audits as local sanity-check/application records. Do not track them in Git by default; promote only reusable findings into `PROFILE_BANK.md`, `JD_CLUSTER_BANK.md`, `RESUME_BULLET_BANK.md`, or a process doc.
-- Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` and store it in the associated job folder's `supporting/` subfolder. Treat completed Q&A files as local interview-prep artifacts, not tracked canonical state.
-- Create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json` when generating a cover letter. Store the plan in `supporting/`, keep the generated DOCX in the job folder root, use `COVER_LETTER_BANK.md` as the source of reusable paragraph modules, and treat completed cover-letter plans/DOCXs as ignored job artifacts.
-- Before final delivery, compare the generated resume against prior same-cluster resumes from the current job-search cycle, usually the same year folder under `job-search/`. This is a late-stage miss check, not a rewrite from history.
+- Create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md` only in full packet mode or interview-Q&A add-on mode, and store it in the associated job folder's `supporting/` subfolder. Treat completed Q&A files as local interview-prep artifacts, not tracked canonical state.
+- Create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json` only when generating a cover letter. Store the plan in `supporting/`, keep the generated DOCX in the job folder root, use `COVER_LETTER_BANK.md` as the source of reusable paragraph modules, and treat completed cover-letter plans/DOCXs as ignored job artifacts.
+- Before final delivery in full packet mode or audit add-on mode, compare the generated resume against prior same-cluster resumes from the current job-search cycle, usually the same year folder under `job-search/`. This is a late-stage miss check, not a rewrite from history. In resume-first mode, use targeted prior-packet comparison only when it is likely to catch a meaningful miss without a broad scan.
 - Ask clarifying questions only for facts not present in the canonical files and only when the missing fact materially affects tailoring.
 
 ## Prior Same-Cluster Resume Scan
 
-Use this scan near the end of a tailored packet, after the first generated resume has been rendered and page budget is known.
+Use this scan near the end of a tailored packet, after the first generated resume exists and page budget is understood. In resume-first mode, keep this as a targeted check only when it is likely to catch a meaningful miss without a broad scan.
 
 1. Identify the current job-search cycle from the target job folder, such as `job-search/2026`.
 2. Use `JD_CLUSTER_BANK.md`, existing audits/plans, folder names, and role context to identify prior applications from the same primary cluster and, when useful, close secondary-cluster matches.
@@ -248,7 +253,7 @@ Update `PROFILE_BANK.md` when:
 - An existing cluster's profile can be made broadly stronger.
 - Kevin explicitly asks to revise the reusable intro options.
 
-When producing a tailored DOCX, render and visually verify the result before delivery.
+When producing a tailored DOCX, render and visually verify the result before delivery only in full packet mode or visual-QA add-on mode. In resume-first mode, Kevin performs visual QA by default.
 
 ## Expected Final Response After Tailoring
 
@@ -262,7 +267,7 @@ When delivering or summarizing a tailored resume, include:
 - Any gaps, risks, or claims that should not be overstated.
 - The final tailored file path if a DOCX was created.
 - The JSON plan path.
-- The audit file path.
+- The audit file path, if created.
 - The interview Q&A path if created.
 - The cover-letter DOCX and plan paths if created.
 - Page count and whether visual verification was completed.

@@ -14,6 +14,7 @@ This repo tracks Kevin's reusable resume and application automation process, not
 
 ## Canonical Resume System Files
 
+- `APPLICATION_WORKFLOW_PROTOCOL.md`: entrypoint for choosing resume-first, full-packet, and optional add-on workflows.
 - `RESUME_TAILORING_AGENT.md`: main workflow for tailoring resumes.
 - `MASTER_RESUME_TEMPLATE.md`: canonical resume structure and section slots.
 - `PROFILE_BANK.md`: canonical profile/headline bank.
@@ -35,10 +36,12 @@ Completed role-specific plans, audits, interview Q&A companions, and cover lette
 
 ## Default Resume Tailoring Rule
 
-When Kevin provides a job description, read `RESUME_TAILORING_AGENT.md` first, then compare the JD against `JD_CLUSTER_BANK.md`, `PROFILE_BANK.md`, `MASTER_RESUME_TEMPLATE.md`, and `RESUME_BULLET_BANK.md`.
+When Kevin provides a job description, read `APPLICATION_WORKFLOW_PROTOCOL.md` first and use the requested workflow mode. If no mode is specified, use resume-first mode.
+
+For resume-first mode, read only the files required by `APPLICATION_WORKFLOW_PROTOCOL.md`, then compare the JD against `JD_CLUSTER_BANK.md`, `PROFILE_BANK.md`, `MASTER_RESUME_TEMPLATE.md`, and `RESUME_BULLET_BANK.md`.
 
 Use core JD archetype signals to choose the primary cluster. Use add-on signals only to tune the profile, bullet selection, skills, and audit notes.
 
-Before final delivery, scan prior same-cluster resumes from the current job-search cycle for missed profile, bullet, publication, research-writing, or compact brand-signal ideas. Treat those prior resumes as comparison examples only, not canonical sources; adopt ideas only when supported by the banks or deliberately promoted.
+Before final delivery in full packet mode or audit add-on mode, scan prior same-cluster resumes from the current job-search cycle for missed profile, bullet, publication, research-writing, or compact brand-signal ideas. In resume-first mode, use a targeted prior-packet check only when it is likely to improve the resume. Treat prior resumes as comparison examples only, not canonical sources; adopt ideas only when supported by the banks or deliberately promoted.
 
-For a tailored deliverable, follow `OUTPUT_CONTRACT.md`: create the role-specific resume plan, cover-letter plan, audit, interview Q&A companion, and generated DOCX files requested for the application packet. Render and visually verify generated DOCX files before delivery.
+For a tailored deliverable, follow `OUTPUT_CONTRACT.md` and the selected mode in `APPLICATION_WORKFLOW_PROTOCOL.md`. In resume-first mode, create the role-specific resume plan and generated resume DOCX first. Create cover letters, audits, interview Q&A companions, and visual render checks only when requested by the mode or by Kevin.

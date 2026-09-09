@@ -4,6 +4,7 @@ This file defines what "done" means when creating a tailored application packet 
 
 ## Primary Inputs
 
+- `APPLICATION_WORKFLOW_PROTOCOL.md`: entrypoint for choosing resume-first, full-packet, or add-on workflow modes.
 - `MASTER_RESUME_TEMPLATE.md`: canonical resume structure and section placeholders.
 - `PROFILE_BANK.md`: canonical reusable profile/headline options.
 - `JD_CLUSTER_BANK.md`: profile clusters, archetype JDs, and core/add-on matching signals.
@@ -16,14 +17,24 @@ This file defines what "done" means when creating a tailored application packet 
 - `generate_resume_docx.py`: DOCX generator that consumes a role-specific resume plan.
 - `generate_cover_letter_docx.py`: DOCX generator that consumes a role-specific cover-letter plan.
 
+## Workflow Modes
+
+Use `APPLICATION_WORKFLOW_PROTOCOL.md` to choose the right output set before generating files.
+
+- `Resume-first mode` is the low-credit default when Kevin asks for a tailored application workflow without explicitly requesting a full packet.
+- `Full packet mode` creates the resume, cover letter, audit, interview Q&A, and supporting plans.
+- `Add-on modes` create a cover letter, audit, interview Q&A, or visual QA pass after the resume-first output.
+
 ## Default Packet
 
-When Kevin provides a job description and asks for a tailored application packet, create these by default unless he says to skip one:
+When Kevin explicitly asks for full packet mode, create these unless he says to skip one:
 
 - Tailored resume DOCX.
 - Cover-letter DOCX.
 - Role-specific audit Markdown.
 - Interview Q&A Markdown companion.
+
+When Kevin asks for resume-first mode or does not specify full packet mode, create the tailored resume plan and tailored resume DOCX first. Do not create cover-letter, audit, or interview Q&A files unless requested as add-ons.
 
 Do not create PDFs by default. Kevin will convert final DOCX files to PDF at submission time so he can make final manual tweaks.
 
@@ -48,7 +59,7 @@ Track only reusable templates, generators, banks, archetypes, and process rules.
 
 - Target length: 3 pages.
 - A fourth page is allowed only when Kevin or the agent explicitly decides it is necessary or strategically appropriate.
-- If the resume reaches 4 pages, the audit must include a short justification.
+- If the resume reaches 4 pages, the audit or final notes must include a short justification.
 - Do not preserve bullets merely because they are strong in the abstract. A tailored 3-page resume should feel deliberately selected.
 
 ### Cluster Confidence Rule
@@ -81,7 +92,7 @@ For each tailored resume:
 
 1. Start from one profile/headline pair in `PROFILE_BANK.md` unless a new cluster is required.
 2. Lightly edit the profile for the JD's core and add-on signals.
-3. Surface and defend every meaningful profile/headline change in the audit.
+3. Surface and defend every meaningful profile/headline change in the audit or final notes, depending on the selected workflow mode.
 4. Distinguish between:
    - `Light edit`: wording, emphasis, or ordering changed for this JD.
    - `Add-on`: a JD-specific element added to the generic profile.
@@ -96,7 +107,7 @@ Use `TAILORED_RESUME_PLAN_TEMPLATE.json` as the starting shape for a role-specif
 - Fill the profile slot from `PROFILE_BANK.md`.
 - Fill core research themes, experience bullets, optional project signals, skills, education, optional training/certifications, publications, and optional awards from `RESUME_BULLET_BANK.md`.
 - Plain string IDs pull exact canonical text from `RESUME_BULLET_BANK.md`.
-- Object entries with `id`, `label`, and/or `text` represent light edits to canonical bullets and must be defended in the audit.
+- Object entries with `id`, `label`, and/or `text` represent light edits to canonical bullets and must be defended in the audit or final notes, depending on the selected workflow mode.
 - CVB bullets must stay in their canonical title/date bucket unless the plan sets `allow_role_override: true` and the audit explains why the bullet spans titles.
 - Object entries without an `id` are custom bullets and should be rare.
 - Blank `headline` and `profile` fields are filled from the selected `profile_cluster`; populated fields indicate role-specific tailoring and must be audited.
@@ -148,7 +159,7 @@ Use honest adjacent-domain framing when Kevin lacks exact domain experience. Do 
 Use `COVER_LETTER_PLAN_TEMPLATE.json` as the starting shape for a role-specific cover-letter plan.
 
 - Plain string IDs pull exact canonical text from `COVER_LETTER_BANK.md`.
-- Object entries with `id`, `label`, and/or `text` represent light edits to canonical modules and must be defended in the audit.
+- Object entries with `id`, `label`, and/or `text` represent light edits to canonical modules and must be defended in the audit or final notes, depending on the selected workflow mode.
 - Object entries without an `id` are custom paragraphs and should be rare.
 - `variables` supplies placeholder values such as `company_problem`, `target_domain`, and `closing_keywords`.
 - Generate the DOCX with `generate_cover_letter_docx.py`.
@@ -156,7 +167,7 @@ Use `COVER_LETTER_PLAN_TEMPLATE.json` as the starting shape for a role-specific 
 
 ## Interview Q&A Contract
 
-Create a role-specific Markdown Q&A companion by default, using `INTERVIEW_QA_TEMPLATE.md`.
+Create a role-specific Markdown Q&A companion in full packet mode or interview-Q&A add-on mode, using `INTERVIEW_QA_TEMPLATE.md`.
 
 - Include likely HR screener questions and hiring-manager questions.
 - Use the tailored resume, cover letter, resume audit, JD cluster, and job description to choose the strongest answer anchor for each question.
@@ -167,7 +178,7 @@ Create a role-specific Markdown Q&A companion by default, using `INTERVIEW_QA_TE
 
 ## Audit Contract
 
-Create one role-specific audit from `TAILORED_RESUME_AUDIT_TEMPLATE.md` and store it in the associated job folder's `supporting/` subfolder.
+Create one role-specific audit in full packet mode or audit add-on mode from `TAILORED_RESUME_AUDIT_TEMPLATE.md` and store it in the associated job folder's `supporting/` subfolder.
 
 The audit should record:
 
@@ -183,9 +194,10 @@ The audit should record:
 
 ## Verification
 
-- Render and visually verify each generated DOCX before delivery.
-- Confirm resume and cover-letter page counts.
-- Complete the prior same-cluster resume scan after page count is known and before final delivery.
+- In full packet mode or visual-QA add-on mode, render and visually verify each generated DOCX before delivery.
+- In resume-first mode, Kevin performs visual QA by default unless he explicitly asks the agent to do it.
+- Confirm resume and cover-letter page counts when practical; if page count or visual rendering is skipped, say so in the final response.
+- Complete the prior same-cluster resume scan after page count is known and before final delivery in full packet mode or audit add-on mode. In resume-first mode, use targeted prior-packet comparison only when it is likely to improve the resume without a broad scan.
 - Check for awkward page breaks, orphan headings, cramped bullets, cramped paragraphs, inconsistent formatting, missing signature, missing audit details, or unresolved placeholders.
 - If visual rendering is unavailable, say so in the final response.
 
@@ -195,12 +207,12 @@ The final response should include:
 
 - Tailored resume path and page count.
 - Resume plan path.
-- Cover-letter DOCX path and page count.
-- Cover-letter plan path.
-- Audit path.
-- Interview Q&A path.
+- Cover-letter DOCX path and page count, if created.
+- Cover-letter plan path, if created.
+- Audit path, if created.
+- Interview Q&A path, if created.
 - Primary cluster and confidence.
 - Starting profile used or new cluster created.
 - Any profile-bank, JD-archetype, resume-bullet-bank, or cover-letter-bank updates.
-- Whether the prior same-cluster resume scan found any adopted changes.
-- Whether visual verification was completed for each DOCX.
+- Whether the prior same-cluster resume scan or targeted prior-packet check found any adopted changes.
+- Whether visual verification was completed for each DOCX or intentionally left for Kevin.

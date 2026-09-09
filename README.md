@@ -12,9 +12,9 @@ Given a job description, the intended workflow is:
 2. Choose and lightly tailor the appropriate resume profile.
 3. Select relevant resume bullets from the canonical bullet bank.
 4. Generate a tailored resume DOCX.
-5. Generate a tailored cover-letter DOCX when useful or required.
-6. Produce an audit explaining profile, bullet, and cover-letter decisions.
-7. Produce an interview Q&A companion for HR screener and hiring-manager prep.
+5. Optionally generate a tailored cover-letter DOCX when useful or required.
+6. Optionally produce an audit explaining profile, bullet, and cover-letter decisions.
+7. Optionally produce an interview Q&A companion for HR screener and hiring-manager prep.
 
 The goal is not full autopilot. Kevin still reviews the packet before submission. The system is meant to remove repetitive re-optimization and make tailoring decisions auditable.
 
@@ -31,26 +31,19 @@ To help ensure the agent follows the intended workflow:
 - **Prompt:** Using ChatGPT/Codex or Claude with permission to access the repo, use the following prompt to ensure the agent follows the intended workflow:
 
   ```
-  Please run the full application-assistant workflow for the JD in:
-  job-search/2026/XX_Company/job-description.md
+  Please use the optimized application-assistant workflow for the JD in:
+  job-search/2026/XX_Company_Role/job-description.md
 
-  Before doing anything, re-read the repo process files:
-  * README.md
-  * AGENTS.md
-  * RESUME_TAILORING_AGENT.md
-  * OUTPUT_CONTRACT.md
-  * MASTER_RESUME_TEMPLATE.md
-  * JD_CLUSTER_BANK.md
-  * PROFILE_BANK.md
-  * RESUME_BULLET_BANK.md
-  * PUBLICATION_PRESENTATION_BANK.md
-  * COVER_LETTER_BANK.md
-  * TAILORED_RESUME_PLAN_TEMPLATE.json
-  * COVER_LETTER_PLAN_TEMPLATE.json
-  * TAILORED_RESUME_AUDIT_TEMPLATE.md
-  * INTERVIEW_QA_TEMPLATE.md
+  First read APPLICATION_WORKFLOW_PROTOCOL.md, then read only the files required for resume-first mode. Generate the tailored resume plan and resume DOCX first. Do not create a cover letter, formal audit, interview Q&A, or DOCX visual render check unless I explicitly ask for those add-ons. I will handle visual QA by default.
+  ```
 
-  Then generate the full packet according to the current rules: resume DOCX, cover-letter DOCX, audit, interview Q&A, and supporting plan files. Make sure to perform the final QA pass, including DOCX visual render checks/page counts, unresolved placeholder checks, and the same-cluster prior-resume scan.
+  If a full packet is needed, use this prompt instead:
+
+  ```
+  Please use APPLICATION_WORKFLOW_PROTOCOL.md and run full packet mode for the JD in:
+  job-search/2026/XX_Company_Role/job-description.md
+
+  Generate the resume DOCX, cover-letter DOCX, audit, interview Q&A, and supporting plan files. Perform the final QA pass unless I say I will handle visual QA.
   ```
 
 ## Current Layout
@@ -59,6 +52,7 @@ The core files are intentionally plain Markdown, JSON, and Python so they can be
 
 ### Workflow And Contracts
 
+- `APPLICATION_WORKFLOW_PROTOCOL.md` - entrypoint for choosing resume-first, full-packet, or add-on workflows.
 - `AGENTS.md` - high-level instructions for future agents working in this repo.
 - `RESUME_TAILORING_AGENT.md` - main tailoring workflow and decision rules.
 - `OUTPUT_CONTRACT.md` - what a completed application packet should include.
