@@ -46,6 +46,8 @@ These mappings began as inferences from the tailored resumes in the 2026 search 
 | Oracle OCI - Senior Principal Applied Scientist | Quantitative Research ML Engineering | Health, Wearables, Neurotech, And Digital Biomarkers; Scientific AI Platform Leadership emerging variant | Medium-High | Scientific/enterprise AI platform role emphasizing strategic-customer discovery, scientific-data workflows, GenAI/RAG/agents, evaluation harnesses, reusable OCI platform capabilities, and research-to-production leadership. Do not create a new cluster yet, but if 2-3 more JDs center on scientific AI platforms, customer workflow discovery, and reusable enterprise AI capability, consider a distinct Applied Science Platform Leadership cluster. |
 
 | RTX / FlightAware - Senior ML Engineer II | Industrial And Operational Time-Series ML | Quantitative Research ML Engineering; Bayesian / Physical Systems Research | Medium-High | Aviation operational-forecasting role emphasizing runway/gate/taxi timing prediction, very large historical datasets, time-series/image/video data, performance efficiency, live predictive products, and weather/geospatial plus MLOps/hybrid-infra add-ons. |
+| Observable Intuition - Member of Technical Staff Research | Experience Representation, Weak Supervision, And Uncertainty Research | Quantitative Research ML Engineering; Measurement Science, Evaluation, And Causal Inference | Mixed | New provisional cluster; role centers on learning calibrated representations of human/organizational experience from incomplete, noisy, longitudinal observations, with weak supervision, temporal/event modeling, process reconstruction, uncertainty, identifiability, and evaluation without complete ground truth. |
+
 ## Preferred Workflow: Source JDs To Archetype JD
 
 For each profile cluster:
@@ -170,6 +172,7 @@ Use these only as inputs to the archetype JD. Keep them compact.
 |---|---|---|
 | Quantitative Research ML Engineering | Updated 2026-08-27 | Voleon Senior Machine Learning Engineer, Abridge Senior Research Data Scientist, Oracle OCI Senior Principal Applied Scientist; watch for possible Applied Science Platform Leadership split if similar scientific/enterprise AI platform JDs recur. |
 | Measurement Science, Evaluation, And Causal Inference | Provisional synthesis 2026-08-26 | Abridge Research Scientist (Measurement and Evaluation). |
+| Experience Representation, Weak Supervision, And Uncertainty Research | Provisional synthesis 2026-09-09 | Observable Intuition Member of Technical Staff Research. |
 | Health, Wearables, Neurotech, And Digital Biomarkers | Updated 2026-08-26 | Oura, Omada, Beacon Biosignals, Lumicity, Motif Neurotech, Dexcom Emerging, Dexcom Advanced, Senseonics, Atria Health, Cleerly. |
 | Sensor AI, Robotics, Autonomy, And Edge Perception | Synthesized 2026-08-21 | General Motors, Trackman, Compound Eye, Samsara. |
 | Bayesian Estimation, Signal Processing, And Physical Systems Research | Synthesized 2026-08-21 | Kobold Data Scientist, Kobold Scientific Computing, Ionosphere, Oxman. |
@@ -199,6 +202,24 @@ Use these only as inputs to the archetype JD. Keep them compact.
 - Last updated: 2026-08-27.
 
 ### Measurement Science, Evaluation, And Causal Inference - Provisional Archetype JD
+### Experience Representation, Weak Supervision, And Uncertainty Research - Provisional Archetype JD
+
+- Source JDs used: Observable Intuition Member of Technical Staff - Research.
+- Archetype role title(s): Founding Research Scientist, Member of Technical Staff - Research, Research Scientist for Experience Representation, Applied Scientist for Weakly Supervised Event Modeling.
+- Typical company / product context: early-stage AI infrastructure or enterprise AI companies building systems that learn from real-world activity traces, decision histories, revisions, approvals, exceptions, failures, outcomes, and other partially observed records of human or organizational behavior.
+- Core / necessary matching signals: the JD centers on learning stable and useful representations from incomplete, noisy, longitudinal, weakly supervised, or partially observed data; it involves temporal/event modeling, process reconstruction, graph or knowledge representation, uncertainty quantification, calibrated abstention, sparse labels, delayed outcomes, causal attribution difficulty, and evaluation without established benchmarks or complete ground truth.
+- Variable / add-on signals: graph machine learning, knowledge representation, process mining, organizational behavior, enterprise activity logs, foundation-model-adjacent infrastructure, long-horizon credit assignment, identifiability, causal reasoning, distributed state, world-model-ish representations, productized research, and founding-level research culture ownership.
+- Typical responsibilities: define behavior/state representations; build models over event streams or observational traces; infer useful structure under weak supervision and partial observability; quantify uncertainty and decide when to abstain; design evaluation frameworks without clean labels; build experiments, pipelines, and research infrastructure; translate research prototypes into deployed systems with scientific rigor.
+- Typical requirements: PhD or equivalent research depth; strong ML/statistics foundations; PyTorch or similar; temporal/event modeling, graph/knowledge representation, process reconstruction, uncertainty quantification, identifiability, calibration, model evaluation, weak supervision, production-oriented engineering, and comfort with autonomous problem definition.
+- Common keywords and phrases: experience representation, observable experience, human judgment, organizational behavior, event modeling, temporal reasoning, process reconstruction, knowledge representation, graph ML, weak supervision, incomplete observations, partial observability, delayed outcomes, causal attribution, calibrated abstention, uncertainty quantification, sparse labels, no established benchmark, production research systems.
+- Hidden evaluation concerns: whether Kevin's sensor/health/geophysical background transfers to enterprise behavioral/event data; whether graph ML and knowledge representation are supported by enough concrete evidence; whether his evaluation and weak-supervision experience can compensate for no direct process-mining or organizational-behavior modeling ownership; whether he can operate in a founding role with little structure; whether AI/agentic project signals are useful or distracting.
+- Tone and culture signals: early-stage, research-first but deployment-bound, philosophically ambitious, founder-proximate, high autonomy, high ambiguity, low tolerance for benchmark-only thinking, values representation, uncertainty, and rigorous evaluation under real-world messiness.
+- Best starting profile: Experience Representation, Weak Supervision, And Uncertainty Research.
+- Resume bullets usually retained: CVB sensor-driven questionnaire estimation, leakage/evaluation-validity redesign, weakly supervised walk detection, cross-domain representation learning, knowledge-graph/database evaluation, large-scale wearable data processing, clinician-friendly proxy modeling, Podimetrics robust estimator validation, adaptive monitoring/alerting, production scan-pipeline work, CSTR latent physical inference and spectral methods, and compact WWE production behavior analytics when page budget allows.
+- Resume bullets usually compressed or discarded: detailed clinical disease outcomes, FDA/regulatory framing, thermal CV implementation detail, and long publication lists unless they support inference, weak supervision, evaluation, or research depth.
+- Gaps / do-not-overstate items: do not imply production graph ML, direct process-mining systems, organizational-behavior modeling, foundation-model training, enterprise deployment ownership, JAX expertise, or formal causal-identifiability research unless Kevin confirms it.
+- Last updated: 2026-09-09.
+
 
 - Source JDs used: Abridge Research Scientist (Measurement and Evaluation).
 - Archetype role title(s): Research Scientist (Measurement and Evaluation), Applied Scientist (Evaluation), Research Scientist (Causal Inference), Program Evaluation Scientist.
@@ -315,6 +336,12 @@ Common signals: quantitative research, research engineering, senior ML engineeri
 Likely hidden concerns: whether Kevin can transfer from sensor/health/geophysical ML into finance, healthcare, or another quantitative research domain; whether his software-engineering depth is sufficient for a senior MLE role; whether gaps around distributed computing, model serving, feature stores, performance profiling, finance, or production trading systems are acknowledged without underselling his research-to-production strengths.
 
 ### Measurement Science, Evaluation, And Causal Inference
+### Experience Representation, Weak Supervision, And Uncertainty Research
+
+Common signals: experience representation, human judgment, organizational behavior, event streams, temporal/event modeling, graph ML, knowledge representation, process reconstruction, weak supervision, indirect supervision, partial observability, incomplete/noisy longitudinal data, delayed outcomes, causal attribution difficulty, identifiability, calibrated abstention, uncertainty quantification, evaluation without clean ground truth, and founding-level research autonomy.
+
+Likely hidden concerns: whether Kevin's strongest evidence from health/wearables/geophysics transfers to enterprise behavioral/event data; whether graph ML, knowledge representation, process reconstruction, and long-horizon credit-assignment language are grounded enough; whether adjacent evidence in weak supervision, proxy measurement, knowledge-graph/database exploration, longitudinal state estimation, and deployment-honest validation can carry the application without overstating production ownership in the target domain.
+
 
 Common signals: measurement science, construct validity, quasi-experimental design, causal inference, program evaluation, evaluation framework, empirical study, observational data, mixed methods, operationalizing a construct, partner-facing research, publishing in evaluation/measurement venues, mentoring research interns.
 

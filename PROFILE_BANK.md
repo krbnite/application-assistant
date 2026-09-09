@@ -43,6 +43,22 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 **Do Not Overstate:** Do not claim prior quant-trading strategy ownership, direct financial-market modeling experience, hedge-fund production infrastructure experience, large-scale distributed ML platform ownership, deep C++ performance-engineering depth, or formal causal-inference/quasi-experimental methods training (instrumental variables, difference-in-differences, matching) unless Kevin confirms it.
 
+## Experience Representation, Weak Supervision, And Uncertainty Research
+
+**Status:** Provisional, retained after the Observable Intuition Member of Technical Staff - Research JD because it requires a distinct framing around learning calibrated representations from incomplete behavioral, event, and outcome traces.
+
+**Best For:** Founding research scientist / MTS research roles focused on learning representations of behavior, process, judgment, or experience from noisy observational data, weak or indirect supervision, sparse outcomes, temporal/event streams, partial observability, and uncertainty-aware evaluation.
+
+**Headline:** Research Scientist | Experience Representation | Weak Supervision | Temporal Modeling | Calibrated ML
+
+**Profile:** My work focuses on inferring useful structure from noisy, incomplete, and longitudinal observations when labels are weak, outcomes are delayed, and the underlying state cannot be measured directly. I have built adaptive estimators, deep time-series models, weakly supervised wearable pipelines, knowledge-graph and database prototypes, sensor-driven proxy-measurement frameworks, and deployment-honest validation methods across health technology, wearable sensing, behavioral modeling, production analytics, and geophysical research. I am strongest in early research settings where the first challenge is deciding what can be responsibly represented, inferred, calibrated, and evaluated before a model is trusted in the real world.
+
+**Emphasize When Pruning:** Lead with weak supervision, incomplete labels, longitudinal/event data, uncertainty, calibration, evaluation without clean ground truth, knowledge-graph/schema work, proxy-measurement frameworks, adaptive estimation, and research-to-production validation. Use Podimetrics and CVB for modern applied evidence; use CSTR for latent-state inference from indirect observations; use compact WWE only when production behavior/decision traces matter.
+
+**Common Add-Ons:** Graph machine learning, knowledge representation, temporal/event modeling, process reconstruction, long-horizon credit assignment, calibrated abstention, enterprise activity data, observational decision traces, delayed outcomes, distributed state, causal attribution, and foundation-model-adjacent infrastructure.
+
+**Do Not Overstate:** Do not imply direct enterprise process-mining product ownership, production graph ML, production knowledge-graph ML, organizational-behavior modeling, long-horizon RL/credit-assignment research, JAX expertise, or foundation-model training ownership unless Kevin confirms it. Frame those as adjacent interests or ramp areas supported by weaker evidence, not proven production experience.
+
 ## Measurement Science, Evaluation, And Causal Inference
 
 **Status:** Provisional, retained after the Abridge Research Scientist (Measurement and Evaluation) JD because it requires an independent-evaluation-scientist framing that no existing cluster covers, even though Kevin's evidence for it is thinner than for his other clusters.
