@@ -4,6 +4,12 @@ This is the entrypoint for running `application-assistant` efficiently.
 
 Use this file first. Do not read every process, bank, template, and historical artifact by default. Choose the workflow mode Kevin requested, read only the files required for that mode, and expand only when the job or Kevin's request makes the extra work useful.
 
+## Fit-Eval First
+
+When Kevin pastes a new job description and asks whether it is a fit, start with `FIT_EVAL.md`, not the packet workflow below. That screening step should produce a verdict, the reasoning behind it, and a one-line note Kevin can paste into his tracker. End by asking whether Kevin wants to discuss the verdict further or proceed to resume-first mode with any requested add-ons.
+
+When Kevin explicitly asks to tailor a resume, apply to a role, build a packet, or run the workflow for an already-greenlit role, use the packet workflow below directly. Treat any prior fit evaluation as context, but do not repeat the full screening pass unless the role, company, or constraints have changed.
+
 ## Default Mode: Resume-First
 
 Use resume-first mode when Kevin asks to apply to a job, tailor a resume, or run the workflow without explicitly requesting a full packet.
