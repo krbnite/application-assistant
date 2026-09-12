@@ -37,6 +37,12 @@ To help ensure the agent follows the intended workflow:
   First read APPLICATION_WORKFLOW_PROTOCOL.md, then read only the files required for resume-first mode. Generate the tailored resume plan and resume DOCX first. Do not create a cover letter, formal audit, interview Q&A, or DOCX visual render check unless I explicitly ask for those add-ons. I will handle visual QA by default.
   ```
 
+  If using a lightweight model, it is often desirable to restrict the agent from editing repo 
+  files outside the target job folder. You can do this by adding the following to the prompt:
+  ```
+  You may create or revise files only inside the target job folder. Do not edit canonical workflow files, banks, templates, generators, README, or repo-level process docs. If you believe a reusable bank/process update is warranted, write it under supporting/proposed_bank_updates.md and explain why, but do not apply it. Explicitly tell me if you create that file so that I know to check. Before finishing, run git status --short and confirm that no files outside the target job folder were modified.
+  ```
+
   Use add-on prompts later only when needed:
 
   **Cover letter add-on**
