@@ -11,7 +11,7 @@ Generated tailored resumes should usually be 3 pages and should be delivered as 
 ```text
 Kevin Urban, PhD
 {TAILORED_HEADLINE_FROM_PROFILE_BANK}
-kevin.ddu@gmail.com | Nutley, NJ | linkedin.com/in/machinesaidgo | github.com/krbnite
+kevin.ddu@gmail.com | Nutley, NJ | (973) 464-6833 | linkedin.com/in/machinesaidgo | github.com/krbnite
 ```
 
 ## Profile / Headline Slot
