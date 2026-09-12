@@ -55,6 +55,8 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | POD-10 | Next Best Action analytics | 2 | 0 | 0 | 3 | 1 | Lead for digital health decisioning, intervention analytics, operations, or A/B testing; omit for pure sensor research. |
 | POD-11 | Cross-functional technical leadership | 3 | 2 | 2 | 3 | 3 | Keep for senior, lead, startup, regulated, or cross-functional roles. |
 | POD-12 | Production scan-pipeline code and QC integration | 2 | 2 | 1 | 3 | 2 | Use for software-heavy ML, scientific platform, production codebase, debugging, PR, pipeline integration, and multi-vendor hardware/QC roles. |
+| POD-13 | Event-driven AWS thermal pipeline | 3 | 3 | 1 | 3 | 2 | Use for AWS/event-driven production pipelines, edge-to-cloud systems, model/API outputs, downstream tools, and provider communications. |
+| POD-14 | SmartMat+ edge-to-cloud estimator outputs | 3 | 3 | 2 | 2 | 3 | Use for edge inference, telemetry-backed cloud outputs, sensor-product jobs, and embedded-to-cloud ML framing. |
 
 ## Cohen Veterans Bioscience
 
@@ -99,6 +101,7 @@ Default role placement matters because CVB has three separate title/date buckets
 | WWE-06 | YouTube and social-platform data remediation | 0 | 0 | 0 | 3 | 0 | Lead for data engineering, API integration, vendor-gap discovery, stakeholder persuasion, and operational analytics. |
 | WWE-07 | Live-event analytics latency reduction | 0 | 0 | 0 | 3 | 0 | Use for real-time dashboards, executive analytics, streaming/live operations, or latency-sensitive reporting. |
 | WWE-08 | Revenue attribution and behavioral research | 0 | 0 | 0 | 2 | 0 | Use for attribution, survey fusion, sentiment analysis, customer behavior, or business analytics roles. |
+| WWE-09 | AWS automated scoring to Redshift | 0 | 0 | 0 | 3 | 0 | Use for automated model scoring, warehouse/dashboard consumption, AWS pipelines, and stakeholder-facing ML outputs. |
 
 ## MachineSaidGo / Independent Research Projects
 
@@ -252,6 +255,14 @@ Served as the primary scientific partner to software and hardware engineering te
 
 Contributed directly to the production Python scan-processing codebase, debugging odd pipeline behavior, fixing bugs, supporting PRs, and integrating consultant-built quality-control components needed to keep thermal algorithms reliable across chip and hardware vendors over time.
 
+### POD-13: Event-driven AWS thermal pipeline
+
+Worked on production algorithm components in an AWS-hosted, event-driven SmartMat thermal pipeline where cellular telemetry receipt through an internal routing service triggered scan-quality handling, imputation, transformation, equilibrium-field prediction/estimation, and diabetic foot-ulcer detection modules; thermal outputs fed internal product/engineering and clinical tools, API-accessible outputs, and provider-facing summary emails.
+
+### POD-14: SmartMat+ edge-to-cloud estimator outputs
+
+Designed a SmartMat+ on-device fall-risk estimator whose outputs were generated on embedded hardware and transmitted with device telemetry to AWS for downstream monitoring and analysis.
+
 ### CVB-01: Technical leadership and mentorship
 
 Led scientific direction, reviewed modeling and validation decisions, mentored data scientists and ML contributors, and translated ambiguous project goals into concrete technical plans, evaluation criteria, and deployment constraints.
@@ -363,6 +374,10 @@ Co-developed multi-platform live-event reporting workflows that captured viewers
 ### WWE-08: Revenue attribution and behavioral research
 
 Built revenue-attribution, survey-fusion, sentiment-analysis, seasonal-behavior, and customer-behavior analyses over large-scale WWE Network and social-platform datasets to support segmentation, marketing decisions, churn/winback forecasting, and stakeholder reporting.
+
+### WWE-09: AWS automated scoring to Redshift
+
+Operated AWS-hosted automated web-scraping, API collection, model-scoring, and reporting workflows, with churn-model scores written to Redshift and ingested by dashboards for marketing and product stakeholders.
 
 ### MSG-01: Self-supervised behavioral video analysis
 
