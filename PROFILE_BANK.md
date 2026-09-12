@@ -131,6 +131,22 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 **Do Not Overstate:** Do not imply deep manufacturing operations, rotating-machinery fault physics, electrical machine diagnostics, cloud-platform depth, or multi-facility rollout ownership unless Kevin confirms.
 
+## Environmental Modeling For Operational Decisions
+
+**Status:** Provisional, retained after Waymo Weather and Overstory Wildfire because it requires a distinct environmental/spatiotemporal operational-decision frame beyond the broader physical-systems and industrial-time-series clusters.
+
+**Best For:** Waymo Weather, Overstory Wildfire, Ionosphere/Kobold-style environmental or geophysical ML roles, aviation/weather intelligence, grid/wildfire risk, climate or environmental risk, and operational forecasting/nowcasting roles.
+
+**Headline:** Staff Data Scientist | Spatiotemporal Modeling | Environmental Intelligence | Measurement Rigor | Operational Decisions
+
+**Profile:** My work connects spatiotemporal inference, statistical signal processing, and decision-grade validation for physical systems where the true state is only observed indirectly. My doctoral research in space weather inferred geomagnetic and polar-cap structure from distributed magnetometer, satellite, and spacecraft observations; later work translated similar uncertainty-aware thinking into physiological sensing, adaptive monitoring, drift and regime-shift validation, and production decision-support systems. I am strongest in roles where environmental, geophysical, sensor, or operational data must become reliable evaluation signals: integrating heterogeneous measurements, quantifying uncertainty, identifying failure modes, and helping product, engineering, or operations teams decide when a model is ready to support real-world action.
+
+**Emphasize When Pruning:** Lead with CSTR space-weather forecasting/nowcasting, MedPSD, multi-instrument geophysical reconstruction, coordinate-system validation, spectral/time-frequency methods, Podimetrics adaptive monitoring and drift/regime-shift validation, physics-informed thermal modeling, and stakeholder-facing operational decision support.
+
+**Common Add-Ons:** Weather intelligence, environmental risk, climate risk, wildfire risk, geospatial ML, remote sensing, public/private data sources, first-party/third-party environmental data, ground-truth strategy, operational mitigation, deployment readiness, fleet or aviation operations, energy/grid resilience, uncertainty quantification, and scalable analysis frameworks across regions or climate types.
+
+**Do Not Overstate:** Do not imply direct meteorology, hydrology, wildfire science, forestry, utility vegetation management, GIS expertise, satellite-imagery production pipelines, lidar canopy modeling, weather-vendor integration, autonomous-vehicle operations ownership, or climate-risk product ownership unless Kevin confirms it. Frame the transfer as inference, validation, uncertainty, and operational-decision methodology applied to a new environmental substrate.
+
 ## Closed-Loop Physical AI And Self-Learning Systems
 
 **Status:** Provisional, retained after the 4MP JD because it requires distinct feedback-loop/action-under-uncertainty framing.

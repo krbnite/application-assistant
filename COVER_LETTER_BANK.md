@@ -24,6 +24,7 @@ Use old cover letters as style references only. Do not treat any prior company-s
 | OPEN-SAR-01 | SAR | Opener | Sensor AI, robotics, autonomy, edge perception, cameras, and physical-world sensing. |
 | OPEN-BSP-01 | BSP | Opener | Bayesian estimation, signal processing, spatiotemporal inference, scientific ML, and physical systems. |
 | OPEN-IOT-01 | IOT | Opener | Industrial, operational, time-series, monitoring, and decision-support roles. |
+| OPEN-ENV-01 | ENV | Opener | Environmental, weather, climate, wildfire, geospatial, and operational-decision roles. |
 | OPEN-CLP-01 | CLP | Opener | Closed-loop, adaptive, feedback, action-under-uncertainty, and self-learning physical systems. |
 | OPEN-QRE-01 | QRE | Opener | Quantitative/applied research-engineering opener: data infrastructure, statistical modeling, and evaluation rigor for a research team, domain-neutral (finance, healthcare, or other). |
 | EVID-POD-01 | HWD/SAR/CLP | Evidence | Podimetrics regulated product, embedded estimator, thermal CV, and validation evidence. |
@@ -40,6 +41,7 @@ Use old cover letters as style references only. Do not treat any prior company-s
 | BRIDGE-SAR-01 | SAR | Company bridge | Connects sensor inference to physical-world perception and deployed systems. |
 | BRIDGE-BSP-01 | BSP | Company bridge | Connects physical inference and spatiotemporal modeling to the target scientific domain. |
 | BRIDGE-IOT-01 | IOT | Company bridge | Connects operational ML to business/production decision systems. |
+| BRIDGE-ENV-01 | ENV | Company bridge | Connects space-weather/geophysical inference to environmental operational-decision roles. |
 | BRIDGE-CLP-01 | CLP | Company bridge | Connects estimation, validation, and deployment to adaptive feedback systems. |
 | BRIDGE-GAP-01 | Default | Gap bridge | Honest adjacent-domain bridge when Kevin lacks the exact target domain. |
 | BRIDGE-QRE-01 | QRE | Company bridge | Connects research-engineering discipline (pipelines, data-quality judgment, evaluation infrastructure) to the target research team's problem; domain-neutral. |
@@ -48,6 +50,7 @@ Use old cover letters as style references only. Do not treat any prior company-s
 | CLOSE-SAR-01 | SAR | Closing | Sensor AI / perception close. |
 | CLOSE-BSP-01 | BSP | Closing | Physical systems / scientific ML close. |
 | CLOSE-IOT-01 | IOT | Closing | Operational ML close. |
+| CLOSE-ENV-01 | ENV | Closing | Environmental/spatiotemporal operational-decision close. |
 | CLOSE-CLP-01 | CLP | Closing | Closed-loop physical AI close. |
 | CLOSE-QRE-01 | QRE | Closing | Quantitative research-engineering close. |
 
@@ -72,6 +75,10 @@ I am excited to apply for the {role_title} position at {company}. Across geophys
 ### OPEN-IOT-01: Operational time-series ML opener
 
 I am excited to apply for the {role_title} position at {company}. My work sits at the intersection of time-series ML, sensor analytics, statistical inference, and production decision support: building models that remain useful when data is noisy, incomplete, delayed, heterogeneous, and tied to real operational decisions. {company_possessive} focus on {company_problem} is a strong match for that background.
+
+### OPEN-ENV-01: Environmental operational-decision opener
+
+I am excited to apply for the {role_title} position at {company}. My work has focused on turning noisy, indirect, spatiotemporal measurements into reliable estimates, evaluation signals, and operating decisions. {company_possessive} work on {company_problem} is a strong match for that background: environmental or physical data has to be integrated, validated, and translated into decisions that remain trustworthy under uncertainty and changing real-world conditions.
 
 ### OPEN-CLP-01: Closed-loop physical AI opener
 
@@ -137,6 +144,10 @@ I do not come from a conventional {target_domain} background. What I would bring
 
 What draws me to {company} is the opportunity to apply that same production-minded modeling discipline to {company_problem}. I am especially interested in environments where modeling, data quality, instrumentation, and stakeholder decisions have to be reasoned about together.
 
+### BRIDGE-ENV-01: Environmental and geophysical decision bridge
+
+My background is not conventional {target_domain} training. The through-line is spatiotemporal physical inference: in space-weather research, I inferred latent environmental structure from distributed ground, satellite, and spacecraft observations; in health-technology work, I built and validated models under drift, sparse sampling, noisy measurements, and changing operating conditions. I would bring that same inference and validation machinery to {company_possessive} work on {target_contribution}, while ramping carefully on the domain-specific weather, climate, geospatial, or operational context.
+
 ### BRIDGE-CLP-01: Closed-loop bridge
 
 What draws me to {company} is the opportunity to work on systems where learning, estimation, and action are connected. My strongest contribution would be helping define what the system can know, how uncertainty should be represented, how feedback should be validated, and how model behavior should be translated into reliable operating decisions.
@@ -168,6 +179,10 @@ I would welcome the opportunity to bring my background in statistical signal pro
 ### CLOSE-IOT-01: Operational ML close
 
 I would welcome the opportunity to bring my background in time-series ML, sensor analytics, production data products, robust validation, and decision-support modeling to {company}.
+
+### CLOSE-ENV-01: Environmental operational-decision close
+
+I would welcome the opportunity to bring my background in spatiotemporal modeling, space-weather inference, statistical signal processing, uncertainty-aware validation, and operational decision support to {company}.
 
 ### CLOSE-CLP-01: Closed-loop physical AI close
 
