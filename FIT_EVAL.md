@@ -43,6 +43,14 @@ Score identity / narrative fit separately from offer probability:
 
 "Data Scientist" is not itself a positive signal. In the modern market it often means analytics, dashboards, growth/product metrics, adtech, fintech risk scoring, customer-support analytics, or stakeholder reporting. Treat generic DS roles cautiously unless the substrate is sensor, physical, physiological, environmental, scientific, operational telemetry, or model-quality work with real uncertainty.
 
+### Identity Pull And Priority
+
+Identity pull is decision-relevant evidence, not decorative enthusiasm. If a role creates a strong identity click and passes the hard gates, treat it as top-priority by default. Compensation, level, location, travel, company stage, and offer probability can still veto, delay, or sequence the application, but they should not demote the role merely because another opportunity is cleaner, safer, easier to score, or more conventionally legible.
+
+For A-identity roles, unresolved non-gating unknowns usually become fast follow-up questions rather than reasons to hold the role outside the ranking. Rank the role high with a flashing unknown when appropriate, then resolve the unknown before spending heavy packet effort if the answer could be a dealbreaker.
+
+Do not let generic product, business, or risk-analytics roles outrank A-identity roles just because they have fewer unknowns, clearer compensation, or a more obvious paper fit. Those roles can still be worth applying to for strategic reasons, but they should not launder Kevin's actual preferences out of the queue.
+
 ---
 
 ## 1. Order of Operations
@@ -51,18 +59,19 @@ Run these in order. Steps 1-3 are cheap and frequently decisive; do not skip the
 
 1. **Precedent check.** If prior job folders, notes, or tracking files are available, search them for the company and role family. A prior packet or prior score can change the decision, especially for same-company coordination.
 2. **Nearest-precedent comparison.** If prior fit evaluations are available, compare against the closest previously scored role. Scores should stay comparable across the cycle, but the process must still work without a tracking file.
-3. **Resolve decision-changing unknowns.** Location, comp band, req status, client identity, career level, or actual modeling substrate. Do not build against an unresolved unknown when the answer could change the verdict, priority, or application target.
+3. **Resolve decision-changing unknowns.** Location, comp band, req status, client identity, career level, or actual modeling substrate. Do not build against an unresolved unknown when the answer could change the verdict, priority, or application target. For strong A-identity roles, the default is to rank high with the unknown clearly flagged, then resolve it quickly before heavy packet work if it could be a dealbreaker.
 4. **Best-role-at-company check.** If the req is junior- or mid-scoped, check the company's job board for a senior version before scoring. Also check for adjacent roles that are a better first target by fit, interest, work mode, or narrative strength. This is the upstream version of the multiple-reqs coordination rule in §2.
 5. **Generic-JD research.** If the JD names no concrete techniques, read what the product actually does — product pages, launch announcements, engineering blogs — before scoring. An unspecific JD is missing information, not a soft gate.
 6. **Identify the positive home-lane signal and identity grade.** If none exists, say so before applying gates. A no-blocker generic DS role is not automatically a good fit.
 7. **Apply the gates and strong cautions (§2), then the structural tests (§3), then score.**
-8. **Separate identity fit, offer probability, strategic value, and final priority.** Do not collapse these into one blended verdict when they point in different directions.
+8. **Separate identity fit, offer probability, economics/logistics, strategic value, and final priority.** Do not collapse these into one blended verdict when they point in different directions. When a role creates strong identity pull and passes the hard gates, identity can dominate the final priority even if offer probability or logistics are uncertain.
 9. **End with a one-line verdict Kevin can paste into his notes (§8).** Logging is optional; do it only when Kevin asks, when it is likely to become an application target, or when the evaluation produced a reusable rule.
 
 ### Corollaries
 
 - **The JD text outranks indirect evidence.** Do not use an org chart, a job-board pattern, or a company's positioning to soften an explicitly stated required qualification.
 - **Cost of applying is not fit.** Commutability, remoteness, and a cheap packet belong in the *ranking*, never in the verdict.
+- **Safety is not priority.** A role should not outrank a stronger-identity target merely because it is easier to explain, easier to score, or less awkward to apply to.
 - **Prior notes are helpful but not required.** Kevin scores roles outside any one session or file. An unfamiliar role name is not evidence it was never assessed — ask rather than treating it as suspect.
 
 ---

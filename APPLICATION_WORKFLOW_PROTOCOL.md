@@ -6,7 +6,7 @@ Use this file first. Do not read every process, bank, template, and historical a
 
 ## Fit-Eval First
 
-When Kevin pastes a new job description and asks whether it is a fit, start with `FIT_EVAL.md`, not the packet workflow below. That screening step should produce a verdict, the reasoning behind it, and a one-line note Kevin can paste into his tracker. End by asking whether Kevin wants to discuss the verdict further or proceed to resume-first mode with any requested add-ons.
+When Kevin pastes a new job description and asks whether it is a fit, start with `FIT_EVAL.md`, not the packet workflow below. That screening step should produce a verdict, the reasoning behind it, and a one-line note Kevin can paste into his tracker. If a role has strong identity pull and passes the hard gates, recommend fast resume-first mode even if non-gating unknowns such as compensation, location, or company stage still need to be resolved. End by asking whether Kevin wants to discuss the verdict further or proceed to resume-first mode with any requested add-ons.
 
 When Kevin explicitly asks to tailor a resume, apply to a role, build a packet, or run the workflow for an already-greenlit role, use the packet workflow below directly. Treat any prior fit evaluation as context, but do not repeat the full screening pass unless the role, company, or constraints have changed.
 
