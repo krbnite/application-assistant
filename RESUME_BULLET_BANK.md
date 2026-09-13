@@ -140,7 +140,7 @@ MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place i
 | SKILL-01 | Machine learning | 3 | 3 | 2 | 2 | 2 | Keep but reorder terms to mirror the JD. |
 | SKILL-02 | Statistical signal processing and estimation | 3 | 3 | 3 | 3 | 3 | Usually keep. This is a signature differentiator. |
 | SKILL-03 | Sensor analytics and modalities | 3 | 3 | 3 | 2 | 2 | Keep for nearly all target roles; trim modalities irrelevant to the JD only if needed. |
-| SKILL-04 | Languages and tools | 2 | 2 | 2 | 3 | 2 | Keep concise; do not overclaim depth in tools only lightly represented. |
+| SKILL-04 | Languages and tools | 2 | 2 | 2 | 3 | 2 | Keep concise; do not overclaim depth in tools only lightly represented. Do not present C++ as professional experience; Kevin has C++ coursework and code-reading literacy, not professional C++ development. |
 
 ## Training / Certifications
 
@@ -445,7 +445,7 @@ IMUs, accelerometers, gyroscopes, ECG, pressure sensing, thermal imaging, magnet
 
 ### SKILL-04: Languages and tools
 
-Python, PyTorch, TensorFlow/Keras, OpenCV, HuggingFace, scikit-learn, SciPy, NumPy, MLflow, C/C++, R, MATLAB, IDL, SQL, Linux, Docker, Git, Jupyter, AWS, GCP.
+Python, PyTorch, TensorFlow/Keras, OpenCV, HuggingFace, scikit-learn, SciPy, NumPy, MLflow, C, R, MATLAB, IDL, SQL, Linux, Docker, Git, Jupyter, AWS, GCP.
 
 ### TRAIN-01: Deep Learning Nanodegree
 
