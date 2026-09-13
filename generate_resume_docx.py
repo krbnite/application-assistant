@@ -592,7 +592,7 @@ def build_docx(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: dict[
 
     core_entries = resolve_entries(plan.get("core_theme_ids", []), bank)
     if core_entries:
-        add_section(doc, "Core Research Themes")
+        add_section(doc, str(plan.get("core_section_title", "Core Research Themes")))
         for entry in core_entries:
             add_labeled_bullet(doc, entry.label, entry.text)
 
