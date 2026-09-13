@@ -253,7 +253,7 @@ Served as the primary scientific partner to software and hardware engineering te
 
 ### POD-12: Production scan-pipeline code and QC integration
 
-Contributed directly to the production Python scan-processing codebase, debugging odd pipeline behavior, fixing bugs, supporting PRs, and integrating consultant-built quality-control components needed to keep thermal algorithms reliable across chip and hardware vendors over time.
+Contributed directly to the production Python scan-processing codebase, debugging odd pipeline behavior, fixing bugs, supporting PRs, and integrating quality-control components needed to keep thermal algorithms reliable across chip and hardware vendors over time.
 
 ### POD-13: Event-driven AWS thermal pipeline
 
