@@ -29,6 +29,22 @@ These rules reflect accumulated fit-evaluation work, but the file should stand o
 
 ---
 
+## Positive Fit And Identity Signal
+
+Hard gates only identify disqualifiers or risks. They do **not** establish positive fit. A role should not become high priority merely because it avoids blockers. It needs a positive home-lane signal.
+
+Kevin's strongest positive signal is work on **instrumented reality**: physiological sensors, wearables, medical devices, robotics/perception, environmental or geophysical sensing, industrial inspection, thermal sensing, telemetry from physical systems, or models that infer hidden state from noisy measurements.
+
+Score identity / narrative fit separately from offer probability:
+
+- **A / North-star fit:** "I work on cyborgs / robots / weather / space / consciousness / patients with X." Sensor, physical, biological, environmental, medical, or scientific reality is central. Surface these roles as strong-interest targets, then use the gates to downgrade or reject only if the core craft is outside Kevin's evidence.
+- **B / Pragmatic fit:** Operational intelligence with real-world systems, telemetry, forecasting, reliability, maintenance, logistics, model trust, or customer-facing intelligence. These can be excellent applications when they use Kevin's modeling and validation strengths, but they are not automatically identity-defining.
+- **C / Fallback or strategic fit:** Generic product analytics, business analytics, risk analytics, dashboards, funnel metrics, feature adoption, adtech, fintech scoring, customer-support analytics, or generic SaaS data science. Apply only for strategic reasons such as compensation, company quality, networking, urgency, or unusually strong offer probability.
+
+"Data Scientist" is not itself a positive signal. In the modern market it often means analytics, dashboards, growth/product metrics, adtech, fintech risk scoring, customer-support analytics, or stakeholder reporting. Treat generic DS roles cautiously unless the substrate is sensor, physical, physiological, environmental, scientific, operational telemetry, or model-quality work with real uncertainty.
+
+---
+
 ## 1. Order of Operations
 
 Run these in order. Steps 1-3 are cheap and frequently decisive; do not skip them to get to the analysis.
@@ -38,8 +54,10 @@ Run these in order. Steps 1-3 are cheap and frequently decisive; do not skip the
 3. **Resolve decision-changing unknowns.** Location, comp band, req status, client identity, career level, or actual modeling substrate. Do not build against an unresolved unknown when the answer could change the verdict, priority, or application target.
 4. **Best-role-at-company check.** If the req is junior- or mid-scoped, check the company's job board for a senior version before scoring. Also check for adjacent roles that are a better first target by fit, interest, work mode, or narrative strength. This is the upstream version of the multiple-reqs coordination rule in §2.
 5. **Generic-JD research.** If the JD names no concrete techniques, read what the product actually does — product pages, launch announcements, engineering blogs — before scoring. An unspecific JD is missing information, not a soft gate.
-6. **Apply the gates and strong cautions (§2), then the structural tests (§3), then score.**
-7. **End with a one-line verdict Kevin can paste into his notes (§8).** Logging is optional; do it only when Kevin asks, when it is likely to become an application target, or when the evaluation produced a reusable rule.
+6. **Identify the positive home-lane signal and identity grade.** If none exists, say so before applying gates. A no-blocker generic DS role is not automatically a good fit.
+7. **Apply the gates and strong cautions (§2), then the structural tests (§3), then score.**
+8. **Separate identity fit, offer probability, strategic value, and final priority.** Do not collapse these into one blended verdict when they point in different directions.
+9. **End with a one-line verdict Kevin can paste into his notes (§8).** Logging is optional; do it only when Kevin asks, when it is likely to become an application target, or when the evaluation produced a reusable rule.
 
 ### Corollaries
 
@@ -228,9 +246,11 @@ Track recurring gaps that affect multiple otherwise-good roles. Treat this as a 
 
 Every fit evaluation produces two things.
 
-**1. Full analysis** — verdict, the gates that fired, honest gaps named specifically, what genuinely clears, ranking against the current queue, and any decision-changing unknown to resolve before building.
+**1. Full analysis** — verdict, identity / narrative fit, offer probability, strategic value, the gates that fired, honest gaps named specifically, what genuinely clears, ranking against the current queue, and any decision-changing unknown to resolve before building.
 
-**2. A short, pastable verdict for Kevin's notes**, covering: verdict, comp and location when known, the deciding gate(s), the strongest genuine hits, and any required pre-action. Kevin pastes this directly.
+**2. A short, pastable verdict for Kevin's notes**, covering: verdict, identity fit, comp and location when known, the deciding gate(s), the strongest genuine hits, and any required pre-action. Kevin pastes this directly.
+
+When the rankings diverge, say so explicitly. Examples: a role may be high identity fit but low offer probability, or high offer probability but only pragmatic/fallback identity fit. Do not call a role "top priority" without saying which axis makes it top priority.
 
 When Kevin wants a durable record, log the full entry wherever the current job-search tracker lives. Use a clear `Company - Role - VERDICT` heading, and note what the entry is logged *for* when it produced a reusable rule.
 
