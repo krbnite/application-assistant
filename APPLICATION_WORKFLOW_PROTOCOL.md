@@ -42,6 +42,15 @@ Do not create a cover letter, formal audit, or interview Q&A companion in resume
 
 Kevin performs DOCX visual QA by default. The agent should still run cheap structural checks when practical: validate the plan, confirm expected company/role naming, check for unresolved placeholders, and report whether page count or visual rendering was skipped.
 
+For priority roles, run a lightweight post-draft cultivation check before final delivery:
+
+- Confirm the first experience section leads with work Kevin would want to discuss, not merely the easiest keyword bridge.
+- Check that tailored rewrites preserve the bank-supported claim, avoid unsupported additions, and restore any specifics lost without a role-specific purpose.
+- Restore useful concrete evidence such as numbers, named systems, named stakeholders, or named data sources when it strengthens the target role.
+- Check for duplicate evidence caused by awards, projects, or repeated bullets.
+- Ensure the profile explains the bridge into the target company's domain without apologizing for honest gaps.
+- Remove skill keywords broader than Kevin's evidence or the selected cluster's guardrails support.
+
 ## Full Packet Mode
 
 Use full packet mode only when Kevin explicitly asks for a full packet or lists the full deliverables.
