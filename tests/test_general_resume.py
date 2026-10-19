@@ -31,7 +31,10 @@ class GeneralResumeTests(unittest.TestCase):
             self.assertEqual(md.count('Official title:'),3)
             for paragraph in doc.paragraphs[3:]:
                 if paragraph.text and paragraph.style.name!='Heading 1':
-                    self.assertIn(paragraph.text,md)
+                    self.assertIn(paragraph.text,md.replace("**", ""))
+            self.assertIn('- **SensorNet reusable biosignal modeling package:** Developed SensorNet',md)
+            # Publications remain ordinary bullets even when their titles contain colons.
+            self.assertIn('- Urban et al. "Rethinking the Polar Cap:',md)
             self.assertNotIn('Evidence /',md)
             self.assertEqual(doc.core_properties.title,'Kevin Urban General Resume')
             self.assertEqual(sorted(p.name for p in out.parent.iterdir()),[out.name])

@@ -815,7 +815,18 @@ def general_resume_markdown(docx_path: Path, plan: dict[str, Any]) -> str:
         elif style == "Resume Role":
             lines.extend(["**" + text + "**", ""])
         elif style == "List Bullet":
-            lines.append("- " + text)
+            # Labeled bullets already carry a bold prefix in the DOCX. Preserve
+            # that semantic label without treating colons in citations as labels.
+            prefix = ""
+            for run in paragraph.runs:
+                if not run.bold:
+                    break
+                prefix += run.text
+            label = prefix.rstrip()
+            if label.endswith(":") and text.startswith(label):
+                lines.append("- **" + label + "**" + text[len(label):])
+            else:
+                lines.append("- " + text)
         else:
             lines.extend([text, ""])
     return "\n".join(lines).rstrip() + "\n"
