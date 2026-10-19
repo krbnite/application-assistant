@@ -4,7 +4,7 @@ Last updated: 2026-10-19
 
 Research Scientist | Applied ML | Statistical Signal Processing | Sensor AI | Scientific Computing
 
-[Email](mailto:kevin.ddu@gmail.com) | [LinkedIn](https://linkedin.com/in/machinesaidgo) | [GitHub](https://github.com/krbnite)
+[Email](mailto:kevin.ddu@gmail.com) | [LinkedIn](https://linkedin.com/in/machinesaidgo) | [GitHub](https://github.com/krbnite) | [Technical Writing](https://krbnite.github.io)
 
 
 ## Profile

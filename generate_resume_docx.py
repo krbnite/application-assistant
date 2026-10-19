@@ -806,7 +806,7 @@ def general_resume_markdown(docx_path: Path, plan: dict[str, Any]) -> str:
             continue
         if i == 2:
             # Never copy the private DOCX contact line, including its phone number.
-            lines.extend([f"[Email](mailto:{email}) | [LinkedIn](https://linkedin.com/in/machinesaidgo) | [GitHub](https://github.com/krbnite)", ""])
+            lines.extend([f"[Email](mailto:{email}) | [LinkedIn](https://linkedin.com/in/machinesaidgo) | [GitHub](https://github.com/krbnite) | [Technical Writing](https://krbnite.github.io)", ""])
             continue
         style = paragraph.style.name
         prefix = ""

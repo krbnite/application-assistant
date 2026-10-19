@@ -26,6 +26,7 @@ class GeneralResumeTests(unittest.TestCase):
             md=public.read_text()
             doc=Document(out)
             self.assertIn('Last updated: 2026-10-19',md)
+            self.assertIn('[Technical Writing](https://krbnite.github.io)',md)
             self.assertNotIn('(973)',md)
             self.assertIn('(973)', '\n'.join(p.text for p in doc.paragraphs))
             self.assertEqual(md.count('Official title:'),3)
