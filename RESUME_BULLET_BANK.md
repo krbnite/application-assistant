@@ -76,7 +76,7 @@ In separate-role mode, default placement matters because CVB has three title/dat
 | CVB-03 | Wearable study design and evaluation | 3 | 1 | 2 | 1 | 1 | Lead for clinical study design, validation, sensor synchronization, and free-living data. |
 | CVB-04 | Sleep sensor validation | 3 | 1 | 2 | 0 | 0 | Use for wearable validation, sleep, biosignals, DTW, or measurement mismatch. |
 | CVB-05 | Parkinson's research leadership | 3 | 1 | 1 | 1 | 0 | Lead for health/neuro roles; compress for non-health roles. |
-| CVB-06 | Large-scale wearable data processing | 3 | 1 | 1 | 2 | 1 | Use for data infrastructure, longitudinal data, queryable datasets, and pipeline roles. |
+| CVB-06 | Multimodal wearable data processing | 3 | 1 | 1 | 2 | 1 | Use for data infrastructure, longitudinal data, queryable datasets, and pipeline roles. |
 | CVB-07 | Parkinson's digital biomarkers | 3 | 1 | 1 | 1 | 0 | Lead for digital biomarkers, neurotech, Parkinson's, grants, and wearable health. |
 | CVB-08 | Free-living Parkinson's monitoring | 3 | 2 | 1 | 1 | 0 | Strong for weak supervision, wearable ML, gait, and real-world sensor classification. |
 | CVB-09 | Wearable gesture recognition | 3 | 2 | 2 | 1 | 1 | Strong for IMUs, activity recognition, ablations, signal processing, and wearable algorithms. Default to Senior Data Scientist; optionally place in Associate Director only when grouping late-Sr-DS / early-Sensor-Analytics transition work improves the resume. |
@@ -325,7 +325,7 @@ Reframed conventional PSG/actigraphy validation methodology by developing a DTW-
 
 Led the wearable Parkinson's disease research program, providing scientific direction while co-developing wearable disease-monitoring models that culminated in a peer-reviewed publication and invited presentations.
 
-### CVB-06: Large-scale wearable data processing
+### CVB-06: Multimodal wearable data processing
 
 Converted free-living multimodal wearable recordings into a queryable local database, enabling efficient slicing, temporal alignment, quality auditing, and model development without loading full sensor streams into memory.
 
@@ -335,11 +335,11 @@ Named, built, and led the Sensor Analytics Team; secured a Michael J. Fox Founda
 
 ### CVB-08: Free-living Parkinson's monitoring
 
-Used a weakly supervised walk-detection framework to restrict disease inference to gait-relevant, walk-like intervals within unconstrained free-living recordings, then applied an end-to-end deep neural network to discriminate Parkinsonian gait from healthy controls with approximately 90% single-event accuracy and 100% daily majority-vote accuracy.
+Used a weakly supervised walk-detection framework to restrict disease inference to gait-relevant, walk-like intervals within unconstrained free-living recordings, then applied an end-to-end deep neural network to discriminate Parkinsonian gait from healthy controls with approximately 90% single-event accuracy and 100% daily majority-vote accuracy in an 11-subject preliminary study using leave-one-subject-out (LOSO) validation; co-first author of the resulting peer-reviewed publication (Sensors, 2022).
 
 ### CVB-09: Wearable gesture recognition
 
-Built Conv1D-LSTM gesture-recognition models for Rett stereotypy detection across Shimmer IMUs, Apple Watch, and Oura Ring datasets; informed IMU sampling-rate decisions using Nyquist reasoning and 25-400 Hz ablations, showing that higher sampling rates degraded classification performance.
+Built Conv1D-LSTM models for Rett stereotypy detection in a wearable-device comparison spanning Shimmer IMUs, Apple Watch, Oura Ring, and Fitbit; guided IMU sampling-rate selection using movement bandwidth, Nyquist criteria, and instrument-noise considerations, then confirmed the lower-rate choice through 25-400 Hz ablations.
 
 ### CVB-10: End-to-end biosignal modeling
 
