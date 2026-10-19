@@ -116,8 +116,8 @@ MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place i
 
 | ID | Bullet | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
-| CSTR-01 | Climatological time-frequency analysis | 0 | 1 | 3 | 1 | 1 | Lead for signal processing, geophysics, spectral/time-frequency methods, or physical systems. |
-| CSTR-02 | Geomagnetic coordinate representation and validation | 0 | 1 | 3 | 0 | 0 | Lead for geophysical/spatial inference; omit for most health or industrial roles. |
+| CSTR-01 | Polar-cap representation inference | 0 | 1 | 3 | 1 | 1 | Lead for signal processing, geophysics, spectral/time-frequency methods, representation inference, or physical systems. |
+| CSTR-02 | Magnetic-coordinate validation | 0 | 1 | 3 | 0 | 0 | Lead for geophysical/spatial inference, hidden-structure inference, and representation validation; omit for most health or industrial roles. |
 | CSTR-03 | Geophysical signal interpretation | 0 | 1 | 3 | 1 | 1 | Use for physical inference, disentangling confounds, and noisy indirect observations. |
 | CSTR-04 | Multi-instrument space weather reconstruction | 0 | 2 | 3 | 0 | 1 | Lead for sensor networks, fusion, reconstruction, visualization, or space/weather roles. |
 | CSTR-05 | Scientific collaboration | 0 | 1 | 2 | 0 | 0 | Use for research teams, NASA/mission credibility, talks, and scientific collaboration. |
@@ -388,13 +388,15 @@ MachineSaidGo / independent R&D: Designed and prototyped self-supervised deep le
 
 MachineSaidGo / independent research collaboration: Collaborated with mechanical-engineering researchers on RNN forecasting and PyTorch surrogate-modeling approaches for computationally expensive tapped-granular-system simulations, extending a long-running nonlinear-dynamics and scientific-simulation research thread.
 
-### CSTR-01: Climatological time-frequency analysis
+### CSTR-01: Polar-cap representation inference
 
-Developed MedPSD, a median-normalized sliding-window power spectral density method that revealed long-timescale geomagnetic spatiotemporal structure across the polar cap not visible in standard event-based case studies or captured by prevailing magnetospheric models, contributing to a PhD dissertation, peer-reviewed publications, and invited research presentations.
+Developed median-relative spectral analysis over 63-day Antarctic magnetometer baselines to test whether the standard magnetic coordinate system correctly mapped ground sensors into the magnetosphere, revealing hidden polar-cap structure not visible in short event studies and motivating a more data-driven geometry.
 
-### CSTR-02: Geomagnetic coordinate representation and validation
+### CSTR-02: Magnetic-coordinate validation
 
-Demonstrated that corrected geomagnetic coordinates misclassify polar cap sites, motivating and validating alternative observational coordinate representations, including eccentric dipole coordinates computed from IGRF-12 coefficients.
+Demonstrated that widely used magnetic coordinates could misclassify high-latitude sensor sites, motivating alternative observational coordinate representations that better separated deep polar-cap behavior from boundary-straddling, cusp-like behavior.
+
+Interview context (Kevin, October 14, 2026): This investigation began during exploratory data analysis when observations did not fit the accepted picture of polar geomagnetic geometry. Kevin then investigated the discrepancy extensively. Use CSTR-01 and CSTR-02 as evidence of testing an accepted representation against observations; avoid broadening the claim into having disproved all polar geomagnetic field geometry.
 
 ### CSTR-03: Geophysical signal interpretation
 
@@ -414,7 +416,7 @@ Translated analytical models of granular fluid dynamics into numerical simulatio
 
 ### CSTR-07: Solar-wind forecasting and inverse nowcasting
 
-Developed solar-wind-driven forecasting pipelines for geomagnetic activity in the deep polar cap, then proposed an inverse remote-sensing approach using ground-based magnetometer observations to nowcast near-Earth solar-wind state parameters.
+Developed dynamic lagged-correlation analyses linking deep polar-cap ground-sensor power to upstream solar-wind magnetic-field fluctuations, supporting an inverse remote-sensing approach for nowcasting near-Earth solar-wind state parameters.
 
 ### INT-01: JPL trajectory optimization and design
 
