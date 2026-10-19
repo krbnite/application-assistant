@@ -68,5 +68,9 @@
     "PUB-02"
   ],
   "award_section_title": "Selected Awards",
-  "award_ids": []
+  "award_ids": [],
+  "group_cvb_roles_before_bullets": false,
+  "cvb_layout_rationale": "",
+  "cvb_functional_description": "",
+  "cvb_group_summary": ""
 }

@@ -466,9 +466,9 @@ def add_org(doc: Document, org: str) -> None:
     doc.add_paragraph(org, style="Resume Org")
 
 
-def add_role(doc: Document, role: Role) -> None:
+def add_role(doc: Document, role: Role, *, official: bool = False) -> None:
     p = doc.add_paragraph(style="Resume Role")
-    add_text(p, role.title, bold=True, size=9.25, color=INK)
+    add_text(p, ("Official title: " if official else "") + role.title, bold=True, size=9.25, color=INK)
     add_text(p, f" | {role.location} | ", size=9.25, color=MUTED)
     add_text(p, role.dates, italic=True, size=9.1, color=MUTED)
 
@@ -606,7 +606,34 @@ def validate_plan(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: di
     experience = plan.get("experience", {})
     if not isinstance(experience, dict):
         raise ValueError("Plan field `experience` must be an object keyed by role key.")
-    valid_roles = {role.key for role in ROLE_ORDER}
+    grouped = plan.get("group_cvb_roles_before_bullets", False)
+    if not isinstance(grouped, bool):
+        raise ValueError("group_cvb_roles_before_bullets must be a boolean.")
+    cvb_roles = [role for role in ROLE_ORDER if role.key.startswith("cvb_")]
+    grouped_specs = experience.get("cvb_grouped", [])
+    if grouped_specs and not grouped:
+        raise ValueError("experience.cvb_grouped requires group_cvb_roles_before_bullets: true.")
+    if grouped_specs and any(experience.get(role.key) for role in cvb_roles):
+        raise ValueError("Use cvb_grouped or individual CVB buckets, not both.")
+    if grouped:
+        if not str(plan.get("cvb_layout_rationale") or "").strip():
+            raise ValueError("Grouped CVB requires cvb_layout_rationale explaining the choice.")
+        if any(plan.get("role_summaries", {}).get(role.key) for role in cvb_roles):
+            raise ValueError("Grouped CVB uses cvb_group_summary instead of individual role_summaries.")
+        specs = grouped_specs or [spec for role in cvb_roles for spec in experience.get(role.key, [])]
+        seen = set()
+        for spec in specs:
+            entry = resolve_entry(spec, bank)
+            if entry.id != "CUSTOM" and entry.id in seen:
+                raise ValueError(f"Duplicate grouped CVB bullet: {entry.id}")
+            seen.add(entry.id)
+    for key in ["cvb_functional_description", "cvb_group_summary"]:
+        value = plan.get(key, "")
+        if not isinstance(value, str):
+            raise ValueError(f"{key} must be a string.")
+        if value and not grouped:
+            raise ValueError(f"{key} requires grouped CVB layout.")
+    valid_roles = {role.key for role in ROLE_ORDER} | {"cvb_grouped"}
     unknown_roles = sorted(set(experience) - valid_roles)
     if unknown_roles:
         raise ValueError(
@@ -620,6 +647,8 @@ def validate_plan(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: di
             raise ValueError(f"`experience.{role_key}` must be a list.")
         for spec in specs:
             entry = resolve_entry(spec, bank)
+            if role_key == "cvb_grouped" and entry.id != "CUSTOM" and not entry.id.startswith("CVB-"):
+                raise ValueError("cvb_grouped accepts only CVB bank entries or supported custom bullets.")
             allowed_ids = ROLE_ALLOWED_ENTRY_IDS.get(role_key)
             allow_override = isinstance(spec, dict) and bool(spec.get("allow_role_override"))
             if (
@@ -653,13 +682,35 @@ def build_docx(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: dict[
             add_labeled_bullet(doc, entry.label, entry.text)
 
     experience = plan.get("experience", {})
-    if any(experience.get(role.key) for role in ROLE_ORDER):
+    if any(experience.get(role.key) for role in ROLE_ORDER) or experience.get("cvb_grouped"):
         add_section(doc, "Experience")
         current_org = None
         role_summaries = plan.get("role_summaries", {})
         group_wwe_roles = bool(plan.get("group_wwe_roles_before_bullets"))
         for role in ROLE_ORDER:
             specs = experience.get(role.key, [])
+            if plan.get("group_cvb_roles_before_bullets") and role.key.startswith("cvb_"):
+                if role.key != "cvb_director":
+                    continue
+                cvb_roles = [candidate for candidate in ROLE_ORDER if candidate.key.startswith("cvb_")]
+                cvb_specs = experience.get("cvb_grouped") or [
+                    spec for candidate in cvb_roles for spec in experience.get(candidate.key, [])
+                ]
+                if not cvb_specs:
+                    continue
+                add_org(doc, role.organization)
+                current_org = role.organization
+                functional = plan.get("cvb_functional_description", "")
+                if functional:
+                    heading = doc.add_paragraph(functional, style="Resume Role")
+                    heading.runs[0].bold = True
+                for candidate in cvb_roles:
+                    add_role(doc, candidate, official=bool(functional))
+                if plan.get("cvb_group_summary"):
+                    add_body(doc, plan["cvb_group_summary"], italic=True)
+                for entry in resolve_entries(cvb_specs, bank):
+                    add_labeled_bullet(doc, entry.label, entry.text)
+                continue
             if group_wwe_roles and role.key == "wwe_senior_ds":
                 wwe_specs = list(experience.get("wwe_senior_ds", [])) + list(
                     experience.get("wwe_data_scientist", [])

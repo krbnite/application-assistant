@@ -93,7 +93,7 @@ Guidance:
 - Compress leadership or older role blocks when the JD is more technical than managerial.
 - Use Early Signal bullets mainly for clinical ML, interpretability, feasibility judgment, or leakage/validation relevance.
 
-For IC targets, the CVB role headings may use a supported functional description above the official title/date line, following `RESUME_TAILORING_AGENT.md` under `IC Positioning And Functional Titles`. The official titles above remain the canonical employment history. Lead the bullets with personal technical work; do not infer a management narrative from the titles. This is a presentation option, not permission to assign equivalent Staff/Principal ranks or change project dates. Grouped-title layout remains a separate choice.
+For IC targets, the CVB role headings may use a supported functional description above the official title/date line, following `RESUME_TAILORING_AGENT.md` under `IC Positioning And Functional Titles`. The official titles above remain the canonical employment history. Lead the bullets with personal technical work; do not infer a management narrative from the titles. This is a presentation option, not permission to assign equivalent Staff/Principal ranks or change project dates. Choose separate or grouped CVB structure using the tailoring guide. Grouped mode preserves all three official title/date lines above one ordered company-wide bullet list and supports a company-wide functional description. Separate mode remains the generator default; choose based on chronology, spanning projects, and narrative clarity.
 
 ### WWE
 

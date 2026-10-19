@@ -62,7 +62,7 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 
 ## Cohen Veterans Bioscience
 
-Default role placement matters because CVB has three separate title/date buckets. Use this placement unless a bullet genuinely spans titles, and document any override in the audit.
+In separate-role mode, default placement matters because CVB has three title/date buckets. Use the placement below unless a bullet genuinely spans titles, and explain overrides in final notes or the requested audit. In optional grouped mode, put ordered company-wide CVB bullets in `experience.cvb_grouped` instead; the generator retains all three official title/date lines without assigning each bullet to a specific period. See the tailoring guide for layout selection.
 
 - `cvb_director`: `CVB-01` to `CVB-06`, plus `CVB-17` when research-ops/team-enablement work is relevant.
 - `cvb_associate_director`: `CVB-07`, `CVB-08`, `CVB-10` to `CVB-12`, `CVB-20`, plus `CVB-18` when knowledge-graph/database work is relevant and the resume benefits from grouping the late Senior Data Scientist / early Associate Director transition platform work with the Associate Director sensor-analytics story. `CVB-09` may be placed here only when the resume benefits from grouping late Senior Data Scientist / early Sensor Analytics transition work with the Associate Director sensor-analytics story.

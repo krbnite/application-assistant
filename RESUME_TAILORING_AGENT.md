@@ -80,7 +80,19 @@ These are functional descriptions, not replacement employment titles or a new ra
 
 Do not translate Director/Associate Director into Staff, Principal, or Associate Research Scientist as presumed equivalent ranks. Do not silently replace official titles. Use official titles in fields requesting employment titles and in background-check employment history.
 
-Record any functional description, its supporting evidence, and the presentation choice in the selection plan and concise delivery notes (or audit when requested). Check the generated DOCX itself: a description stored only in plan notes does not change the visible role heading. If the current generator cannot express the chosen presentation, identify that implementation gap rather than claiming it was applied. This protocol does not by itself add generator support or change the separate/grouped-title layout rules.
+Record any functional description, its supporting evidence, and the presentation choice in the selection plan and concise delivery notes (or audit when requested). Check the generated DOCX itself: a description stored only in plan notes does not change the visible role heading. If the current generator cannot express the chosen presentation, identify that implementation gap rather than claiming it was applied. The generator supports company-wide functional descriptions in grouped CVB mode as documented below; per-role functional headings in separate mode remain an implementation gap.
+
+## Choosing Separate Or Grouped CVB Roles
+
+Choose the CVB layout for the target role; neither layout is universally preferred. Use separate role sections when project dates, promotion-specific accomplishments, or changes in responsibility help the reader. Use grouped titles when selected projects span promotions, exact title boundaries are uncertain, or a company-wide technical narrative avoids repetition and artificial project splits. Page savings alone should not erase useful chronology. For IC roles, either structure must foreground hands-on contributions.
+
+Set `group_cvb_roles_before_bullets: true` and explain the choice in `cvb_layout_rationale`. The generator prints all three official titles, locations, and date ranges in reverse chronology, followed by one ordered list of company-wide bullets. Each accomplishment appears once; grouping does not imply that it occurred throughout every title period.
+
+For grouped mode, prefer `experience.cvb_grouped` as the ordered list and leave the three individual CVB lists empty or omitted. This accepts CVB bank IDs, named variants, and supported custom bullets without pretending to know exact title placement. Existing plans may instead retain their separate CVB buckets: grouped rendering concatenates them in reverse role order, with their usual placement checks intact. Do not mix a nonempty cvb_grouped list with nonempty individual CVB lists. Duplicate bank IDs are rejected; also review different IDs for overlapping accomplishments.
+
+Optionally supply `cvb_functional_description` for a supported company-wide function such as `Research Scientist - Wearable ML & Signal Processing`. It appears above the three official title lines, each explicitly labeled `Official title:`. Use a description that faithfully covers the selected work; per-period differences may favor separate sections instead. Optional `cvb_group_summary` appears once below the titles; individual CVB role summaries must be removed in grouped mode. Record the functional-description rationale in plan notes as required by the IC-positioning rules.
+
+When grouping is false or omitted, existing separate-role behavior and title-placement checks remain unchanged. Keep dates and attribution accurate in either layout. Report the chosen layout and reason in final notes or the requested audit. No post-generation title rearrangement script is needed.
 
 ## Optional AI / Agentic Systems Project Signal
 
@@ -239,7 +251,7 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Use a role-specific JSON plan as the bridge between tailoring decisions and DOCX generation.
 - Use plain bullet IDs when retaining canonical text as-is.
 - Use plan objects with `id` plus edited `text` when lightly editing or merging canonical bullets; explain those edits in the audit.
-- Keep CVB bullets under their canonical title/date bucket. If `RESUME_BULLET_BANK.md` explicitly marks a CVB bullet as spanning/transition work, place it wherever it best supports the resume's narrative and section balance, then note the placement logic in the audit. If a CVB bullet is not marked as spanning but truly spans titles for a specific resume, use `allow_role_override: true` in the plan and explain the override in the audit.
+- In separate-role mode, keep CVB bullets under their canonical title/date bucket. If `RESUME_BULLET_BANK.md` explicitly marks a CVB bullet as spanning/transition work, place it wherever it best supports the resume's narrative and section balance, then note the placement logic in the audit. If a CVB bullet is not marked as spanning but truly spans titles for a specific resume, use `allow_role_override: true` in the plan and explain the override in the audit.
 - Use custom bullet objects rarely, and only when Kevin's known evidence supports the claim.
 - Use `project_ids`, `training_ids`, and `award_ids` sparingly and only when the JD benefits from those optional signals enough to justify the space.
 - Preserve the strongest evidence density: concrete systems, sensors, methods, validation designs, deployment context, metrics, and outcomes.
