@@ -27,6 +27,7 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 - Drop even high-scoring bullets when they are redundant, too detailed, or not needed for the three-page target.
 - Create new bullets rarely. When a new bullet is created for a role, record it in the audit and decide whether to add it here as `provisional`.
 - Do not invent evidence. Rewrite, merge, or split only from known master-resume material unless Kevin supplies new facts.
+- Broad and detailed variants serve different audiences. Prefer broad wording for scientific/modeling roles; use implementation detail when software ownership, reproducibility, research computing, or engineering standards are central. Select one version of the same accomplishment and avoid repeating it through overlapping IDs. Evidence notes are tailoring guidance, not resume text.
 
 ## Core Research Theme Bullets
 
@@ -54,9 +55,10 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | POD-09 | Physics-informed thermal modeling | 3 | 2 | 3 | 1 | 3 | Lead for physical modeling, synthetic data, simulation, and scientific ML. |
 | POD-10 | Next Best Action analytics | 2 | 0 | 0 | 3 | 1 | Lead for digital health decisioning, intervention analytics, operations, or A/B testing; omit for pure sensor research. |
 | POD-11 | Cross-functional technical leadership | 3 | 2 | 2 | 3 | 3 | Keep for senior, lead, startup, regulated, or cross-functional roles. |
-| POD-12 | Production scan-pipeline code and QC integration | 2 | 2 | 1 | 3 | 2 | Use for software-heavy ML, scientific platform, production codebase, debugging, PR, pipeline integration, and multi-vendor hardware/QC roles. |
+| POD-12 | Production scan-pipeline ownership and QC integration | 2 | 2 | 1 | 3 | 2 | Prefer over POD-05 for scientific software leadership, production code ownership, refactoring, and external-module integration; avoid repeating the same pipeline accomplishment in both. |
 | POD-13 | Event-driven AWS thermal pipeline | 3 | 3 | 1 | 3 | 2 | Use for AWS/event-driven production pipelines, edge-to-cloud systems, model/API outputs, downstream tools, and provider communications. |
 | POD-14 | SmartMat+ edge-to-cloud estimator outputs | 3 | 3 | 2 | 2 | 3 | Use for edge inference, telemetry-backed cloud outputs, sensor-product jobs, and embedded-to-cloud ML framing. |
+| POD-15 | PR-triggered pipeline sandbox validation | 2 | 2 | 1 | 3 | 2 | Supporting evidence for isolated integration testing, GitHub Actions, and version-controlled pipeline configuration. Do not claim Terraform authoring or infrastructure ownership. |
 
 ## Cohen Veterans Bioscience
 
@@ -65,6 +67,7 @@ Default role placement matters because CVB has three separate title/date buckets
 - `cvb_director`: `CVB-01` to `CVB-06`, plus `CVB-17` when research-ops/team-enablement work is relevant.
 - `cvb_associate_director`: `CVB-07`, `CVB-08`, `CVB-10` to `CVB-12`, `CVB-20`, plus `CVB-18` when knowledge-graph/database work is relevant and the resume benefits from grouping the late Senior Data Scientist / early Associate Director transition platform work with the Associate Director sensor-analytics story. `CVB-09` may be placed here only when the resume benefits from grouping late Senior Data Scientist / early Sensor Analytics transition work with the Associate Director sensor-analytics story.
 - `cvb_senior_ds`: `CVB-09`, `CVB-13` to `CVB-16`, `CVB-18`, `CVB-19`. `CVB-09` defaults here because the sampling-rate ablation work occurred in Kevin's final months as Senior Data Scientist. `CVB-18` is a legitimate spanning/transition bullet: the dated EaSiEco/knowledge-graph/database materials are concentrated in the 2018-2019 Senior Data Scientist period, but some work continued into the first several Associate Director months.
+- `CVB-21` (SensorNet) belongs with the Sensor Analytics team work; `CVB-22` (cloud tooling) combines an early EC2 setup with later team tooling; `CVB-23` (code/pipeline review) describes work across projects. Exact title boundaries for these newly supplied facts are not established. Use a combined CVB entry when appropriate, or confirm placement before assigning a narrow title/date bucket.
 
 | ID | Bullet | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
@@ -88,6 +91,9 @@ Default role placement matters because CVB has three separate title/date buckets
 | CVB-18 | Wearables knowledge graph and database evaluation | 2 | 0 | 1 | 2 | 1 | Use for knowledge graphs, databases, schema design, wearable-to-biology mapping, or ontology-ish roles. |
 | CVB-19 | Sensor-driven questionnaire estimation | 3 | 1 | 2 | 1 | 2 | Lead for passive sensing, mental health, clinic-assessment proxy modeling, patient-state estimation, and strategic pivot from unsupported wearable-suicide prediction asks. |
 | CVB-20 | Biosignal ablation leadership variant | 3 | 1 | 2 | 1 | 1 | Variant of CVB-10 for staff, lead, manager, or principal roles where experiment design, delegation, and team direction matter; usually choose either CVB-10 or CVB-20, not both. |
+| CVB-21 | SensorNet reusable biosignal modeling package | 3 | 2 | 2 | 2 | 2 | Lead for scientific software, reusable ML libraries, configurable model APIs, time-series tooling, and reproducibility. Complement CVB-10/20 only if software design and modeling results each earn separate space. |
+| CVB-22 | AWS research-computing access and workflow tooling | 2 | 1 | 2 | 2 | 1 | Concrete computing-focused alternative to broad CVB-17; use for Linux/AWS environments, IAM role assumption, synchronization, and team enablement. Usually choose one of CVB-17/22. |
+| CVB-23 | Cross-project scientific code and leakage review | 3 | 1 | 2 | 2 | 2 | Use for scientific software quality, peer code review, and validation standards. Distinguish recurring cross-project review from the specific CVB-15 validation redesign; avoid redundant leakage bullets. |
 
 ## WWE
 
@@ -102,6 +108,9 @@ Default role placement matters because CVB has three separate title/date buckets
 | WWE-07 | Live-event analytics latency reduction | 0 | 0 | 0 | 3 | 0 | Use for real-time dashboards, executive analytics, streaming/live operations, or latency-sensitive reporting. |
 | WWE-08 | Revenue attribution and behavioral research | 0 | 0 | 0 | 2 | 0 | Use for attribution, survey fusion, sentiment analysis, customer behavior, or business analytics roles. |
 | WWE-09 | AWS automated scoring to Redshift | 0 | 0 | 0 | 3 | 0 | Use for automated model scoring, warehouse/dashboard consumption, AWS pipelines, and stakeholder-facing ML outputs. |
+| WWE-10 | Streaming-account anomaly and enforcement investigation | 0 | 0 | 0 | 3 | 0 | Lead for investigative analytics, anomaly detection, fraud-adjacent work, SQL validation, visualization, and challenging operational assumptions. Do not imply established user intent or include an unverified settlement amount. |
+| WWE-11 | Shared GPU-enabled AWS/Linux research environment | 1 | 1 | 2 | 2 | 1 | Use for scientific computing, shared GPU/Linux administration, researcher support, and scheduled data workloads. Single-instance experience; do not label as cluster/distributed HPC. |
+| WWE-12 | Reusable R ingestion-to-reporting package | 1 | 0 | 2 | 3 | 1 | Lead for reusable packages, automated analysis/reporting, maintainability, and consultant handoff. HTML reports are not evidence of web-application ownership. |
 
 ## MachineSaidGo / Independent Research Projects
 
@@ -109,7 +118,6 @@ MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place i
 
 | ID | Project | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
-| WWE-10 | Streaming-account anomaly and enforcement investigation | 0 | 0 | 0 | 3 | 0 | Lead for investigative analytics, anomaly detection, fraud-adjacent work, SQL validation, visualization, and challenging operational assumptions. Do not imply established user intent or include an unverified settlement amount. |
 | MSG-01 | Self-supervised behavioral video analysis | 1 | 3 | 1 | 0 | 1 | Optional project signal for computer vision, behavioral analysis, biotech/animal-behavior research, self-supervised learning, anomaly detection, or video-based sensing roles. |
 | MSG-02 | Granular-dynamics surrogate modeling | 0 | 1 | 3 | 0 | 2 | Optional project signal for scientific ML, surrogate modeling, simulation acceleration, nonlinear dynamics, physics-informed ML, and physics/modeling roles. |
 
@@ -171,6 +179,7 @@ These are optional keyword and storyline signals. Use `training_ids` only when a
 | PUB-11 | Bounded DTW sleep-device validation methods manuscript | 3 | 0 | 2 | 0 | 0 | Manuscript in preparation / unpublished. Lead for sleep validation, PSG-device comparison, signal alignment, and methods-heavy wearable roles. |
 | PUB-12 | Sleep apnea deep learning and domain-expertise working paper | 3 | 0 | 2 | 0 | 0 | Working paper / unpublished. Lead for EEG/sleep, biosignal ML, ablations, and classical-to-deep-model comparison roles. |
 | PUB-13 | Augmented unsupervised domain adaptation working paper | 3 | 2 | 2 | 0 | 1 | Working paper / unpublished. Lead for transfer learning, domain adaptation, shared representations, patient-level adaptation, and deep time-series roles. |
+| PUB-14 | APS DFD 2022 tapped granular systems ML presentation | 0 | 1 | 3 | 0 | 2 | Conference abstract / oral presentation, not peer-reviewed. Use for recent physics-informed ML, RNN forecasting, surrogate modeling, granular microstructure, and nonlinear physical systems. |
 
 ## Awards
 
@@ -178,7 +187,6 @@ Awards are optional credibility signals. Use `award_ids` only when a role benefi
 
 | ID | Award | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
-| PUB-14 | APS DFD 2022 tapped granular systems ML presentation | 0 | 1 | 3 | 0 | 2 | Conference abstract / oral presentation, not peer-reviewed. Use for recent physics-informed ML, RNN forecasting, surrogate modeling, granular microstructure, and nonlinear physical systems. |
 | AWARD-01 | CVB 2023 Milestone Achievement Awards | 1 | 0 | 0 | 1 | 0 | Use sparingly for senior leadership, program-delivery, grant/funding, or CV-like profiles; usually omit from ordinary technical resumes. |
 
 ## Canonical Text
@@ -229,9 +237,15 @@ Designed baseline-updating and alert-triggering logic for longitudinal fall-risk
 
 Extended, validated, and refactored FDA-cleared SmartMat thermal computer-vision workflows, including foot bounding-box extraction, left/right classification, segmentation masks, background removal, scan-quality handling, and anatomical keypoint temperature extraction in a deployed platform serving roughly 15k active patients and 25k lifetime patients.
 
+Selection guidance: Keep POD-05 for broad CV/health resumes emphasizing scientific scope, modality, and deployed reach. Prefer POD-12 for engineering-focused resumes emphasizing ownership, refactoring, and integration. Merge selectively rather than spending two bullets on the same underlying pipeline.
+
 ### POD-06: SmartMat+ thermal algorithm adaptation
 
 Led technical investigations to transfer, tune, and validate existing SmartMat thermal scan-processing modules for SmartMat+, tracing hardware, statistical, and algorithmic sources of prediction error across data collection, validation design, training/inference consistency, scan quality, and device-specific behavior to support reliable production deployment.
+
+Implementation-focused variant: Adapted the production thermal pipeline for SmartMat+ by adding device-specific processing for its different sensor-matrix shape, training new machine-learning and calibration models, and collaborating with hardware engineering on data collection and validation and software engineering on sandbox testing and Git workflows.
+
+Selection guidance: The default emphasizes scientific diagnosis and validation judgment; the variant emphasizes implementation and model delivery. Use the version that matches the JD, not both. Source for added implementation details: Kevin, October 15, 2026.
 
 ### POD-07: Personalized DFU detection prototype
 
@@ -253,9 +267,11 @@ Co-designed an analytical framework combining quasi-experimental methods with ba
 
 Served as the primary scientific partner to software and hardware engineering teams, advising on algorithm integration, sensor behavior, scan-processing pipelines, validation methodology, and implementation decisions to ensure production systems preserved the integrity of physiological data and scientific conclusions.
 
-### POD-12: Production scan-pipeline code and QC integration
+### POD-12: Production scan-pipeline ownership and QC integration
 
-Contributed directly to the production Python scan-processing codebase, debugging odd pipeline behavior, fixing bugs, supporting PRs, and integrating quality-control components needed to keep thermal algorithms reliable across chip and hardware vendors over time.
+Owned the production thermal-imaging, modeling, and detection pipeline; substantially refactored the Python codebase, integrated data-quality modules supplied by external consultants, and implemented device-specific processing paths for SmartMat+ in collaboration with software and hardware engineering.
+
+Evidence / selection guidance (Kevin, October 15, 2026): Ownership, substantial refactoring, and consultant-module integration strengthen the earlier contribution-only wording and replace it. Debugging, bug fixes, PR participation, and reliability across chip/hardware vendors remain supported by the earlier bank entry and may be substituted when relevant. Prefer POD-05 for broader scientific/modality framing and POD-06 when SmartMat+ model training and validation are the main accomplishment. Do not imply ownership of the entire cloud platform or all engineering infrastructure.
 
 ### POD-13: Event-driven AWS thermal pipeline
 
@@ -264,6 +280,12 @@ Worked on production algorithm components in an AWS-hosted, event-driven SmartMa
 ### POD-14: SmartMat+ edge-to-cloud estimator outputs
 
 Designed a SmartMat+ on-device fall-risk estimator whose outputs were generated on embedded hardware and transmitted with device telemetry to AWS for downstream monitoring and analysis.
+
+### POD-15: PR-triggered pipeline sandbox validation
+
+Validated thermal-processing and model-inference changes in isolated clones of the production AWS environment, using PR-triggered Terraform/GitHub Actions provisioning, configuring scan-processing workflows and pipeline revisions, and submitting scans to exercise the integrated system.
+
+Evidence / boundaries (Kevin, October 15, 2026, clarified): Terraform use is confirmed, not inferred from a repository name. Kevin opened PRs in the team's infrastructure/controller repository to trigger creation of a full clone of the production AWS setup with its own API address. He edited relevant configuration and GitHub Actions YAML files, including test-data selections and pipeline revision hashes, and pushed scans to the environment to test scan-triggered processing. Software engineers taught him the workflow; much of provisioning remained a black box to him. This establishes hands-on use of Terraform-provisioned AWS environments and configuration of integration-testing workflows, not authorship of Terraform infrastructure, design of the provisioning system, or ownership of the entire cloud platform. Terraform may be named in this qualified context; do not present it as independent infrastructure-as-code expertise. Use generic system descriptions on resumes. This evidence does not by itself establish automated test-suite design.
 
 ### CVB-01: Technical leadership and mentorship
 
@@ -291,7 +313,7 @@ Converted free-living multimodal wearable recordings into a queryable local data
 
 ### CVB-07: Parkinson's digital biomarkers
 
-Named, built, and led the Sensor Analytics Team; won a Michael J. Fox Foundation grant to develop digital biomarkers for longitudinal Parkinson's disease monitoring using Verily Watch data from PPMI.
+Named, built, and led the Sensor Analytics Team; secured a Michael J. Fox Foundation grant and its second-year renewal to develop digital biomarkers for longitudinal Parkinson's disease monitoring using Verily Watch data from PPMI.
 
 ### CVB-08: Free-living Parkinson's monitoring
 
@@ -303,11 +325,11 @@ Built Conv1D-LSTM gesture-recognition models for Rett stereotypy detection acros
 
 ### CVB-10: End-to-end biosignal modeling
 
-Adapted an end-to-end Conv1D-LSTM architecture from wearable gesture recognition to ECG sleep-apnea detection, then validated the approach through ablation studies that progressively replaced a classical signal-processing, handcrafted-feature, and SVM pipeline with learned representations; the resulting framework was later adapted to Parkinson's disease monitoring.
+Adapted an end-to-end Conv1D-LSTM architecture from wearable gesture recognition to ECG sleep-apnea detection, then validated the approach through ablation studies that progressively replaced a classical signal-processing, handcrafted-feature, and SVM pipeline with learned representations; the TensorFlow/Keras framework was later ported to PyTorch and adapted to Parkinson's disease monitoring.
 
 ### CVB-11: Cross-domain representation learning
 
-Explored DRCN-style reconstruction/classification networks, variational autoencoder architectures, transfer learning, and unsupervised domain adaptation for wearable physiological time series, using shared representations and pseudolabel concepts to adapt general activity models toward new sensors, subjects, and clinical datasets.
+Explored DRCN-style reconstruction/classification networks, variational autoencoder architectures, transfer learning, and unsupervised domain adaptation for wearable physiological time series, using TensorFlow/Keras and PyTorch prototypes with shared representations and pseudolabel concepts to adapt general activity models toward new sensors, subjects, and clinical datasets.
 
 ### CVB-12: Weakly supervised learning
 
@@ -333,6 +355,8 @@ Collaborated with Columbia University on maternal-health prediction using clinic
 
 Created reusable project-organization practices, code-review patterns, technical tutorials, Bash/AWS/Docker/Conda/Git helper tools, and lightweight environment scaffolding to reduce reproducibility friction and technical debt across data science research projects.
 
+Selection guidance: Preserve this broad team-enablement bullet for roles that value reproducible research without requiring low-level cloud detail. Prefer CVB-22 when concrete access/environment automation is more relevant; do not repeat the same tooling work in both. SensorNet (CVB-21) is separate reusable-package evidence.
+
 ### CVB-18: Wearables knowledge graph and database evaluation
 
 Evaluated graph, document, relational, time-series, and key-value databases for a wearable-to-biological-phenomenon knowledge graph; designed schema iterations and demonstrated Neo4j/Cypher query patterns for many-to-many mappings among sensors, algorithms, symptoms, disorders, and physiological signals.
@@ -345,13 +369,35 @@ Proposed a Sensor-Driven Questionnaire Estimation framework as a tractable alter
 
 Conceived and mapped systematic ablation experiments demonstrating that end-to-end deep learning architectures outperformed handcrafted feature-engineering pipelines across biosignal domains, delegated most model implementation to a direct report, and personally contributed the final, best-performing architecture.
 
+### CVB-21: SensorNet reusable biosignal modeling package
+
+Developed SensorNet, an internal, pip-installable package for the Sensor Analytics Team, consolidating recurring Conv1D-LSTM implementations into a configurable model class with training, updating, and inference methods plus DTW-like and time-series augmentation utilities; pinned installations to documented revision hashes for reproducibility as the package evolved.
+
+Evidence / boundaries (Kevin, October 15, 2026): Kevin began the package after repeatedly rewriting the network for new projects. This establishes reusable interfaces, package development/refactoring, and version-pinned project dependencies. Do not infer a public release, PyPI publication, automated test coverage, comprehensive dependency locking, or exact title/date placement. Hash pinning supports reproducibility; it does not prove an entire experiment environment was reproducible.
+
+### CVB-22: AWS research-computing access and workflow tooling
+
+Configured an EC2/Linux research environment and later created login, synchronization, IAM role-assumption, and EC2-selection scripts for himself and a direct report, reducing workflow friction on a newly introduced cloud research system.
+
+Evidence / selection guidance (Kevin, October 15, 2026): The initial EC2 setup was a single-user environment early in Kevin's CVB tenure; the later team scripts addressed a new cloud system that initially slowed research. IAM roles here were temporarily assumed roles, not simply Linux user accounts. This is the concrete cloud-workflow alternative to CVB-17, not evidence that Kevin architected the underlying cloud platform. Exact title boundaries remain unconfirmed.
+
+### CVB-23: Cross-project scientific code and leakage review
+
+Reviewed other researchers' software packages and modeling pipelines across projects, identifying data-leakage risks and scrutinizing implementation choices that affected the validity of scientific results.
+
+Evidence / selection guidance (Kevin, October 15, 2026): This recurring review work extends beyond the specific gesture-validation redesign in CVB-15. Use for scientific code review and quality judgment; do not infer organization-wide mandatory review policies, release authority, or formal test standards.
+
 ### WWE-01: Production viewership data products
 
-Built API-based social-data pipelines and live-event KPI dashboards across YouTube, Facebook, Twitter, and WWE Network, replacing third-party vendor feeds costing roughly $1M/year while improving data coverage and timeliness.
+Built API-based social-data pipelines and co-developed live-event KPI dashboards across YouTube, Facebook, Twitter, and WWE Network, replacing third-party vendor feeds costing roughly $1M/year while improving data coverage and timeliness.
 
 ### WWE-02: Real-time executive analytics
 
-Developed a multi-platform dashboard for live-event viewership metrics and KPIs, enabling informed real-time executive decisions during live broadcasts.
+Co-created a multi-platform live-event dashboard by owning its data collection, transformation, and analysis pipelines, enabling real-time executive decisions during broadcasts.
+
+Detailed variant: Owned collection, transformation, analysis, and table preparation for executive live-event reporting across YouTube, WWE Network, Facebook, and Twitter, implementing most pipelines directly and delegating Twitter collection to a direct report; partnered with the manager who built the Tableau SQL and visualizations.
+
+Attribution / selection guidance (Kevin, October 15, 2026): Use the compact version when the outcome matters most and the detailed version when pipeline ownership, delegation, and collaboration matter. Kevin's manager owned the Tableau SQL and visualizations; do not imply Kevin independently built those components. This attribution also applies to WWE-01 and WWE-07.
 
 ### WWE-03: Production customer behavior analytics
 
@@ -379,13 +425,27 @@ Built revenue-attribution, survey-fusion, sentiment-analysis, seasonal-behavior,
 
 ### WWE-09: AWS automated scoring to Redshift
 
-Operated AWS-hosted automated web-scraping, API collection, model-scoring, and reporting workflows, with churn-model scores written to Redshift and ingested by dashboards for marketing and product stakeholders.
+Developed and maintained AWS-hosted automated web-scraping, API collection, model-scoring, and reporting workflows, using cron to schedule hourly/daily data collection and daily analytical reports; churn-model scores were written to Redshift for marketing and product dashboards.
+
+Evidence / selection guidance (Kevin, October 15, 2026): The cron schedules and ongoing code maintenance strengthen the earlier operations-only wording. These are scheduled workloads on EC2, not evidence of cluster scheduling or distributed execution. Use WWE-11 instead when shared GPU/Linux environment administration is the main requirement; avoid repeating the collection/reporting details.
 
 ### WWE-10: Streaming-account anomaly and enforcement investigation
 
 Investigated anomalous WWE Network account usage by rebuilding SQL analyses and mapping device activity, revealing individual accounts with 200+ devices streaming simultaneously across countries and exposing a failure to enforce the platform's two-device concurrency limit.
 
 Evidence / interview context (Kevin, October 14, 2026): The original assignment concerned device-switching behavior during major live events. Implausibly large device counts initially led Kevin to suspect his own queries; he rebuilt them incrementally before visualizing geographic and simultaneous usage. He encountered internal pushback based on the stated two-device limit. Kevin reports that WWE subsequently established that MLBAM was not enforcing the limit and that a lawsuit/settlement followed, but he does not recall the precise legal details or amount. Omit the legal outcome and dollar figure from resume claims until confirmed. The observations establish unexpected usage and failed enforcement, not the users' motives or a network intrusion.
+
+### WWE-11: Shared GPU-enabled AWS/Linux research environment
+
+Administered a GPU-enabled AWS EC2/Linux instance shared by three users, configuring user accounts, private and shared directory permissions, NVIDIA/TensorFlow dependencies, and Jupyter and RStudio servers while troubleshooting colleagues' environment issues.
+
+Evidence / boundaries (Kevin, October 15, 2026): Approximately 2016-2017. The instance also hosted cron-scheduled scrapers, API collectors, and reporting workflows (WWE-09). This is concrete shared GPU research-computing and Linux administration experience; do not claim a multi-node HPC cluster, distributed training, Slurm/PBS, or measured performance/scaling gains.
+
+### WWE-12: Reusable R ingestion-to-reporting package
+
+Built an R package spanning SFTP data ingestion, parsing and transformation, analysis, plotting, and HTML/PDF report generation for stakeholder email distribution; handed the package off to consultants to run and maintain.
+
+Evidence / boundaries (Kevin, October 15, 2026): The handoff supports reusable software and lifecycle/knowledge-transfer experience. Do not infer a public package release, a web application, specific documentation or testing practices, or that the package itself implemented email delivery.
 
 ### MSG-01: Self-supervised behavioral video analysis
 
