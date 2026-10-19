@@ -114,6 +114,7 @@ Use `TAILORED_RESUME_PLAN_TEMPLATE.json` as the starting shape for a role-specif
 - Fill the profile slot from `PROFILE_BANK.md`.
 - Fill core research themes, experience bullets, optional project signals, skills, education, optional training/certifications, publications, and optional awards from `RESUME_BULLET_BANK.md`.
 - Plain string IDs pull exact canonical text from `RESUME_BULLET_BANK.md`.
+- For structured bank entries, plain IDs pull only `Resume text`; Evidence, Boundaries, and Selection sections never enter the document. Select a named variant with an object such as `{"id": "POD-06", "variant": "implementation"}`. A variant cannot be combined with a `text` override. Legacy single-paragraph entries remain supported.
 - Object entries with `id`, `label`, and/or `text` represent light edits to canonical bullets and must be defended in the audit or final notes, depending on the selected workflow mode.
 - CVB bullets must stay in their canonical title/date bucket unless the plan sets `allow_role_override: true` and the audit explains why the bullet spans titles.
 - Object entries without an `id` are custom bullets and should be rare.

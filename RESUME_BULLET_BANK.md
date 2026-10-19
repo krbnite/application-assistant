@@ -191,7 +191,7 @@ Awards are optional credibility signals. Use `award_ids` only when a role benefi
 
 ## Canonical Text
 
-The generator uses this section for exact bullet, project, skill, internship, training, publication, and award text. Keep IDs synchronized with the tables above.
+The generator uses this section for exact bullet, project, skill, internship, training, publication, and award text. Keep IDs synchronized with the tables above. Plain entries remain a single paragraph. Entries needing internal context use `#### Resume text` plus optional `#### Evidence`, `#### Boundaries`, `#### Selection`, or `#### Variant: name` sections. Only Resume text is emitted by default; notes are never resume text. Select a named variant in a plan with `{"id": "POD-06", "variant": "implementation"}` or `{"id": "WWE-02", "variant": "detailed"}`. A variant and a custom `text` override are mutually exclusive. Keep each resume text or variant to one paragraph. Do not add unmarked paragraphs; the generator rejects ambiguous content. Short selection guidance already covered by the scoring table should stay there; entry-specific explanations may remain alongside the entry without duplicating the table.
 
 ### CORE-01: Sensor inference under uncertainty
 
@@ -235,17 +235,27 @@ Designed baseline-updating and alert-triggering logic for longitudinal fall-risk
 
 ### POD-05: Production thermal CV pipeline
 
+#### Resume text
+
 Extended, validated, and refactored FDA-cleared SmartMat thermal computer-vision workflows, including foot bounding-box extraction, left/right classification, segmentation masks, background removal, scan-quality handling, and anatomical keypoint temperature extraction in a deployed platform serving roughly 15k active patients and 25k lifetime patients.
 
-Selection guidance: Keep POD-05 for broad CV/health resumes emphasizing scientific scope, modality, and deployed reach. Prefer POD-12 for engineering-focused resumes emphasizing ownership, refactoring, and integration. Merge selectively rather than spending two bullets on the same underlying pipeline.
+#### Selection
+
+Keep POD-05 for broad CV/health resumes emphasizing scientific scope, modality, and deployed reach. Prefer POD-12 for engineering-focused resumes emphasizing ownership, refactoring, and integration. Merge selectively rather than spending two bullets on the same underlying pipeline.
 
 ### POD-06: SmartMat+ thermal algorithm adaptation
 
+#### Resume text
+
 Led technical investigations to transfer, tune, and validate existing SmartMat thermal scan-processing modules for SmartMat+, tracing hardware, statistical, and algorithmic sources of prediction error across data collection, validation design, training/inference consistency, scan quality, and device-specific behavior to support reliable production deployment.
 
-Implementation-focused variant: Adapted the production thermal pipeline for SmartMat+ by adding device-specific processing for its different sensor-matrix shape, training new machine-learning and calibration models, and collaborating with hardware engineering on data collection and validation and software engineering on sandbox testing and Git workflows.
+#### Variant: implementation
 
-Selection guidance: The default emphasizes scientific diagnosis and validation judgment; the variant emphasizes implementation and model delivery. Use the version that matches the JD, not both. Source for added implementation details: Kevin, October 15, 2026.
+Adapted the production thermal pipeline for SmartMat+ by adding device-specific processing for its different sensor-matrix shape, training new machine-learning and calibration models, and collaborating with hardware engineering on data collection and validation and software engineering on sandbox testing and Git workflows.
+
+#### Selection
+
+The default emphasizes scientific diagnosis and validation judgment; the variant emphasizes implementation and model delivery. Use the version that matches the JD, not both. Source for added implementation details: Kevin, October 15, 2026.
 
 ### POD-07: Personalized DFU detection prototype
 
@@ -269,7 +279,11 @@ Served as the primary scientific partner to software and hardware engineering te
 
 ### POD-12: Production scan-pipeline ownership and QC integration
 
+#### Resume text
+
 Owned the production thermal-imaging, modeling, and detection pipeline; substantially refactored the Python codebase, integrated data-quality modules supplied by external consultants, and implemented device-specific processing paths for SmartMat+ in collaboration with software and hardware engineering.
+
+#### Evidence
 
 Evidence / selection guidance (Kevin, October 15, 2026): Ownership, substantial refactoring, and consultant-module integration strengthen the earlier contribution-only wording and replace it. Debugging, bug fixes, PR participation, and reliability across chip/hardware vendors remain supported by the earlier bank entry and may be substituted when relevant. Prefer POD-05 for broader scientific/modality framing and POD-06 when SmartMat+ model training and validation are the main accomplishment. Do not imply ownership of the entire cloud platform or all engineering infrastructure.
 
@@ -283,7 +297,11 @@ Designed a SmartMat+ on-device fall-risk estimator whose outputs were generated 
 
 ### POD-15: PR-triggered pipeline sandbox validation
 
+#### Resume text
+
 Validated thermal-processing and model-inference changes in isolated clones of the production AWS environment, using PR-triggered Terraform/GitHub Actions provisioning, configuring scan-processing workflows and pipeline revisions, and submitting scans to exercise the integrated system.
+
+#### Evidence
 
 Evidence / boundaries (Kevin, October 15, 2026, clarified): Terraform use is confirmed, not inferred from a repository name. Kevin opened PRs in the team's infrastructure/controller repository to trigger creation of a full clone of the production AWS setup with its own API address. He edited relevant configuration and GitHub Actions YAML files, including test-data selections and pipeline revision hashes, and pushed scans to the environment to test scan-triggered processing. Software engineers taught him the workflow; much of provisioning remained a black box to him. This establishes hands-on use of Terraform-provisioned AWS environments and configuration of integration-testing workflows, not authorship of Terraform infrastructure, design of the provisioning system, or ownership of the entire cloud platform. Terraform may be named in this qualified context; do not present it as independent infrastructure-as-code expertise. Use generic system descriptions on resumes. This evidence does not by itself establish automated test-suite design.
 
@@ -353,9 +371,13 @@ Collaborated with Columbia University on maternal-health prediction using clinic
 
 ### CVB-17: Reproducible team workflows and tooling
 
+#### Resume text
+
 Created reusable project-organization practices, code-review patterns, technical tutorials, Bash/AWS/Docker/Conda/Git helper tools, and lightweight environment scaffolding to reduce reproducibility friction and technical debt across data science research projects.
 
-Selection guidance: Preserve this broad team-enablement bullet for roles that value reproducible research without requiring low-level cloud detail. Prefer CVB-22 when concrete access/environment automation is more relevant; do not repeat the same tooling work in both. SensorNet (CVB-21) is separate reusable-package evidence.
+#### Selection
+
+Preserve this broad team-enablement bullet for roles that value reproducible research without requiring low-level cloud detail. Prefer CVB-22 when concrete access/environment automation is more relevant; do not repeat the same tooling work in both. SensorNet (CVB-21) is separate reusable-package evidence.
 
 ### CVB-18: Wearables knowledge graph and database evaluation
 
@@ -371,19 +393,31 @@ Conceived and mapped systematic ablation experiments demonstrating that end-to-e
 
 ### CVB-21: SensorNet reusable biosignal modeling package
 
+#### Resume text
+
 Developed SensorNet, an internal, pip-installable package for the Sensor Analytics Team, consolidating recurring Conv1D-LSTM implementations into a configurable model class with training, updating, and inference methods plus DTW-like and time-series augmentation utilities; pinned installations to documented revision hashes for reproducibility as the package evolved.
+
+#### Evidence
 
 Evidence / boundaries (Kevin, October 15, 2026): Kevin began the package after repeatedly rewriting the network for new projects. This establishes reusable interfaces, package development/refactoring, and version-pinned project dependencies. Do not infer a public release, PyPI publication, automated test coverage, comprehensive dependency locking, or exact title/date placement. Hash pinning supports reproducibility; it does not prove an entire experiment environment was reproducible.
 
 ### CVB-22: AWS research-computing access and workflow tooling
 
+#### Resume text
+
 Configured an EC2/Linux research environment and later created login, synchronization, IAM role-assumption, and EC2-selection scripts for himself and a direct report, reducing workflow friction on a newly introduced cloud research system.
+
+#### Evidence
 
 Evidence / selection guidance (Kevin, October 15, 2026): The initial EC2 setup was a single-user environment early in Kevin's CVB tenure; the later team scripts addressed a new cloud system that initially slowed research. IAM roles here were temporarily assumed roles, not simply Linux user accounts. This is the concrete cloud-workflow alternative to CVB-17, not evidence that Kevin architected the underlying cloud platform. Exact title boundaries remain unconfirmed.
 
 ### CVB-23: Cross-project scientific code and leakage review
 
+#### Resume text
+
 Reviewed other researchers' software packages and modeling pipelines across projects, identifying data-leakage risks and scrutinizing implementation choices that affected the validity of scientific results.
+
+#### Evidence
 
 Evidence / selection guidance (Kevin, October 15, 2026): This recurring review work extends beyond the specific gesture-validation redesign in CVB-15. Use for scientific code review and quality judgment; do not infer organization-wide mandatory review policies, release authority, or formal test standards.
 
@@ -393,9 +427,15 @@ Built API-based social-data pipelines and co-developed live-event KPI dashboards
 
 ### WWE-02: Real-time executive analytics
 
+#### Resume text
+
 Co-created a multi-platform live-event dashboard by owning its data collection, transformation, and analysis pipelines, enabling real-time executive decisions during broadcasts.
 
-Detailed variant: Owned collection, transformation, analysis, and table preparation for executive live-event reporting across YouTube, WWE Network, Facebook, and Twitter, implementing most pipelines directly and delegating Twitter collection to a direct report; partnered with the manager who built the Tableau SQL and visualizations.
+#### Variant: detailed
+
+Owned collection, transformation, analysis, and table preparation for executive live-event reporting across YouTube, WWE Network, Facebook, and Twitter, implementing most pipelines directly and delegating Twitter collection to a direct report; partnered with the manager who built the Tableau SQL and visualizations.
+
+#### Evidence
 
 Attribution / selection guidance (Kevin, October 15, 2026): Use the compact version when the outcome matters most and the detailed version when pipeline ownership, delegation, and collaboration matter. Kevin's manager owned the Tableau SQL and visualizations; do not imply Kevin independently built those components. This attribution also applies to WWE-01 and WWE-07.
 
@@ -425,25 +465,41 @@ Built revenue-attribution, survey-fusion, sentiment-analysis, seasonal-behavior,
 
 ### WWE-09: AWS automated scoring to Redshift
 
+#### Resume text
+
 Developed and maintained AWS-hosted automated web-scraping, API collection, model-scoring, and reporting workflows, using cron to schedule hourly/daily data collection and daily analytical reports; churn-model scores were written to Redshift for marketing and product dashboards.
+
+#### Evidence
 
 Evidence / selection guidance (Kevin, October 15, 2026): The cron schedules and ongoing code maintenance strengthen the earlier operations-only wording. These are scheduled workloads on EC2, not evidence of cluster scheduling or distributed execution. Use WWE-11 instead when shared GPU/Linux environment administration is the main requirement; avoid repeating the collection/reporting details.
 
 ### WWE-10: Streaming-account anomaly and enforcement investigation
 
+#### Resume text
+
 Investigated anomalous WWE Network account usage by rebuilding SQL analyses and mapping device activity, revealing individual accounts with 200+ devices streaming simultaneously across countries and exposing a failure to enforce the platform's two-device concurrency limit.
+
+#### Evidence
 
 Evidence / interview context (Kevin, October 14, 2026): The original assignment concerned device-switching behavior during major live events. Implausibly large device counts initially led Kevin to suspect his own queries; he rebuilt them incrementally before visualizing geographic and simultaneous usage. He encountered internal pushback based on the stated two-device limit. Kevin reports that WWE subsequently established that MLBAM was not enforcing the limit and that a lawsuit/settlement followed, but he does not recall the precise legal details or amount. Omit the legal outcome and dollar figure from resume claims until confirmed. The observations establish unexpected usage and failed enforcement, not the users' motives or a network intrusion.
 
 ### WWE-11: Shared GPU-enabled AWS/Linux research environment
 
+#### Resume text
+
 Administered a GPU-enabled AWS EC2/Linux instance shared by three users, configuring user accounts, private and shared directory permissions, NVIDIA/TensorFlow dependencies, and Jupyter and RStudio servers while troubleshooting colleagues' environment issues.
+
+#### Evidence
 
 Evidence / boundaries (Kevin, October 15, 2026): Approximately 2016-2017. The instance also hosted cron-scheduled scrapers, API collectors, and reporting workflows (WWE-09). This is concrete shared GPU research-computing and Linux administration experience; do not claim a multi-node HPC cluster, distributed training, Slurm/PBS, or measured performance/scaling gains.
 
 ### WWE-12: Reusable R ingestion-to-reporting package
 
+#### Resume text
+
 Built an R package spanning SFTP data ingestion, parsing and transformation, analysis, plotting, and HTML/PDF report generation for stakeholder email distribution; handed the package off to consultants to run and maintain.
+
+#### Evidence
 
 Evidence / boundaries (Kevin, October 15, 2026): The handoff supports reusable software and lifecycle/knowledge-transfer experience. Do not infer a public package release, a web application, specific documentation or testing practices, or that the package itself implemented email delivery.
 
@@ -461,7 +517,11 @@ Developed median-relative spectral analysis over 63-day Antarctic magnetometer b
 
 ### CSTR-02: Magnetic-coordinate validation
 
+#### Resume text
+
 Demonstrated that widely used magnetic coordinates could misclassify high-latitude sensor sites, motivating alternative observational coordinate representations that better separated deep polar-cap behavior from boundary-straddling, cusp-like behavior.
+
+#### Evidence
 
 Interview context (Kevin, October 14, 2026): This investigation began during exploratory data analysis when observations did not fit the accepted picture of polar geomagnetic geometry. Kevin then investigated the discrepancy extensively. Use CSTR-01 and CSTR-02 as evidence of testing an accepted representation against observations; avoid broadening the claim into having disproved all polar geomagnetic field geometry.
 

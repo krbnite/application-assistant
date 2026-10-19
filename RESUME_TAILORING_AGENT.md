@@ -192,6 +192,8 @@ When a new JD strongly matches an existing archetype:
 - Example: FDA IDE/PMA language is a strong health/neurotech tailoring signal when present, as in Motif, but it is not mandatory for the health/neurotech archetype.
 - Tell Kevin whether the archetype was unchanged, lightly updated, or substantially revised, and why.
 
+Bank maintenance: keep ordinary canonical entries as single paragraphs. Use the optional structured format documented under `RESUME_BULLET_BANK.md` Canonical Text only for entries needing evidence, boundaries, selection notes, or named variants. Never place unmarked notes in resume text. Keep general rules here and brief relevance guidance in the scoring table; retain specific attribution and claim boundaries beside the accomplishment. Select variants explicitly in the plan; plain IDs emit only the default resume paragraph.
+
 ## Bullet Selection Workflow
 
 For each template section, choose the appropriate and relevant bullets for the target job using `RESUME_BULLET_BANK.md`, and discard inappropriate or lower-value bullets.

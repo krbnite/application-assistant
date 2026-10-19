@@ -5,7 +5,7 @@ import argparse
 import json
 import re
 import sys
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
@@ -41,6 +41,7 @@ class BankEntry:
     text: str
     scores: dict[str, int]
     guidance: str
+    variants: dict[str, str] = field(default_factory=dict)
 
 
 @dataclass(frozen=True)
@@ -187,28 +188,72 @@ def parse_table_entries(markdown: str) -> dict[str, dict[str, Any]]:
     return entries
 
 
-def parse_canonical_text(markdown: str) -> dict[str, tuple[str, str]]:
+def parse_entry_body(entry_id: str, body: str) -> tuple[str, dict[str, str]]:
+    """Accept legacy prose or explicitly bounded resume text and internal notes."""
+    def resume_paragraph(value: str) -> str:
+        value = value.strip()
+        if not value or re.search(r"\n\s*\n", value):
+            raise ValueError(f"{entry_id}: resume text/variants must be one nonempty paragraph; "
+                             "put notes under Evidence, Boundaries, or Selection.")
+        if re.search(r"^(?:Evidence|Selection guidance|Interview context|Detailed variant|"
+                     r"Implementation-focused variant|Attribution)[^\n]*:", value, re.M):
+            raise ValueError(f"{entry_id}: unmarked notes; use explicit field headings.")
+        return " ".join(value.split())
+
+    fields = list(re.finditer(r"^#### ([^\n]+)\n", body, re.M))
+    if not fields:
+        return resume_paragraph(body), {}
+    if body[:fields[0].start()].strip():
+        raise ValueError(f"{entry_id}: put resume wording under '#### Resume text'.")
+    values: dict[str, str] = {}
+    variants: dict[str, str] = {}
+    for i, match in enumerate(fields):
+        name = match.group(1).strip()
+        value = body[match.end():fields[i+1].start() if i+1 < len(fields) else len(body)].strip()
+        if name in values:
+            raise ValueError(f"{entry_id}: duplicate field {name!r}.")
+        if not value:
+            raise ValueError(f"{entry_id}: empty field {name!r}.")
+        values[name] = value
+        if name.startswith("Variant: "):
+            key = name.removeprefix("Variant: ").strip()
+            if not re.fullmatch(r"[a-z][a-z0-9_-]*", key):
+                raise ValueError(f"{entry_id}: invalid variant name {key!r}.")
+            variants[key] = resume_paragraph(value)
+        elif name not in {"Resume text", "Evidence", "Boundaries", "Selection"}:
+            raise ValueError(f"{entry_id}: unknown field {name!r}.")
+    if "Resume text" not in values:
+        raise ValueError(f"{entry_id}: structured entry requires '#### Resume text'.")
+    return resume_paragraph(values["Resume text"]), variants
+
+
+def parse_canonical_entries(markdown: str) -> dict[str, tuple[str, str, dict[str, str]]]:
     if "## Canonical Text" not in markdown:
         raise SystemExit("RESUME_BULLET_BANK.md is missing `## Canonical Text`.")
     section = markdown.split("## Canonical Text", 1)[1]
     pattern = re.compile(
-        r"^###\s+((?:CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB|TRAIN|AWARD)-\d+):\s*(.*?)\s*$\n+(.*?)(?=^###\s+(?:CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB|TRAIN|AWARD)-\d+:|\Z)",
+        r"^###[ \t]+((?:CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB|TRAIN|AWARD)-\d+):[ \t]*(.*?)\n+(.*?)(?=^###[ \t]+(?:CORE|POD|CVB|WWE|MSG|CSTR|INT|SKILL|PUB|TRAIN|AWARD)-\d+:|\Z)",
         re.M | re.S,
     )
-    texts: dict[str, tuple[str, str]] = {}
+    entries = {}
     for match in pattern.finditer(section):
-        entry_id = match.group(1).strip()
-        label = match.group(2).strip()
-        text = re.sub(r"\n{2,}", "\n\n", match.group(3).strip())
-        text = " ".join(line.strip() for line in text.splitlines() if line.strip())
-        texts[entry_id] = (label, text)
-    return texts
+        entry_id, label, body = match.groups()
+        if entry_id in entries:
+            raise ValueError(f"Duplicate canonical ID: {entry_id}")
+        text, variants = parse_entry_body(entry_id, body)
+        entries[entry_id] = (label.strip(), text, variants)
+    return entries
+
+
+def parse_canonical_text(markdown: str) -> dict[str, tuple[str, str]]:
+    # Preserve the existing public return shape for callers needing defaults only.
+    return {key: (label, text) for key, (label, text, _) in parse_canonical_entries(markdown).items()}
 
 
 def parse_bullet_bank(path: Path) -> dict[str, BankEntry]:
     markdown = read_text(path)
     table_entries = parse_table_entries(markdown)
-    canonical_text = parse_canonical_text(markdown)
+    canonical_text = parse_canonical_entries(markdown)
 
     bank: dict[str, BankEntry] = {}
     missing_text = sorted(set(table_entries) - set(canonical_text))
@@ -219,13 +264,14 @@ def parse_bullet_bank(path: Path) -> dict[str, BankEntry]:
         )
 
     for entry_id, meta in table_entries.items():
-        label, text = canonical_text[entry_id]
+        label, text, variants = canonical_text[entry_id]
         bank[entry_id] = BankEntry(
             id=entry_id,
             label=label or meta["label"],
             text=text,
             scores=meta.get("scores", {}),
             guidance=meta.get("guidance", ""),
+            variants=variants,
         )
     return bank
 
@@ -474,14 +520,24 @@ def resolve_entry(spec: Any, bank: dict[str, BankEntry]) -> BankEntry:
         base = bank.get(entry_id)
         if base is None:
             raise ValueError(f"Unknown bullet-bank ID: {entry_id}")
+        text = spec.get("text") or base.text
+        if "variant" in spec:
+            if "text" in spec:
+                raise ValueError(f"{entry_id}: choose a variant or a text override, not both.")
+            variant = spec["variant"]
+            if not isinstance(variant, str) or variant not in base.variants:
+                raise ValueError(f"{entry_id}: unknown variant {variant!r}; available: {', '.join(base.variants) or 'none'}.")
+            text = base.variants[variant]
         return BankEntry(
             id=entry_id,
             label=spec.get("label") or base.label,
-            text=spec.get("text") or base.text,
+            text=text,
             scores=base.scores,
             guidance=base.guidance,
         )
 
+    if "variant" in spec:
+        raise ValueError("Variant selection requires a bullet-bank ID.")
     label = spec.get("label")
     text = spec.get("text")
     if not label or not text:
