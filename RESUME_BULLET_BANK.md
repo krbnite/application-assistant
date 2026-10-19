@@ -48,7 +48,7 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | POD-02 | Robust estimator validation | 3 | 2 | 3 | 3 | 3 | Lead for validation, uncertainty, deployment, drift, and sparse/noisy data. |
 | POD-03 | Adaptive fall-risk monitoring | 3 | 1 | 2 | 3 | 3 | Lead for longitudinal monitoring, personalized baselines, operational alerts, and adaptive systems. |
 | POD-04 | Adaptive alert logic | 3 | 1 | 2 | 3 | 3 | Strong for health decisioning, alerting, production monitoring, and action-under-uncertainty. |
-| POD-05 | Production thermal CV pipeline | 3 | 3 | 2 | 2 | 2 | Lead for computer vision, medical device algorithms, production CV, and sensor perception. |
+| POD-05 | Production thermal CV and signal-processing pipeline | 3 | 3 | 2 | 2 | 2 | Lead for computer vision, medical device algorithms, production CV, and sensor perception. |
 | POD-06 | SmartMat+ thermal algorithm adaptation | 3 | 2 | 2 | 3 | 2 | Strong for transfer/tuning, hardware variation, product deployment, and production diagnostics. |
 | POD-07 | Personalized DFU detection prototype | 3 | 1 | 2 | 1 | 2 | Use for clinical personalization, biomarkers, baselines, or adaptive detection; often compress. |
 | POD-08 | Framewise foot tracking prototype | 2 | 3 | 2 | 1 | 2 | Use for tracking, segmentation, sequence imaging, and perception roles. |
@@ -233,11 +233,11 @@ Reduced time to reliable patient-specific estimates from roughly 20-30 days to 3
 
 Designed baseline-updating and alert-triggering logic for longitudinal fall-risk monitoring from pressure-derived stability metrics, evaluating deviations from individualized baselines and requiring time-bounded persistence before clinical escalation.
 
-### POD-05: Production thermal CV pipeline
+### POD-05: Production thermal CV and signal-processing pipeline
 
 #### Resume text
 
-Extended, validated, and refactored FDA-cleared SmartMat thermal computer-vision workflows, including foot bounding-box extraction, left/right classification, segmentation masks, background removal, scan-quality handling, and anatomical keypoint temperature extraction in a deployed platform serving roughly 15k active patients and 25k lifetime patients.
+Extended, validated, and refactored FDA-cleared SmartMat thermal-processing workflows spanning scan-quality handling, thermal-equilibrium prediction from 17-frame temperature curves, calibration, foot localization and left/right classification, segmentation and background removal, and anatomical keypoint temperature extraction in a deployed platform serving roughly 15k active patients and 25k lifetime patients.
 
 #### Selection
 
