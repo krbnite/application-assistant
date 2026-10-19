@@ -109,6 +109,7 @@ MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place i
 
 | ID | Project | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
+| WWE-10 | Streaming-account anomaly and enforcement investigation | 0 | 0 | 0 | 3 | 0 | Lead for investigative analytics, anomaly detection, fraud-adjacent work, SQL validation, visualization, and challenging operational assumptions. Do not imply established user intent or include an unverified settlement amount. |
 | MSG-01 | Self-supervised behavioral video analysis | 1 | 3 | 1 | 0 | 1 | Optional project signal for computer vision, behavioral analysis, biotech/animal-behavior research, self-supervised learning, anomaly detection, or video-based sensing roles. |
 | MSG-02 | Granular-dynamics surrogate modeling | 0 | 1 | 3 | 0 | 2 | Optional project signal for scientific ML, surrogate modeling, simulation acceleration, nonlinear dynamics, physics-informed ML, and physics/modeling roles. |
 
@@ -379,6 +380,12 @@ Built revenue-attribution, survey-fusion, sentiment-analysis, seasonal-behavior,
 ### WWE-09: AWS automated scoring to Redshift
 
 Operated AWS-hosted automated web-scraping, API collection, model-scoring, and reporting workflows, with churn-model scores written to Redshift and ingested by dashboards for marketing and product stakeholders.
+
+### WWE-10: Streaming-account anomaly and enforcement investigation
+
+Investigated anomalous WWE Network account usage by rebuilding SQL analyses and mapping device activity, revealing individual accounts with 200+ devices streaming simultaneously across countries and exposing a failure to enforce the platform's two-device concurrency limit.
+
+Evidence / interview context (Kevin, October 14, 2026): The original assignment concerned device-switching behavior during major live events. Implausibly large device counts initially led Kevin to suspect his own queries; he rebuilt them incrementally before visualizing geographic and simultaneous usage. He encountered internal pushback based on the stated two-device limit. Kevin reports that WWE subsequently established that MLBAM was not enforcing the limit and that a lawsuit/settlement followed, but he does not recall the precise legal details or amount. Omit the legal outcome and dollar figure from resume claims until confirmed. The observations establish unexpected usage and failed enforcement, not the users' motives or a network intrusion.
 
 ### MSG-01: Self-supervised behavioral video analysis
 
