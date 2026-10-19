@@ -423,7 +423,17 @@ Evidence / selection guidance (Kevin, October 15, 2026): This recurring review w
 
 ### WWE-01: Production viewership data products
 
-Built API-based social-data pipelines and co-developed live-event KPI dashboards across YouTube, Facebook, Twitter, and WWE Network, replacing third-party vendor feeds costing roughly $1M/year while improving data coverage and timeliness.
+#### Resume text
+
+Built API-based social-data pipelines and co-developed live-event KPI dashboards across YouTube, Facebook, Twitter, and WWE Network, replacing third-party data and reporting services costing roughly $1M annually while improving data coverage and timeliness.
+
+#### Evidence
+
+Kevin clarified on October 19, 2026 that his manager reported approximately $1M in combined annual spending across third-party data providers and potentially associated consultants. Kevin did not own the contracts; inclusion of consulting costs is uncertain. The amount describes manager-reported service spending, not independently audited savings.
+
+#### Boundaries
+
+Use "third-party data and reporting services" rather than narrowing the combined spend to data feeds alone. Do not state that consultants were definitely included. Do not translate the roughly $1M annual service cost into $1M in realized savings or confirmed contract cancellations without confirmation. Preserve the co-developed dashboard attribution; Kevin's manager owned Tableau SQL and visualizations, as documented under WWE-02. These boundaries also apply when adapting WWE-02, WWE-06, or WWE-07 into cost-impact claims.
 
 ### WWE-02: Real-time executive analytics
 
