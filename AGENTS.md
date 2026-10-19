@@ -40,6 +40,10 @@ For a new role, do not let prior role-specific drafts, recent conversation memor
 
 Prior same-cluster packets may be scanned only near the end as a miss-check for bank-supported ideas or cleaner phrasing. Adopt nothing from a prior packet unless it is already supported by the canonical banks or is deliberately promoted into them.
 
+## IC Positioning And Employment Titles
+
+Kevin's CVB Director and Associate Director titles did not mark a departure from hands-on research and implementation. For IC targets, foreground personal technical contributions rather than generic management signals. Functional descriptions may precede official titles, but official titles and dates must remain adjacent and unambiguous; do not invent an equivalent Staff/Principal ladder. Follow `RESUME_TAILORING_AGENT.md` under `IC Positioning And Functional Titles` for attribution, examples, and verification.
+
 ## Default Resume Tailoring Rule
 
 When Kevin provides a job description, read `APPLICATION_WORKFLOW_PROTOCOL.md` first and use the requested workflow mode. If no mode is specified, use resume-first mode.

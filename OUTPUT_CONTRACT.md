@@ -87,6 +87,12 @@ For each tailored resume:
 5. Create new bullets only when the JD reveals a real evidence gap and Kevin's known background supports the claim.
 6. If a new bullet is created, decide in the audit whether it should be retained in the bullet bank, marked provisional, or treated as one-off tailoring.
 
+### IC Positioning And Role Titles
+
+- Match the narrative to the JD's actual IC, technical-lead, or management responsibilities. For IC roles, Director/Associate Director experience must establish personal technical contributions promptly; generic leadership is not a default seniority requirement.
+- A functional role description must be supported by canonical evidence, visibly distinguished from the adjacent official employment title, and preserve employer, dates, and chronology. Do not infer equivalent Staff/Principal ranks. Keep official titles in employment-title fields and background-check history.
+- Record the description and rationale in the role-specific plan and final notes or requested audit. Verify the chosen heading presentation in the generated document; report any generator limitation. Detailed rules and examples live in `RESUME_TAILORING_AGENT.md`.
+
 ### Profile / Headline
 
 For each tailored resume:

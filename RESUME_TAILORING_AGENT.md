@@ -47,6 +47,41 @@ MachineSaidGo may be referenced as Kevin's LLC / exploratory side-project umbrel
 
 Training/certification and award entries are optional support signals, not default resume bulk. Use `training_ids` only when a JD, recruiter screen, or application form benefits from explicit evidence such as the Deep Learning Nanodegree, Intel IoT Edge AI Scholarship, or Building with the Claude API. Use `award_ids` only when awards strengthen a senior leadership, program-delivery, grant/funding, presentation, or CV-like research narrative. Omit Tableau and most awards unless the role clearly asks for that signal.
 
+## IC Positioning And Functional Titles
+
+Kevin remained hands-on throughout all three CVB roles. He reports that interviewers have interpreted the Director and Associate Director titles as evidence that he moved away from implementation, despite his actual work. "Data Scientist" can also obscure his research and signal-processing specialty. Treat these as communication ambiguities to resolve through accurate functional descriptions and concrete evidence; do not infer management load or technical distance from the official titles.
+
+### Match the target role's work shape
+
+- Determine whether the JD seeks an individual contributor, technical lead, player-coach, or people manager from its responsibilities and requirements. A senior research title does not itself call for a management narrative.
+- For IC applications, lead each relevant experience block, including Director and Associate Director periods, with Kevin's personal research and implementation contributions: what he designed, implemented, investigated, experimentally tested, debugged, or validated. Make the method, system, and result concrete.
+- Include mentorship, hiring, funding, strategy, or team-building evidence when the JD values it and it earns space over technical evidence. Do not select generic leadership bullets merely to explain a senior title.
+- Preserve accurate attribution. Do not turn supervision, collaboration, or delegated implementation into personal authorship by mechanically replacing "led" with "built." Technical ownership and scientific leadership can remain where they substantiate an IC contribution.
+- Evaluate contributions by substance and relevance, not just their title bucket. For example, Director-era Rett study design, multimodal synchronization and annotation audits demonstrate different technical work from earlier Rett model development and subject-generalization validation. They should not be discarded as duplicate project names; retain distinct contributions when each earns its space.
+
+### Clarify function while preserving official history
+
+For IC applications, use a function-first presentation when the official title would obscure relevant work. Keep the official title adjacent and explicitly labeled, with the correct employer, location, and dates. Official-title-first presentation with a concise functional clarification remains an option when clearer for the target audience.
+
+Example of function-first presentation:
+
+```text
+Research Scientist - Wearable ML & Signal Processing
+Official title: Director of Data Science & Digital Health | New York, NY | Jul 2021 - May 2024
+```
+
+Supported starting descriptions for CVB, to be checked against the selected evidence:
+
+- Senior Data Scientist, Early Signal Team: `Research Scientist - Biosignal ML & Signal Processing`.
+- Associate Director of Data Science - Sensor Analytics: `Research Scientist - Wearable ML & Signal Processing`.
+- Director of Data Science & Digital Health: `Research Scientist - Wearable ML & Signal Processing`.
+
+These are functional descriptions, not replacement employment titles or a new rank ladder. Choose each period's description from the work actually performed, then emphasize the supported aspects relevant to the JD. Do not impose identical specialties on all periods if the evidence differs. Reusing a functional description across promotions is acceptable; the official titles and dates preserve progression, while bullets demonstrate increasing technical scope.
+
+Do not translate Director/Associate Director into Staff, Principal, or Associate Research Scientist as presumed equivalent ranks. Do not silently replace official titles. Use official titles in fields requesting employment titles and in background-check employment history.
+
+Record any functional description, its supporting evidence, and the presentation choice in the selection plan and concise delivery notes (or audit when requested). Check the generated DOCX itself: a description stored only in plan notes does not change the visible role heading. If the current generator cannot express the chosen presentation, identify that implementation gap rather than claiming it was applied. This protocol does not by itself add generator support or change the separate/grouped-title layout rules.
+
 ## Optional AI / Agentic Systems Project Signal
 
 ProblemForm and application-assistant are optional project signals, not default resume sections. Use them only when the job description materially values LLMs, AI agents, prompt/workflow automation, LLM evaluation, human-AI collaboration, developer tooling, AI product systems, or agentic/document-generation workflows. Do not force them into ordinary sensor, health, algorithm, or research resumes just because AI is fashionable.

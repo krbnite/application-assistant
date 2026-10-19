@@ -54,6 +54,7 @@ Kevin performs DOCX visual QA by default. The agent should still run cheap struc
 For priority roles, run a lightweight post-draft cultivation check before final delivery:
 
 - Confirm the first experience section leads with work Kevin would want to discuss, not merely the easiest keyword bridge.
+- For IC targets, check that CVB Director/Associate Director blocks establish personal technical contributions promptly, with generic leadership included only when relevant. Apply the functional-title rules in `RESUME_TAILORING_AGENT.md`; preserve adjacent official titles and dates and verify any chosen presentation in the generated DOCX.
 - Check that tailored rewrites preserve the bank-supported claim, avoid unsupported additions, and restore any specifics lost without a role-specific purpose.
 - Restore useful concrete evidence such as numbers, named systems, named stakeholders, or named data sources when it strengthens the target role.
 - Check for duplicate evidence caused by awards, projects, or repeated bullets.
