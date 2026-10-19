@@ -62,6 +62,7 @@ Do not treat this file as a mandate to include everything. For ordinary three-pa
 
 | Date | Presentation | Venue | Resume use |
 |---|---|---|---|
+| Nov 20, 2022 | "Tapped Granular Systems: Simulations and Machine Learning Approaches" | 75th Annual Meeting of the APS Division of Fluid Dynamics, Granular Flows II | Strong for recent physics-informed ML, RNN forecasting, surrogate modeling, granular microstructure evolution, and nonlinear physical systems. Label as conference abstract / oral presentation, not peer-reviewed publication. |
 | May 1, 2020 | "Technical Performance Verification of Wearable and Home Sensor Devices Monitoring Sleep: Best Practices" | Biological Psychiatry 87(9), S343. DOI: `10.1016/j.biopsych.2020.02.880` | Strong for Oura-style sleep validation, wearable/home sensor verification, technical performance evaluation, and scientific dissemination. Label as conference abstract/poster, not a full journal article. |
 | Oct 18, 2019 | "Quantifying Stereotypic Hand Movements in Rare Disorders Using IMU Sensors and Deep Learning Algorithms" | National Organization for Rare Disorders | Strong for health, wearables, rare disease, IMU ML. |
 | May 16, 2019 | "Quantifying Stereotypic Hand Movements in Rare Disorders Using IMU Sensors and Deep Learning Algorithms" | Society of Biological Psychiatry | Strong for health, neurotech, IMU ML. |

@@ -110,7 +110,7 @@ MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place i
 | ID | Project | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
 | MSG-01 | Self-supervised behavioral video analysis | 1 | 3 | 1 | 0 | 1 | Optional project signal for computer vision, behavioral analysis, biotech/animal-behavior research, self-supervised learning, anomaly detection, or video-based sensing roles. |
-| MSG-02 | Granular-dynamics surrogate modeling | 0 | 1 | 3 | 0 | 2 | Optional project signal for scientific ML, surrogate modeling, simulation acceleration, nonlinear dynamics, and physics/modeling roles. |
+| MSG-02 | Granular-dynamics surrogate modeling | 0 | 1 | 3 | 0 | 2 | Optional project signal for scientific ML, surrogate modeling, simulation acceleration, nonlinear dynamics, physics-informed ML, and physics/modeling roles. |
 
 ## Center For Solar-Terrestrial Research
 
@@ -177,6 +177,7 @@ Awards are optional credibility signals. Use `award_ids` only when a role benefi
 
 | ID | Award | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
+| PUB-14 | APS DFD 2022 tapped granular systems ML presentation | 0 | 1 | 3 | 0 | 2 | Conference abstract / oral presentation, not peer-reviewed. Use for recent physics-informed ML, RNN forecasting, surrogate modeling, granular microstructure, and nonlinear physical systems. |
 | AWARD-01 | CVB 2023 Milestone Achievement Awards | 1 | 0 | 0 | 1 | 0 | Use sparingly for senior leadership, program-delivery, grant/funding, or CV-like profiles; usually omit from ordinary technical resumes. |
 
 ## Canonical Text
@@ -385,7 +386,7 @@ MachineSaidGo / independent R&D: Designed and prototyped self-supervised deep le
 
 ### MSG-02: Granular-dynamics surrogate modeling
 
-MachineSaidGo / independent research collaboration: Collaborated with mechanical-engineering researchers on PyTorch surrogate models for computationally expensive granular-dynamics simulations, extending a long-running nonlinear-dynamics and scientific-simulation research thread.
+MachineSaidGo / independent research collaboration: Collaborated with mechanical-engineering researchers on RNN forecasting and PyTorch surrogate-modeling approaches for computationally expensive tapped-granular-system simulations, extending a long-running nonlinear-dynamics and scientific-simulation research thread.
 
 ### CSTR-01: Climatological time-frequency analysis
 
@@ -514,6 +515,10 @@ Urban, K. and Atri, R. "Evaluating the impact of domain expertise and deep learn
 ### PUB-13: Augmented unsupervised domain adaptation working paper
 
 Atri, R. and Urban, K. "Augmented Unsupervised Domain Adaptation for Deep Time Series Models." Working paper / unpublished.
+
+### PUB-14: APS DFD 2022 tapped granular systems ML presentation
+
+Rosato et al. "Tapped Granular Systems: Simulations and Machine Learning Approaches." 75th Annual Meeting of the APS Division of Fluid Dynamics, 2022. Conference abstract / oral presentation.
 
 ### AWARD-01: CVB 2023 Milestone Achievement Awards
 
