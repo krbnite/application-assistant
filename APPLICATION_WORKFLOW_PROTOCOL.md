@@ -4,6 +4,14 @@ This is the entrypoint for running `application-assistant` efficiently.
 
 Use this file first. Do not read every process, bank, template, and historical artifact by default. Choose the workflow mode Kevin requested, read only the files required for that mode, and expand only when the job or Kevin's request makes the extra work useful.
 
+## Source Hierarchy And Context Isolation
+
+For each new role, treat the current job description and the canonical top-level files as the source of truth. Recent conversation memory, prior role-specific drafts, prior resumes, prior cover letters, prior audits, and other generated job-search artifacts are not evidence and should not guide early framing unless Kevin explicitly asks to reuse them or the idea has already been promoted into a tracked bank, template, archetype, or process file.
+
+Build from the selected cluster's reusable archetype, profile/headline, bullet bank, cover-letter modules, templates, and generator contracts first. Think of the first pass as a lightly and strategically tailored version of the cluster's platonic resume: select, prune, reorder, and lightly edit canonical bank items for the current JD. Do not let a recent application packet define the profile, tone, headline, or evidence order for a new role.
+
+Prior same-cluster packets may be inspected only as a late-stage miss-check after the current JD has been matched to a cluster and an initial plan or draft exists. Adopt a prior-packet idea only when it is supported by the canonical banks or deliberately promoted into them.
+
 ## Fit-Eval First
 
 When Kevin pastes a new job description and asks whether it is a fit, start with `FIT_EVAL.md`, not the packet workflow below. That screening step should produce a verdict, the reasoning behind it, and a one-line note Kevin can paste into his tracker. If a role has strong identity pull and passes the hard gates, recommend fast resume-first mode even if non-gating unknowns such as compensation, location, or company stage still need to be resolved. End by asking whether Kevin wants to discuss the verdict further or proceed to resume-first mode with any requested add-ons.
@@ -21,6 +29,7 @@ Read these files before creating the first resume draft:
 - `APPLICATION_WORKFLOW_PROTOCOL.md`
 - `AGENTS.md`
 - `OUTPUT_CONTRACT.md`
+- `RESUME_TAILORING_AGENT.md`
 - `MASTER_RESUME_TEMPLATE.md`
 - `TAILORED_RESUME_PLAN_TEMPLATE.json`
 - `JD_CLUSTER_BANK.md`
@@ -150,16 +159,17 @@ Render and visually inspect generated DOCX files. Check for page count, awkward 
 
 ## Prior-Packet Reuse
 
-For similar jobs, start by identifying one or two nearby prior packets from the same cluster rather than scanning all historical applications.
+Do not start a new packet by reading prior packets. First build from the current JD, `JD_CLUSTER_BANK.md`, `PROFILE_BANK.md`, `RESUME_BULLET_BANK.md`, `MASTER_RESUME_TEMPLATE.md`, `RESUME_TAILORING_AGENT.md`, and the selected workflow mode's required files.
 
-Use prior packets as examples of judgment, not as canonical sources. Before adopting any prior-packet idea, verify that it is supported by the canonical banks or deliberately promote it into a tracked bank/process file.
+Use prior packets only as late-stage comparison examples, not as canonical sources. Before adopting any prior-packet idea, verify that it is supported by the canonical banks or deliberately promote it into a tracked bank/process file.
 
 When optimizing for low token/credit usage:
 
 1. Pick the likely cluster from the JD and `JD_CLUSTER_BANK.md`.
-2. Scan only relevant sections of `RESUME_BULLET_BANK.md` and `PROFILE_BANK.md`.
-3. Optionally inspect one or two closest prior same-cluster packets for missed section-level ideas.
-4. Do not deep-scan the full current-year job-search history unless full packet mode or audit add-on requires it.
+2. Scan only relevant sections of `RESUME_BULLET_BANK.md`, `PROFILE_BANK.md`, and `RESUME_TAILORING_AGENT.md`.
+3. Create the first role-specific plan or draft from canonical sources.
+4. Optionally inspect one or two closest prior same-cluster packets near the end for missed section-level ideas.
+5. Do not deep-scan the full current-year job-search history unless full packet mode or audit add-on requires it.
 
 ## Cover Letter Default
 
@@ -182,7 +192,7 @@ Use this prompt for the low-credit default workflow:
 Please use the optimized application-assistant workflow for the JD in:
 job-search/2026/XX_Company_Role/job-description.md
 
-First read APPLICATION_WORKFLOW_PROTOCOL.md, then read only the files required for resume-first mode. Generate the tailored resume plan and resume DOCX first. Do not create a cover letter, formal audit, interview Q&A, or DOCX visual render check unless I explicitly ask for those add-ons. I will handle visual QA by default.
+Treat this as a clean role-specific run. Do not use prior role-specific drafts, prior cover letters, prior resumes, recent conversation memory, or generated job-search artifacts as evidence unless I explicitly ask you to. First read APPLICATION_WORKFLOW_PROTOCOL.md, then read only the files required for resume-first mode, including RESUME_TAILORING_AGENT.md. Build from the relevant cluster's archetype, profile/headline, and canonical bank items first; scan prior same-cluster packets only near the end as a miss-check. Generate the tailored resume plan and resume DOCX first. Do not create a cover letter, formal audit, interview Q&A, or DOCX visual render check unless I explicitly ask for those add-ons. I will handle visual QA by default.
 ```
 
 Use add-on prompts later only when needed:

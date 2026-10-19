@@ -34,7 +34,7 @@ To help ensure the agent follows the intended workflow:
   Please use the optimized application-assistant workflow for the JD in:
   job-search/2026/XX_Company_Role/job-description.md
 
-  First read APPLICATION_WORKFLOW_PROTOCOL.md, then read only the files required for resume-first mode. Generate the tailored resume plan and resume DOCX first. Do not create a cover letter, formal audit, interview Q&A, or DOCX visual render check unless I explicitly ask for those add-ons. I will handle visual QA by default.
+  Treat this as a clean role-specific run. Do not use prior role-specific drafts, prior cover letters, prior resumes, recent conversation memory, or generated job-search artifacts as evidence unless I explicitly ask you to. First read APPLICATION_WORKFLOW_PROTOCOL.md, then read only the files required for resume-first mode, including RESUME_TAILORING_AGENT.md. Build from the relevant cluster's archetype, profile/headline, and canonical bank items first; scan prior same-cluster packets only near the end as a miss-check. Generate the tailored resume plan and resume DOCX first. Do not create a cover letter, formal audit, interview Q&A, or DOCX visual render check unless I explicitly ask for those add-ons. I will handle visual QA by default.
   ```
 
   If using a lightweight model, it is often desirable to restrict the agent from editing repo 
@@ -153,7 +153,7 @@ For final DOCX work, render and visually inspect the output before submission. L
 
 ## Content Promotion Rule
 
-The top-level banks are the source of truth for generated application materials. Older resumes, old cover letters, `archive/`, `job-search/`, and external repositories can be mined for content, but useful material should be deliberately promoted into the relevant bank before it becomes part of the standard process.
+The top-level banks are the source of truth for generated application materials. Older resumes, old cover letters, `archive/`, `job-search/`, prior role-specific drafts, and recent conversation memory should not guide a new role's early framing. They can be mined for content only when explicitly requested or used near the end as a same-cluster miss-check, and useful material should be deliberately promoted into the relevant bank before it becomes part of the standard process.
 
 Kevin's separate public `kitchensink` repository, `https://github.com/krbnite/kitchensink`, is a broad archive of older writing and cross-domain material. It should not be searched automatically for every application, but it is worth asking about when a role might benefit from public writing, older technical essays, talks, side projects, or other material not yet represented here.
 

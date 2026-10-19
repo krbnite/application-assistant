@@ -5,6 +5,7 @@ This file defines what "done" means when creating a tailored application packet 
 ## Primary Inputs
 
 - `APPLICATION_WORKFLOW_PROTOCOL.md`: entrypoint for choosing resume-first, full-packet, or add-on workflow modes.
+- `RESUME_TAILORING_AGENT.md`: detailed resume-construction rules used whenever a resume is being built.
 - `MASTER_RESUME_TEMPLATE.md`: canonical resume structure and section placeholders.
 - `PROFILE_BANK.md`: canonical reusable profile/headline options.
 - `JD_CLUSTER_BANK.md`: profile clusters, archetype JDs, and core/add-on matching signals.
@@ -91,8 +92,8 @@ For each tailored resume:
 For each tailored resume:
 
 1. Start from one profile/headline pair in `PROFILE_BANK.md` unless a new cluster is required.
-2. Lightly edit the profile for the JD's core and add-on signals.
-3. Surface and defend every meaningful profile/headline change in the audit or final notes, depending on the selected workflow mode.
+2. Lightly edit the profile for the JD's core and add-on signals while preserving the selected cluster profile's center of gravity.
+3. Surface and defend every meaningful profile/headline change in the audit or final notes, depending on the selected workflow mode. If the tailored profile materially departs from the cluster profile, explain why a lighter edit was insufficient.
 4. Distinguish between:
    - `Light edit`: wording, emphasis, or ordering changed for this JD.
    - `Add-on`: a JD-specific element added to the generic profile.
@@ -119,9 +120,9 @@ Use `TAILORED_RESUME_PLAN_TEMPLATE.json` as the starting shape for a role-specif
 
 ### Prior Same-Cluster Resume Scan
 
-Before finalizing a tailored resume, scan prior resumes from the same profile/JD cluster in the current job-search cycle, such as the current `job-search/2026` folder.
+Before finalizing a tailored resume, and only after the current JD has been matched to a cluster and an initial plan or draft exists, scan prior resumes from the same profile/JD cluster in the current job-search cycle, such as the current `job-search/2026` folder.
 
-- Use this as a miss check for strong ideas, not as a replacement for the canonical banks.
+- Use this as a late-stage miss check for strong ideas, not as a replacement for the canonical banks or as the source of the initial frame.
 - Look especially for profile phrasing, publication/research-writing selections, compact brand signals, bullet compression choices, and section-level judgment that the current plan may have missed.
 - Adopt an idea only when it is supported by the canonical banks or can be deliberately promoted into them.
 - If a useful idea is adopted from a prior resume, record the source resume and rationale in the audit.

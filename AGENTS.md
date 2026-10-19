@@ -34,11 +34,17 @@ This repo tracks Kevin's reusable resume and application automation process, not
 Generated DOCX files are deliverables or snapshots, not canonical sources.
 Completed role-specific plans, audits, interview Q&A companions, and cover letters are job-specific sanity/prep/application artifacts, not canonical sources. Keep generated resume and cover-letter DOCX files in the ignored job folder root, and keep plans, audits, and interview Q&A companions in that job folder's `supporting/` subfolder unless Kevin explicitly asks otherwise. Promote only reusable lessons into the tracked banks, archetypes, templates, or process docs.
 
+## Source Hierarchy / Clean-Run Rule
+
+For a new role, do not let prior role-specific drafts, recent conversation memory, generated resumes, cover letters, audits, or previous packet wording guide the early resume or cover-letter frame. Use the current JD and canonical top-level files first. Build the resume from the selected cluster's reusable archetype, profile/headline, canonical bullet bank, and templates before considering any prior packets.
+
+Prior same-cluster packets may be scanned only near the end as a miss-check for bank-supported ideas or cleaner phrasing. Adopt nothing from a prior packet unless it is already supported by the canonical banks or is deliberately promoted into them.
+
 ## Default Resume Tailoring Rule
 
 When Kevin provides a job description, read `APPLICATION_WORKFLOW_PROTOCOL.md` first and use the requested workflow mode. If no mode is specified, use resume-first mode.
 
-For resume-first mode, read only the files required by `APPLICATION_WORKFLOW_PROTOCOL.md`, then compare the JD against `JD_CLUSTER_BANK.md`, `PROFILE_BANK.md`, `MASTER_RESUME_TEMPLATE.md`, and `RESUME_BULLET_BANK.md`.
+For resume-first mode, read only the files required by `APPLICATION_WORKFLOW_PROTOCOL.md`, including `RESUME_TAILORING_AGENT.md`, then compare the JD against `JD_CLUSTER_BANK.md`, `PROFILE_BANK.md`, `MASTER_RESUME_TEMPLATE.md`, and `RESUME_BULLET_BANK.md`.
 
 Use core JD archetype signals to choose the primary cluster. Use add-on signals only to tune the profile, bullet selection, skills, and audit notes.
 
