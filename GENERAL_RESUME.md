@@ -108,28 +108,28 @@ PhD research inferred polar-cap electrodynamics from distributed magnetometer, s
 
 ## Internships
 
-- Trajectory Optimization and Design - NASA Jet Propulsion Laboratory, Pasadena, CA (May-Aug 2011). Full spacecraft mission design to Jupiter's Trojan asteroids: science goals, instrument selection, trajectory optimization, concurrent engineering, and formal NASA review board presentation; contributing author on peer-reviewed paper.
-- Observational Cosmology Laboratory - NASA Goddard Space Flight Center, Greenbelt, MD (Summer 2007). Developed software to model data collection and analysis for the Absolute Spectrum Polarimeter, a proposed spacecraft instrument for detecting B-mode gravitational-wave signatures.
-- Heliophysics Division - NASA Goddard Space Flight Center, Greenbelt, MD (Summer 2006). Developed web content and gained early experience with Python, HTML, CSS, JavaScript, PHP, and UNIX command-line tools.
+- **Trajectory Optimization and Design - NASA Jet Propulsion Laboratory**, Pasadena, CA (May-Aug 2011). Full spacecraft mission design to Jupiter's Trojan asteroids: science goals, instrument selection, trajectory optimization, concurrent engineering, and formal NASA review board presentation; contributing author on peer-reviewed paper.
+- **Observational Cosmology Laboratory - NASA Goddard Space Flight Center**, Greenbelt, MD (Summer 2007). Developed software to model data collection and analysis for the Absolute Spectrum Polarimeter, a proposed spacecraft instrument for detecting B-mode gravitational-wave signatures.
+- **Heliophysics Division - NASA Goddard Space Flight Center**, Greenbelt, MD (Summer 2006). Developed web content and gained early experience with Python, HTML, CSS, JavaScript, PHP, and UNIX command-line tools.
 
 ## Technical Skills
 
-Machine learning: Deep learning; sequence modeling with Conv1D/CNNs, LSTMs, transformers, and TCNs; representation learning; autoencoders/VAEs; transfer learning; fine-tuning; self-supervised learning; tree-based learning; clustering; explainable AI with SHAP and LIME; computer vision; image localization/segmentation; human activity recognition; gesture recognition; synthetic data generation; physics-informed modeling; model selection; validation/verification; ablation studies.
+**Machine learning:** Deep learning; sequence modeling with Conv1D/CNNs, LSTMs, transformers, and TCNs; representation learning; autoencoders/VAEs; transfer learning; fine-tuning; self-supervised learning; tree-based learning; clustering; explainable AI with SHAP and LIME; computer vision; image localization/segmentation; human activity recognition; gesture recognition; synthetic data generation; physics-informed modeling; model selection; validation/verification; ablation studies.
 
-Statistical signal processing and estimation: Bayesian inference; inverse problems; state estimation; stochastic filtering; Kalman filtering; recursive Bayesian estimation; adaptive estimators; tracking; uncertainty-aware modeling; drift/regime-shift analysis; robustness testing; Normal-Inverse-Gamma priors; time-series and longitudinal modeling; spatiotemporal modeling; time-frequency methods; STFT; PSD/spectral analysis; wavelets; coherence analysis; time-series similarity and alignment with DTW.
+**Statistical signal processing and estimation:** Bayesian inference; inverse problems; state estimation; stochastic filtering; Kalman filtering; recursive Bayesian estimation; adaptive estimators; tracking; uncertainty-aware modeling; drift/regime-shift analysis; robustness testing; Normal-Inverse-Gamma priors; time-series and longitudinal modeling; spatiotemporal modeling; time-frequency methods; STFT; PSD/spectral analysis; wavelets; coherence analysis; time-series similarity and alignment with DTW.
 
-Sensor analytics and modalities: IMUs, accelerometers, gyroscopes, ECG, pressure sensing, thermal imaging, magnetometers, cameras, medical devices, satellites/spacecraft, sensor fusion, multimodal sensing, physiological sensing, wearables, longitudinal monitoring, digital biomarkers, field validation, sensor synchronization, embedded deployment.
+**Sensor analytics and modalities:** IMUs, accelerometers, gyroscopes, ECG, pressure sensing, thermal imaging, magnetometers, cameras, medical devices, satellites/spacecraft, sensor fusion, multimodal sensing, physiological sensing, wearables, longitudinal monitoring, digital biomarkers, field validation, sensor synchronization, embedded deployment.
 
-Languages and tools: Python, PyTorch, TensorFlow/Keras, OpenCV, HuggingFace, scikit-learn, SciPy, NumPy, MLflow, C, R, MATLAB, IDL, SQL, Linux, Docker, Git, Jupyter, AWS, GCP, Bash, GitHub Actions, cron; reusable package development and version-pinned dependencies; integration testing in team-provisioned Terraform/AWS sandboxes.
+**Languages and tools:** Python, PyTorch, TensorFlow/Keras, OpenCV, HuggingFace, scikit-learn, SciPy, NumPy, MLflow, C, R, MATLAB, IDL, SQL, Linux, Docker, Git, Jupyter, AWS, GCP, Bash, GitHub Actions, cron; reusable package development and version-pinned dependencies; integration testing in team-provisioned Terraform/AWS sandboxes.
 
 
 ## Education
 
-PhD, Physics: New Jersey Institute of Technology / Rutgers University, 2016.
+**PhD, Physics:** New Jersey Institute of Technology / Rutgers University, 2016.
 
-MS, Applied Physics: Minor in Applied Math, NJIT / Rutgers University, 2010.
+**MS, Applied Physics:** Minor in Applied Math, NJIT / Rutgers University, 2010.
 
-BS, Applied Physics: Minor in Applied Math, NJIT / Rutgers University, 2008.
+**BS, Applied Physics:** Minor in Applied Math, NJIT / Rutgers University, 2008.
 
 
 ## Selected Training

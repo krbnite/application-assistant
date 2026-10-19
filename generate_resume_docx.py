@@ -799,6 +799,7 @@ def general_resume_markdown(docx_path: Path, plan: dict[str, Any]) -> str:
     email = plan.get("public_contact_email", "kevin.ddu@gmail.com")
     if not isinstance(email, str) or not re.fullmatch(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", email):
         raise ValueError("public_contact_email must be a valid email address.")
+    section = ""
     for i, paragraph in enumerate(doc.paragraphs):
         text = paragraph.text.strip()
         if not text or i == 0:
@@ -808,27 +809,31 @@ def general_resume_markdown(docx_path: Path, plan: dict[str, Any]) -> str:
             lines.extend([f"[Email](mailto:{email}) | [LinkedIn](https://linkedin.com/in/machinesaidgo) | [GitHub](https://github.com/krbnite)", ""])
             continue
         style = paragraph.style.name
+        prefix = ""
+        for run in paragraph.runs:
+            if not run.bold:
+                break
+            prefix += run.text
+        label = prefix.rstrip()
+        formatted = "**" + label + "**" + text[len(label):] if label.endswith(":") and text.startswith(label) else text
         if style == "Heading 1":
+            section = text
             lines.extend(["", "## " + text.title(), ""])
         elif style == "Resume Org":
             lines.extend(["", "### " + text, ""])
         elif style == "Resume Role":
             lines.extend(["**" + text + "**", ""])
         elif style == "List Bullet":
-            # Labeled bullets already carry a bold prefix in the DOCX. Preserve
-            # that semantic label without treating colons in citations as labels.
-            prefix = ""
-            for run in paragraph.runs:
-                if not run.bold:
-                    break
-                prefix += run.text
-            label = prefix.rstrip()
-            if label.endswith(":") and text.startswith(label):
-                lines.append("- **" + label + "**" + text[len(label):])
-            else:
-                lines.append("- " + text)
+            # Internship entries have no bold runs in DOCX. Emphasize the
+            # role/institution while leaving location, dates and narrative plain.
+            if section == "INTERNSHIPS" and formatted == text:
+                match = re.match(r"^(.+?)(?=,|\s\()", text)
+                if match:
+                    label = match.group(1)
+                    formatted = "**" + label + "**" + text[len(label):]
+            lines.append("- " + formatted)
         else:
-            lines.extend([text, ""])
+            lines.extend([formatted, ""])
     return "\n".join(lines).rstrip() + "\n"
 
 

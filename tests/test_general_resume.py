@@ -35,6 +35,9 @@ class GeneralResumeTests(unittest.TestCase):
             self.assertIn('- **SensorNet reusable biosignal modeling package:** Developed SensorNet',md)
             # Publications remain ordinary bullets even when their titles contain colons.
             self.assertIn('- Urban et al. "Rethinking the Polar Cap:',md)
+            self.assertIn('**Machine learning:** Deep learning',md)
+            self.assertIn('**PhD, Physics:** New Jersey',md)
+            self.assertIn('- **Trajectory Optimization and Design - NASA Jet Propulsion Laboratory**, Pasadena',md)
             self.assertNotIn('Evidence /',md)
             self.assertEqual(doc.core_properties.title,'Kevin Urban General Resume')
             self.assertEqual(sorted(p.name for p in out.parent.iterdir()),[out.name])
