@@ -2,6 +2,9 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
+import tempfile
+from datetime import date
 import json
 import re
 import sys
@@ -789,6 +792,77 @@ def build_docx(plan: dict[str, Any], bank: dict[str, BankEntry], profiles: dict[
     doc.save(str(output_path))
 
 
+def general_resume_markdown(docx_path: Path, plan: dict[str, Any]) -> str:
+    """Use the generated document's selected content and layout, with public contacts."""
+    doc = Document(docx_path)
+    lines = ["# Kevin Urban, PhD", "", f"Last updated: {plan['date']}", ""]
+    email = plan.get("public_contact_email", "kevin.ddu@gmail.com")
+    if not isinstance(email, str) or not re.fullmatch(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", email):
+        raise ValueError("public_contact_email must be a valid email address.")
+    for i, paragraph in enumerate(doc.paragraphs):
+        text = paragraph.text.strip()
+        if not text or i == 0:
+            continue
+        if i == 2:
+            # Never copy the private DOCX contact line, including its phone number.
+            lines.extend([f"[Email](mailto:{email}) | [LinkedIn](https://linkedin.com/in/machinesaidgo) | [GitHub](https://github.com/krbnite)", ""])
+            continue
+        style = paragraph.style.name
+        if style == "Heading 1":
+            lines.extend(["", "## " + text.title(), ""])
+        elif style == "Resume Org":
+            lines.extend(["", "### " + text, ""])
+        elif style == "Resume Role":
+            lines.extend(["**" + text + "**", ""])
+        elif style == "List Bullet":
+            lines.append("- " + text)
+        else:
+            lines.extend([text, ""])
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def general_resume_paths(plan: dict[str, Any], root: Path) -> tuple[Path, Path]:
+    stamp = str(plan.get("date", ""))
+    try:
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", stamp):
+            raise ValueError("Expected YYYY-MM-DD")
+        date.fromisoformat(stamp)
+    except ValueError as exc:
+        raise ValueError("General resume requires an ISO date (YYYY-MM-DD).") from exc
+    cycle = str(plan.get("job_search_cycle", ""))
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", cycle):
+        raise ValueError("job_search_cycle must be a simple folder name, such as 2026.")
+    out = root / "job-search" / cycle / "00_General-Resume" / f"{stamp}_Kevin-Urban_General-Resume.docx"
+    public = root / "GENERAL_RESUME.md"
+    if public.exists():
+        expected = plan.get("public_resume_base_sha256")
+        actual = hashlib.sha256(public.read_bytes()).hexdigest()
+        if expected != actual:
+            raise ValueError("GENERAL_RESUME.md exists or changed: reconcile its edits, then set "
+                             "public_resume_base_sha256 to the reviewed file's SHA-256 before rebuilding.")
+    return out, public
+
+
+def build_general_resume(plan: dict[str, Any], bank: dict[str, BankEntry],
+                         profiles: dict[str, Profile], root: Path = REPO_ROOT) -> tuple[Path, Path]:
+    validate_plan(plan, bank, profiles)
+    output, public = general_resume_paths(plan, root)
+    # Prepare both artifacts before replacing either destination. Rendering/QA remains
+    # the agent's next step; the generation command never deletes the selection plan.
+    with tempfile.TemporaryDirectory(prefix="general-resume-") as tmp:
+        draft = Path(tmp) / output.name
+        build_docx(plan, bank, profiles, draft)
+        doc = Document(draft)
+        doc.core_properties.title = "Kevin Urban General Resume"
+        doc.save(draft)
+        markdown = general_resume_markdown(draft, plan)
+        general_resume_paths(plan, root)  # Recheck the reviewed public baseline before replacement.
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_bytes(draft.read_bytes())
+        public.write_text(markdown, encoding="utf-8")
+    return output, public
+
+
 def split_paragraphs(text: str) -> list[str]:
     return [part.strip() for part in re.split(r"\n\s*\n", text.strip()) if part.strip()]
 
@@ -825,7 +899,10 @@ def main(argv: list[str] | None = None) -> int:
     except ValueError as exc:
         raise SystemExit(f"Plan validation failed: {exc}") from exc
 
-    output_path = resolve_output_path(plan, args.out)
+    general = plan.get("workflow_mode") == "general-resume"
+    if general and args.out:
+        parser.error("General resume output paths are defined by job_search_cycle; do not use --out.")
+    output_path = general_resume_paths(plan, REPO_ROOT)[0] if general else resolve_output_path(plan, args.out)
     if args.validate_only:
         cluster, headline, _ = get_profile(plan, profiles)
         print(f"Plan valid for {plan['company']}.")
@@ -834,8 +911,13 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Output path: {output_path}")
         return 0
 
-    build_docx(plan, bank, profiles, output_path)
-    print(output_path)
+    if general:
+        output_path, public = build_general_resume(plan, bank, profiles)
+        print(output_path)
+        print(public)
+    else:
+        build_docx(plan, bank, profiles, output_path)
+        print(output_path)
     return 0
 
 

@@ -18,6 +18,10 @@ Given a job description, the intended workflow is:
 
 The goal is not full autopilot. Kevin still reviews the packet before submission. The system is meant to remove repetitive re-optimization and make tailoring decisions auditable.
 
+## General Resume
+
+For a broad CV-like resume without a specific JD, use [GENERAL_RESUME_WORKFLOW.md](GENERAL_RESUME_WORKFLOW.md). It produces an editable DOCX inside the current ignored search folder and a public root-level GENERAL_RESUME.md from the same selection, without a fixed page cap. Refresh intentionally after a new search or substantial evidence changes. Once the public file is first generated and reviewed, link it prominently near the top of this README. Temporary build material is removed after successful verification; canonical banks remain the source of truth.
+
 ## Usage
 
 To help ensure the agent follows the intended workflow:

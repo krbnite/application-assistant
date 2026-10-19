@@ -26,6 +26,10 @@ Use `APPLICATION_WORKFLOW_PROTOCOL.md` to choose the right output set before gen
 - `Full packet mode` creates the resume, cover letter, audit, interview Q&A, and supporting plans.
 - `Add-on modes` create a cover letter, audit, interview Q&A, or visual QA pass after the resume-first output.
 
+## General Resume Exception
+
+General-resume mode follows GENERAL_RESUME_WORKFLOW.md instead of the role-specific three-page target and retained-plan requirement. Deliver a broad, deliberately selected CV-like DOCX in `job-search/<cycle>/00_General-Resume/` and public root-level GENERAL_RESUME.md from the same selection. Keep public contacts separate, reconcile existing Markdown edits before replacement, verify the DOCX and Markdown, then remove run-specific temporary build/QA files only after successful verification and delivery. Banks remain canonical; no automatic regeneration or publication follows bank edits. PDF is optional when requested.
+
 ## Default Packet
 
 When Kevin explicitly asks for full packet mode, create these unless he says to skip one:

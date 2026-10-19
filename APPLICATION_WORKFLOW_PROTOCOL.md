@@ -18,6 +18,10 @@ When Kevin pastes a new job description and asks whether it is a fit, start with
 
 When Kevin explicitly asks to tailor a resume, apply to a role, build a packet, or run the workflow for an already-greenlit role, use the packet workflow below directly. Treat any prior fit evaluation as context, but do not repeat the full screening pass unless the role, company, or constraints have changed.
 
+## General Resume Mode
+
+For a broad resume without one target JD, follow GENERAL_RESUME_WORKFLOW.md. Use canonical banks, no fixed page cap, and one selection for a local DOCX under `job-search/<cycle>/00_General-Resume/` plus public `GENERAL_RESUME.md`. Meaningful new evidence may warrant suggesting a refresh; do not rebuild automatically. General-mode public review and post-verification temporary-file cleanup override the role-specific plan-retention defaults below.
+
 ## Default Mode: Resume-First
 
 Use resume-first mode when Kevin asks to apply to a job, tailor a resume, or run the workflow without explicitly requesting a full packet.
