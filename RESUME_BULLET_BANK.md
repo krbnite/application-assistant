@@ -408,7 +408,17 @@ Preserve this broad team-enablement bullet for roles that value reproducible res
 
 ### CVB-18: Wearables knowledge graph and database evaluation
 
+#### Resume text
+
 Evaluated graph, document, relational, time-series, and key-value databases for a wearable-to-biological-phenomenon knowledge graph; designed schema iterations and demonstrated Neo4j/Cypher query patterns for many-to-many mappings among sensors, algorithms, symptoms, disorders, and physiological signals.
+
+#### Evidence
+
+Kevin clarified on October 22, 2026 that this exploratory work represented a relatively small part of his CVB tenure compared with sensor, human-activity recognition, Parkinson's, Rett, and sleep research.
+
+#### Selection
+
+Use as supporting evidence of exploratory graph/schema design and database/query familiarity. Generally avoid leading the CVB section with this item or letting keyword relevance imply that graph modeling was Kevin's primary specialty or a major share of his work. Lead with substantial, representative research that he can discuss in depth; place this bridge later when useful. Do not imply production graph ML, large-scale entity resolution, or production graph-inference expertise.
 
 ### CVB-19: Sensor-driven questionnaire estimation
 
