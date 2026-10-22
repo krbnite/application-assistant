@@ -49,7 +49,7 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 | POD-03 | Adaptive fall-risk monitoring | 3 | 1 | 2 | 3 | 3 | Lead for longitudinal monitoring, personalized baselines, operational alerts, and adaptive systems. |
 | POD-04 | Adaptive alert logic | 3 | 1 | 2 | 3 | 3 | Strong for health decisioning, alerting, production monitoring, and action-under-uncertainty. |
 | POD-05 | Production thermal CV and signal-processing pipeline | 3 | 3 | 2 | 2 | 2 | Lead for computer vision, medical device algorithms, production CV, and sensor perception. |
-| POD-06 | SmartMat+ thermal algorithm adaptation | 3 | 2 | 2 | 3 | 2 | Strong for transfer/tuning, hardware variation, product deployment, and production diagnostics. |
+| POD-06 | Second-generation device enablement | 3 | 2 | 2 | 3 | 2 | Strong for transfer/tuning, hardware variation, product deployment, and production diagnostics. |
 | POD-07 | Personalized DFU detection prototype | 3 | 1 | 2 | 1 | 2 | Use for clinical personalization, biomarkers, baselines, or adaptive detection; often compress. |
 | POD-08 | Framewise foot tracking prototype | 2 | 3 | 2 | 1 | 2 | Use for tracking, segmentation, sequence imaging, and perception roles. |
 | POD-09 | Physics-informed thermal modeling | 3 | 2 | 3 | 1 | 3 | Lead for physical modeling, synthetic data, simulation, and scientific ML. |
@@ -244,19 +244,27 @@ Extended, validated, and refactored FDA-cleared SmartMat thermal-processing work
 
 Keep POD-05 for broad CV/health resumes emphasizing scientific scope, modality, and deployed reach. Prefer POD-12 for engineering-focused resumes emphasizing ownership, refactoring, and integration. Merge selectively rather than spending two bullets on the same underlying pipeline.
 
-### POD-06: SmartMat+ thermal algorithm adaptation
+### POD-06: Second-generation device enablement
 
 #### Resume text
 
-Led technical investigations to transfer, tune, and validate existing SmartMat thermal scan-processing modules for SmartMat+, tracing hardware, statistical, and algorithmic sources of prediction error across data collection, validation design, training/inference consistency, scan quality, and device-specific behavior to support reliable production deployment.
+Adapted the SmartMat thermal-processing pipeline for SmartMat+, addressing changes in sensor geometry, placement, materials, and manufacturing through device-specific processing, calibration, and exception handling—enabling the second-generation device’s release.
+
+#### Variant: rollout
+
+Adapted the SmartMat thermal-processing pipeline for SmartMat+, addressing changes in sensor geometry, placement, materials, and manufacturing through device-specific processing, calibration, and exception handling—enabling the second-generation device’s release, with roughly 30 patients shipped SmartMat+ by my departure.
 
 #### Variant: implementation
 
-Adapted the production thermal pipeline for SmartMat+ by adding device-specific processing for its different sensor-matrix shape, training new machine-learning and calibration models, and collaborating with hardware engineering on data collection and validation and software engineering on sandbox testing and Git workflows.
+Adapted the SmartMat thermal-processing pipeline for SmartMat+ through device-specific processing, new ML/calibration models, and exception handling, working with hardware engineering on data collection and validation and software engineering on sandbox testing and Git workflows—enabling the second-generation device’s release.
+
+#### Evidence
+
+Kevin, October 22, 2026: SmartMat+ was a materially different second-generation product, not simply a resized sensor matrix. Changes included sensor geometry/shape, sensors closer to the surface, new materials, a smaller device, and new manufacturers. Adaptation required device-specific branches and exceptions, calibration, validation, and new ML/calibration models (earlier implementation details confirmed October 15). Kevin's thermal-pipeline adaptation, alongside his fall-risk work, enabled capabilities necessary for the device's actual launch. By his departure roughly 30 patients had been shipped SmartMat+ rather than SmartMat; client transitions were still underway. This establishes an initial commercial rollout, not a completed fleet-wide transition, sole ownership of the launch, active use of every shipped device, or clinical benefit. The roughly 30 launch shipments and the 3-month, 30-patient prospective pilot in POD-02 are separately reported facts; do not equate the groups, add their counts, or assume they are disjoint without confirmation.
 
 #### Selection
 
-The default emphasizes scientific diagnosis and validation judgment; the variant emphasizes implementation and model delivery. Use the version that matches the JD, not both. Source for added implementation details: Kevin, October 15, 2026.
+Preserve release enablement when shortening or tailoring; do not weaken the outcome to "supported rollout." Technical variants may foreground investigation, calibration, model training, or hardware adaptation while retaining that outcome. The shipment metric is optional supporting evidence; release enablement is the central impact. Choose one variant. POD-12 covers production pipeline ownership/refactoring and consultant QC integration; POD-06 covers adapting algorithms to changed hardware and enabling release; POD-15 covers integrated-system validation mechanics. They may coexist when each supplies distinct evidence, but do not repeat implementation details, validation mechanics, or rollout metrics across all three. Keep fall-risk methods and their own outcomes in POD-01/POD-03.
 
 ### POD-07: Personalized DFU detection prototype
 
@@ -276,7 +284,17 @@ Co-designed an analytical framework combining quasi-experimental methods with ba
 
 ### POD-11: Cross-functional technical leadership
 
+#### Resume text
+
 Served as the primary scientific partner to software and hardware engineering teams, advising on algorithm integration, sensor behavior, scan-processing pipelines, validation methodology, and implementation decisions to ensure production systems preserved the integrity of physiological data and scientific conclusions.
+
+#### Evidence
+
+Kevin, October 22, 2026: Thermal-pipeline adaptation and fall-risk estimation were hands-on technical contributions enabling capabilities required for SmartMat+'s actual launch. Use this context to substantiate technical leadership; do not recast it as sole product-launch ownership. Rollout details belong with POD-06, while fall-risk methods and outcomes remain with POD-01/POD-03.
+
+#### Selection
+
+Keep when cross-functional technical direction adds evidence beyond the selected implementation bullets. Compress or omit when POD-06/POD-12/POD-15 plus CVB technical leadership already establish the same point.
 
 ### POD-12: Production scan-pipeline ownership and QC integration
 
@@ -287,6 +305,10 @@ Owned the production thermal-imaging, modeling, and detection pipeline; substant
 #### Evidence
 
 Evidence / selection guidance (Kevin, October 15, 2026): Ownership, substantial refactoring, and consultant-module integration strengthen the earlier contribution-only wording and replace it. Debugging, bug fixes, PR participation, and reliability across chip/hardware vendors remain supported by the earlier bank entry and may be substituted when relevant. Prefer POD-05 for broader scientific/modality framing and POD-06 when SmartMat+ model training and validation are the main accomplishment. Do not imply ownership of the entire cloud platform or all engineering infrastructure.
+
+#### Selection
+
+When POD-06 is also selected, keep POD-12 focused on deployed-system ownership, Python refactoring, and consultant QC integration; omit its device-specific processing clause rather than repeating the adaptation accomplishment. POD-15 may separately establish end-to-end validation mechanics. Select all three only when those distinct contributions merit the space.
 
 ### POD-13: Event-driven AWS thermal pipeline
 
@@ -300,11 +322,15 @@ Designed a SmartMat+ on-device fall-risk estimator whose outputs were generated 
 
 #### Resume text
 
-Validated thermal-processing and model-inference changes in isolated clones of the production AWS environment, using PR-triggered Terraform/GitHub Actions provisioning, configuring scan-processing workflows and pipeline revisions, and submitting scans to exercise the integrated system.
+Validated SmartMat+ thermal-processing and model-inference changes while adapting the existing pipeline for the second-generation device, using isolated production AWS clones with PR-triggered Terraform/GitHub Actions provisioning, configuring scan-processing workflows and pipeline revisions, and submitting scans to exercise the integrated system.
 
 #### Evidence
 
 Evidence / boundaries (Kevin, October 15, 2026, clarified): Terraform use is confirmed, not inferred from a repository name. Kevin opened PRs in the team's infrastructure/controller repository to trigger creation of a full clone of the production AWS setup with its own API address. He edited relevant configuration and GitHub Actions YAML files, including test-data selections and pipeline revision hashes, and pushed scans to the environment to test scan-triggered processing. Software engineers taught him the workflow; much of provisioning remained a black box to him. This establishes hands-on use of Terraform-provisioned AWS environments and configuration of integration-testing workflows, not authorship of Terraform infrastructure, design of the provisioning system, or ownership of the entire cloud platform. Terraform may be named in this qualified context; do not present it as independent infrastructure-as-code expertise. Use generic system descriptions on resumes. This evidence does not by itself establish automated test-suite design.
+
+#### Selection
+
+Kevin, October 22, 2026: This integration-validation work primarily supported adaptation of the SmartMat pipeline to SmartMat+ scans. When POD-06 is also selected, identify SmartMat+ here but keep hardware differences and rollout impact in POD-06. Retain the AWS clone, PR-triggered provisioning, workflow/revision configuration, and submitted-scan details as evidence of integrated-system testing rather than model-only evaluation.
 
 ### CVB-01: Technical leadership and mentorship
 
