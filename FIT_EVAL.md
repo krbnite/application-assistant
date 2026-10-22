@@ -202,6 +202,8 @@ The single most useful calibration in the cycle. Locate every LLM requirement on
 2. **ADAPT** — demonstrated hands-on LoRA/PEFT fine-tuning, knowledge distillation, transformer architecture depth. **Does not clear today.**
 3. **TRAIN** — training large models from scratch, owning optimizer and scheduler choices, debugging divergence at scale. **Far beyond**, and no solo project will buy it.
 
+**Separate small sequence transformers from LLM/foundation-model specialization.** MSG-03 documents a built and trained PyTorch transformer prototype for irregular synthetic biomarker sequences, fused with static features and learned patient/intervention embeddings. It clears hands-on transformer prototyping, embeddings, and sequence representation learning at prototype depth. Do not mark transformer experience absent merely because the professional sequence work used CNN/LSTM architectures. Evaluate production depth, scale, comparative model evidence, and domain relevance separately. This does not clear the ADAPT or TRAIN rungs above, which concern specialized LLM/foundation-model work.
+
 **Generative-system evaluation is the door.** Across Snorkel, Atlassian, Cresta, and Yahoo, the one LLM-adjacent requirement Kevin can genuinely touch is evaluation — rubric design, LLM-as-judge, property-based evaluation. That is consistently his entry point into LLM work.
 
 ### C++ — escalation note

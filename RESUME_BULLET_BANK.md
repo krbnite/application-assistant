@@ -114,12 +114,13 @@ In separate-role mode, default placement matters because CVB has three title/dat
 
 ## MachineSaidGo / Independent Research Projects
 
-MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place it in the main chronological Experience section by default because it can complicate the CVB timeline. Use `project_ids` and a compact `Selected Research Projects` section only when the JD specifically rewards self-supervised video, computer vision, behavioral analysis, scientific simulation, surrogate modeling, consulting/startup initiative, or independent R&D.
+MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place it in the main chronological Experience section by default because it can complicate the CVB timeline. Use `project_ids` and a compact `Selected Research Projects` section only when the JD specifically rewards self-supervised video, computer vision, behavioral analysis, scientific simulation, surrogate modeling, consulting/startup initiative, transformer sequence modeling, learned embeddings, recommender prototyping, or independent R&D. Independent projects need not be attributed to MachineSaidGo; preserve each project's actual context.
 
 | ID | Project | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
 | MSG-01 | Self-supervised behavioral video analysis | 1 | 3 | 1 | 0 | 1 | Optional project signal for computer vision, behavioral analysis, biotech/animal-behavior research, self-supervised learning, anomaly detection, or video-based sensing roles. |
 | MSG-02 | Granular-dynamics surrogate modeling | 0 | 1 | 3 | 0 | 2 | Optional project signal for scientific ML, surrogate modeling, simulation acceleration, nonlinear dynamics, physics-informed ML, and physics/modeling roles. |
+| MSG-03 | Time-aware transformer recommendation prototype | 2 | 1 | 1 | 2 | 1 | Supporting evidence for hands-on transformers, irregular sequence modeling, learned embeddings, and hybrid recommender exploration. Independent interview-preparation prototype on synthetic data; not Podimetrics employment or production recommender experience. |
 
 ## Center For Solar-Terrestrial Research
 
@@ -520,6 +521,20 @@ MachineSaidGo / independent R&D: Designed and prototyped self-supervised deep le
 ### MSG-02: Granular-dynamics surrogate modeling
 
 MachineSaidGo / independent research collaboration: Collaborated with mechanical-engineering researchers on RNN forecasting and PyTorch surrogate-modeling approaches for computationally expensive tapped-granular-system simulations, extending a long-running nonlinear-dynamics and scientific-simulation research thread.
+
+### MSG-03: Time-aware transformer recommendation prototype
+
+#### Resume text
+
+Built and trained an independent PyTorch recommendation prototype on synthetic patient data, combining a transformer encoder for irregular biomarker sequences with static patient features and learned patient/intervention embeddings to score candidate interventions.
+
+#### Evidence
+
+Source / context (reviewed October 20, 2026): `/Users/kevin/github/jobs/Podimetrics/next-best-action-transformer/` (README, `src/next_best_action_transformer/model.py`, `config.py`, `load.py`, `utils.py`, and saved `nba.ipynb` outputs). Kevin built this mini project before interviewing with Podimetrics to refresh recommender-system knowledge and explore how heterogeneous longitudinal health data might support intervention recommendations. It was an interview-preparation learning prototype, never presented during the interviews and never used at Podimetrics. Do not assign it to Podimetrics employment, merge it with POD-10, or imply MachineSaidGo attribution or a validated research result. Exact project dates are not established.
+
+Implementation: two-layer, four-head transformer encoder with 64-dimensional sequence representations; value and elapsed-time inputs; sinusoidal cumulative-time encoding; attention padding masks and masked mean pooling; static-feature encoder; learned patient/intervention embeddings and an interaction MLP; fused binary-response scoring and top-k recommendation utility. Saved notebook outputs show 12 training epochs using Adam and binary cross-entropy on synthetic data (400 patients, 24 interventions, 12,000 sampled interactions, sequence length up to 20).
+
+Boundaries: Supports hands-on transformer implementation/training, embeddings, and sequence representation learning at prototype depth. Does not establish transformer superiority over CNN/LSTM or classical baselines, real clinical effectiveness, causal intervention benefit, production deployment, high-rate telemetry scale, or production recommender expertise. Random interaction-level validation does not establish unseen-patient or future-time generalization; saved losses show overfitting. Time is encoded in inputs rather than injected directly into attention logits. Padding masks do not establish arbitrary missing-measurement handling. Do not infer LLM/foundation-model fine-tuning, LoRA/PEFT, distillation, or large-model training expertise. The project's purpose was exploration and interview preparation, not a completed comparative modeling study; these limits should guide claim scope rather than erase the implementation evidence.
 
 ### CSTR-01: Polar-cap representation inference
 
