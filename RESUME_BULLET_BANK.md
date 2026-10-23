@@ -44,7 +44,7 @@ Use this as guidance, not a mechanical scoring system. A high score means "usual
 
 | ID | Bullet | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
 |---|---|---:|---:|---:|---:|---:|---|
-| POD-01 | On-device fall-risk estimation | 3 | 3 | 2 | 2 | 3 | Lead for edge, embedded, estimation, health, and closed-loop-ish roles. |
+| POD-01 | On-device fall-risk estimation | 3 | 3 | 2 | 2 | 3 | Lead for edge, embedded, estimation, health, and closed-loop-ish roles; sensor-fusion variant exposes four-sensor center-of-pressure and sway-speed implementation. |
 | POD-02 | Robust estimator validation | 3 | 2 | 3 | 3 | 3 | Lead for validation, uncertainty, deployment, drift, and sparse/noisy data. |
 | POD-03 | Adaptive fall-risk monitoring | 3 | 1 | 2 | 3 | 3 | Lead for longitudinal monitoring, personalized baselines, operational alerts, and adaptive systems. |
 | POD-04 | Adaptive alert logic | 3 | 1 | 2 | 3 | 3 | Strong for health decisioning, alerting, production monitoring, and action-under-uncertainty. |
@@ -79,7 +79,7 @@ In separate-role mode, default placement matters because CVB has three title/dat
 | CVB-06 | Multimodal wearable data processing | 3 | 1 | 1 | 2 | 1 | Use for data infrastructure, longitudinal data, queryable datasets, and pipeline roles. |
 | CVB-07 | Parkinson's digital biomarkers | 3 | 1 | 1 | 1 | 0 | Lead for digital biomarkers, neurotech, Parkinson's, grants, and wearable health. |
 | CVB-08 | Free-living Parkinson's monitoring | 3 | 2 | 1 | 1 | 0 | Strong for weak supervision, wearable ML, gait, and real-world sensor classification. |
-| CVB-09 | Wearable gesture recognition | 3 | 2 | 2 | 1 | 1 | Strong for IMUs, activity recognition, ablations, signal processing, and wearable algorithms. Default to Senior Data Scientist; optionally place in Associate Director only when grouping late-Sr-DS / early-Sensor-Analytics transition work improves the resume. |
+| CVB-09 | Wearable gesture recognition | 3 | 2 | 2 | 1 | 1 | Strong for learned accelerometer/gyroscope sensor fusion, IMUs, activity recognition, ablations, signal processing, and wearable algorithms. Default to Senior Data Scientist; optionally place in Associate Director only when grouping late-Sr-DS / early-Sensor-Analytics transition work improves the resume. |
 | CVB-10 | End-to-end biosignal modeling | 3 | 1 | 2 | 1 | 0 | Use for biosignal ML, deep sequence models, ablations, and replacing classical pipelines. |
 | CVB-11 | Cross-domain representation learning | 3 | 2 | 2 | 0 | 1 | Use when transfer/domain adaptation, shared representations, DRCN/autoencoders, patient-level personalization, or general-to-subject adaptation is called out. |
 | CVB-12 | Weakly supervised learning | 2 | 2 | 1 | 1 | 0 | Use for unlabeled data, weak supervision, activity detection, and real-world model framing. |
@@ -120,7 +120,7 @@ MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place i
 |---|---|---:|---:|---:|---:|---:|---|
 | MSG-01 | Self-supervised behavioral video analysis | 1 | 3 | 1 | 0 | 1 | Optional project signal for computer vision, behavioral analysis, biotech/animal-behavior research, self-supervised learning, anomaly detection, or video-based sensing roles. |
 | MSG-02 | Granular-dynamics surrogate modeling | 0 | 1 | 3 | 0 | 2 | Optional project signal for scientific ML, surrogate modeling, simulation acceleration, nonlinear dynamics, physics-informed ML, and physics/modeling roles. |
-| MSG-03 | Time-aware transformer recommendation prototype | 2 | 1 | 1 | 2 | 1 | Supporting evidence for hands-on transformers, irregular sequence modeling, learned embeddings, and hybrid recommender exploration. Independent interview-preparation prototype on synthetic data; not Podimetrics employment or production recommender experience. |
+| MSG-03 | Time-aware transformer recommendation prototype | 2 | 1 | 1 | 2 | 1 | Supporting evidence for hands-on transformers, irregular sequence modeling, learned embeddings, heterogeneous representation fusion, and hybrid recommender exploration. Independent interview-preparation prototype on synthetic data; not Podimetrics employment or production recommender experience. |
 
 ## Center For Solar-Terrestrial Research
 
@@ -129,7 +129,7 @@ MachineSaidGo is Kevin's LLC / exploratory side-project umbrella. Do not place i
 | CSTR-01 | Polar-cap representation inference | 0 | 1 | 3 | 1 | 1 | Lead for signal processing, geophysics, spectral/time-frequency methods, representation inference, or physical systems. |
 | CSTR-02 | Magnetic-coordinate validation | 0 | 1 | 3 | 0 | 0 | Lead for geophysical/spatial inference, hidden-structure inference, and representation validation; omit for most health or industrial roles. |
 | CSTR-03 | Geophysical signal interpretation | 0 | 1 | 3 | 1 | 1 | Use for physical inference, disentangling confounds, and noisy indirect observations. |
-| CSTR-04 | Multi-instrument space weather reconstruction | 0 | 2 | 3 | 0 | 1 | Lead for sensor networks, fusion, reconstruction, visualization, or space/weather roles. |
+| CSTR-04 | Multi-instrument space weather reconstruction | 0 | 2 | 3 | 0 | 1 | Lead for sensor networks, multi-instrument integration, reconstruction, visualization, or space/weather roles; fusion-adjacent evidence, not by itself proof of a joint sensor-estimation algorithm. |
 | CSTR-05 | Scientific collaboration | 0 | 1 | 2 | 0 | 0 | Use for research teams, NASA/mission credibility, talks, and scientific collaboration. |
 | CSTR-06 | Computational mathematics, granular fluids, and nonlinear dynamics | 0 | 0 | 3 | 0 | 2 | Use for mathematical modeling, simulation, dynamics, and physical AI; usually compress. |
 | CSTR-07 | Solar-wind forecasting and inverse nowcasting | 0 | 1 | 3 | 1 | 2 | Use for forecasting, inverse problems, remote sensing, physical systems, and sensor-network inference. |
@@ -220,7 +220,25 @@ Repeatedly redesigned evaluation methods to reflect real deployment conditions, 
 
 ### POD-01: On-device fall-risk estimation
 
+#### Resume text
+
 Designed and implemented streaming fall-risk estimators for SmartMat+, a battery-powered patient-facing edge device enabling near-real-time risk updates after a 17-second pressure-sensor session. Prototyped Bayesian and weighted-window approaches in Python, selected the strongest estimator, translated it to C, validated numerical equivalence, and supported firmware integration for prospective testing.
+
+#### Variant: sensor-fusion
+
+Implemented multisensor pressure processing for SmartMat+, combining measurements from four corner sensors into center-of-pressure trajectories and deriving scalar sway speed from sampling-rate-scaled first differences of the x/y coordinates; designed streaming fall-risk estimators, prototyped candidates in Python, translated the selected estimator to C, validated numerical equivalence, and supported firmware integration for prospective testing.
+
+#### Evidence
+
+Kevin, October 23, 2026: personally implemented the four-sensor combination using force-weighted sensor positions to calculate center of pressure (center of force), then computed x/y velocities by first differencing with the sampling rate and combined them into scalar sway speed. This processing was part of the fall-risk assessment work, not merely a precomputed input supplied by someone else.
+
+#### Boundaries
+
+This establishes same-modality multisensor physical estimation and signal processing. Center of pressure is not a direct measurement of body center of mass. Do not infer orientation estimation, cross-modal fusion, Kalman-based fusion, or that every upstream processing step was translated to embedded C; confirmed C translation applies to the selected streaming estimator.
+
+#### Selection
+
+Use the sensor-fusion variant when multisensor estimation or sensor-to-feature implementation is central. The default emphasizes near-real-time edge estimation and the 17-second session. Choose one variant; preserve POD-03 separately when the adaptive-estimation outcome earns space.
 
 ### POD-02: Robust estimator validation
 
@@ -366,7 +384,25 @@ Used a weakly supervised walk-detection framework to restrict disease inference 
 
 ### CVB-09: Wearable gesture recognition
 
-Built Conv1D-LSTM models for Rett stereotypy detection in a wearable-device comparison spanning Shimmer IMUs, Apple Watch, Oura Ring, and Fitbit; guided IMU sampling-rate selection using movement bandwidth, Nyquist criteria, and instrument-noise considerations, then confirmed the lower-rate choice through 25-400 Hz ablations.
+#### Resume text
+
+Built Conv1D-LSTM models fusing triaxial accelerometer and gyroscope signals for Rett stereotypy detection in a wearable-device comparison spanning Shimmer IMUs, Apple Watch, Oura Ring, and Fitbit; guided IMU sampling-rate selection using movement bandwidth, Nyquist criteria, and instrument-noise considerations, then confirmed the lower-rate choice through 25-400 Hz ablations.
+
+#### Variant: sensor-fusion
+
+Built Conv1D-LSTM models combining triaxial accelerometer and gyroscope signals for Rett stereotypy detection, with early experiments also incorporating triaxial magnetometer measurements; guided IMU sampling-rate selection using movement bandwidth, Nyquist criteria, and instrument-noise considerations, then confirmed the lower-rate choice through 25-400 Hz ablations.
+
+#### Evidence
+
+Kevin, October 23, 2026: gesture/activity-recognition work jointly modeled at least triaxial accelerometer and gyroscope measurements; early gesture experiments also included a triaxial magnetometer. This is learned multisensor fusion for classification, not merely collection of different modalities or comparison of devices.
+
+#### Boundaries
+
+The device list describes the comparison study; it does not imply every device supplied identical sensor channels, simultaneous cross-device fusion, or a magnetometer in every final model. Do not infer attitude/orientation estimation, a particular concatenation layer, or Kalman/complementary-filter implementation. Clinical annotations and caregiver notes establish supervision/context unless explicitly used as inference inputs.
+
+#### Selection
+
+Use the default for device comparisons plus multimodal IMU modeling. Use the sensor-fusion variant when named channels and magnetometer exploration matter more than the device list. Preserve sampling-rate ablation evidence in either version.
 
 ### CVB-10: End-to-end biosignal modeling
 
@@ -562,7 +598,7 @@ MachineSaidGo / independent research collaboration: Collaborated with mechanical
 
 #### Resume text
 
-Built and trained an independent PyTorch recommendation prototype on synthetic patient data, combining a transformer encoder for irregular biomarker sequences with static patient features and learned patient/intervention embeddings to score candidate interventions.
+Built and trained an independent PyTorch recommendation prototype on synthetic patient data, fusing three input branches—a transformer encoder for irregular biomarker sequences, static patient features, and learned patient/intervention embeddings—into a shared representation to score candidate interventions.
 
 #### Evidence
 
@@ -570,7 +606,7 @@ Source / context (reviewed October 20, 2026): `/Users/kevin/github/jobs/Podimetr
 
 Implementation: two-layer, four-head transformer encoder with 64-dimensional sequence representations; value and elapsed-time inputs; sinusoidal cumulative-time encoding; attention padding masks and masked mean pooling; static-feature encoder; learned patient/intervention embeddings and an interaction MLP; fused binary-response scoring and top-k recommendation utility. Saved notebook outputs show 12 training epochs using Adam and binary cross-entropy on synthetic data (400 patients, 24 interventions, 12,000 sampled interactions, sequence length up to 20).
 
-Boundaries: Supports hands-on transformer implementation/training, embeddings, and sequence representation learning at prototype depth. Does not establish transformer superiority over CNN/LSTM or classical baselines, real clinical effectiveness, causal intervention benefit, production deployment, high-rate telemetry scale, or production recommender expertise. Random interaction-level validation does not establish unseen-patient or future-time generalization; saved losses show overfitting. Time is encoded in inputs rather than injected directly into attention logits. Padding masks do not establish arbitrary missing-measurement handling. Do not infer LLM/foundation-model fine-tuning, LoRA/PEFT, distillation, or large-model training expertise. The project's purpose was exploration and interview preparation, not a completed comparative modeling study; these limits should guide claim scope rather than erase the implementation evidence.
+Boundaries: Supports hands-on transformer implementation/training, embeddings, and sequence representation learning at prototype depth. Does not establish transformer superiority over CNN/LSTM or classical baselines, real clinical effectiveness, causal intervention benefit, production deployment, high-rate telemetry scale, or production recommender expertise. Random interaction-level validation does not establish unseen-patient or future-time generalization; saved losses show overfitting. Time is encoded in inputs rather than injected directly into attention logits. Padding masks do not establish arbitrary missing-measurement handling. Do not infer LLM/foundation-model fine-tuning, LoRA/PEFT, distillation, or large-model training expertise. The project's purpose was exploration and interview preparation, not a completed comparative modeling study; these limits should guide claim scope rather than erase the implementation evidence. Kevin clarified on October 23, 2026 that the three towers flow into a shared representation. This supports heterogeneous input/representation fusion at synthetic-prototype depth; it does not establish deployed physical-sensor fusion. Preserve this positive implementation evidence when screening fusion-related roles.
 
 ### CSTR-01: Polar-cap representation inference
 
@@ -632,7 +668,13 @@ Bayesian inference; inverse problems; state estimation; stochastic filtering; Ka
 
 ### SKILL-03: Sensor analytics and modalities
 
+#### Resume text
+
 IMUs, accelerometers, gyroscopes, ECG, pressure sensing, thermal imaging, magnetometers, cameras, medical devices, satellites/spacecraft, sensor fusion, multimodal sensing, physiological sensing, wearables, longitudinal monitoring, digital biomarkers, field validation, sensor synchronization, embedded deployment.
+
+#### Evidence
+
+Sensor-fusion claim is supported by CVB-09 (joint accelerometer/gyroscope classification, early magnetometer experiments) and POD-01 sensor-fusion variant (four pressure sensors to center of pressure and sway speed). MSG-03 separately supports heterogeneous representation fusion on synthetic data. Use these accomplishments to substantiate the skill rather than treating the modality list alone as proof.
 
 ### SKILL-04: Languages and tools
 
