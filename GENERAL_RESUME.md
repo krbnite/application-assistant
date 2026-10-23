@@ -1,6 +1,6 @@
 # Kevin Urban, PhD
 
-Last updated: 2026-10-19
+Last updated: 2026-10-23
 
 Research Scientist | Applied ML | Statistical Signal Processing | Sensor AI | Scientific Computing
 
@@ -9,7 +9,7 @@ Research Scientist | Applied ML | Statistical Signal Processing | Sensor AI | Sc
 
 ## Profile
 
-Across physical, physiological, behavioral, and geophysical systems, my work focuses on turning noisy, indirect measurements into reliable models, estimates, and decisions. I build time-series and spatiotemporal ML models, statistical signal-processing methods, Bayesian estimators, computer-vision pipelines, and physics-informed simulations. My experience spans wearable and medical-device research, production customer analytics, research software, and distributed geophysical observations. I remain hands-on across problem formulation, implementation, experimental design, validation, and research-to-product translation, with particular attention to data quality, uncertainty, and the conditions under which a model can be trusted.
+I develop ML and statistical systems that infer useful physical and physiological state from noisy sensor measurements. My work spans multisensor pressure estimation, accelerometer/gyroscope fusion for activity recognition, deep biosignal models, representation learning, physics-informed simulation, and production thermal-image processing. I combine hands-on research and implementation with funded research-roadmap development and technical direction across hardware, software, and clinical partners. My focus is reliable inference under real operating conditions: understanding sensor behavior, testing generalization and uncertainty, and translating promising methods into reproducible research software and validated product algorithms.
 
 
 ## Core Research Themes

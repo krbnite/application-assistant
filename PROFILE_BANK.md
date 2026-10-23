@@ -21,7 +21,7 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 **Headline:** Research Scientist | Applied Scientist | Sensor AI | Time-Series ML | Bayesian Estimation | Computer Vision
 
-**Profile:** Across physical, physiological, and geophysical systems, my career has focused on transforming noisy, indirect sensor measurements into reliable estimates and decisions. My work spans time-series and spatiotemporal machine learning, computer vision, statistical signal processing, Bayesian estimation, and physics-informed modeling, with sensor experience including thermal imaging, pressure sensing, wearable sensors, medical devices, camera-based sensing, and large-scale geophysical sensor networks. I am strongest where research depth has to survive contact with real sensors, messy users, hardware artifacts, and production constraints.
+**Profile:** I develop ML and statistical systems that infer useful physical and physiological state from noisy sensor measurements. My work spans multisensor pressure estimation, accelerometer/gyroscope fusion for activity recognition, deep biosignal models, representation learning, physics-informed simulation, and production thermal-image processing. I combine hands-on research and implementation with funded research-roadmap development and technical direction across hardware, software, and clinical partners. My focus is reliable inference under real operating conditions: understanding sensor behavior, testing generalization and uncertainty, and translating promising methods into reproducible research software and validated product algorithms.
 
 **Emphasize When Pruning:** Keep the Podimetrics, CVB, and space-weather spine balanced; prune only the least relevant older/analytics bullets.
 
