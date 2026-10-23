@@ -162,3 +162,19 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 **Common Add-Ons:** Correction outcomes, feedback optimization, inverse problems, RL/imitation-learning literacy, continual learning, uncertainty guardrails, staged rollout, transfer across machines/materials/sites, system identification, dynamics/control literacy, differentiable simulation.
 
 **Do Not Overstate:** Do not claim direct CNC, robotics control, servo/PID, reinforcement-learning-on-hardware, or closed-loop manufacturing deployment experience unless Kevin provides it.
+
+## Product ML And Customer Intelligence
+
+**Status:** Provisional; initial source JD: Plaid Senior MLE, Embedded Insights (2026-10-23).
+
+**Best For:** Product-embedded ML, customer intelligence, consumer-facing ML features, and applied ML roles spanning opportunity discovery, prototyping, production, and ongoing improvement.
+
+**Headline:** Machine Learning Engineer | Applied Scientist | Customer Intelligence | Production ML | Robust Validation
+
+**Profile:** I develop machine learning and statistical systems that turn complex data into useful product capabilities and customer decisions. My work spans customer segmentation and churn prediction, automated model-scoring and reporting pipelines, executive KPI dashboards, and patient-facing monitoring algorithms taken from Python prototypes through firmware integration and production-system validation. I bring a research-driven approach to ambiguous opportunities: define a tractable problem, evaluate whether the evidence supports it, and work with engineering and domain partners to deliver and improve reliable systems.
+
+**Emphasize When Pruning:** Customer ML and measurable outcomes at WWE; production algorithms and cross-functional delivery at Podimetrics; problem formulation, leakage prevention, and interpretable models at CVB.
+
+**Common Add-Ons:** Product experimentation, feedback loops, customer value, financial-data applications, model monitoring and retraining.
+
+**Do Not Overstate:** Do not imply direct financial-data expertise, consumer product-market-fit ownership, independent A/B experiment design, automated retraining systems, or large-scale recommendation expertise without evidence.

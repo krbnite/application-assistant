@@ -19,6 +19,7 @@ These mappings began as inferences from the tailored resumes in the 2026 search 
 
 | Company / Folder | Primary Cluster | Secondary Cluster | Confidence | Notes |
 |---|---|---|---|---|
+| Plaid — Senior MLE, Embedded Insights | Product ML And Customer Intelligence | Industrial And Operational Time-Series ML (production-lifecycle support only) | High archetype match; provisional single-source cluster | Consumer product ML, ambiguous opportunity definition, customer value, and ongoing model health. |
 | Kobold | Bayesian Estimation, Signal Processing, And Physical Systems Research | Sensor AI / Edge Perception | High | Earlier resume foregrounded Bayesian estimation, sensor fusion, spatiotemporal perception, and physical-system inference. |
 | Oura | Health, Wearables, Neurotech, And Digital Biomarkers | Default Sensor ML Research Scientist | High | Wearables, physiological sensing, sleep, digital biomarkers. |
 | Omada | Health, Wearables, Neurotech, And Digital Biomarkers | Industrial And Operational Time-Series ML | High | Digital health plus intervention/decision-support analytics. |
@@ -174,6 +175,7 @@ Use these only as inputs to the archetype JD. Keep them compact.
 
 | Profile Cluster | Archetype JD Status | Source JDs Used / Notes |
 |---|---|---|
+| Product ML And Customer Intelligence | Provisional synthesis 2026-10-23 | Plaid Senior MLE, Embedded Insights; consumer product ML is outside the operational cluster boundary. |
 | Quantitative Research ML Engineering | Updated 2026-08-27 | Voleon Senior Machine Learning Engineer, Abridge Senior Research Data Scientist, Oracle OCI Senior Principal Applied Scientist; watch for possible Applied Science Platform Leadership split if similar scientific/enterprise AI platform JDs recur. |
 | Experience Representation, Weak Supervision, And Uncertainty Research | Provisional synthesis 2026-09-09 | Observable Intuition Member of Technical Staff Research. |
 | Measurement Science, Evaluation, And Causal Inference | Provisional synthesis 2026-08-26 | Abridge Research Scientist (Measurement and Evaluation). |
@@ -412,3 +414,21 @@ Likely hidden concerns: whether Kevin can move from prediction to action-aware m
 Common signals: broad applied scientist / research scientist / ML scientist roles where the JD combines sensor data, time-series ML, modeling, validation, and production translation without a narrow domain.
 
 Likely hidden concerns: whether Kevin's breadth is a strength or a distraction. Use this cluster when the JD rewards cross-domain sensor ML but still needs a concise through-line.
+
+### Product ML And Customer Intelligence - Provisional Archetype JD
+
+- Source JDs used: Plaid Senior Machine Learning Engineer, Embedded Insights.
+- Archetype role title(s): Senior Machine Learning Engineer, Product ML Engineer, Applied Scientist, Customer Intelligence Data Scientist.
+- Typical company / product context: Consumer or SaaS intelligence products; ML contributors embedded with product teams.
+- Core / necessary matching signals: Customer-facing ML features; ambiguous business opportunities translated into modeling problems; proof of concept through production and ongoing improvement; cross-functional product delivery.
+- Variable / add-on signals: 0-to-1 products, product-market fit, financial datasets, feedback loops, retraining cadences, metrics, alerts, dashboards, and experiments.
+- Typical responsibilities: Identify and validate ML opportunities, define success metrics with partners, prototype models, productionize useful features, improve model health, and explain tradeoffs to technical and nontechnical audiences.
+- Typical requirements: Python, SQL, ML experience in real products, complex-data analysis, clear communication, and quantitative training.
+- Common keywords and phrases: Customer value, product ML, customer intelligence, experimentation, proof of concept, production, model health, feedback loops, model scoring, segmentation, and churn.
+- Hidden evaluation concerns: Whether research judgment produces useful features quickly; hands-on engineering depth; lifecycle ownership; credible business metrics; domain transfer without inflated expertise.
+- Tone and culture signals: High agency, rapid iteration, customer focus, and close product/engineering collaboration.
+- Best starting profile: Product ML And Customer Intelligence.
+- Resume bullets usually retained: WWE-03, WWE-04, WWE-09, WWE-01 or WWE-07; POD-01, POD-03, POD-06, POD-10, POD-12; CVB-08, CVB-14, CVB-15, CVB-13 where feasibility judgment matters.
+- Resume bullets usually compressed or discarded: Detailed sensor modalities, physical simulation, geophysical methods, and publications unless needed to substantiate research depth.
+- Gaps / do-not-overstate items: Financial-data specialization and 0-to-1 consumer product-market-fit ownership are source-specific expectations, not established experience. Do not infer independent A/B design, automated retraining, real-time serving architecture, or foundation-model expertise from adjacent analytics work.
+- Last updated: 2026-10-23.
