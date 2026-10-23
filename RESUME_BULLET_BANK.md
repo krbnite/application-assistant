@@ -67,6 +67,7 @@ In separate-role mode, default placement matters because CVB has three title/dat
 - `cvb_director`: `CVB-01` to `CVB-06`, plus `CVB-17` when research-ops/team-enablement work is relevant.
 - `cvb_associate_director`: `CVB-07`, `CVB-08`, `CVB-10` to `CVB-12`, `CVB-20`, plus `CVB-18` when knowledge-graph/database work is relevant and the resume benefits from grouping the late Senior Data Scientist / early Associate Director transition platform work with the Associate Director sensor-analytics story. `CVB-09` may be placed here only when the resume benefits from grouping late Senior Data Scientist / early Sensor Analytics transition work with the Associate Director sensor-analytics story.
 - `cvb_senior_ds`: `CVB-09`, `CVB-13` to `CVB-16`, `CVB-18`, `CVB-19`. `CVB-09` defaults here because the sampling-rate ablation work occurred in Kevin's final months as Senior Data Scientist. `CVB-18` is a legitimate spanning/transition bullet: the dated EaSiEco/knowledge-graph/database materials are concentrated in the 2018-2019 Senior Data Scientist period, but some work continued into the first several Associate Director months.
+- `CVB-24` covers Parkinson's/UPDRS exploratory analyses directed by Kevin and implemented by his direct report. Exact title-period placement is unconfirmed; use grouped CVB mode or confirm dates before assigning a narrow title/date bucket.
 - `CVB-21` (SensorNet) belongs with the Sensor Analytics team work; `CVB-22` (cloud tooling) combines an early EC2 setup with later team tooling; `CVB-23` (code/pipeline review) describes work across projects. Exact title boundaries for these newly supplied facts are not established. Use a combined CVB entry when appropriate, or confirm placement before assigning a narrow title/date bucket.
 
 | ID | Bullet | HWD | SAR | BSP | IOT | CLP | Use / cut guidance |
@@ -94,6 +95,7 @@ In separate-role mode, default placement matters because CVB has three title/dat
 | CVB-21 | SensorNet reusable biosignal modeling package | 3 | 2 | 2 | 2 | 2 | Lead for scientific software, reusable ML libraries, configurable model APIs, time-series tooling, and reproducibility. Complement CVB-10/20 only if software design and modeling results each earn separate space. |
 | CVB-22 | AWS research-computing access and workflow tooling | 2 | 1 | 2 | 2 | 1 | Concrete computing-focused alternative to broad CVB-17; use for Linux/AWS environments, IAM role assumption, synchronization, and team enablement. Usually choose one of CVB-17/22. |
 | CVB-23 | Cross-project scientific code and leakage review | 3 | 1 | 2 | 2 | 2 | Use for scientific software quality, peer code review, and validation standards. Distinguish recurring cross-project review from the specific CVB-15 validation redesign; avoid redundant leakage bullets. |
+| CVB-24 | Exploratory wearable correlates of Parkinson's severity | 3 | 1 | 2 | 1 | 1 | Use for exploratory UPDRS relationships, raw/derived wearable measures, hypothesis generation, and research direction; direct report performed analysis, results unconfirmed. |
 
 ## WWE
 
@@ -376,7 +378,21 @@ Converted free-living multimodal wearable recordings into a queryable local data
 
 ### CVB-07: Parkinson's digital biomarkers
 
-Named, built, and led the Sensor Analytics Team; secured a Michael J. Fox Foundation grant and its second-year renewal to develop digital biomarkers for longitudinal Parkinson's disease monitoring using Verily Watch data from PPMI.
+#### Resume text
+
+Named, built, and led the Sensor Analytics Team; originated the research vision, technical plan, and roadmap for longitudinal Parkinson’s disease monitoring using Verily Watch data from PPMI, securing a Michael J. Fox Foundation grant and its second-year renewal to develop digital biomarkers for Parkinson’s disease.
+
+#### Evidence
+
+Kevin clarified on October 23, 2026 that the Parkinson's research program originated in his vision, planning, and roadmapping documents, which were folded into the original grant proposal and renewal proposal. Both the initial grant and second-year renewal secured funding.
+
+#### Boundaries
+
+This supports research-agenda authorship, scientific direction, team building, and grant funding. It does not assign all model implementation or exploratory analyses to Kevin; preserve collaborator and direct-report attribution in project-specific bullets. Do not imply sole authorship of the grant applications or clinical validation of every proposed biomarker.
+
+#### Selection
+
+Use for research strategy, technical roadmaps, scientific leadership, funded program development, and wearable biomarkers. CVB-24 supplies distinct exploratory UPDRS work and delegated implementation; CVB-08 supplies the published gait-classification result. Include multiple entries only when each contributes distinct evidence; avoid repeating the program/funding narrative in CVB-05 or CVB-02.
 
 ### CVB-08: Free-living Parkinson's monitoring
 
@@ -458,7 +474,21 @@ Use as supporting evidence of exploratory graph/schema design and database/query
 
 ### CVB-19: Sensor-driven questionnaire estimation
 
-Proposed a Sensor-Driven Questionnaire Estimation framework as a tractable alternative to an unsupported wearable-suicide prediction mandate, targeting the PHQ-9 depression screener first for its free availability and initial supporting evidence and envisioning a roadmap extension toward a continuously updated proxy index refined via Kalman-filter-style data assimilation whenever a real PHQ-9 score became available; generalized the core approach with a broad literature review and synthetic-data examples to broader clinic-administered assessments and patient-state risk indicators.
+#### Resume text
+
+Conducted a broad literature review and developed a Sensor-Driven Questionnaire Estimation proposal to redirect an unsupported wearable-suicide-prediction mandate toward estimating established clinical assessments from passive sensing; selected PHQ-9 initially for its free availability and supporting evidence, illustrated the approach with synthetic data, and outlined an extension to a continuously updated proxy index refined through Kalman-filter-style data assimilation whenever an actual questionnaire score became available.
+
+#### Evidence
+
+Kevin clarified on October 23, 2026 that this was his first major literature review and proposal aimed at persuading stakeholders/funders to narrow the wearable-suicide-prediction mandate to a more practical, achievable research target. The work included the PHQ-9 rationale, synthetic-data illustrations, broader applicability to clinic-administered assessments and patient-state risk indicators, and a proposed questionnaire-updated proxy-index roadmap.
+
+#### Boundaries
+
+Distinguish literature review, research proposal, and synthetic demonstrations from an implemented or clinically validated prediction system. Kalman-filter-style assimilation describes a proposed roadmap extension, not confirmed deployed filtering. Do not claim that stakeholders formally accepted the proposal, that it secured funding, or that clinical utility was demonstrated without further evidence.
+
+#### Selection
+
+Use for scientific feasibility judgment, literature synthesis, stakeholder-facing scope definition, passive sensing, and clinical-assessment proxy modeling. CVB-13 addresses the broader feasibility pivot; avoid duplicating that narrative unless the proposal mechanism earns separate space. CVB-24 describes distinct Parkinson's/UPDRS exploratory work; do not merge the projects or imply identical implementation maturity.
 
 ### CVB-20: Biosignal ablation leadership variant
 
@@ -493,6 +523,24 @@ Reviewed other researchers' software packages and modeling pipelines across proj
 #### Evidence
 
 Evidence / selection guidance (Kevin, October 15, 2026): This recurring review work extends beyond the specific gesture-validation redesign in CVB-15. Use for scientific code review and quality judgment; do not infer organization-wide mandatory review policies, release authority, or formal test standards.
+
+### CVB-24: Exploratory wearable correlates of Parkinson's severity
+
+#### Resume text
+
+Directed exploratory analyses of raw Verily Watch recordings and Verily-derived measures, including step counts and heart rate, to investigate relationships with UPDRS assessments and identify promising directions for subsequent Parkinson’s monitoring research.
+
+#### Evidence
+
+Kevin clarified on October 23, 2026 that he originated the Parkinson's research vision, technical plan, and roadmap. Under his direction and purview, his direct report analyzed both raw Verily data and Verily-provided data products, seeking relationships and correlations that could motivate further research involving UPDRS assessments.
+
+#### Boundaries
+
+Kevin supplied research direction; his direct report performed the exploratory analysis. Do not recast this as Kevin's independent implementation, claim established significant correlations, predictive accuracy, causality, successful UPDRS forecasting/nowcasting, or clinical validation. Specific results and exact title-period placement are not established.
+
+#### Selection
+
+Use for wearable biomarkers, exploratory clinical-assessment modeling, hypothesis generation, and research direction with delegated analysis. Prefer grouped CVB presentation or confirm dates before narrow title-period placement. Distinct from the CVB-19 PHQ-9 proposal and CVB-08 published gait classifier; retain alongside CVB-07 only when exploratory methods add evidence beyond program leadership.
 
 ### WWE-01: Production viewership data products
 
