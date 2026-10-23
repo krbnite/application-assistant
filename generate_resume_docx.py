@@ -92,7 +92,7 @@ ROLE_ORDER = [
         "Cohen Veterans Bioscience",
         "Senior Data Scientist, Early Signal Team",
         "New York, NY",
-        "Jun 2018 - Jun 2019",
+        "Jul 2018 - Jun 2019",
     ),
     Role(
         "wwe_senior_ds",

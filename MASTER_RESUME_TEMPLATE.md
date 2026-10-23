@@ -83,7 +83,7 @@ Associate Director of Data Science - Sensor Analytics | New York, NY | Jun 2019 
 - {CVB-* selected bullet}
 - {CVB-* selected bullet}
 
-Senior Data Scientist, Early Signal Team | New York, NY | Jun 2018 - Jun 2019
+Senior Data Scientist, Early Signal Team | New York, NY | Jul 2018 - Jun 2019
 - {CVB-* selected bullet, if relevant}
 ```
 

@@ -48,7 +48,7 @@ Adaptive statistical estimation, computer vision, and physics-informed modeling 
 
 **Official title: Associate Director of Data Science - Sensor Analytics | New York, NY | Jun 2019 - Jul 2021**
 
-**Official title: Senior Data Scientist, Early Signal Team | New York, NY | Jun 2018 - Jun 2019**
+**Official title: Senior Data Scientist, Early Signal Team | New York, NY | Jul 2018 - Jun 2019**
 
 Hands-on research across physiological time-series modeling, wearable study design, clinical prediction, reusable ML software, and scientific validation.
 
