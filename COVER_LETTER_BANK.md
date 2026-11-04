@@ -115,7 +115,7 @@ Internal guidance only. Canonical source IDs refer to `RESUME_BULLET_BANK.md` un
 - **EVID-CVB-05** — Sources: CVB-07, CVB-01. Scope: Kevin originated vision, technical plan and roadmap; grant and renewal funded. Preserve shared proposal/model implementation; do not imply sole grant authorship or enterprise executive scope.
 - **EVID-CVB-06** — Sources: CVB-20, CVB-10. Scope: Conceived experiments, delegated most model implementation, personally contributed final best architecture. Do not collapse team work into sole implementation or imply broad deep-learning superiority beyond studied tasks.
 - **EVID-CVB-07** — Sources: CVB-04, CVB-15. Scope: Two separate projects; redesign of gesture prototype evaluation and sleep modality agreement. No deployed gesture model, disproved PSG ground truth, causal-impact study, or successful validated clinical proxy.
-- **EVID-WWE-02** — Sources: WWE-04. Scope: Personally developed neural churn model and noise-injection regularization; reported approximate AUCs and approximate contribution, not causal business/revenue benefit or invention of Gaussian regularization generally.
+- **EVID-WWE-02** — Sources: WWE-04. Scope: Feature engineering, transformations, neural-network and noise experiments; approximately 0.77 AUROC endpoint. Dataset/version correspondence and per-step gains remain unresolved; do not use a fixed-dataset 0.64-to-0.77 claim or the former half-the-gain attribution. No causal retention/revenue benefit or invention of Gaussian regularization generally.
 - **EVID-WWE-03** — Sources: WWE-01, WWE-02, WWE-07, WWE-09. Scope: Owned data collection/transformation; co-developed dashboards; manager owned Tableau SQL/visualizations. $1M is manager-reported combined services cost, not audited realized savings. Shortening must preserve services scope.
 - **EVID-CSTR-02** — Sources: CSTR-01, CSTR-02. Scope: Personally developed spectral/representation investigation; not all magnetic geometry disproved or a production assimilation platform.
 - **EVID-MSG-01** — Sources: RESUME_TAILORING_AGENT.md: Optional AI / Agentic Systems Project Signal. Scope: ProblemForm is independent LLM workflow development with CLI, benchmarks and rubric/property-based evaluation. No enterprise production adoption, validated productivity gain, autonomous research discovery, or foundation-model training claim.
@@ -293,7 +293,7 @@ In a gesture-recognition prototype, I found overlapping-window leakage, time-ord
 
 ### EVID-WWE-02: Measured modeling contribution
 
-At WWE, I developed churn models using feature engineering, input transformations, and deeper neural networks, including experiments with Gaussian-noise regularization between hidden layers.
+At WWE, I developed churn models reaching approximately 0.77 AUROC through new behavioral and calendar features, input transformations, and experiments with deeper neural networks and Gaussian-noise regularization between hidden layers.
 
 ### EVID-WWE-03: Data delivery and business outcomes
 

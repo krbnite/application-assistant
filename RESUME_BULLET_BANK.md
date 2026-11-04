@@ -104,7 +104,7 @@ In separate-role mode, default placement matters because CVB has three title/dat
 | WWE-01 | Production viewership data products | 0 | 0 | 0 | 3 | 0 | Use for production data products, dashboards, business impact, and pipeline ownership. |
 | WWE-02 | Real-time executive analytics | 0 | 0 | 0 | 2 | 0 | Use for operational dashboards, live decisions, and stakeholder-facing analytics. |
 | WWE-03 | Production customer behavior analytics | 1 | 0 | 0 | 3 | 0 | Use for segmentation, churn, A/B testing, and automated ML/reporting pipelines. |
-| WWE-04 | Deep learning for churn prediction | 0 | 0 | 0 | 2 | 0 | Use for applied ML performance gains; usually compress behind newer sensor work. |
+| WWE-04 | Churn modeling and neural-network experimentation | 0 | 0 | 0 | 2 | 0 | Use for applied ML performance gains; usually compress behind newer sensor work. |
 | WWE-05 | Transfer learning and fine-tuning for computer vision | 1 | 3 | 1 | 0 | 0 | Use as optional evidence when the JD asks for transfer learning, fine-tuning, pretrained-model adaptation, computer vision, or small-data model diagnostics. |
 | WWE-06 | YouTube and social-platform data remediation | 0 | 0 | 0 | 3 | 0 | Lead for data engineering, API integration, vendor-gap discovery, stakeholder persuasion, and operational analytics. |
 | WWE-07 | Live-event analytics latency reduction | 0 | 0 | 0 | 3 | 0 | Use for real-time dashboards, executive analytics, streaming/live operations, or latency-sensitive reporting. |
@@ -113,6 +113,8 @@ In separate-role mode, default placement matters because CVB has three title/dat
 | WWE-10 | Streaming-account anomaly and enforcement investigation | 0 | 0 | 0 | 3 | 0 | Lead for investigative analytics, anomaly detection, fraud-adjacent work, SQL validation, visualization, and challenging operational assumptions. Do not imply established user intent or include an unverified settlement amount. |
 | WWE-11 | Shared GPU-enabled AWS/Linux research environment | 1 | 1 | 2 | 2 | 1 | Use for scientific computing, shared GPU/Linux administration, researcher support, and scheduled data workloads. Single-instance experience; do not label as cluster/distributed HPC. |
 | WWE-12 | Reusable R ingestion-to-reporting package | 1 | 0 | 2 | 3 | 1 | Lead for reusable packages, automated analysis/reporting, maintainability, and consultant handoff. HTML reports are not evidence of web-application ownership. |
+| WWE-13 | Cost-sensitive churn evaluation and targeting | 0 | 0 | 1 | 3 | 1 | Lead for model evaluation, decision thresholds, imbalanced outcomes, and cost-sensitive analytical judgment; economic results are scenarios. |
+| WWE-14 | Email winback campaign analysis | 0 | 0 | 0 | 3 | 0 | Use for completed campaign/A/B analysis; assignment, effects, and design ownership are not recalled. |
 
 ## MachineSaidGo / Independent Research Projects
 
@@ -574,9 +576,35 @@ Attribution / selection guidance (Kevin, October 15, 2026): Use the compact vers
 
 Developed and maintained automated data processing, machine learning, and reporting pipelines supporting customer segmentation, churn prediction, executive reporting, and A/B test analysis for marketing and customer engagement initiatives.
 
-### WWE-04: Deep learning for churn prediction
+### WWE-04: Churn modeling and neural-network experimentation
 
-Replaced a logistic-regression-based churn prediction system with a 5-layer neural network, improving total AUC from approximately 0.64 to 0.73; independently developed Gaussian noise injection between hidden layers as a regularization strategy, contributing approximately half of the overall performance gain.
+#### Resume text
+
+Improved an inherited consultant-developed churn model from approximately 0.64 to 0.77 AUROC. Rebuilt the scikit-learn logistic-regression baseline in TensorFlow, verified numerical agreement with the original, then developed and tuned deep neural networks through feature engineering, input transformations, architecture exploration, and regularization.
+
+#### Variant: technical
+
+Improved an inherited consultant-developed churn model from approximately 0.64 to 0.77 AUROC. Reproduced the scikit-learn logistic-regression baseline in TensorFlow and verified numerical agreement, then explored network depth, constant and varying layer widths, activation functions, weight initialization, dropout, batch normalization, and Gaussian-noise regularization alongside feature engineering and input transformations.
+
+#### Evidence
+
+Kevin, November 4, 2026: strongly recalls an initial logistic-regression AUROC near 0.64 and confirms the sequence of new features, transformations, hidden layers (including dropout/batch normalization experiments), and Gaussian-noise injection. Viewing-speed and acceleration features used first and second differences. The earlier bank endpoint of 0.73 was a remembered estimate, superseded by the historical presentation reporting approximately 0.77.
+
+Kevin additionally confirms systematic experimentation with layer counts, constant-width and varying-width architectures, activation functions, and weight initializations. The default bullet emphasizes this broader development process; the technical variant preserves specific experiments, including Gaussian noise, without assigning per-step gains.
+
+Kevin subsequently clarified that he rebuilt the consultants' scikit-learn logistic-regression implementation in TensorFlow and trained/tested it on the same dataset they used, specifically checking numerical agreement before proceeding to neural-network improvements. This same-dataset baseline-reproduction check is distinct from comparisons across later development datasets. He recalls dataset-to-dataset AUROC variation on the order of +/-0.01; this is an approximate recollection, not a calculated confidence interval or standard deviation. The approximately 0.64-to-0.77 claim describes the overall development improvement, not a per-step attribution.
+
+Historical sources: 2017-04-28_Improving-the-Churn-Model.pptx; 2017-03-12_Audible-Presentation.pdf (cover dated March 12, 2018); ChurnModel source and notebooks in Kevin's WWE archive. The Audible deck reports 0.68 to 0.73 from calendar/content features, 0.73 to 0.76 from transformations, and 0.76 to 0.77 from hidden layers plus noise. Kevin worked with different datasets over time; exact correspondence between experimental versions and the remembered 0.64 baseline is unresolved. Archived notebook source/output state is not a reproducible final-run record.
+
+Kevin also recalls both held-out-customer testing (customers absent from training/validation) and out-of-time testing (future observations from customers represented in training/validation). The surviving code includes random row splits; it does not reconstruct these final evaluation sets or attach a particular score to either test.
+
+#### Boundaries
+
+Do not present 0.64 to 0.77 as a controlled comparison on one fixed dataset/test set. Do not attribute all improvement to moving from logistic regression to a neural network. Remove the former claim that noise supplied approximately half the gain: its numerical contribution is uncertain. Preserve the independently conceived noise experiment without implying invention of Gaussian regularization generally. No realized retention/revenue uplift, final-model production adoption, or leakage-free end-to-end evaluation follows from these archives alone.
+
+#### Selection
+
+Use for applied model development and experimentation. WWE-13 supplies distinct evaluation/targeting judgment; do not repeat the entire modeling story in both. Use the overall approximate baseline-to-endpoint improvement with the implementation and numerical-agreement work when space permits; shorten to the endpoint for compact versions. Preserve dataset/version context in evidence notes and do not assign numerical gains to individual steps.
 
 ### WWE-05: Transfer learning and fine-tuning for computer vision
 
@@ -633,6 +661,42 @@ Built an R package spanning SFTP data ingestion, parsing and transformation, ana
 #### Evidence
 
 Evidence / boundaries (Kevin, October 15, 2026): The handoff supports reusable software and lifecycle/knowledge-transfer experience. Do not infer a public package release, a web application, specific documentation or testing practices, or that the package itself implemented email delivery.
+
+### WWE-13: Cost-sensitive churn evaluation and targeting
+
+#### Resume text
+
+Built churn-model evaluation reports comparing AUROC, precision-recall tradeoffs, and risk-decile capture; developed an economic framework incorporating retention benefits, false-positive offer costs, and assumed treatment effectiveness to recommend narrower high-risk targeting over broad risk deciles.
+
+#### Evidence
+
+Sources: ChurnModel/Model-Scores-Report.ipynb and Gains-Charts.ipynb; 2017-06-27_segmentation-treatment-analysis__kurban.pdf, pages 2-8. Kevin authored the treatment presentation and implemented evaluation/reporting code. The presentation compares hypothetical targeting strategies, acknowledging unknown treatment effectiveness. Separate July 2017 segmentation materials describe approximately 1.2M subscribers and distinguish payment history, engagement, tenure, and voluntary/involuntary attrition; Kevin's exact personal contribution to every component of that shared deck is not established.
+
+#### Boundaries
+
+Dollar amounts are illustrative scenarios, not realized savings or observed treatment effects. Churn risk is not treatment responsiveness. No measured incremental retention, estimated heterogeneous treatment effect, policy adoption, or experiment launch is established. A gains-chart line labeled Randomized Control is a theoretical random-ranking baseline, not randomized treatment assignment. Avoid precise table values from inconsistent draft notebook snapshots.
+
+#### Selection
+
+Prefer over architecture detail for senior DS roles emphasizing metrics, prioritization, and analytical decisions. Can coexist with WWE-04 when the distinct modeling and decision contributions both earn space.
+
+### WWE-14: Email winback campaign analysis
+
+#### Resume text
+
+Analyzed email winback campaigns by comparing subscriber return rates between emailed and non-emailed users and examining email-open and link-click behavior.
+
+#### Evidence
+
+Kevin, November 4, 2026: confirms a separate completed, quick one-off A/B analysis involving winback rates for email versus no email, whether users opened an email, and whether they clicked its link. No corresponding artifact or result has been located; this is user-confirmed experience rather than a claim inferred from the segmentation-treatment deck.
+
+#### Boundaries
+
+Do not claim randomization, power/sample-size planning, independent experiment design, statistical significance, a remembered effect size, causal uplift, or a specific rollout decision. Open/click behavior is post-email behavior, not itself a randomized treatment contrast. Preserve A/B analysis as Kevin's description without upgrading it to end-to-end experimentation ownership.
+
+#### Selection
+
+Use when campaign analysis or experimentation breadth matters. WWE-03 may remain a compact summary; avoid duplicating this example verbatim in the same resume.
 
 ### MSG-01: Self-supervised behavioral video analysis
 
