@@ -106,7 +106,7 @@ In separate-role mode, default placement matters because CVB has three title/dat
 | WWE-03 | Production customer behavior analytics | 1 | 0 | 0 | 3 | 0 | Use for segmentation, churn, A/B testing, and automated ML/reporting pipelines. |
 | WWE-04 | Churn modeling and neural-network experimentation | 0 | 0 | 0 | 2 | 0 | Use for applied ML performance gains; usually compress behind newer sensor work. |
 | WWE-05 | Transfer learning and fine-tuning for computer vision | 1 | 3 | 1 | 0 | 0 | Use as optional evidence when the JD asks for transfer learning, fine-tuning, pretrained-model adaptation, computer vision, or small-data model diagnostics. |
-| WWE-06 | YouTube and social-platform data remediation | 0 | 0 | 0 | 3 | 0 | Lead for data engineering, API integration, vendor-gap discovery, stakeholder persuasion, and operational analytics. |
+| WWE-06 | Social-platform measurement and data remediation | 0 | 0 | 0 | 3 | 0 | Lead for data engineering, API integration, vendor-gap discovery, stakeholder persuasion, and operational analytics. |
 | WWE-07 | Live-event analytics latency reduction | 0 | 0 | 0 | 3 | 0 | Use for real-time dashboards, executive analytics, streaming/live operations, or latency-sensitive reporting. |
 | WWE-08 | Revenue attribution and behavioral research | 0 | 0 | 0 | 2 | 0 | Use for attribution, survey fusion, sentiment analysis, customer behavior, or business analytics roles. |
 | WWE-09 | AWS automated scoring to Redshift | 0 | 0 | 0 | 3 | 0 | Use for automated model scoring, warehouse/dashboard consumption, AWS pipelines, and stakeholder-facing ML outputs. |
@@ -115,6 +115,7 @@ In separate-role mode, default placement matters because CVB has three title/dat
 | WWE-12 | Reusable R ingestion-to-reporting package | 1 | 0 | 2 | 3 | 1 | Lead for reusable packages, automated analysis/reporting, maintainability, and consultant handoff. HTML reports are not evidence of web-application ownership. |
 | WWE-13 | Cost-sensitive churn evaluation and targeting | 0 | 0 | 1 | 3 | 1 | Lead for model evaluation, decision thresholds, imbalanced outcomes, and cost-sensitive analytical judgment; economic results are scenarios. |
 | WWE-14 | Email winback campaign analysis | 0 | 0 | 0 | 3 | 0 | Use for completed campaign/A/B analysis; assignment, effects, and design ownership are not recalled. |
+| WWE-15 | Recurring executive content-performance reporting | 0 | 0 | 0 | 3 | 0 | Use for ongoing metrics/reporting ownership and senior stakeholder delivery; distinct from live-event latency. |
 
 ## MachineSaidGo / Independent Research Projects
 
@@ -572,6 +573,10 @@ Owned collection, transformation, analysis, and table preparation for executive 
 
 Attribution / selection guidance (Kevin, October 15, 2026): Use the compact version when the outcome matters most and the detailed version when pipeline ownership, delegation, and collaboration matter. Kevin's manager owned the Tableau SQL and visualizations; do not imply Kevin independently built those components. This attribution also applies to WWE-01 and WWE-07.
 
+Additional evidence, November 4, 2026: the April 10, 2018 cross-platform live-stream article describes Kevin drafting the orchestration script, defining component inputs/outputs so another contributor could implement a platform collector, and working toward a two-week WrestleMania deadline. A teammate identified the incorrect JW Player source; Kevin discarded that collector in favor of the better source rather than originating that finding himself. The article ends before a complete delivery account; use WWE-07's separately supported reporting outcome, not an invented deadline-success claim.
+
+youtube_daily_channel_report.py records a production mailing list of 19 named people plus the Content Analytics mailbox, including Kevin and his teammates. Public historical sources establish recipients Pamela Murrin as SVP Data Strategy ([WWE announcement, March 28, 2016](https://corporate.wwe.com/about/news/2016/03-28-2016)), Jayar Donlan as EVP Digital & Social Content ([WWE announcement, December 13, 2017](https://corporate.wwe.com/f/docs/press-releases/12132017_361.pdf)), and Craig Tello as VP Digital & Social Content ([2018 FUTURE NOW panel](https://music.amazon.in/podcasts/736606a0-0ca3-4597-98fb-75aaa7dbe4ba/episodes/757d329c-0418-4f65-9d6e-778f5d31c926/future-now-media-podcast-art-of-storytelling-2018)). This establishes senior cross-functional distribution, not evidence that every recipient read every report or made a particular decision. The source contains private configuration; retain these evidence notes rather than copying raw code, addresses, or credentials into this public repository.
+
 ### WWE-03: Production customer behavior analytics
 
 Developed and maintained automated data processing, machine learning, and reporting pipelines supporting customer segmentation, churn prediction, executive reporting, and A/B test analysis for marketing and customer engagement initiatives.
@@ -610,9 +615,27 @@ Use for applied model development and experimentation. WWE-13 supplies distinct 
 
 Built a 20-class WWE Superstar image-recognition prototype by fine-tuning ImageNet-pretrained VGG16 with a custom classification head, two-phase frozen-base/top-block-unfrozen training, heavy data augmentation, VGG16/VGG19/ResNet50 comparison, and confidence-thresholded out-of-roster rejection under roughly 50 images per class.
 
-### WWE-06: YouTube and social-platform data remediation
+### WWE-06: Social-platform measurement and data remediation
 
-Researched YouTube, Facebook, Instagram, and platform-specific APIs to identify major gaps in third-party vendor feeds, then built automated collection and warehousing pipelines that substantially expanded available social/video metrics while reducing vendor dependence.
+#### Resume text
+
+Investigated discrepancies and coverage gaps across platform consoles, APIs, and vendor feeds; built and maintained collection pipelines, distinguished validated reports from immediate estimates, and replaced fragile scraping with API-based workflows where available.
+
+#### Variant: coverage
+
+Built and maintained social-platform collection and warehousing pipelines that expanded available metrics and reduced vendor dependence, including daily Facebook insights across 400+ Pages; investigated missing coverage and differences in metric definitions across platform and vendor sources.
+
+#### Evidence
+
+Historical sources: Audible presentation pages 11-14; 2018-03-09_YouTube-Reporting-API__v2.pdf; 2018-05-30__Facebook-Graph-API__1-Graph Explorer.pdf; kitchensink articles 2017-12-12-Digging-Deep-with-the-Data-API and 2018-01-29-Scraping-Instabilities. Kevin documented why YouTube screenshots/CMS/Analytics API differed and identified Reporting API reports as the authoritative validated source. Diagnosed incomplete video enumeration and vendor omissions, including differences between Facebook post- and video-level metrics and shared/crossposted views. Daily collection included 400+ Facebook Pages, with live/post-live work documented in 2018-05-15-Whats-What-When-Selenium-Crashes. The Audible deck describes roughly double the vendor's Facebook dimensions/metrics, not double unique users or business value. Reporting-API teaching material describes revised historical reports and an as_on_date convention; implementation of that convention is not independently confirmed.
+
+#### Boundaries
+
+No measured uptime improvement or guarantee of complete/unbiased counts. Source-system removals, privatization, republication, and missing statistics can distort snapshot differences. Do not transfer counts of Pages into users/concurrent streams. Instagram materials include exploration and unimplemented webhook plans; do not imply every investigated platform capability shipped.
+
+#### Selection
+
+Use for measurement correctness and vendor/source investigation. WWE-09 establishes recurring delivery; select complementary clauses rather than two versions of the same pipeline inventory.
 
 ### WWE-07: Live-event analytics latency reduction
 
@@ -620,7 +643,25 @@ Co-developed multi-platform live-event reporting workflows that captured viewers
 
 ### WWE-08: Revenue attribution and behavioral research
 
+#### Resume text
+
 Built revenue-attribution, survey-fusion, sentiment-analysis, seasonal-behavior, and customer-behavior analyses over large-scale WWE Network and social-platform datasets to support segmentation, marketing decisions, churn/winback forecasting, and stakeholder reporting.
+
+#### Variant: measurement
+
+Developed a content revenue-attribution framework comparing stream-, day-, and entitlement-level engagement with minutes watched, examining how fragmented viewing and metric definitions changed the allocation of subscription value to episodes.
+
+#### Evidence
+
+2017-01-13__revenue-shares.pdf, pages 2-16, defines entitlement/customer/content windows and compares interaction and duration-based measures. Examples show that splitting viewing across sessions can inflate stream-count-based content value. This adds concrete metric-design evidence to the broader existing behavioral-analysis inventory.
+
+#### Boundaries
+
+Framework development and comparison are established; selected production metric, implementation, sustained adoption, and downstream content/revenue decisions remain unconfirmed. Example subscription allocations are illustrative, not measured incremental revenue.
+
+#### Selection
+
+Use the measurement variant for metric-definition and construct-validity roles; retain broader text when behavioral-analysis breadth matters. Do not present either as causal revenue attribution.
 
 ### WWE-09: AWS automated scoring to Redshift
 
@@ -628,9 +669,15 @@ Built revenue-attribution, survey-fusion, sentiment-analysis, seasonal-behavior,
 
 Developed and maintained AWS-hosted automated web-scraping, API collection, model-scoring, and reporting workflows, using cron to schedule hourly/daily data collection and daily analytical reports; churn-model scores were written to Redshift for marketing and product dashboards.
 
+#### Variant: data-collaboration
+
+Enabled daily YouTube report collection and collaborated with data engineering to make S3-delivered reports queryable through Hive and Presto; maintained API and scraping workflows supplying recurring analytical datasets and reports.
+
 #### Evidence
 
-Evidence / selection guidance (Kevin, October 15, 2026): The cron schedules and ongoing code maintenance strengthen the earlier operations-only wording. These are scheduled workloads on EC2, not evidence of cluster scheduling or distributed execution. Use WWE-11 instead when shared GPU/Linux environment administration is the main requirement; avoid repeating the collection/reporting details.
+Evidence / selection guidance (Kevin, October 15, 2026): The cron schedules and ongoing code maintenance strengthen the earlier operations-only wording. These are scheduled workloads on EC2, not evidence of cluster scheduling or distributed execution. Kevin, November 4, 2026, confirms personally maintaining all scrapers and API pipelines. Contemporary Cron and Data API articles describe months of operation, stakeholder reliance, failure recovery, and migration from fragile scraping. Collection included daily insights for 400+ Facebook Pages plus live/post-live reporting; Pages are sources, not users or concurrent streams.
+
+The January 26, 2018 Hive/Presto article records Kevin enabling available daily YouTube reports and collaborating with engineering, which exposed S3 CSVs as queryable Hive/Presto tables. Kevin used but did not administer Redshift/Hive/Presto. The sanitized youtube_analytics_automation archive corroborates EC2/S3/Redshift delivery, snapshots and test-table routing but is not an exact runnable production snapshot. No automated test-suite, SLA, quantified reliability gain, or platform-architecture ownership is inferred. Use WWE-11 instead when shared GPU/Linux administration is the main requirement; avoid repeating the collection/reporting details.
 
 ### WWE-10: Streaming-account anomaly and enforcement investigation
 
@@ -651,6 +698,8 @@ Administered a GPU-enabled AWS EC2/Linux instance shared by three users, configu
 #### Evidence
 
 Evidence / boundaries (Kevin, October 15, 2026): Approximately 2016-2017. The instance also hosted cron-scheduled scrapers, API collectors, and reporting workflows (WWE-09). This is concrete shared GPU research-computing and Linux administration experience; do not claim a multi-node HPC cluster, distributed training, Slurm/PBS, or measured performance/scaling gains.
+
+The March 22, 2018 RStudio Server article describes setting up the service for three other teammates and teaching SSH/SFTP/cron/Vim/Tmux/Bash. This may describe a later period or a different shared configuration from the three-user account above. Do not silently change the user count or claim formal training adoption or quantified productivity improvements.
 
 ### WWE-12: Reusable R ingestion-to-reporting package
 
@@ -697,6 +746,24 @@ Do not claim randomization, power/sample-size planning, independent experiment d
 #### Selection
 
 Use when campaign analysis or experimentation breadth matters. WWE-03 may remain a compact summary; avoid duplicating this example verbatim in the same resume.
+
+### WWE-15: Recurring executive content-performance reporting
+
+#### Resume text
+
+Built and maintained automated daily YouTube reporting for senior digital-content and analytics leaders, combining channel performance, historical comparisons, and top-content rankings for WWE, UpUpDownDown, and The Bella Twins.
+
+#### Evidence
+
+Kevin confirms personal scraper/API maintenance. youtube_daily_channel_report.py queries Redshift, combines recent estimated metrics with delayed reporting data, constructs channel and top-video HTML reports, and sends to an explicit production mailing list containing VP/SVP/EVP recipients (see WWE-02 evidence). It supports date-specific reruns and separate test/official distribution. Contemporary articles corroborate recurring stakeholder reliance.
+
+#### Boundaries
+
+Report code and confirmed operating responsibility establish intended recurring delivery, not guaranteed send history, reader engagement, a specific decision changed, or company-wide north-star KPI ownership. Historical average calculations have slicing/denominator issues; do not claim validated baseline methodology or perfect metric accuracy. Do not copy recipient addresses, source credentials, or private configurations into public outputs.
+
+#### Selection
+
+Use for ongoing analytical data-product ownership; WWE-02/WWE-07 emphasize live-event collaboration/latency. Merge selectively if both would repeat the same stakeholder-delivery claim.
 
 ### MSG-01: Self-supervised behavioral video analysis
 
