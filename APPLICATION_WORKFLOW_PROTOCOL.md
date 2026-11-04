@@ -105,12 +105,21 @@ Read:
 - the target role's `job-description.md`
 - the existing role-specific resume plan JSON
 
-Read `PROFILE_BANK.md`, `RESUME_BULLET_BANK.md`, or the generated resume DOCX only if the resume plan does not provide enough context.
+Read the selected entries in `RESUME_BULLET_BANK.md`, including their evidence, attribution, maturity and boundaries, before drafting factual cover-letter claims; a resume plan alone may omit important limits. Read `PROFILE_BANK.md` or the generated resume DOCX only when needed for positioning or consistency.
 
 Produce:
 
 - cover-letter plan JSON in `supporting/`
 - cover-letter DOCX in the job folder root
+
+Cover-letter sequence:
+
+1. Identify the reader's main uncertainty and one central contribution; note a specific target connection or Kevin-confirmed motivation when useful.
+2. Select two or three examples from canonical sources. Use the source register in `COVER_LETTER_BANK.md` to find them, not as a substitute for reading the selected evidence.
+3. Give each paragraph a distinct purpose in the plan. Domain modules and scientist/engineer/lead lenses are optional; fresh bank-supported prose is normal. Do not assemble a required opener/every-employer/bridge/gap/close sequence.
+4. Verify the final narrative against sources for employer, personal versus delegated contribution, project maturity, modality, outcome and platform versus model scale. Check voice and remove repeated rhetorical functions.
+
+The plan's `editorial_plan`, paragraph `purpose`, and `evidence_ids` are lightweight writer notes, not generated prose or machine-enforced factual validation. Older plans remain valid. Follow the cover-letter contract for format and QA; this adds no mandatory agent review, audit file, detector check or extra deliverable.
 
 ### Audit Add-On
 

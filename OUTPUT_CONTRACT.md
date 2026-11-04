@@ -144,38 +144,35 @@ Before finalizing a tailored resume, and only after the current JD has been matc
 
 ### Length And Shape
 
-- Target length: 1 page.
-- Usual structure: salutation, 4-6 paragraphs, closing, signature.
-- Target word count: roughly 400-650 words.
-- Prefer short paragraphs over dense walls of text.
-- If a letter exceeds one page, cut before shrinking type.
+- Ordinary cover letters target one page, usually around 300–450 words. This is a starting range, not a floor, quota, or quality score; use the length the argument earns.
+- Textbox answers follow the actual prompt and character/word limit. Longer research-interest letters require a purpose or user request.
+- Use short paragraphs with distinct jobs, a salutation and signature when the format calls for them, and a concise landing. No fixed number of paragraphs is required.
+- If the letter exceeds the page target, remove repeated claims and low-value detail before shrinking type.
 
-### Selection And Tone
+### Selection And Voice
 
-For each cover letter:
+Begin with the target reader's main uncertainty and one central contribution Kevin can substantiate. Select two or three examples that establish the argument. Domain clusters and scientist/engineer/technical-lead lenses help select material but do not dictate a template or title equivalence.
 
-1. Choose an opener from `COVER_LETTER_BANK.md` based on the primary profile/JD cluster.
-2. Choose 2-3 evidence paragraphs that support the role's most important hidden concern.
-3. Choose one company/role bridge that explains why this specific role makes sense.
-4. Choose one closing paragraph.
-5. Lightly edit selected modules for the job description's terminology, company mission, product context, and target role.
-6. Create new paragraphs only when the JD requires a materially distinct argument that the bank cannot express.
-7. If new paragraph language is broadly reusable, add it to `COVER_LETTER_BANK.md`; otherwise keep it in the local plan and audit only.
+Use `COVER_LETTER_BANK.md` as optional narrative material. Read the selected canonical accomplishment entries and their notes. Fresh or combined paragraphs are normal when their facts are supported; polishing a familiar module is not a reason to keep it. Prior company letters are editorial examples, not factual authority.
 
-Use Kevin's established cover-letter voice: substantive, technically literate, thesis-driven, and low-fluff. The letter should explain the through-line behind the resume, not repeat every bullet. Keep enthusiasm concrete: tie interest to the company's actual problem, data, product, or mission.
+Preserve Kevin's curiosity, precision and specific intellectual motivations. Show a decision and its consequence rather than repeatedly declaring rigor, breadth or fit. Do not invent enthusiasm or fabricate personal history. A company connection can appear in the opening or evidence discussion; a separate bridge is unnecessary if it repeats the same point. Qualification boundaries should be specific and included only when necessary to prevent a material misunderstanding. Use accurate verbs and attribution rather than a ritual gap paragraph. End with a concrete contribution or natural invitation, not a keyword inventory.
 
-Use honest adjacent-domain framing when Kevin lacks exact domain experience. Do not fabricate experience or imply direct ownership of unsupported domains, tools, regulatory activities, or clinical expertise.
+### Plan And Generator
 
-### Cover-Letter Plan And Generator
+Use `COVER_LETTER_PLAN_TEMPLATE.json`. Record a short central argument, reader uncertainty, target connection, and any meaningful boundaries/omissions in `editorial_plan`. Paragraph objects may include `purpose` and `evidence_ids` alongside existing `id`, `label`, and `text`; fresh text may override a module or use a custom object. These editorial fields are non-rendered notes, not generator-enforced factual checks. No exhaustive sentence-by-sentence ledger is required.
 
-Use `COVER_LETTER_PLAN_TEMPLATE.json` as the starting shape for a role-specific cover-letter plan.
+Plain module IDs, existing overrides, variables and older plans remain supported. Keep the source/scope register outside the bank's `## Canonical Text` section; only rendered paragraph text belongs under module headings. Generate with `generate_cover_letter_docx.py` and validate first. Promote reusable evidence through the accomplishment bank; promote reusable wording into the cover-letter bank only when it improves future use.
 
-- Plain string IDs pull exact canonical text from `COVER_LETTER_BANK.md`.
-- Object entries with `id`, `label`, and/or `text` represent light edits to canonical modules and must be defended in the audit or final notes, depending on the selected workflow mode.
-- Object entries without an `id` are custom paragraphs and should be rare.
-- `variables` supplies placeholder values such as `company_problem`, `target_domain`, and `closing_keywords`.
-- Generate the DOCX with `generate_cover_letter_docx.py`.
-- Validate before generating when possible.
+### Final Editorial Check
+
+- Can the reader identify Kevin's contribution and at least one consequential action from the opening and first example?
+- Does each paragraph add evidence, interpretation or relevant motivation rather than repeat the thesis or company mission?
+- Do employer, personal/delegated work, maturity, modality and outcome match canonical sources? Do not invent a causal progression between separate projects, equate platform reach with deployment of a new model, or extend regulatory clearance by grammar.
+- Does the role connection follow from the examples, with consequential qualification gaps left visible rather than argued away by analogy?
+- Does the language sound like something Kevin could comfortably say and defend? Remove stock rhetoric, abstract inventories and unnecessary caveats; do not insert fake quirks or optimize for detector scores.
+- Check layout and submission limits according to the selected workflow mode. Report any unperformed rendering or page-count checks.
+
+These are qualitative writing checks, not a new numerical rubric or mandatory review artifact. Independent review is useful when requested or warranted, not a requirement on every letter. Historical application files are unchanged unless Kevin requests revisions.
 
 ## Interview Q&A Contract
 

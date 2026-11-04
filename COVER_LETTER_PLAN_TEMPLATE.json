@@ -1,27 +1,56 @@
 {
   "company": "Example Company",
   "role_title": "Example Role",
-  "date": "2026-08-21",
+  "date": "YYYY-MM-DD",
   "salutation": "Dear Hiring Team,",
   "recipient_block": [],
   "include_date": false,
   "variables": {
-    "company_problem": "turning noisy real-world data into reliable product decisions",
+    "company_problem": "the specific research, engineering, or user problem in the JD",
     "target_domain": "the target domain",
-    "target_contribution": "the target contribution",
-    "gap_domain": "the exact target domain",
-    "adjacent_strengths": "sensor inference, validation, and research-to-product translation",
-    "closing_keywords": "machine learning, statistical signal processing, Bayesian estimation, sensor analytics, and deployment-oriented validation"
+    "target_contribution": "the concrete work the selected evidence prepares Kevin to contribute",
+    "gap_domain": "a material qualification gap, only if a boundary is necessary",
+    "adjacent_strengths": "specific supported experience relevant to that boundary",
+    "closing_keywords": "legacy variable retained for older plans; do not turn it into a keyword closing"
   },
   "paragraphs": [
-    "OPEN-DEFAULT-01",
-    "EVID-POD-01",
-    "EVID-CVB-01",
-    "EVID-RESEARCH-01",
-    "BRIDGE-SAR-01",
-    "CLOSE-DEFAULT-01"
+    {
+      "id": "OPEN-DEFAULT-01",
+      "purpose": "Establish the target problem and central contribution; rewrite around this application.",
+      "evidence_ids": []
+    },
+    {
+      "id": "EVID-POD-04",
+      "purpose": "Demonstrate a consequential implementation and evaluation decision.",
+      "evidence_ids": [
+        "POD-01",
+        "POD-02",
+        "POD-03"
+      ]
+    },
+    {
+      "id": "EVID-CVB-04",
+      "purpose": "Add distinct reusable-software and scientific-review evidence; replace if irrelevant.",
+      "evidence_ids": [
+        "CVB-21",
+        "CVB-23"
+      ]
+    },
+    {
+      "id": "CLOSE-CONTRIB-01",
+      "purpose": "Land on a specific contribution without repeating the skills inventory.",
+      "evidence_ids": []
+    }
   ],
   "closing": "Sincerely,",
   "signature": "Kevin Urban, PhD",
-  "output_path": "job-search/2026/example/2026-08-21_Kevin-Urban_Cover-Letter_Example-Company.docx"
+  "output_path": "job-search/2026/example/YYYY-MM-DD_Kevin-Urban_Cover-Letter_Example-Company.docx",
+  "editorial_plan": {
+    "format": "ordinary-letter",
+    "central_argument": "",
+    "reader_uncertainty": "",
+    "specific_connection_or_motivation": "",
+    "scope_boundaries": [],
+    "deliberate_omissions": []
+  }
 }
