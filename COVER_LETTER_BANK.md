@@ -93,6 +93,10 @@ Only single-paragraph renderings belong in the renderable section at the end of 
 | EVID-MSG-02 | BSP/RS/RE | Evidence | Simulation and learned approximations. Select only for the current argument; see source register. |
 | OPEN-PERSONAL-01 | Any | Opener | Specific motivation opening. Select only for the current argument; see source register. |
 | CLOSE-CONTRIB-01 | Any | Closing | Contribution landing. Select only for the current argument; see source register. |
+| EVID-WWE-04 | IOT/RS | Evidence | Cost-sensitive evaluation and targeting; hypothetical economics, not realized uplift. |
+| EVID-WWE-05 | IOT | Evidence | Completed email winback analysis; recalled scope without effect-size or design-ownership claims. |
+| EVID-WWE-06 | IOT/RE | Evidence | Measurement reconciliation and maintained collection; preserve source/version limits. |
+| EVID-WWE-07 | IOT/RE/TL | Evidence | Recurring senior-stakeholder reporting and engineering collaboration; no platform-administration claim. |
 
 ## Source And Scope Register
 
@@ -122,6 +126,10 @@ Internal guidance only. Canonical source IDs refer to `RESUME_BULLET_BANK.md` un
 - **EVID-MSG-02** — Sources: CSTR-06, MSG-02. Scope: Early analytical/numerical work and later independent collaboration are distinct contexts. Collaborated on surrogate approaches; no sole authorship, quantified acceleration or deployed industrial solver replacement.
 - **OPEN-PERSONAL-01** — Sources: Plan-specific supported motivation. Scope: Use only genuine motivation from Kevin or supported prior material; no invented childhood passion, company use, admiration or values.
 - **CLOSE-CONTRIB-01** — Sources: Selected evidence and current JD. Scope: Forward-looking contribution, not invented employment commitment. Keep one natural sentence; customize to the actual contribution.
+- **EVID-WWE-04** — Sources: WWE-13, WWE-04. Scope: personally implemented model-evaluation reporting and authored economic scenarios; no policy adoption, measured treatment effects, or realized savings.
+- **EVID-WWE-05** — Sources: WWE-14. Scope: user-confirmed completed one-off analysis; randomization, design ownership, statistical methods, outcome magnitude, and rollout decisions are not recalled. Open/click behavior is not a randomized contrast.
+- **EVID-WWE-06** — Sources: WWE-06, WWE-09. Scope: personal collection/maintenance and measurement investigation; 400+ Pages are data sources. No quantified reliability gain or every investigated Instagram capability deployed.
+- **EVID-WWE-07** — Sources: WWE-15, WWE-09, WWE-02. Scope: recurring reporting to an explicit senior-leader distribution and collaboration with DE; no proof of every recipient's use, changed roadmap, or administration of S3/Hive/Presto infrastructure.
 
 For independent transformer/shared-representation work, consult MSG-03 directly and write a short role-specific paragraph if needed. Preserve synthetic-data, independent-learning context and evaluation limits; do not treat the absence of a canned paragraph as absence of experience.
 
@@ -318,3 +326,19 @@ I am applying for the {role_title} position at {company} because {specific_motiv
 ### CLOSE-CONTRIB-01: Contribution landing
 
 I would welcome the opportunity to contribute to {target_contribution} at {company}.
+
+### EVID-WWE-04: Cost-sensitive model evaluation
+
+At WWE, I built evaluation reports comparing AUROC, precision and recall, and how churners were concentrated across risk deciles. I then examined what those measures implied for a retention offer: subsidizing customers who would stay anyway could overwhelm the benefit of reaching likely churners. I compared targeting strategies under explicit cost and treatment-effectiveness assumptions and recommended a narrower high-risk population.
+
+### EVID-WWE-05: Email winback analysis
+
+At WWE, I analyzed an email winback campaign by comparing subscriber return rates between emailed and non-emailed users and examining whether recipients opened the email or clicked a link. This was a separate, one-off analytical assignment alongside my broader customer-modeling and reporting work.
+
+### EVID-WWE-06: Measurement reconciliation and collection maintenance
+
+At WWE, I investigated why platform consoles, APIs, and vendor feeds produced different numbers or omitted useful data. I documented the distinctions between validated reports and immediate estimates, built collection workflows, and maintained them as source platforms changed. The work included daily Facebook insights collection across more than 400 Pages and replacing fragile scraping with API-based collection where available.
+
+### EVID-WWE-07: Recurring reporting and engineering collaboration
+
+At WWE, I built and maintained daily YouTube performance reports combining channel metrics, historical comparisons, and top-content rankings for senior digital-content and analytics leaders. In separate reporting-data work, I enabled YouTube report collection and collaborated with data engineering to make the S3-delivered data queryable through Hive and Presto. My responsibility was to collect and shape useful analytical data, working with the engineers responsible for the underlying systems.
