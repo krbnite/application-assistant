@@ -62,10 +62,9 @@ Track only reusable templates, generators, banks, archetypes, and process rules.
 
 ### Length Target
 
-- Target length: 3 pages.
-- A fourth page is allowed only when Kevin or the agent explicitly decides it is necessary or strategically appropriate.
-- If the resume reaches 4 pages, the audit or final notes must include a short justification.
-- Do not preserve bullets merely because they are strong in the abstract. A tailored 3-page resume should feel deliberately selected.
+- Two or three pages are acceptable; three pages is the maximum unless Kevin explicitly requests an exception.
+- Preserve useful, role-relevant content. Do not cut it merely to reach two pages or expand it merely to fill three.
+- Do not preserve bullets merely because they are strong in the abstract. A tailored resume should feel deliberately selected.
 
 ### Cluster Confidence Rule
 

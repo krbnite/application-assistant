@@ -4,7 +4,7 @@ This file is the canonical structure for tailored resumes.
 
 It is intentionally template-like. Do not treat it as the evidence reservoir. Resume evidence lives in `RESUME_BULLET_BANK.md`; reusable profile/headline language lives in `PROFILE_BANK.md`; cluster matching lives in `JD_CLUSTER_BANK.md`.
 
-Generated tailored resumes should usually be 3 pages and should be delivered as DOCX by default according to `OUTPUT_CONTRACT.md`.
+Follow the two-to-three-page length rule in `OUTPUT_CONTRACT.md`; deliver tailored resumes as DOCX by default.
 
 ## Header
 
@@ -69,7 +69,7 @@ Guidance:
 
 - Usually the most important recent evidence block.
 - Lead with this section for health, sensor AI, industrial, and closed-loop physical AI roles.
-- Select heavily; do not keep all Podimetrics bullets in a tailored 3-page resume.
+- Select heavily; do not keep all Podimetrics bullets in a tailored resume.
 
 ### Cohen Veterans Bioscience
 

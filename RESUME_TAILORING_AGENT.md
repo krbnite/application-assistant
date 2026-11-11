@@ -153,7 +153,7 @@ Read `APPLICATION_WORKFLOW_PROTOCOL.md` first and use the requested mode. If Kev
 13. In full packet mode or when useful for a high-value resume, scan prior same-cluster resumes only after the current JD has been matched to a cluster and an initial plan or draft exists. Use the scan for missed section-level ideas, especially profile phrasing, publication/research-writing choices, compact brand signals, and unusually good bullet-selection decisions. Use those prior resumes as comparison examples only, not canonical sources.
 14. In full packet mode or interview-Q&A add-on mode, create a role-specific interview Q&A companion from `INTERVIEW_QA_TEMPLATE.md`.
 15. In full packet mode or cover-letter add-on mode, create a role-specific cover-letter plan from `COVER_LETTER_PLAN_TEMPLATE.json`, generate the DOCX with `generate_cover_letter_docx.py`, render/verify it when requested by the mode, and complete cover-letter audit notes only when an audit is being produced.
-16. Follow `OUTPUT_CONTRACT.md`: target 3 resume pages, target 1 cover-letter page when a cover letter is generated, create DOCX by default, and document exceptions according to the selected workflow mode.
+16. Follow `OUTPUT_CONTRACT.md`: allow two or three resume pages, target 1 cover-letter page when a cover letter is generated, create DOCX by default, and document exceptions according to the selected workflow mode.
 
 ## Profile Cluster Guidance
 
@@ -247,7 +247,8 @@ If a new bullet is created for a specific role, record why it was needed and dec
 ## Tailored Resume Construction Principles
 
 - Start from `MASTER_RESUME_TEMPLATE.md` unless Kevin asks for a different format.
-- Follow the output contract: tailored resumes should usually be 3 pages and should produce a DOCX by default, not a PDF.
+- Follow the output contract: two or three resume pages are acceptable, with three as the maximum unless Kevin explicitly requests an exception; produce a DOCX by default, not a PDF.
+- Check formatting before cutting content to resolve page overflow.
 - Use a role-specific JSON plan as the bridge between tailoring decisions and DOCX generation.
 - Use plain bullet IDs when retaining canonical text as-is.
 - Use plan objects with `id` plus edited `text` when lightly editing or merging canonical bullets; explain those edits in the audit.
