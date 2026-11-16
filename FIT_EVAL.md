@@ -39,7 +39,7 @@ Score identity / narrative fit separately from offer probability:
 
 - **A / North-star fit:** "I work on cyborgs / robots / weather / space / consciousness / patients with X." Sensor, physical, biological, environmental, medical, or scientific reality is central. Surface these roles as strong-interest targets, then use the gates to downgrade or reject only if the core craft is outside Kevin's evidence.
 - **B / Pragmatic fit:** Operational intelligence with real-world systems, telemetry, forecasting, reliability, maintenance, logistics, model trust, or customer-facing intelligence. These can be excellent applications when they use Kevin's modeling and validation strengths, but they are not automatically identity-defining.
-- **C / Fallback or strategic fit:** Generic product analytics, business analytics, risk analytics, dashboards, funnel metrics, feature adoption, adtech, fintech scoring, customer-support analytics, or generic SaaS data science. Apply only for strategic reasons such as compensation, company quality, networking, urgency, or unusually strong offer probability.
+- **C / Broader career opportunities:** Product, commercial, risk, growth, advertising, financial, and business analytics. Assess the actual methods, contribution, development opportunities, and employment terms rather than treating the sector as intrinsically less worthwhile. These roles may be high priority when the overall opportunity is compelling; preserve the North-star priority protections below when comparing them against A-identity roles.
 
 "Data Scientist" is not itself a positive signal. In the modern market it often means analytics, dashboards, growth/product metrics, adtech, fintech risk scoring, customer-support analytics, or stakeholder reporting. Treat generic DS roles cautiously unless the substrate is sensor, physical, physiological, environmental, scientific, operational telemetry, or model-quality work with real uncertainty.
 
@@ -128,8 +128,10 @@ Use this as a sequencing rule, not a blanket veto:
 - If a recruiter conversation opens, mention adjacent roles and ask where Kevin should be routed.
 - Do not let a low-fit or lower-level req dilute a high-fit packet at the same company.
 
-### Agency submission without a client name
-Contingency submission attaches a placement fee to Kevin's candidacy and can make him more expensive than an identical direct applicant. **Obtain the client name before authorizing any submission**, and never let an agency submit somewhere he might apply directly. Prefer applying direct when the client is identifiable.
+### Recruiter representation and submission coordination
+Agency representation may involve a placement fee that affects employer hiring costs, but can also provide access, advocacy, role information, and coordination. Consider both when weighing a recruiter introduction against a direct application; neither route is automatically preferable merely because the client is identifiable.
+
+Ask for the client name and requisition when useful, especially to check for existing applications or representation and avoid duplicate submissions. Prefer clarity before submission, but do not make client disclosure an absolute prerequisite when Kevin understands the uncertainty and explicitly authorizes proceeding. Respect authorization already given rather than repeatedly asking for it. Compare direct-hire versus contract terms where relevant, and keep named submission details in private job-search records.
 
 ---
 
