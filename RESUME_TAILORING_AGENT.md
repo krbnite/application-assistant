@@ -258,6 +258,7 @@ If a new bullet is created for a specific role, record why it was needed and dec
 - Preserve the strongest evidence density: concrete systems, sensors, methods, validation designs, deployment context, metrics, and outcomes.
 - Prefer people -> problem -> decision -> outcome -> mechanism when restructuring bullets.
 - Lead with the experience most relevant to the JD's implicit concern.
+- Check that the combined effect of bullet selection, ordering, and wording reflects Kevin's actual depth and ownership. A small but highly relevant project may earn inclusion or prominent placement, but should not make exploratory or supporting work appear to have been his primary specialty or responsibility. Balance relevance with representative evidence; do not impose proportional allocation by time spent.
 - Keep cross-domain breadth when it helps the role, but reduce entropy by tethering breadth to the target company's problem.
 - Use job-description language selectively and truthfully.
 - Keep a short "deliberate framing choices" summary in the final response.
@@ -288,6 +289,8 @@ Use this scan near the end of a tailored packet, after the first generated resum
 ## Updating The Master System
 
 Do not casually edit the canonical template, `PROFILE_BANK.md`, `JD_CLUSTER_BANK.md`, or `RESUME_BULLET_BANK.md` while tailoring a one-off application.
+
+Reusable factual clarifications, attribution corrections, and claim boundaries belong beside the relevant canonical bank entry. Role-specific selection, ordering, compression, and wording belong in the application plan; tailoring alone is not a reason to revise canonical text. If a reusable update is warranted but outside the authorized editing scope, report the proposed update rather than silently applying it. Keep evidence and guidance notes optional; do not restructure unaffected entries.
 
 Update `RESUME_BULLET_BANK.md` when Kevin provides reusable new evidence, such as:
 
