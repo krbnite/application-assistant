@@ -273,17 +273,17 @@ If a new bullet is created for a specific role, record why it was needed and dec
 Use this scan near the end of a tailored packet, after the first generated resume exists and page budget is understood. In resume-first mode, keep this as a targeted check only when it is likely to catch a meaningful miss without a broad scan.
 
 1. Identify the current job-search cycle from the target job folder, such as `job-search/2026`.
-2. Use `JD_CLUSTER_BANK.md`, existing audits/plans, folder names, and role context to identify prior applications from the same primary cluster and, when useful, close secondary-cluster matches.
+2. Use the public archetype definitions to identify the relevant cluster, then consult the ignored current-cycle source-history file (for 2026, `job-search/2026/supporting/cluster_source_history.md`) to locate possible comparison packets. A source JD or company mapping does not establish that a completed resume exists; verify the files. If the local index is absent or incomplete, search folder names, role JDs, and supporting plans/audits selectively within the active cycle. Do not require a comprehensive catalog or a broad historical scan. Keep named comparison sources and findings in the private job folder.
 3. Inspect prior tailored resumes, and optionally their audits/plans, for missed judgment calls:
    - Stronger profile/headline phrasing.
    - Better publication or research-writing selections.
    - Useful compact brand signals such as WWE, NASA/JPL, or other credibility lines.
    - Strong bullet-selection, compression, or section-order decisions.
    - Good cover-letter framing only if a cover letter is part of the packet.
-4. Do not copy prior resumes wholesale and do not treat them as canonical sources. If an idea is useful, verify that it is supported by `RESUME_BULLET_BANK.md`, `PROFILE_BANK.md`, `PUBLICATION_PRESENTATION_BANK.md`, or another tracked source before adopting it.
+4. Comparison is a sanity check, not an instruction to change the new resume. Look especially for relevant bullets or evidence accidentally omitted. Retain the current selection unless a specific discrepancy merits a change based on the current JD, canonical evidence, proportionality, and space. A prior version never automatically overrides the new plan or resume. Do not copy prior resumes wholesale or treat them as canonical sources; verify support in `RESUME_BULLET_BANK.md`, `PROFILE_BANK.md`, `PUBLICATION_PRESENTATION_BANK.md`, or another tracked source before adopting an idea.
 5. If a prior resume contains a good idea not represented in the banks, either ask Kevin, keep it as an audited one-off only when clearly supported, or promote it deliberately into the relevant bank.
-6. Record the scan in the audit: which prior resumes were checked, what was adopted or rejected, and why.
-7. If no same-cluster prior resumes exist, note that explicitly in the audit.
+6. If the check justifies a change, update the current plan before regenerating the resume. Record sources, substantive findings, and reasons in the requested audit, or briefly in final notes when no audit is requested. A successful check may result in no changes; do not create an audit solely to document the check.
+7. If no suitable comparison resume is available, note that in the requested audit or final notes and complete the current workflow without inventing a comparison.
 
 ## Updating The Master System
 

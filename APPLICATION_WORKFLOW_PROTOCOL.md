@@ -175,7 +175,7 @@ Render and visually inspect generated DOCX files. Check for page count, awkward 
 
 Do not start a new packet by reading prior packets. First build from the current JD, `JD_CLUSTER_BANK.md`, `PROFILE_BANK.md`, `RESUME_BULLET_BANK.md`, `MASTER_RESUME_TEMPLATE.md`, `RESUME_TAILORING_AGENT.md`, and the selected workflow mode's required files.
 
-Use prior packets only as late-stage comparison examples, not as canonical sources. Before adopting any prior-packet idea, verify that it is supported by the canonical banks or deliberately promote it into a tracked bank/process file.
+Use prior packets only as a late-stage sanity check for omissions, not as canonical sources or automatic overrides. Follow `RESUME_TAILORING_AGENT.md` under `Prior Same-Cluster Resume Scan` for private-folder discovery and evaluation. Before adopting any prior-packet idea, establish its value for the current JD and verify canonical evidence support. If a change is warranted, update the current plan before regenerating; no change is a valid result.
 
 When optimizing for low token/credit usage:
 

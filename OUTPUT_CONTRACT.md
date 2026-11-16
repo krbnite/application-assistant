@@ -132,12 +132,13 @@ Use `TAILORED_RESUME_PLAN_TEMPLATE.json` as the starting shape for a role-specif
 
 Before finalizing a tailored resume, and only after the current JD has been matched to a cluster and an initial plan or draft exists, scan prior resumes from the same profile/JD cluster in the current job-search cycle, such as the current `job-search/2026` folder.
 
-- Use this as a late-stage miss check for strong ideas, not as a replacement for the canonical banks or as the source of the initial frame.
+- Follow `RESUME_TAILORING_AGENT.md` under `Prior Same-Cluster Resume Scan` for discovering suitable resumes in private search folders.
+- Use this as a late-stage sanity check for omissions, not as a replacement for canonical banks, the initial frame, or an automatic override. No change is a valid result; changes must be justified by current JD fit and canonical evidence, recorded in the current plan, and then regenerated.
 - Look especially for profile phrasing, publication/research-writing selections, compact brand signals, bullet compression choices, and section-level judgment that the current plan may have missed.
 - Adopt an idea only when it is supported by the canonical banks or can be deliberately promoted into them.
-- If a useful idea is adopted from a prior resume, record the source resume and rationale in the audit.
-- If a good prior-resume idea is rejected, briefly record why, such as page pressure, weaker JD fit, or unsupported source status.
-- If no same-cluster prior resumes are available, note that in the audit.
+- If a useful idea is adopted from a prior resume, record the source and rationale in the requested audit or final notes. Keep named sources in private artifacts; do not create an audit solely for this check.
+- For substantive rejected ideas, briefly record why in the requested audit or final notes, such as page pressure, weaker JD fit, or unsupported source status.
+- If no suitable prior resumes are available, note that in the requested audit or final notes.
 
 ## Cover Letter Contract
 
