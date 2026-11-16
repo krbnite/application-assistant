@@ -29,9 +29,9 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 ## Quantitative Research ML Engineering
 
-**Status:** Provisional, retained after the Voleon Senior Machine Learning Engineer JD because it requires a distinct research-engineering frame beyond the sensor-first default profile.
+**Status:** Provisional, retained after the senior research ML engineering JD because it requires a distinct research-engineering frame beyond the sensor-first default profile.
 
-**Best For:** Voleon-style senior ML engineering roles, quantitative research engineering, research-team ML infrastructure, statistically rigorous model development, experiment/model evaluation tooling, feature engineering, data-quality monitoring, and production-quality code for research organizations.
+**Best For:** Research-oriented senior ML engineering roles, quantitative research engineering, research-team ML infrastructure, statistically rigorous model development, experiment/model evaluation tooling, feature engineering, data-quality monitoring, and production-quality code for research organizations.
 
 **Headline:** Senior Machine Learning Engineer | Research ML Systems | Statistical Modeling | Data Pipelines | Robust Model Evaluation
 
@@ -45,7 +45,7 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 ## Experience Representation, Weak Supervision, And Uncertainty Research
 
-**Status:** Provisional, retained after the Observable Intuition Member of Technical Staff - Research JD because it requires a distinct framing around learning calibrated representations from incomplete behavioral, event, and outcome traces.
+**Status:** Provisional, retained after the founding representation-learning research JD because it requires a distinct framing around learning calibrated representations from incomplete behavioral, event, and outcome traces.
 
 **Best For:** Founding research scientist / MTS research roles focused on learning representations of behavior, process, judgment, or experience from noisy observational data, weak or indirect supervision, sparse outcomes, temporal/event streams, partial observability, and uncertainty-aware evaluation.
 
@@ -61,9 +61,9 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 ## Measurement Science, Evaluation, And Causal Inference
 
-**Status:** Provisional, retained after the Abridge Research Scientist (Measurement and Evaluation) JD because it requires an independent-evaluation-scientist framing that no existing cluster covers, even though Kevin's evidence for it is thinner than for his other clusters.
+**Status:** Provisional, retained after the independent measurement-and-evaluation research JD because it requires an independent-evaluation-scientist framing that no existing cluster covers, even though Kevin's evidence for it is thinner than for his other clusters.
 
-**Best For:** Abridge-style "Research Scientist, Measurement and Evaluation" roles; health-AI program-evaluation and applied causal-inference research roles; roles centered on operationalizing hard-to-measure constructs and validating models or instruments against ground truth or human judgment.
+**Best For:** Independent "Research Scientist, Measurement and Evaluation" roles; health-AI program-evaluation and applied causal-inference research roles; roles centered on operationalizing hard-to-measure constructs and validating models or instruments against ground truth or human judgment.
 
 **Headline:** Research Scientist | Measurement Science | Model & Instrument Evaluation | Research-to-Product Translation
 
@@ -77,7 +77,7 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 ## Health, Wearables, Neurotech, And Digital Biomarkers
 
-**Best For:** Motif Neurotech, Oura, Omada, Beacon Biosignals, digital health, remote monitoring, neurological sensing, and clinical AI roles.
+**Best For:** digital health, remote monitoring, neurological sensing, and clinical AI roles.
 
 **Headline:** Research Scientist | Wearable AI | Digital Biomarkers | Biosignal ML | Statistical Signal Processing | Medical Device Analytics
 
@@ -91,7 +91,7 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 ## Sensor AI, Robotics, Autonomy, And Edge Perception
 
-**Best For:** Samsara, General Motors, Compound Eye, Trackman, camera/sensor perception, robotics, autonomous systems, and edge AI roles.
+**Best For:** camera/sensor perception, robotics, autonomous systems, and edge AI roles.
 
 **Headline:** Applied Scientist | Sensor AI | Edge Perception | Computer Vision | Time-Series ML | Robust Model Validation
 
@@ -105,7 +105,7 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 ## Bayesian Estimation, Signal Processing, And Physical Systems Research
 
-**Best For:** Kobold, Ionosphere, Oxman-style research roles, geophysical/spatiotemporal inference, scientific ML, physics-informed modeling, and mathematically serious ML teams.
+**Best For:** Physical-systems research roles, geophysical/spatiotemporal inference, scientific ML, physics-informed modeling, and mathematically serious ML teams.
 
 **Headline:** Research Scientist | Bayesian Estimation | Statistical Signal Processing | Spatiotemporal ML | Physics-Informed Modeling
 
@@ -119,7 +119,7 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 ## Industrial And Operational Time-Series ML
 
-**Best For:** Oden Technologies, Cargill, Cutsforth, applied ML for production systems, industrial analytics, monitoring, anomaly/risk, interventions, and decision-support roles.
+**Best For:** applied ML for production systems, industrial analytics, monitoring, anomaly/risk, interventions, and decision-support roles.
 
 **Headline:** Applied Scientist | Time-Series ML | Sensor Analytics | Decision Systems | Robust Validation | Production Data Products
 
@@ -133,9 +133,9 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 ## Environmental Modeling For Operational Decisions
 
-**Status:** Provisional, retained after Waymo Weather and Overstory Wildfire because it requires a distinct environmental/spatiotemporal operational-decision frame beyond the broader physical-systems and industrial-time-series clusters.
+**Status:** Provisional, retained after weather and wildfire operational-research JDs because it requires a distinct environmental/spatiotemporal operational-decision frame beyond the broader physical-systems and industrial-time-series clusters.
 
-**Best For:** Waymo Weather, Overstory Wildfire, Ionosphere/Kobold-style environmental or geophysical ML roles, aviation/weather intelligence, grid/wildfire risk, climate or environmental risk, and operational forecasting/nowcasting roles.
+**Best For:** Weather, wildfire, environmental or geophysical ML roles, aviation/weather intelligence, grid/wildfire risk, climate or environmental risk, and operational forecasting/nowcasting roles.
 
 **Headline:** Staff Data Scientist | Spatiotemporal Modeling | Environmental Intelligence | Measurement Rigor | Operational Decisions
 
@@ -149,9 +149,9 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 ## Closed-Loop Physical AI And Self-Learning Systems
 
-**Status:** Provisional, retained after the 4MP JD because it requires distinct feedback-loop/action-under-uncertainty framing.
+**Status:** Provisional, retained after the closed-loop physical-AI research JD because it requires distinct feedback-loop/action-under-uncertainty framing.
 
-**Best For:** 4MP-style roles, self-correcting physical systems, robotics/manufacturing/industrial AI, inverse-problem optimization, and action-under-uncertainty roles.
+**Best For:** Closed-loop physical-AI research roles, self-correcting physical systems, robotics/manufacturing/industrial AI, inverse-problem optimization, and action-under-uncertainty roles.
 
 **Headline:** Applied Scientist | Closed-Loop Physical AI | Sensor ML | Uncertainty-Aware Decision Systems | Robust Validation
 
@@ -165,7 +165,7 @@ The old DOCX profile bank can be regenerated for viewing if useful, but this Mar
 
 ## Product ML And Customer Intelligence
 
-**Status:** Provisional; initial source JD: Plaid Senior MLE, Embedded Insights (2026-10-23).
+**Status:** Provisional; initial source JD: consumer-product ML (2026-10-23).
 
 **Best For:** Product-embedded ML, customer intelligence, consumer-facing ML features, and applied ML roles spanning opportunity discovery, prototyping, production, and ongoing improvement.
 

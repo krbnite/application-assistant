@@ -182,7 +182,7 @@ When Kevin provides several JDs for the same cluster:
 
 - Extract compact fingerprints from each JD.
 - Merge the recurring signals into one generic archetype JD for that profile cluster.
-- Preserve only the source list and the distilled signals needed for future matching.
+- Keep named source provenance in the ignored current-cycle source-history file; preserve distilled matching signals in the public archetype.
 - Update the archetype when a new JD adds a recurring signal not already captured.
 - Avoid overfitting the archetype to a single company's phrasing.
 
@@ -191,17 +191,17 @@ When a new JD does not fit any existing profile cluster:
 - Create a new labeled cluster and retain it.
 - Create an initial archetype JD entry in `JD_CLUSTER_BANK.md` using generic, reusable language.
 - Mark it as provisional if it is based on a single primary JD.
-- Add the source company/JD to the archetype's source list.
+- Record the source company/JD in the ignored current-cycle source-history file, keyed by archetype.
 - Put company-specific or weakly supported requirements in `Gaps / do-not-overstate items`.
 - Update `PROFILE_BANK.md` only if the new cluster needs a distinct reusable intro/profile. Render and visually verify a DOCX only when producing a DOCX deliverable.
 
 When a new JD strongly matches an existing archetype:
 
-- Add the JD to `Source JDs used` only if it meaningfully confirms or extends the archetype.
+- Record the JD in the ignored current-cycle source-history file only if it meaningfully confirms or extends the archetype.
 - Update the archetype only for reusable information: new recurring responsibilities, role titles, company contexts, keyword families, implicit evaluation concerns, bullet-selection guidance, or do-not-overstate warnings.
 - Do not add one-off company phrasing or requirements that are too narrow to help future matching.
 - If an element matters but is still single-source, label it as an emerging signal or a do-not-overstate note rather than treating it as universal.
-- Example: FDA IDE/PMA language is a strong health/neurotech tailoring signal when present, as in Motif, but it is not mandatory for the health/neurotech archetype.
+- Example: FDA IDE/PMA language is a strong health/neurotech tailoring signal when present, but it is not mandatory for the health/neurotech archetype.
 - Tell Kevin whether the archetype was unchanged, lightly updated, or substantially revised, and why.
 
 Bank maintenance: keep ordinary canonical entries as single paragraphs. Use the optional structured format documented under `RESUME_BULLET_BANK.md` Canonical Text only for entries needing evidence, boundaries, selection notes, or named variants. Never place unmarked notes in resume text. Keep general rules here and brief relevance guidance in the scoring table; retain specific attribution and claim boundaries beside the accomplishment. Select variants explicitly in the plan; plain IDs emit only the default resume paragraph.

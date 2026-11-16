@@ -33,7 +33,7 @@ To help ensure the agent follows the intended workflow:
 - **Role Subfolders:** Within that folder, create subfolders for each role being pursued.
   - Example: My current `2026` syntax has subfolders like `job-search/2026/<JobNumber>_<Company>_<Role>`, which I like because it organizes the job search chronologically and by company/role, but you can use whatever naming convention you prefer, such as `job-search/2026/<Company1>/<Role1>`, `job-search/2026/<Company1>/<Role2>`, or `job-search/2026/<Company2>/<Role1>`.
 - **Job Description:** Each subfolder should contain the job description and any supporting materials for that role.
-  - Example: `job-search/2026/17_Dexcom/job-description.md` contains the job description for the Dexcom Staff Algorithm Engineer role.
+  - Example: `job-search/2026/17_ExampleCo_Algorithm-Engineer/job-description.md` contains a role-specific job description (fictional example).
 - **Prompt:** Using ChatGPT/Codex or Claude with permission to access the repo, use the following prompt to ensure the agent follows the intended workflow:
 
   ```

@@ -143,11 +143,11 @@ These decide the cases where the domain looks right but the role is wrong. Apply
 
 | Role | Unfamiliar thing | Core | Verdict |
 |---|---|---|---|
-| Waymo Weather | terrestrial meteorology | measurement rigor + spatiotemporal inference | overlay → **GO** |
-| Overstory | Earth-observation craft, fire science | validation methodology, uncertainty quantification | overlay → **soft go** |
-| Tubi | recommender systems | recommender systems | core → **NO-GO** |
-| PNNL GEOINT | hyperspectral LWIR + SAR physics | hyperspectral LWIR + SAR physics | core → **NO-GO** |
-| Samsara Edge AI | edge model optimization | edge model optimization | core → **NO-GO** |
+| Operational weather research | terrestrial meteorology | measurement rigor + spatiotemporal inference | overlay → **GO** |
+| Wildfire-risk evaluation | Earth-observation craft, fire science | validation methodology, uncertainty quantification | overlay → **soft go** |
+| Consumer recommendation modeling | recommender systems | recommender systems | core → **NO-GO** |
+| Hyperspectral geospatial research | hyperspectral LWIR + SAR physics | hyperspectral LWIR + SAR physics | core → **NO-GO** |
+| Staff edge AI | edge model optimization | edge model optimization | core → **NO-GO** |
 
 A domain gap sitting on top of a methodological core Kevin owns is learnable and often forgiven. A domain gap that *is* the technical core is not.
 
@@ -189,10 +189,10 @@ Ranked by observed frequency across the 2026 cycle.
 
 1. **Production LLM / foundation-model experience** (~10 roles). See the three-rung ladder below.
 2. **Distributed compute and cloud data platforms** (~7): Spark, Ray, Databricks, Snowflake, Azure ML, Flink.
-3. **C++** (~7): CACI, Parallel Domain, Slingshot, Greylock, NBCU, D-Wave, Samsara Edge AI.
+3. **C++** (~7): recurring across research engineering, simulation, and edge-AI roles.
 4. **3D geometry** (~5). See §2.
-5. **Speech / ASR** (~3): Cresta, Cerence, Canals.
-6. **Vision transformers, VLMs, and vision foundation models** (~3): Buzz, HavocAI, Tubi-adjacent.
+5. **Speech / ASR** (~3): recurring across speech and conversational-AI roles.
+6. **Vision transformers, VLMs, and vision foundation models** (~3): recurring across visual-modeling and autonomy-adjacent roles.
 
 ### The three-rung LLM ladder
 
@@ -204,14 +204,14 @@ The single most useful calibration in the cycle. Locate every LLM requirement on
 
 **Separate small sequence transformers from LLM/foundation-model specialization.** MSG-03 documents a built and trained PyTorch transformer prototype for irregular synthetic biomarker sequences, fused with static features and learned patient/intervention embeddings. It clears hands-on transformer prototyping, embeddings, and sequence representation learning at prototype depth. Do not mark transformer experience absent merely because the professional sequence work used CNN/LSTM architectures. Evaluate production depth, scale, comparative model evidence, and domain relevance separately. This does not clear the ADAPT or TRAIN rungs above, which concern specialized LLM/foundation-model work.
 
-**Generative-system evaluation is the door.** Across Snorkel, Atlassian, Cresta, and Yahoo, the one LLM-adjacent requirement Kevin can genuinely touch is evaluation — rubric design, LLM-as-judge, property-based evaluation. That is consistently his entry point into LLM work.
+**Generative-system evaluation is the door.** Across generative-system evaluation roles, the one LLM-adjacent requirement Kevin can genuinely touch is evaluation — rubric design, LLM-as-judge, property-based evaluation. That is consistently his entry point into LLM work.
 
 ### C++ — escalation note
 
 Originally priced as an unlock for defense R&D and simulation, two "physics is the qualification" sectors. Two developments complicate that:
 
-- It has now appeared as a **minimum requirement inside the IOT cluster** (Samsara Edge AI, remote, $178.6-319k). The wall is no longer only outside his strongest lane.
-- But the two defense-lane roles scored since the clearance filter was corrected (PNNL, HavocAI) died on *other* grounds — instrument physics and embedded deployment craft. **C++ alone would not have unlocked either.** Lowering the clearance wall revealed a second wall behind it.
+- It has now appeared as a **minimum requirement inside the IOT cluster** (staff edge AI). The wall is no longer only outside his strongest lane.
+- But the two defense-lane roles scored since the clearance filter was corrected (instrument-physics research and maritime-autonomy deployment) died on *other* grounds — instrument physics and embedded deployment craft. **C++ alone would not have unlocked either.** Lowering the clearance wall revealed a second wall behind it.
 
 Net: still cheap (he has C and the numerical-computing instincts; modern C++ is weeks for basic credibility, though longer for production-grade C++ judgment), but worth less as a lane-opener than first estimated.
 
@@ -243,7 +243,7 @@ Net: still cheap (he has C and the numerical-computing instincts; modern C++ is 
 Track recurring gaps that affect multiple otherwise-good roles. Treat this as a current-cycle planning aid, not a permanent ranking. See when document was last updated in the header.
 
 
-1. **Survival / reliability analysis** — ~1 weekend. Closes the single named gap in Fleetio, the highest-probability role.
+1. **Survival / reliability analysis** — ~1 weekend. Addresses a recurring gap in physical-product reliability roles.
 2. **Promote ProblemForm, application-assistant, and the MCP pipeline project into `RESUME_BULLET_BANK.md`** with proper IDs and cluster scores. ~1 day. They currently exist only as candidate language in `RESUME_TAILORING_AGENT.md`. This closes part of the *perceived* LLM gap with capability Kevin already has, and improves every packet built afterward.
 3. **LLM-evaluation credibility** via extending ProblemForm with judge-vs-human agreement, position and verbosity bias, a small benchmark. 2-4 weekends.
 4. **nnU-Net / MONAI** — ~2 weekends. Opens the imaging branch of HWD.

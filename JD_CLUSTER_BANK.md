@@ -13,43 +13,9 @@ It is not meant to become a full archive of every pasted job description. The pr
 - `OUTPUT_CONTRACT.md` - output requirements for tailored application packets.
 - `TAILORED_RESUME_AUDIT_TEMPLATE.md` - audit template for tailoring decisions.
 
-## Cluster Mapping From 2026 Company-Specific Resumes And Recovered JDs
+## Source Provenance
 
-These mappings began as inferences from the tailored resumes in the 2026 search folder and were updated after Kevin added the recovered job descriptions on 2026-08-21.
-
-| Company / Folder | Primary Cluster | Secondary Cluster | Confidence | Notes |
-|---|---|---|---|---|
-| Plaid — Senior MLE, Embedded Insights | Product ML And Customer Intelligence | Industrial And Operational Time-Series ML (production-lifecycle support only) | High archetype match; provisional single-source cluster | Consumer product ML, ambiguous opportunity definition, customer value, and ongoing model health. |
-| Kobold | Bayesian Estimation, Signal Processing, And Physical Systems Research | Sensor AI / Edge Perception | High | Earlier resume foregrounded Bayesian estimation, sensor fusion, spatiotemporal perception, and physical-system inference. |
-| Oura | Health, Wearables, Neurotech, And Digital Biomarkers | Default Sensor ML Research Scientist | High | Wearables, physiological sensing, sleep, digital biomarkers. |
-| Omada | Health, Wearables, Neurotech, And Digital Biomarkers | Industrial And Operational Time-Series ML | High | Digital health plus intervention/decision-support analytics. |
-| Beacon Biosignals | Health, Wearables, Neurotech, And Digital Biomarkers | Bayesian / Signal Processing | High | Clinical biosignals, neurological sensing, validation-heavy health ML. |
-| General Motors | Sensor AI, Robotics, Autonomy, And Edge Perception | Industrial And Operational Time-Series ML | High | Autonomy / sensing / robust model validation likely dominate. |
-| Oden Technologies | Industrial And Operational Time-Series ML | Sensor AI / Edge Perception | High | Industrial analytics, operational monitoring, production systems. |
-| Trackman | Sensor AI, Robotics, Autonomy, And Edge Perception | Bayesian / Physical Systems Research | High | Sensor/perception/trajectory-style applied physical inference. |
-| Compound Eye | Sensor AI, Robotics, Autonomy, And Edge Perception | Bayesian / Physical Systems Research | High | Perception, cameras/sensors, autonomy-adjacent framing. |
-| Ionosphere | Bayesian Estimation, Signal Processing, And Physical Systems Research | Default Sensor ML Research Scientist | High | Geophysical/spatiotemporal inference and space-weather background are central. |
-| Overstory | Environmental Modeling For Operational Decisions | Bayesian / Physical Systems Research; Industrial And Operational Time-Series ML | Medium-High | Wildfire/grid-resilience role centered on remote sensing, vegetation/fuel-risk modeling, ground-truth strategy, uncertainty, and validation of environmental ML for operational decisions. |
-| Waymo - Staff Data Scientist, Weather | Environmental Modeling For Operational Decisions | Bayesian / Physical Systems Research; Industrial And Operational Time-Series ML | High | Weather-impact role centered on spatiotemporal modeling, measurement rigor, operational mitigation, evaluation signals, deployment readiness, and adverse-condition decision support. |
-| 4MP | Closed-Loop Physical AI And Self-Learning Systems | Industrial / Operational Time-Series ML | High | JD is specifically about learning from correction outcomes, physical feedback loops, uncertainty guardrails, inverse problems, and staged rollout. Keep as a provisional retained cluster. |
-| Lumicity | Health, Wearables, Neurotech, And Digital Biomarkers | Industrial And Operational Time-Series ML | Medium-High | Regulated medical algorithm work on complex sensor data; broader than wearables/neurotech but fits the health/clinical algorithm profile best. |
-| Cutsforth | Industrial And Operational Time-Series ML | Bayesian / Physical Systems Research | High | Industrial monitoring and physical-system reliability likely dominate. |
-| Cargill | Industrial And Operational Time-Series ML | Sensor AI / Edge Perception | High | Industrial/operational analytics with production decision-support framing. |
-| Samsara | Sensor AI, Robotics, Autonomy, And Edge Perception | Industrial And Operational Time-Series ML | High | Edge devices, perception, deployed sensor systems, robust validation. |
-| Oxman | Bayesian Estimation, Signal Processing, And Physical Systems Research | Default Sensor ML Research Scientist | High | Research themes, physics-informed modeling, spatiotemporal inference, synthetic data. |
-| Motif Neurotech | Health, Wearables, Neurotech, And Digital Biomarkers | Bayesian / Signal Processing | High | Neurotech, biosignal/wearable sensing, clinical/device validation. |
-| Dexcom - Emerging Sensing Technologies | Health, Wearables, Neurotech, And Digital Biomarkers | Bayesian / Physical Systems Research | Medium-High | CGM/biosensing algorithm role with strong mechanistic modeling, simulation, feasibility, and performance-limit analysis signals. |
-| Dexcom - Advanced Sensing Technologies | Health, Wearables, Neurotech, And Digital Biomarkers | Bayesian / Physical Systems Research | High | CGM/biosensing algorithm role emphasizing signal processing, estimation, calibration, detection, sensor-behavior modeling, algorithm maturation, verification strategy, and hardware/firmware/product integration. |
-| Senseonics | Health, Wearables, Neurotech, And Digital Biomarkers | Bayesian / Physical Systems Research | High | Implantable CGM algorithm-development role emphasizing mathematical modeling, signal processing, Python/MATLAB/C/C++ scientific computing, data-processing pipelines, unit tests, and sensor performance/accuracy investigations. |
-| Atria Health | Health, Wearables, Neurotech, And Digital Biomarkers | Default Sensor ML Research Scientist | Medium-High | Clinical AI scientist role emphasizing foundation-model-adjacent medical models, multimodal health data, fine-tuning/post-training literacy, rigorous evaluation, and patient-level adaptation. |
-| Voleon | Quantitative Research ML Engineering | Bayesian / Signal Processing; Industrial / Operational Time-Series ML | High | Research-team ML engineering role emphasizing mathematical maturity, production-quality research code, data pipelines, feature engineering, validation, model evaluation infrastructure, reproducibility, and imperfect heterogeneous data. |
-| Cleerly | Health, Wearables, Neurotech, And Digital Biomarkers | None | Medium-High | Medical-device image processing (coronary CT angiography) role; imaging modality differs from Kevin's wearable-sensing spine but the clinical-rigor/validation/regulated-product core matches the cluster directly. |
-| Rad AI - Staff ML Research Scientist | Health, Wearables, Neurotech, And Digital Biomarkers | Quantitative Research ML Engineering | Medium-High | Clinical generative-AI/radiology role emphasizing LLMs/NLP, retrieval, multimodal and speech modeling, rigorous offline-to-online evaluation, calibration/slice analysis, observability, rollback, production deployment, and clinical workflow integration. |
-| Abridge - Senior Research Data Scientist | Quantitative Research ML Engineering | Health, Wearables, Neurotech, And Digital Biomarkers | High | Research-team data-infrastructure/applied-science hybrid role for a healthcare-AI product; core ask (pipelines, causal/descriptive analysis, evaluation-framework rigor, mathematical maturity) matches QRE directly; health domain and mission language borrowed from HWD. |
-| Abridge - Research Scientist (Measurement and Evaluation) | Measurement Science, Evaluation, And Causal Inference | Health, Wearables, Neurotech, And Digital Biomarkers | Low | New provisional cluster; role asks for independent causal/quasi-experimental study leadership, a named quantitative/social-science PhD field, and an evaluation-science publication track record that Kevin's evidence only partially supports. Applied as a deliberate stretch, not a strong-fit application. |
-| Oracle OCI - Senior Principal Applied Scientist | Quantitative Research ML Engineering | Health, Wearables, Neurotech, And Digital Biomarkers; Scientific AI Platform Leadership emerging variant | Medium-High | Scientific/enterprise AI platform role emphasizing strategic-customer discovery, scientific-data workflows, GenAI/RAG/agents, evaluation harnesses, reusable OCI platform capabilities, and research-to-production leadership. Do not create a new cluster yet, but if 2-3 more JDs center on scientific AI platforms, customer workflow discovery, and reusable enterprise AI capability, consider a distinct Applied Science Platform Leadership cluster. |
-| RTX / FlightAware - Senior ML Engineer II | Industrial And Operational Time-Series ML | Quantitative Research ML Engineering; Bayesian / Physical Systems Research | Medium-High | Aviation operational-forecasting role emphasizing runway/gate/taxi timing prediction, very large historical datasets, time-series/image/video data, performance efficiency, live predictive products, and weather/geospatial plus MLOps/hybrid-infra add-ons. |
-| Observable Intuition - Member of Technical Staff Research | Experience Representation, Weak Supervision, And Uncertainty Research | Quantitative Research ML Engineering; Measurement Science, Evaluation, And Causal Inference | Mixed | New provisional cluster; role centers on learning calibrated representations of human/organizational experience from incomplete, noisy, longitudinal observations, with weak supervision, temporal/event modeling, process reconstruction, uncertainty, identifiability, and evaluation without complete ground truth. |
+Company-specific mappings, source-JD fingerprints, and historical provenance belong in the ignored current-cycle search folder. For the 2026 cycle, use `job-search/2026/supporting/cluster_source_history.md`. The public archetypes below remain sufficient for matching; local provenance is optional context, not canonical resume evidence.
 
 ## Preferred Workflow: Source JDs To Archetype JD
 
@@ -76,12 +42,12 @@ Create a new retained cluster when the JD exposes a materially different positio
 
 For the initial archetype:
 
-1. Add the company to the cluster mapping table.
+1. Record the company-to-cluster mapping in the ignored current-cycle source-history file.
 2. Add a new row to `Current Archetype JD Status`.
 3. Create a full archetype JD entry using the template below.
 4. Mark the archetype as `Provisional` if it is based on one primary JD.
 5. Use generic, reusable role language rather than the company's exact wording.
-6. Save the source company in `Source JDs used`.
+6. Save named source JDs in the ignored current-cycle source-history file, keyed by cluster.
 7. Put company-specific requirements that should not be generalized under `Gaps / do-not-overstate items`.
 8. Update `PROFILE_BANK.md` only if the new cluster needs a distinct reusable intro/profile. Render and visually verify a DOCX only when producing a DOCX deliverable.
 
@@ -93,11 +59,11 @@ A provisional cluster can later be:
 
 ### When A New JD Strongly Matches An Existing Archetype
 
-Compare the JD against the existing archetype and update only the reusable parts. Add the new JD to `Source JDs used` and update `Last updated` when any meaningful change is made.
+Compare the JD against the existing archetype and update only the reusable parts. Record the source JD in the ignored current-cycle source-history file and update `Last updated` when any meaningful change is made.
 
 When assigning a JD to a cluster, use `Core / necessary matching signals` to decide whether the archetype is a real match. Use `Variable / add-on signals` only after the cluster is selected, to decide what to emphasize in the tailored profile and bullet selection. Add-on signals should not outweigh missing core signals.
 
-Example: FDA IDE/PMA language in the Motif JD is a strong health/neurotech tailoring signal, but it is not mandatory for the Health, Wearables, Neurotech, And Digital Biomarkers archetype. It belongs in `Variable / add-on signals`, while the core match is health/neurotech data, ML or biomarker work, and validation/product translation.
+Example: FDA IDE/PMA language in an implantable-neurotechnology JD is a strong health/neurotech tailoring signal, but it is not mandatory for the Health, Wearables, Neurotech, And Digital Biomarkers archetype. It belongs in `Variable / add-on signals`, while the core match is health/neurotech data, ML or biomarker work, and validation/product translation.
 
 Add to the archetype when the new JD contributes one of these:
 
@@ -110,21 +76,6 @@ Add to the archetype when the new JD contributes one of these:
 
 Do not update the archetype when the new JD merely restates existing signals, uses idiosyncratic company language, or adds a requirement too narrow to help future matching. If a single-source element is important but not yet clearly recurring, include it as an emerging signal or a do-not-overstate note instead of treating it as universal.
 
-### Change Log
-
-- 2026-08-21: Added Motif Neurotech JD to the Health, Wearables, Neurotech, And Digital Biomarkers archetype. Decision: no new cluster; Motif strongly matches the health/neurotech cluster while adding reusable signal around implantable neuromodulation, mental-health biomarkers, data/ML roadmap ownership, improvement-native products, fielded-product research, and FDA IDE/PMA data-feature constraints.
-- 2026-08-22: Added Dexcom JD to the Health, Wearables, Neurotech, And Digital Biomarkers archetype. Decision: no new cluster; Dexcom strongly matches health/biosensing while adding reusable signal around continuous glucose monitoring, emerging biosensing technologies, first-principles/mechanistic modeling, simulation environments, technical feasibility, technology readiness, performance limits, and roadmap-facing advanced development.
-- 2026-08-22: Added Dexcom Advanced Sensing Technologies JD to the Health, Wearables, Neurotech, And Digital Biomarkers archetype. Decision: no new cluster; the role reinforces Dexcom/biosensing while adding reusable signal around algorithm maturation, calibration/filtering and measurement-system algorithms, design tradeoffs, verification/validation strategy, hardware/firmware resource constraints, design controls, and transition from early concepts to scalable product integration.
-- 2026-08-24: Added Senseonics Sr. Algorithm Development Engineer JD to the Health, Wearables, Neurotech, And Digital Biomarkers archetype. Decision: no new cluster; the role reinforces CGM/biosensing while adding reusable signal around Python/MATLAB/C/C++ algorithm-development tooling, reproducible data-processing pipelines, controlled unit tests, and data-driven sensor performance / accuracy investigations.
-- 2026-08-25: Added Atria Health Senior AI Scientist JD to the Health, Wearables, Neurotech, And Digital Biomarkers archetype. Decision: no new cluster; Atria adds reusable signal around clinical foundation-model-adjacent model adaptation, open-source model evaluation, fine-tuning/post-training literacy, multimodal medical data, PHI-safe data hygiene, train/test contamination prevention, calibration/subgroup/error analysis, and general-to-patient model adaptation.
-- 2026-08-26: Added Cleerly Senior ML Scientist JD to the Health, Wearables, Neurotech, And Digital Biomarkers archetype. Decision: no new cluster; Cleerly is medical-device image processing (coronary CT angiography) rather than wearables, but shares the same clinical-rigor, validation, and research-to-product-translation core as the rest of the cluster. Adds reusable signal around coronary/cardiac and CT/MRI imaging, medical-imaging segmentation/registration/reconstruction/detection, a top-tier medical-imaging/computer-vision publication track record (MICCAI, IEEE TMI, CVPR, Medical Image Analysis, MIDL), patent authorship, and managing research collaborations with academic/medical institutions. Also adds a paired do-not-overstate note since Kevin's own publication record (Sensors, working papers, a conference poster) does not itself clear that top-tier medical-imaging bar.
-- 2026-09-09: Added Rad AI Staff ML Research Scientist JD to the Health, Wearables, Neurotech, And Digital Biomarkers archetype. Decision: light update; Rad AI reinforces the clinical-AI/foundation-model branch while adding reusable radiology generative-AI product signals: NLP/LLMs, retrieval, speech, multimodal and vision-language modeling, proprietary report datasets, offline-to-online evaluation, calibration and slice analysis, observability, rollback, clinician workflow integration, and RIS/PACS/reporting-system exposure as a preferred add-on.
-- 2026-08-26: Added Abridge Senior Research Data Scientist JD to the Quantitative Research ML Engineering archetype. Decision: no new cluster; this is the second QRE-cluster source JD and confirms the cluster generalizes beyond quant finance to any research-intensive organization that needs a scientist who bridges data infrastructure and rigorous applied analysis. Adds reusable signal around causal and descriptive analysis of observational data, construct validity, measurement-error characterization, selection-bias auditing, owning data provenance/structure/limitations for a research team, and translating analyses for non-technical/commercial stakeholders.
-- 2026-08-26: Added Abridge Research Scientist (Measurement and Evaluation) JD as a new provisional cluster, `Measurement Science, Evaluation, And Causal Inference`. Decision: new cluster needed; none of the existing archetypes center on independently designing and leading causal/quasi-experimental evaluation studies, and this JD names a specific quantitative/social-science PhD field and an evaluation-science-specific publication bar that no existing cluster's do-not-overstate language covers. Applied to Kevin's real measurement/verification-adjacent evidence (CVB sleep-measurement validity reframing, sensor-driven proxy-measurement framework design, deployment-honest validation) as a deliberate stretch application, with an explicit Low confidence rating and paired gap notes (PhD field, no formal causal-inference methods training, no evaluation-science-venue publication).
-- 2026-08-27: Added Oracle OCI Senior Principal Applied Scientist JD to the Quantitative Research ML Engineering archetype. Decision: no new cluster yet; QRE is still the closest fit because the role centers on scientific-data workflows, model/platform evaluation, research-to-production leadership, data/ML/AI integration, and reusable platform capability rather than direct molecular-biology or bioinformatics research. Emerging signal to watch: if 2-3 more JDs center on strategic-customer scientific workflow discovery, GenAI/RAG/agents or knowledge systems, rigorous evaluation harnesses, and reusable enterprise AI platform capabilities, consider creating a distinct `Applied Science Platform Leadership` or `Scientific AI Platform Leadership` cluster.
-- 2026-08-27: Added RTX / FlightAware Senior Machine Learning Engineer II JD to the Industrial And Operational Time-Series ML archetype. Decision: no new cluster; the role centers on live operational prediction and productized forecasts, while adding reusable signal around aviation/transportation operations, runway/gate/taxi timing prediction, weather/geospatial context, image/video data as complex-data add-ons, performance efficiency, observability/orchestration tooling, and hybrid cloud/on-prem infrastructure.
-- 2026-09-12: Added `Environmental Modeling For Operational Decisions` as a provisional cluster after Waymo Weather and Overstory Wildfire exposed a recurring lane reinforced by Ionosphere, Kobold, and RTX / FlightAware. Decision: create a distinct lane rather than overload BSP/IOT; the reusable positioning problem is environmental or physical spatiotemporal inference used for operational decisions, with explicit guardrails against overclaiming meteorology, wildfire, GIS, Earth-observation, lidar, AV operations, or climate-risk product ownership.
-
 ## Cluster Archetype JD Template
 
 Use one entry per profile cluster.
@@ -132,7 +83,7 @@ Use one entry per profile cluster.
 ```markdown
 ### Cluster Name - Archetype JD
 
-- Source JDs used:
+- Source basis (generic role families; named provenance stays local):
 - Archetype role title(s):
 - Typical company / product context:
 - Core / necessary matching signals:
@@ -151,7 +102,7 @@ Use one entry per profile cluster.
 
 ## Source JD Fingerprint Template
 
-Use these only as inputs to the archetype JD. Keep them compact.
+Use these only as inputs to the archetype JD. Keep them compact and store completed company-specific fingerprints in the ignored current-cycle source-history file, not this public bank.
 
 ```markdown
 ### Company - Role Title
@@ -173,25 +124,25 @@ Use these only as inputs to the archetype JD. Keep them compact.
 
 ## Current Archetype JD Status
 
-| Profile Cluster | Archetype JD Status | Source JDs Used / Notes |
+| Profile Cluster | Archetype JD Status | Reusable Scope Notes |
 |---|---|---|
-| Product ML And Customer Intelligence | Provisional synthesis 2026-10-23 | Plaid Senior MLE, Embedded Insights; consumer product ML is outside the operational cluster boundary. |
-| Quantitative Research ML Engineering | Updated 2026-08-27 | Voleon Senior Machine Learning Engineer, Abridge Senior Research Data Scientist, Oracle OCI Senior Principal Applied Scientist; watch for possible Applied Science Platform Leadership split if similar scientific/enterprise AI platform JDs recur. |
-| Experience Representation, Weak Supervision, And Uncertainty Research | Provisional synthesis 2026-09-09 | Observable Intuition Member of Technical Staff Research. |
-| Measurement Science, Evaluation, And Causal Inference | Provisional synthesis 2026-08-26 | Abridge Research Scientist (Measurement and Evaluation). |
-| Health, Wearables, Neurotech, And Digital Biomarkers | Updated 2026-09-09 | Oura, Omada, Beacon Biosignals, Lumicity, Motif Neurotech, Dexcom Emerging, Dexcom Advanced, Senseonics, Atria Health, Cleerly, Rad AI. |
-| Sensor AI, Robotics, Autonomy, And Edge Perception | Synthesized 2026-08-21 | General Motors, Trackman, Compound Eye, Samsara. |
-| Bayesian Estimation, Signal Processing, And Physical Systems Research | Synthesized 2026-08-21 | Kobold Data Scientist, Kobold Scientific Computing, Ionosphere, Oxman. |
-| Industrial And Operational Time-Series ML | Updated 2026-08-27 | Oden Technologies, Cutsforth, Cargill, RTX / FlightAware, with Lumicity as a health/regulated-product bridge. |
-| Environmental Modeling For Operational Decisions | Provisional synthesis 2026-09-12 | Waymo Staff Data Scientist, Weather; Overstory Staff Data Scientist, Wildfire; reinforced by Ionosphere, Kobold, and RTX / FlightAware. |
-| Closed-Loop Physical AI And Self-Learning Systems | Provisional synthesis 2026-08-21 | 4MP primary, with reinforcing signals from Oden, Cutsforth, Trackman, and GM. |
-| Default Sensor ML Research Scientist | Fallback profile, not a separate JD archetype | Use when a new JD is broad or cross-domain enough that no specialized cluster dominates. |
+| Product ML And Customer Intelligence | Provisional synthesis 2026-10-23 | Consumer product ML is outside the operational cluster boundary. |
+| Quantitative Research ML Engineering | Updated 2026-08-27 | Watch for a scientific/enterprise AI platform leadership split if recurring responsibilities justify it. |
+| Experience Representation, Weak Supervision, And Uncertainty Research | Provisional synthesis 2026-09-09 | Learning representations from incomplete behavioral and event traces. |
+| Measurement Science, Evaluation, And Causal Inference | Provisional synthesis 2026-08-26 | Independent measurement and evaluation research; preserve qualification boundaries. |
+| Health, Wearables, Neurotech, And Digital Biomarkers | Updated 2026-09-09 | Physiological sensing, clinical AI, regulated algorithms, and digital biomarkers. |
+| Sensor AI, Robotics, Autonomy, And Edge Perception | Synthesized 2026-08-21 | Sensor perception, robotics, and real-world validation. |
+| Bayesian Estimation, Signal Processing, And Physical Systems Research | Synthesized 2026-08-21 | Physical-state inference, scientific computing, and geophysical modeling. |
+| Industrial And Operational Time-Series ML | Updated 2026-08-27 | Industrial monitoring, operational prediction, and production decision support. |
+| Environmental Modeling For Operational Decisions | Provisional synthesis 2026-09-12 | Environmental and spatiotemporal inference for operating decisions. |
+| Closed-Loop Physical AI And Self-Learning Systems | Provisional synthesis 2026-08-21 | Learning from correction outcomes and physical feedback. |
+| Default Sensor ML Research Scientist | Fallback profile, not a separate JD archetype | Use when no specialized cluster dominates. |
+
 
 ## Synthesized Archetype JDs
 
 ### Quantitative Research ML Engineering - Provisional Archetype JD
 
-- Source JDs used: Voleon Senior Machine Learning Engineer, Abridge Senior Research Data Scientist, Oracle OCI Senior Principal Applied Scientist.
 - Archetype role title(s): Senior Machine Learning Engineer, Research ML Engineer, Quantitative Research Engineer, ML Infrastructure Engineer for Research Teams, Applied ML Engineer, Senior Research Data Scientist, Senior/Principal Applied Scientist.
 - Typical company / product context: quantitative investment management, research-intensive AI/ML organizations (including health-AI and other applied-research startups, not only finance), scientific or statistical modeling teams, productized research environments, scientific AI platform teams, and teams where PhD researchers or domain experts need maintainable model, data, and experimentation systems.
 - Core / necessary matching signals: the JD centers on translating research ideas or prototypes into production-quality code; it asks for strong mathematical maturity in statistics, probability, optimization, linear algebra, or ML; it emphasizes data ingestion, feature engineering, validation, quality monitoring, model evaluation, experiment tooling, reproducibility, and imperfect or heterogeneous data; it expects close collaboration with researchers or domain experts.
@@ -205,12 +156,11 @@ Use these only as inputs to the archetype JD. Keep them compact.
 - Resume bullets usually retained: Podimetrics robust estimator validation, production scan-pipeline code/QC integration, and cross-functional translation; CVB deployment-honest validation, sleep-measurement validity reframing, large-scale data processing, database/schema evaluation, sensor-driven questionnaire/proxy-measurement estimation, reproducible workflows, and deep time-series/ablation work; WWE production customer/viewership data products; CSTR spectral/time-frequency methods, mathematical modeling, and geophysical signal interpretation; selected publications that signal mathematical and research credibility.
 - Resume bullets usually compressed or discarded: health-specific clinical outcome language, FDA/regulatory language, detailed wearable study-design material, therapeutic/patient-specific framing, and medical-device modality lists unless they support validation, noisy data, or research-to-production judgment.
 - Gaps / do-not-overstate items: do not claim direct quant-trading strategy ownership, financial-market modeling experience, hedge-fund infrastructure experience, large-scale distributed ML platform ownership, deep C++ systems/performance engineering, formal finance domain expertise, formal causal-inference/quasi-experimental methods training (e.g., instrumental variables, difference-in-differences, matching), direct molecular-biology/genomics/bioinformatics ownership, or OCI/enterprise cloud-platform ownership unless Kevin confirms it.
-- Emerging cluster watch: Oracle-style Senior Principal Applied Scientist roles may justify a new `Applied Science Platform Leadership` / `Scientific AI Platform Leadership` cluster if several future JDs share the same core: strategic-customer scientific workflow discovery, GenAI/RAG/agents or knowledge systems, rigorous evaluation harnesses, and reusable enterprise platform capability. Until then, treat this as QRE with a platform/applied-science add-on.
+- Emerging cluster watch: Senior Principal Applied Scientist roles in enterprise scientific AI may justify a new `Applied Science Platform Leadership` / `Scientific AI Platform Leadership` cluster if several future JDs share the same core: strategic-customer scientific workflow discovery, GenAI/RAG/agents or knowledge systems, rigorous evaluation harnesses, and reusable enterprise platform capability. Until then, treat this as QRE with a platform/applied-science add-on.
 - Last updated: 2026-08-27.
 
 ### Experience Representation, Weak Supervision, And Uncertainty Research - Provisional Archetype JD
 
-- Source JDs used: Observable Intuition Member of Technical Staff - Research.
 - Archetype role title(s): Founding Research Scientist, Member of Technical Staff - Research, Research Scientist for Experience Representation, Applied Scientist for Weakly Supervised Event Modeling.
 - Typical company / product context: early-stage AI infrastructure or enterprise AI companies building systems that learn from real-world activity traces, decision histories, revisions, approvals, exceptions, failures, outcomes, and other partially observed records of human or organizational behavior.
 - Core / necessary matching signals: the JD centers on learning stable and useful representations from incomplete, noisy, longitudinal, weakly supervised, or partially observed data; it involves temporal/event modeling, process reconstruction, graph or knowledge representation, uncertainty quantification, calibrated abstention, sparse labels, delayed outcomes, causal attribution difficulty, and evaluation without established benchmarks or complete ground truth.
@@ -228,7 +178,6 @@ Use these only as inputs to the archetype JD. Keep them compact.
 
 ### Measurement Science, Evaluation, And Causal Inference - Provisional Archetype JD
 
-- Source JDs used: Abridge Research Scientist (Measurement and Evaluation).
 - Archetype role title(s): Research Scientist (Measurement and Evaluation), Applied Scientist (Evaluation), Research Scientist (Causal Inference), Program Evaluation Scientist.
 - Typical company / product context: AI-product or health-AI companies that need an independent scientist to design and lead empirical (experimental or quasi-experimental) studies of an AI system's or intervention's real-world impact, usually in partnership with external institutions (health systems, academic/medical partners), and to publish that work externally.
 - Core / necessary matching signals: the JD centers on independently designing and leading rigorous empirical studies (experimental or quasi-experimental) that evaluate an AI system's or intervention's real-world impact on outcomes; it asks for operationalizing hard-to-measure constructs (e.g., quality of care, safety, cognitive burden, ROI) via principled measurement frameworks; it expects a strong personal publication track record specifically in evaluation/measurement science, not just applied ML; it names a specific quantitative or social-science PhD field (statistics, biostatistics, economics, information systems, clinical informatics, or similar) rather than accepting any technical PhD.
@@ -246,7 +195,6 @@ Use these only as inputs to the archetype JD. Keep them compact.
 
 ### Health, Wearables, Neurotech, And Digital Biomarkers - Archetype JD
 
-- Source JDs used: Oura, Omada, Beacon Biosignals, Lumicity, Motif Neurotech, Dexcom Emerging Sensing Technologies, Dexcom Advanced Sensing Technologies, Senseonics Sr. Algorithm Development Engineer, Atria Health Senior AI Scientist, Cleerly Senior ML Scientist, Rad AI Staff ML Research Scientist.
 - Archetype role title(s): Senior ML Data Scientist, Principal Applied ML Scientist, Senior AI Scientist, Staff ML Research Scientist, Senior Algorithm/ML Engineer, Staff Algorithm Engineer, Algorithm Engineer, Data and Machine Learning Lead.
 - Typical company / product context: wearable health, at-home clinical sensing, continuous glucose monitoring, regulated medical technology, neurotechnology, implantable or wearable therapeutic platforms, emerging biosensing technologies, digital health programs, clinical AI / medical model platforms, radiology generative-AI products, neuro/biosignal products, longitudinal member or patient data, and algorithms that turn sensor, clinical, imaging, text/report, speech, or multimodal health data into actionable health insight.
 - Core / necessary matching signals: the JD is centered on health, clinical, medical-device, digital-health, neurotechnology, biological sensing, or patient/member outcomes; it involves physiological, behavioral, wearable, biosignal, clinical, experimental, or longitudinal health data; it asks for ML, statistics, signal processing, biomarker discovery, risk/trajectory modeling, health decision support, or physiological/sensing model development; it values validation, evidence generation, product translation, technology feasibility, or clinical/scientific rigor.
@@ -257,14 +205,13 @@ Use these only as inputs to the archetype JD. Keep them compact.
 - Hidden evaluation concerns: clinical rigor; avoiding overclaims; whether validation survives noisy free-living or experimental data and patient variability; whether Kevin can handle regulated or productized algorithm work; whether he can lead data strategy as well as model development; whether he can connect research models to hardware, firmware, resource constraints, verification strategy, and commercial product integration; whether causal/intervention or closed-loop therapy language is supported rather than decorative; whether foundation-model, LLM, retrieval, speech, open-source-model, PHI, genomics, radiology/imaging, reporting-workflow, and clinical-data governance claims are grounded in confirmed experience; whether neurostimulation, psychiatric, implantable-device, CGM, electrochemistry, analytical-chemistry, formal calibration-algorithm ownership, or design-control ownership gaps are acknowledged honestly; whether his adjacent physiological-sensing, model-adaptation, and physical-modeling background transfers to new biosensing and clinical-AI mechanisms.
 - Tone and culture signals: mission-driven health product teams; evidence-conscious; cross-functional; commercialization and release-oriented; often expects senior scientific judgment, data-roadmap ownership, and concise executive/scientific communication without academic over-elaboration.
 - Best starting profile: Health, Wearables, Neurotech, And Digital Biomarkers.
-- Resume bullets usually retained: Podimetrics FDA-cleared remote monitoring, pressure-sensor modeling, embedded estimator implementation, thermal CV, adaptive alerting, physics-informed thermal modeling, synthetic thermograms, validation under drift/outliers, SmartMat+ hardware-transfer investigations, cross-functional hardware/software/clinical leadership, production scan-pipeline debugging/QC integration; CVB wearable studies, Parkinsonian gait, Rett stereotypy, sleep validation, patient-level modeling, DRCN/domain adaptation, shared representations, weak supervision, scientific/team leadership, grants and external collaborators, clinician-friendly ML, deployment-honest validation/leakage detection, reproducible team workflows; WWE transfer-learning/fine-tuning project when pretrained-model adaptation, small-data diagnostics, or foundation-model-adjacent language is useful; optional AI-systems project signals when the JD materially values LLM workflow, evaluation, documentation, or human-AI collaboration; CSTR/PhD physical-systems, simulation, and noisy-sensor inference bullets when the JD emphasizes first-principles, mechanistic, simulation, or feasibility work; Omada/Motif-style roles may also retain Next Best Action, quasi-experimental analytics, A/B testing, data-roadmap, and decision-support language; PUB-13 when the role rewards domain adaptation, deep time-series representation learning, or general-to-subject/patient adaptation.
+- Resume bullets usually retained: Podimetrics FDA-cleared remote monitoring, pressure-sensor modeling, embedded estimator implementation, thermal CV, adaptive alerting, physics-informed thermal modeling, synthetic thermograms, validation under drift/outliers, SmartMat+ hardware-transfer investigations, cross-functional hardware/software/clinical leadership, production scan-pipeline debugging/QC integration; CVB wearable studies, Parkinsonian gait, Rett stereotypy, sleep validation, patient-level modeling, DRCN/domain adaptation, shared representations, weak supervision, scientific/team leadership, grants and external collaborators, clinician-friendly ML, deployment-honest validation/leakage detection, reproducible team workflows; WWE transfer-learning/fine-tuning project when pretrained-model adaptation, small-data diagnostics, or foundation-model-adjacent language is useful; optional AI-systems project signals when the JD materially values LLM workflow, evaluation, documentation, or human-AI collaboration; CSTR/PhD physical-systems, simulation, and noisy-sensor inference bullets when the JD emphasizes first-principles, mechanistic, simulation, or feasibility work; Digital-health and neurotechnology roles may also retain Next Best Action, quasi-experimental analytics, A/B testing, data-roadmap, and decision-support language; PUB-13 when the role rewards domain adaptation, deep time-series representation learning, or general-to-subject/patient adaptation.
 - Resume bullets usually compressed or discarded: space-weather/geophysics unless framed as statistical signal-processing evidence; WWE/business analytics beyond one compact brand-value line unless experimentation, decisioning, or product analytics is directly relevant; generic image-recognition work unless the role values algorithm breadth.
 - Gaps / do-not-overstate items: do not imply direct women's-health domain expertise, EEG/neural electrophysiology diagnostic ownership, active implantable medical-device experience, neuromodulation/neurostimulation therapy ownership, psychiatry/depression clinical expertise, CGM/glucose-sensing ownership, electrochemistry or analytical-chemistry expertise, direct CGM calibration-algorithm ownership, formal design-control ownership, formal FDA IDE/PMA regulatory-authoring ownership, production RL, production digital-twin ownership, production-scale clinical foundation-model ownership, expert LLM post-training infrastructure ownership, direct clinical NLP/LLM/retrieval ownership at scale, direct speech-modeling ownership, direct RIS/PACS/PowerScribe/Dragon integration experience, direct genomics/radiology model ownership, expert PHI platform/data-governance ownership, expert embedded C++ ownership, deep AWS/SageMaker experience, direct coronary/cardiac imaging or CT/MRI angiography modeling experience, a top-tier medical-imaging or computer-vision conference/journal publication track record (MICCAI, IEEE TMI, CVPR, Medical Image Analysis, MIDL), issued or filed patents, or ownership of academic/medical-institution research collaborations unless Kevin confirms it.
 - Last updated: 2026-09-09.
 
 ### Sensor AI, Robotics, Autonomy, And Edge Perception - Archetype JD
 
-- Source JDs used: General Motors, Trackman, Compound Eye, Samsara.
 - Archetype role title(s): Future Sensing Engineer, Applied Scientist, ML/CV Applied Scientist, Signal Processing Software Developer, Research Engineer.
 - Typical company / product context: autonomous driving, robotic perception, sports or industrial tracking, connected IoT fleets, passive cameras/IMUs, radar/video fusion, edge devices, and real-world sensor systems operating outside curated lab conditions.
 - Core / necessary matching signals: the JD is centered on real-world sensor perception, tracking, localization, autonomy, robotics, edge AI, or deployed camera/radar/IMU/IoT systems; it asks for computer vision, signal processing, sensor fusion, or ML on physical sensor streams; it emphasizes robustness, evaluation, deployment constraints, or performance in changing operating environments.
@@ -282,7 +229,6 @@ Use these only as inputs to the archetype JD. Keep them compact.
 
 ### Bayesian Estimation, Signal Processing, And Physical Systems Research - Archetype JD
 
-- Source JDs used: Kobold Data Scientist, Kobold Scientific Computing, Ionosphere, Oxman.
 - Archetype role title(s): Data Scientist, Scientific Computing Engineer, Principal Ionospheric Physicist, Geospatial AI / ML Research Scientist.
 - Typical company / product context: scientific ML for physical or environmental systems, mineral exploration, geophysical or ionospheric data assimilation, ecological/geospatial modeling, remote sensing, simulation, and operational scientific software.
 - Core / necessary matching signals: the JD is centered on inference, modeling, or scientific computing for physical, geophysical, environmental, spatial, or instrumented systems; it involves sparse, noisy, indirect, heterogeneous, or spatiotemporal observations; it asks for applied statistics, Bayesian inference, signal processing, uncertainty quantification, physics-informed modeling, simulation, inverse problems, data assimilation, or scientific ML; it expects collaboration with domain experts or research-to-product translation.
@@ -300,7 +246,6 @@ Use these only as inputs to the archetype JD. Keep them compact.
 
 ### Industrial And Operational Time-Series ML - Archetype JD
 
-- Source JDs used: Oden Technologies, Cutsforth, Cargill, RTX / FlightAware, with Lumicity as a regulated-product bridge.
 - Archetype role title(s): ML Data Engineer, Senior Data Scientist, Senior Machine Learning Engineer, Data Scientist / Signal Processing Engineer, Algorithm Engineer.
 - Typical company / product context: manufacturing AI, industrial process optimization, predictive maintenance, quality/yield/cost prediction, machine failure monitoring, transportation or aviation intelligence, live predictive operational data products, regulated product algorithms, computer vision for production facilities, and operational ML systems that support real decisions.
 - Core / necessary matching signals: the JD is centered on operational, industrial, manufacturing, facility, supply-chain, logistics/transportation, reliability, or production-product data; it asks for ML/statistical modeling on time-series, sensor, image/video, process, equipment, event, or contextual data; it emphasizes deployment, monitoring, anomaly/risk detection, forecasting/prediction, diagnostics, optimization, scaling, performance efficiency, or decision support in real operating environments.
@@ -319,7 +264,6 @@ Use these only as inputs to the archetype JD. Keep them compact.
 
 ### Environmental Modeling For Operational Decisions - Provisional Archetype JD
 
-- Source JDs used: Waymo Staff Data Scientist, Weather; Overstory Staff Data Scientist, Wildfire; reinforced by Ionosphere, Kobold, and RTX / FlightAware.
 - Archetype role title(s): Staff Data Scientist - Weather, Staff Data Scientist - Wildfire, Environmental ML Scientist, Geospatial / Climate Risk Data Scientist, Operational Weather Intelligence Scientist, Physical Spatiotemporal Modeling Scientist.
 - Typical company / product context: autonomous vehicle operations, wildfire and grid-resilience intelligence, commercial space-weather products, aviation or transportation intelligence, energy, insurance, agriculture, logistics, climate risk, and other systems where environmental or physical-state estimates guide real-world operating decisions.
 - Core / necessary matching signals: the JD centers on modeling, forecasting, nowcasting, or evaluating environmental, geospatial, weather, climate, wildfire, atmospheric, geophysical, or physical-system risk; it involves sparse, noisy, indirect, heterogeneous, public/private, first-party/third-party, or spatiotemporal observations; it asks for measurement rigor, uncertainty quantification, validation against ground truth, error analysis, decision-grade evaluation signals, operational mitigation, readiness criteria, or stakeholder-facing recommendations that affect deployment or field operations.
@@ -337,7 +281,6 @@ Use these only as inputs to the archetype JD. Keep them compact.
 
 ### Closed-Loop Physical AI And Self-Learning Systems - Provisional Archetype JD
 
-- Source JDs used: 4MP primary; reinforcing signals from Oden Technologies, Cutsforth, Trackman, and General Motors.
 - Archetype role title(s): Principal AI Engineer, Applied Scientist, ML Scientist for Closed-Loop Learning, Self-Learning Physical Systems, or Physical AI.
 - Typical company / product context: hardware, robotics, autonomy, manufacturing, precision machinery, or fielded physical systems where models learn from correction outcomes and decide when to recommend, withhold, or update actions.
 - Core / necessary matching signals: the JD is centered on physical-system feedback loops where model outputs influence future measurements or actions; it asks for learning from outcomes, corrections, interventions, or real-world feedback; it requires uncertainty-aware decisioning, guardrails, staged rollout, validation before action, or deciding when not to act; it involves noisy, delayed, sparse, costly, drifting, or partially observed physical data.
@@ -417,7 +360,6 @@ Likely hidden concerns: whether Kevin's breadth is a strength or a distraction. 
 
 ### Product ML And Customer Intelligence - Provisional Archetype JD
 
-- Source JDs used: Plaid Senior Machine Learning Engineer, Embedded Insights.
 - Archetype role title(s): Senior Machine Learning Engineer, Product ML Engineer, Applied Scientist, Customer Intelligence Data Scientist.
 - Typical company / product context: Consumer or SaaS intelligence products; ML contributors embedded with product teams.
 - Core / necessary matching signals: Customer-facing ML features; ambiguous business opportunities translated into modeling problems; proof of concept through production and ongoing improvement; cross-functional product delivery.
